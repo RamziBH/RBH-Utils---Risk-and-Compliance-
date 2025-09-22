@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>0104641893c0a6109cb7b91c5cba10c1</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="SPM - Financials - Agile"&gt;f187e0794723da9097744049116d4343&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_scope_privilege_0d04641893c0a6109cb7b91c5cba10bf&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_scope_privilege"&gt;&lt;sys_scope_privilege action="INSERT_OR_UPDATE"&gt;&lt;operation&gt;execute&lt;/operation&gt;&lt;source_scope display_value="SPM - Financials - Agile"&gt;f187e0794723da9097744049116d4343&lt;/source_scope&gt;&lt;status&gt;allowed&lt;/status&gt;&lt;sys_class_name&gt;sys_scope_privilege&lt;/sys_class_name&gt;&lt;sys_created_by&gt;rmouaatarif_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-26 18:05:50&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;0d04641893c0a6109cb7b91c5cba10bf&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;ScriptableFlowRunner.withInputs&lt;/sys_name&gt;&lt;sys_package display_value="SPM - Financials - Agile" source="x_gamlp_spm_fina_0"&gt;f187e0794723da9097744049116d4343&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="SPM - Financials - Agile"&gt;f187e0794723da9097744049116d4343&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_scope_privilege_0d04641893c0a6109cb7b91c5cba10bf&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;rmouaatarif_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-02-26 18:05:50&lt;/sys_updated_on&gt;&lt;target_name&gt;ScriptableFlowRunner.withInputs&lt;/target_name&gt;&lt;target_scope display_value="Global"&gt;global&lt;/target_scope&gt;&lt;target_type&gt;scriptable&lt;/target_type&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;/sys_scope_privilege&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;274603767&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;rmouaatarif_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-02-26 18:05:50&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0104641893c0a6109cb7b91c5cba10c1&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;195436fb8590000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;rmouaatarif_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-02-26 18:05:50&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;ScriptableFlowRunner.withInputs&lt;/target_name&gt;
+        &lt;type&gt;Cross scope privilege&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;0d046418cdc0a610b9f3a462c6e555c0&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;0d046418cdc0a610b9f3a462c6e555c0:274603767&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;f587e0794723da9097744049116d43f6&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:11</sys_created_on>
+        <sys_id>e611033947c4fe1097744049116d43af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_scope_privilege_0d04641893c0a6109cb7b91c5cba10bf</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_e611033947c4fe1097744049116d43af</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:11</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>001e3e6c1b01529006256465624bcb9a</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>sysevent_email_action_a988a59b87eace10124b7777dabb35ee</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition&gt;&lt;![CDATA[(function() {
+
+    // User ne fait pas parti des groupes: Alerte modification idée, Analyste d'affaires, Architecture, Autorisation modification Coordonnateur d'entrée Idée
+    var groupMember = gs.getUser();
+
+    return !groupMember.isExplicitMemberOf('5c0b699f87eace10124b7777dabb3542') &amp;&amp; !groupMember.isExplicitMemberOf('25985abe0facf10049346509b1050eed') &amp;&amp; !groupMember.isExplicitMemberOf('447b02990f89750049346509b1050ef2') &amp;&amp; !groupMember.isExplicitMemberOf('43022e2c474dd65097744049116d43e5');
+
+
+})();]]&gt;&lt;/advanced_condition&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Idea Management" name="Idea Management"&gt;1dbfe61b873ee550124b7777dabb3554&lt;/category&gt;&lt;collection&gt;idea&lt;/collection&gt;&lt;condition table="idea"&gt;u_programVALCHANGES^ORu_tshirt_sizeVALCHANGES^ORu_t_shirt_size_analysisVALCHANGES^ORbusiness_capabilitiesVALCHANGES^ORportfolioVALCHANGES^ORu_acquisition_requirementVALCHANGES^ORu_technologyVALCHANGES^ORu_productVALCHANGES^EQ&lt;item endquery="false" field="u_program" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/&gt;&lt;item display_value="-- None --" endquery="false" field="u_tshirt_size" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/&gt;&lt;item display_value="-- None --" endquery="false" field="u_t_shirt_size_analysis" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/&gt;&lt;item endquery="false" field="business_capabilities" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/&gt;&lt;item endquery="false" field="portfolio" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/&gt;&lt;item display_value="-- None --" endquery="false" field="u_acquisition_requirement" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/&gt;&lt;item display_value="-- None --" endquery="false" field="u_technology" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/&gt;&lt;item endquery="false" field="u_product" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_interval/&gt;&lt;description&gt;Nous avons besoin de tracer les modifications qui sont faites par des membres autres que les analystes d'affaires, architectes et Kevin McKenna sur les idées. Certains bo/po/directeur produits courtcircuite le processus en analysant eux-mêmes les idées.&amp;#13;
+Collab-4567&lt;/description&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;enable_dynamic_translation&gt;false&lt;/enable_dynamic_translation&gt;&lt;event_name&gt;activate.life.cycle.migration&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;engine&lt;/generation_type&gt;&lt;importance&gt;high&lt;/importance&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;Bonjour,&lt;/p&gt;
+&lt;p&gt;Veuillez prendre note que l'id&amp;eacute;e &lt;strong&gt;${number}&lt;/strong&gt; - ${URI_REF} &amp;agrave; &amp;eacute;t&amp;eacute; modifi&amp;eacute; par &lt;strong&gt;${mail_script:get_updated_by_name}&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Voici les valeurs actuelles de la section du bas de l'id&amp;eacute;e:&lt;/p&gt;
+&lt;table style="width: 99.6094%; height: 114.6px;" width="100%"&gt;
+&lt;tbody&gt;
+&lt;tr style="height: 19.1px;"&gt;
+&lt;th style="text-align: left; background-color: #004070; color: #ffffff; width: 100.143%; height: 19.1px;" colspan="2"&gt;Section r&amp;eacute;serv&amp;eacute;e exclusivement aux architectes de solutions et analystes d'affaires&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 19.1px;"&gt;
+&lt;td style="width: 47.6615%; height: 30.8px;"&gt;
+&lt;p&gt;&lt;strong&gt;Programme (Produit ambition) : &lt;/strong&gt;${u_program}&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="width: 52.4813%; height: 19.1px;"&gt;&lt;strong&gt;Portefeuille : &lt;/strong&gt;${portfolio}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 19.1px;"&gt;
+&lt;td style="width: 47.6615%; height: 19.1px;"&gt;&lt;strong&gt;&lt;label dir="ltr" for="idea.u_tshirt_size"&gt;&lt;span title="" data-original-title="S: 0@50k, M:51k@250k, L: 251k@1M, XL: 1M@4.5m, XL: 4.5M+" data-html="false"&gt;T-shirt size Techno :&amp;nbsp; &lt;/span&gt;&lt;/label&gt;&lt;/strong&gt;&lt;label dir="ltr" for="idea.u_tshirt_size"&gt;&lt;span title="" data-original-title="S: 0@50k, M:51k@250k, L: 251k@1M, XL: 1M@4.5m, XL: 4.5M+" data-html="false"&gt;${u_tshirt_size}&lt;/span&gt;&lt;/label&gt;&lt;/td&gt;
+&lt;td style="width: 52.4813%; height: 19.1px;"&gt;&lt;strong&gt;Requis d'acquisition : &lt;/strong&gt;${u_acquisition_requirement}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 19.1px;"&gt;
+&lt;td style="width: 47.6615%; height: 19.1px;"&gt;&lt;strong&gt;&lt;label dir="ltr" for="idea.u_t_shirt_size_analysis"&gt;&lt;span title="" data-original-title="" data-html="false"&gt;T-shirt size analyse : &lt;/span&gt;&lt;/label&gt;&lt;/strong&gt;&lt;label dir="ltr" for="idea.u_t_shirt_size_analysis"&gt;&lt;span title="" data-original-title="" data-html="false"&gt;${u_t_shirt_size_analysis}&lt;/span&gt;&lt;/label&gt;&lt;/td&gt;
+&lt;td style="width: 52.4813%; height: 19.1px;"&gt;&lt;strong&gt;Technologie&lt;span title="" aria-describedby="tooltip405852" data-original-title="Open dictionary entry"&gt; : &lt;/span&gt;&lt;/strong&gt;&lt;span title="" aria-describedby="tooltip405852" data-original-title="Open dictionary entry"&gt;${u_technology}&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 19.1px;"&gt;
+&lt;td style="width: 47.6615%; height: 19.1px;"&gt;&lt;strong&gt;&lt;label dir="ltr" for="select_0idea.business_capabilities"&gt;&lt;span title="" data-original-title="" data-html="false"&gt;Capacit&amp;eacute;s d'affaires : &lt;/span&gt;&lt;/label&gt;&lt;/strong&gt;&lt;label dir="ltr" for="select_0idea.business_capabilities"&gt;&lt;span title="" data-original-title="" data-html="false"&gt;${business_capabilities}&lt;/span&gt;&lt;/label&gt;&lt;/td&gt;
+&lt;td style="width: 52.4813%; height: 19.1px;"&gt;&lt;strong&gt;Produit : &lt;/strong&gt;${u_product}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;Energir - Alerte modif idée&lt;/name&gt;&lt;omit_watermark&gt;true&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields/&gt;&lt;recipient_groups name="Alerte modification idée"&gt;5c0b699f87eace10124b7777dabb3542&lt;/recipient_groups&gt;&lt;recipient_users/&gt;&lt;reply_to/&gt;&lt;send_self&gt;false&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;${number} : Des modifications ont été apportées à la section réservée aux architectes et analystes&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;rmouaatarif_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-07 21:09:50&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a988a59b87eace10124b7777dabb35ee&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;Energir - Alerte modif idée&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_a988a59b87eace10124b7777dabb35ee&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;rmouaatarif_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-01 18:56:09&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template display_value="Énergir - BPI"&gt;cc91b7c987dc7d10124b7777dabb3542&lt;/template&gt;&lt;type&gt;email&lt;/type&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-292621396</payload_hash>
+        <remote_update_set/>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>rmouaatarif_admin</sys_created_by>
+        <sys_created_on>2024-10-01 20:48:59</sys_created_on>
+        <sys_id>001e3e6c1b01529006256465624bcb9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19249d7e8350000001</sys_recorded_at>
+        <sys_updated_by>rmouaatarif_admin</sys_updated_by>
+        <sys_updated_on>2024-10-01 20:48:59</sys_updated_on>
+        <table>idea</table>
+        <target_name>Energir - Alerte modif idée</target_name>
+        <type>Notification</type>
+        <update_domain>global</update_domain>
+        <update_guid>13342eecb64dd650ab3fc4bc0aed839e</update_guid>
+        <update_guid_history>13342eecb64dd650ab3fc4bc0aed839e:-292621396,1b154634dc0c5650b754beeaf9487aaa:-1221327236,93187d3c17401610e059cb90e670e32f:2121039436,5cd63db8334016102161aeefc0684420:1332826741,48846bf6e67b0a104e466a2c86f706c3:-1221327236,b9be5bf62a3b0a10284e66e3d7bbbce4:-877039646,c68c5f76233b0a10fec9949da97cdcba:-1217351040,7f9a93f2fd3b0a10d3f85d47bb3510c2:722708172,17f59ff67bf70a10dd16959fbae17816:2093198010,416bfd5b8e6ece10cc8ef0b007fc41a4:-1417255922,6a4979d76e6ece10613166279778985e:267577345,5487f557326ece10f6e5a66cac8a2456:190441995,25e57193e66ece100b8985fac63326bc:-564199268,5204fd13936ece10621057ebf2dce648:481291942,f4b3b513f06ece100f3a2466959894dd:-1506399422,9270f11fc12ece109296bf885c959433:-1502446824,1f3fe95be72ece10f1a5efa8336645eb:-48713404,a26ae55f41eace10925f36270c7b323c:-2146494395</update_guid_history>
+        <update_set display_value="RM -  COLLAB - 5074 - Notif modification section Coordonateur d'entree des idées">041e3e6c1b01529006256465624bcb19</update_set>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:31</sys_created_on>
+        <sys_id>e7704f7547c4fe1097744049116d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sysevent_email_action_a988a59b87eace10124b7777dabb35ee</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_e7704f7547c4fe1097744049116d430d</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:31</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>0059bbcedb3e13007e24de82ca9619d6</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sc_cat_item_8e976eb50fc64a40eea6a218b1050efe&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sc_cat_item action="INSERT_OR_UPDATE"&gt;
+&lt;active&gt;true&lt;/active&gt;
+&lt;availability&gt;on_desktop&lt;/availability&gt;
+&lt;billable&gt;false&lt;/billable&gt;
+&lt;category display_value=""/&gt;
+&lt;cost&gt;0&lt;/cost&gt;
+&lt;custom_cart display_value=""/&gt;
+&lt;delivery_plan display_value=""/&gt;
+&lt;delivery_plan_script/&gt;
+&lt;delivery_time&gt;1970-01-04 18:00:00&lt;/delivery_time&gt;
+&lt;description/&gt;
+&lt;entitlement_script/&gt;
+&lt;group display_value=""/&gt;
+&lt;icon/&gt;
+&lt;ignore_price&gt;true&lt;/ignore_price&gt;
+&lt;image/&gt;
+&lt;list_price&gt;0&lt;/list_price&gt;
+&lt;location display_value=""/&gt;
+&lt;meta/&gt;
+&lt;mobile_hide_price&gt;false&lt;/mobile_hide_price&gt;
+&lt;mobile_picture/&gt;
+&lt;mobile_picture_type&gt;use_desktop_picture&lt;/mobile_picture_type&gt;
+&lt;model display_value=""/&gt;
+&lt;name&gt;Demande de service GMP&lt;/name&gt;
+&lt;no_cart&gt;false&lt;/no_cart&gt;
+&lt;no_order&gt;false&lt;/no_order&gt;
+&lt;no_order_now&gt;false&lt;/no_order_now&gt;
+&lt;no_proceed_checkout&gt;false&lt;/no_proceed_checkout&gt;
+&lt;no_quantity&gt;false&lt;/no_quantity&gt;
+&lt;no_search&gt;false&lt;/no_search&gt;
+&lt;omit_price&gt;false&lt;/omit_price&gt;
+&lt;order&gt;930&lt;/order&gt;
+&lt;ordered_item_link display_value=""/&gt;
+&lt;picture/&gt;
+&lt;preview&gt;JavaScript: popupOpenStandard("./com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;amp;sysparm_id=8e976eb50fc64a40eea6a218b1050efe&amp;amp;sysparm_preview=true", "summary");&lt;/preview&gt;
+&lt;price&gt;0&lt;/price&gt;
+&lt;recurring_frequency/&gt;
+&lt;recurring_price&gt;0&lt;/recurring_price&gt;
+&lt;roles/&gt;
+&lt;sc_catalogs&gt;e0d08b13c3330100c8b837659bba8fb4&lt;/sc_catalogs&gt;
+&lt;sc_ic_item_staging display_value=""/&gt;
+&lt;sc_ic_version/&gt;
+&lt;short_description&gt;Demande de service GMP&lt;/short_description&gt;
+&lt;show_variable_help_on_load&gt;false&lt;/show_variable_help_on_load&gt;
+&lt;start_closed&gt;false&lt;/start_closed&gt;
+&lt;sys_class_name&gt;sc_cat_item&lt;/sys_class_name&gt;
+&lt;sys_created_by&gt;hbenkram_admin&lt;/sys_created_by&gt;
+&lt;sys_created_on&gt;2015-08-24 02:16:51&lt;/sys_created_on&gt;
+&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;
+&lt;sys_id&gt;8e976eb50fc64a40eea6a218b1050efe&lt;/sys_id&gt;
+&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;
+&lt;sys_name&gt;Demande de service GMP&lt;/sys_name&gt;
+&lt;sys_package display_value="Global"&gt;global&lt;/sys_package&gt;
+&lt;sys_policy/&gt;
+&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;
+&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;
+&lt;sys_update_name&gt;sc_cat_item_8e976eb50fc64a40eea6a218b1050efe&lt;/sys_update_name&gt;
+&lt;sys_updated_by&gt;plepine_admin&lt;/sys_updated_by&gt;
+&lt;sys_updated_on&gt;2015-10-27 18:41:15&lt;/sys_updated_on&gt;
+&lt;template display_value=""/&gt;
+&lt;type&gt;item&lt;/type&gt;
+&lt;u_approval_group display_value=""/&gt;
+&lt;u_categorie_sla/&gt;
+&lt;u_derogation_ti_necessaire&gt;false&lt;/u_derogation_ti_necessaire&gt;
+&lt;u_ignorerapprobationgazmet&gt;false&lt;/u_ignorerapprobationgazmet&gt;
+&lt;u_requestautoclose&gt;false&lt;/u_requestautoclose&gt;
+&lt;use_sc_layout&gt;true&lt;/use_sc_layout&gt;
+&lt;vendor display_value=""/&gt;
+&lt;visible_bundle&gt;true&lt;/visible_bundle&gt;
+&lt;visible_guide&gt;true&lt;/visible_guide&gt;
+&lt;visible_standalone&gt;true&lt;/visible_standalone&gt;
+&lt;workflow display_value="Demande de service GMP"&gt;4e28a6f50fc64a40eea6a218b1050e8f&lt;/workflow&gt;
+&lt;/sc_cat_item&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;1688426475&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;landre_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2018-06-21 14:34:47&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0059bbcedb3e13007e24de82ca9619d6&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;16687836a2e0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;Ludovic.Andre@fxinnovation.com&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2018-10-18 14:10:28&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;Demande de service GMP&lt;/target_name&gt;
+        &lt;type&gt;Catalog Item&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;d4f8a8e072d5af0009e73c7a6020e427&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;d4f8a8e072d5af0009e73c7a6020e427:1688426475,98acb01b17cda700220f329cf75fd63b:-1347399562,90acb01b25cda700a1ed66f09301c436:209827958,d8acfcd7cccda70094923e040784c00a:-422358395,5cacfcd76bcda700c4b95b417366c707:-1131063376,4c59bbce6c3e1300f3ff42fbae0649d5:1688426475&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:57</sys_created_on>
+        <sys_id>b99007b547c4fe1097744049116d43fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sc_cat_item_8e976eb50fc64a40eea6a218b1050efe</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_b99007b547c4fe1097744049116d43fc</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:57</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

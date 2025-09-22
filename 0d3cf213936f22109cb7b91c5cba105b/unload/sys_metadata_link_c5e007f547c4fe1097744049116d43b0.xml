@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00b0daea47ff661097744049116d43b9</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sn_risk_m2m_risk_definition_policy_statement_4ca3c32593f726909cb7b91c5cba10ab&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_risk_m2m_risk_definition_policy_statement"&gt;&lt;sn_risk_m2m_risk_definition_policy_statement action="INSERT_OR_UPDATE"&gt;&lt;last_associated_timestamp&gt;2025-09-08 11:32:24&lt;/last_associated_timestamp&gt;&lt;sn_compliance_policy_statement display_value="Les actifs sont protégés contre les risques de dommage par les tiers"&gt;7254994d47b3625097744049116d4350&lt;/sn_compliance_policy_statement&gt;&lt;sn_risk_definition display_value="Méc.01 Impact d'un véhicule / train / avion"&gt;f588a69d93bf2e509cb7b91c5cba1021&lt;/sn_risk_definition&gt;&lt;sys_created_by&gt;rben-hassine_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-09-05 12:51:01&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;4ca3c32593f726909cb7b91c5cba10ab&lt;/sys_id&gt;&lt;sys_mod_count&gt;72&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-09-08 11:32:24&lt;/sys_updated_on&gt;&lt;/sn_risk_m2m_risk_definition_policy_statement&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-810784295&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;rben-hassine_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-09-08 11:42:24&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00b0daea47ff661097744049116d43b9&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;199292266520000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;rben-hassine_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-09-08 11:42:24&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;Méc.01 Impact d'un véhicule / train / avion.Les actifs sont protégés contre les risques de dommage p&lt;/target_name&gt;
+        &lt;type&gt;Risk Statement to Control Objective&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;c8b0daea0bff66102fee6a801a9f66b8&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;c8b0daea0bff66102fee6a801a9f66b8:-810784295&lt;/update_guid_history&gt;
+        &lt;update_set display_value="COLLAB-6468-RBH-Data"&gt;5bd7c761937b26909cb7b91c5cba1017&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:33:15</sys_created_on>
+        <sys_id>c5e007f547c4fe1097744049116d43b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_risk_m2m_risk_definition_policy_statement_4ca3c32593f726909cb7b91c5cba10ab</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_c5e007f547c4fe1097744049116d43b0</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:33:15</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

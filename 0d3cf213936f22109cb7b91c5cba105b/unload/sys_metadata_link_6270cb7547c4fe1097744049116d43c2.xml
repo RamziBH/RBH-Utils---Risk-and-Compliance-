@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00140aa6db633810521260ab139619ef</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;DELETE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sn_int_common_choice_map_8c140aa6db633810521260ab139619d4&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_int_common_choice_map"&gt;&lt;sn_int_common_choice_map action="DELETE"&gt;&lt;external_choice&gt;10280&lt;/external_choice&gt;&lt;external_choice_name&gt;Fermé&lt;/external_choice_name&gt;&lt;field_map display_value=""&gt;3f040aa6db633810521260ab139619ae&lt;/field_map&gt;&lt;internal_choice&gt;6&lt;/internal_choice&gt;&lt;is_valid&gt;true&lt;/is_valid&gt;&lt;sn_order&gt;10&lt;/sn_order&gt;&lt;sys_class_name&gt;sn_int_common_choice_map&lt;/sys_class_name&gt;&lt;sys_created_by&gt;system&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-11-04 03:13:28&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;8c140aa6db633810521260ab139619d4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_int_common_choice_map_8c140aa6db633810521260ab139619d4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-11-04 03:13:28&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;/sn_int_common_choice_map&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;1129578902&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;system&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-11-04 03:13:28&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00140aa6db633810521260ab139619ef&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;18e2f90d5350000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-03-11 22:10:04&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name/&gt;
+        &lt;type&gt;Choice Map&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;7a4c200f42bc8e90586abd2f50e6abfc&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;7a4c200f42bc8e90586abd2f50e6abfc:1129578902,cc140aa67c633810bc3542bd65a43cd5:-241754877&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:27</sys_created_on>
+        <sys_id>6270cb7547c4fe1097744049116d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_int_common_choice_map_8c140aa6db633810521260ab139619d4</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_6270cb7547c4fe1097744049116d43c2</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:27</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

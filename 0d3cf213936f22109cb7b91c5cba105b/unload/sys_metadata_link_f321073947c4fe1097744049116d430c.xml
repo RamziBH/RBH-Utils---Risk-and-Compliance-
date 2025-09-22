@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>011de6a287ecc6108f7275d8dabb3582</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;m2m_blacklist_search_suggestion_f81de6a287ecc6108f7275d8dabb3580&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="m2m_blacklist_search_suggestion"&gt;&lt;m2m_blacklist_search_suggestion action="INSERT_OR_UPDATE"&gt;&lt;blacklist display_value="\b[a-zA-Z]{2,}[0-9]{6,}\b"&gt;e3241f3787c83300f917e55936cb0b02&lt;/blacklist&gt;&lt;suggestion display_value="idea0002586"&gt;341de6a287ecc6108f7275d8dabb357a&lt;/suggestion&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-27 08:00:04&lt;/sys_created_on&gt;&lt;sys_id&gt;f81de6a287ecc6108f7275d8dabb3580&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-27 08:00:04&lt;/sys_updated_on&gt;&lt;/m2m_blacklist_search_suggestion&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;666079837&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-02-27 08:00:04&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;011de6a287ecc6108f7275d8dabb3582&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;18de993f64c0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-02-27 08:00:04&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;f81de6a287ecc6108f7275d8dabb3580&lt;/target_name&gt;
+        &lt;type&gt;Exclusion List Rule and Search Suggestio&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;0d1de6a2cdecc6102b9c5bfb6b51cd81&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;0d1de6a2cdecc6102b9c5bfb6b51cd81:666079837&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:32</sys_created_on>
+        <sys_id>f321073947c4fe1097744049116d430c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>m2m_blacklist_search_suggestion_f81de6a287ecc6108f7275d8dabb3580</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_f321073947c4fe1097744049116d430c</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:32</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

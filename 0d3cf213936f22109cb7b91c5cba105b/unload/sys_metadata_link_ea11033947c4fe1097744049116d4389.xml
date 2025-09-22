@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>01030c1adbbe13007e24de82ca9619c9</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;io_set_item_bb5ea9470f620600eea6a218b1050e9f&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;io_set_item action="INSERT_OR_UPDATE"&gt;
+&lt;order&gt;100&lt;/order&gt;
+&lt;sc_cat_item display_value="CD Search (LB Search)"&gt;ce2d99c30f220a00caa5a218b1050ec5&lt;/sc_cat_item&gt;
+&lt;sys_class_name&gt;io_set_item&lt;/sys_class_name&gt;
+&lt;sys_created_by&gt;plepine_admin&lt;/sys_created_by&gt;
+&lt;sys_created_on&gt;2015-09-21 15:50:12&lt;/sys_created_on&gt;
+&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;
+&lt;sys_id&gt;bb5ea9470f620600eea6a218b1050e9f&lt;/sys_id&gt;
+&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+&lt;sys_name&gt;Information supplementaire.CD Search (LB Search)&lt;/sys_name&gt;
+&lt;sys_package display_value="Global"&gt;global&lt;/sys_package&gt;
+&lt;sys_policy/&gt;
+&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;
+&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;
+&lt;sys_update_name&gt;io_set_item_bb5ea9470f620600eea6a218b1050e9f&lt;/sys_update_name&gt;
+&lt;sys_updated_by&gt;plepine_admin&lt;/sys_updated_by&gt;
+&lt;sys_updated_on&gt;2015-09-21 15:50:12&lt;/sys_updated_on&gt;
+&lt;variable_set display_value="Information supplementaire"&gt;af18df360fda0e4049346509b1050ed9&lt;/variable_set&gt;
+&lt;/io_set_item&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;751553696&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;landre_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2018-06-21 15:17:11&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;01030c1adbbe13007e24de82ca9619c9&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;16422ebba830000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;landre_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2018-06-21 15:17:11&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;Information supplementaire.CD Search (LB Search)&lt;/target_name&gt;
+        &lt;type&gt;Catalog Variable Set&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;4d030c1a93be13001753867c8a6772c8&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;4d030c1a93be13001753867c8a6772c8:751553696&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:10</sys_created_on>
+        <sys_id>ea11033947c4fe1097744049116d4389</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>io_set_item_bb5ea9470f620600eea6a218b1050e9f</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_ea11033947c4fe1097744049116d4389</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:10</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

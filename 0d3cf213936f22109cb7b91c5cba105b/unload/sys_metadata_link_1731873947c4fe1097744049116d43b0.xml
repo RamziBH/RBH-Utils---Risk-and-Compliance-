@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>012db636db630110633d3fd3e2961901</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>customer</category>
+        <comments/>
+        <name>help_content_4d2d7636db630110633d3fd3e29619ff</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="help_content"&gt;&lt;help_content action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;configuration_types&gt;custom&lt;/configuration_types&gt;&lt;custom_html&gt;&lt;![CDATA[&lt;table cellpadding="4" cellspacing="0" summary="" id="cow-cloud-disco-create-schedule__d28e1295" class="table" frame="border" border="1" rules="all"&gt;&lt;colgroup&gt;&lt;col /&gt;&lt;col /&gt;&lt;/colgroup&gt;&lt;thead class="thead" style="text-align:left;"&gt;&lt;tr class="row"&gt;&lt;th class="entry cellrowborder" style="vertical-align:top;" id="d24482e475"&gt;Field&lt;/th&gt;&lt;th class="entry cellrowborder" style="vertical-align:top;" id="d24482e478"&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody class="tbody"&gt;&lt;tr class="row"&gt;&lt;td class="entry cellrowborder" style="vertical-align:top;" headers="d24482e475 "&gt;Name&lt;/td&gt;&lt;td class="entry cellrowborder" style="vertical-align:top;" headers="d24482e478 "&gt;Name of the service account.&lt;/td&gt;&lt;/tr&gt;&lt;tr class="row"&gt;&lt;td class="entry cellrowborder" style="vertical-align:top;" headers="d24482e475 "&gt;Account ID&lt;/td&gt;&lt;td class="entry cellrowborder" style="vertical-align:top;" headers="d24482e478 "&gt;OCI Compartment id.&lt;/td&gt;&lt;/tr&gt;&lt;tr class="row"&gt;&lt;td class="entry cellrowborder" style="vertical-align:top;" headers="d24482e475 "&gt;Credentials&lt;/td&gt;&lt;td class="entry cellrowborder" style="vertical-align:top;" headers="d24482e478 "&gt;Name of the credentials that you have created for &lt;span class="ph"&gt;Oracle&lt;/span&gt; Cloud Infrastructure (OCI)
+                                            discovery.&lt;/td&gt;&lt;/tr&gt;&lt;tr class="row"&gt;&lt;td class="entry cellrowborder" style="vertical-align:top;" headers="d24482e475 "&gt;Datacenter URL&lt;/td&gt;&lt;td class="entry cellrowborder" style="vertical-align:top;" headers="d24482e478 "&gt;Datacenter value.&lt;p class="p"&gt;For example,
+                                                https://$service.ap-mumbai-1.oraclecloud.com&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;]]&gt;&lt;/custom_html&gt;&lt;default_content&gt;false&lt;/default_content&gt;&lt;field_name/&gt;&lt;filter/&gt;&lt;footer/&gt;&lt;guidance_step/&gt;&lt;has_custom_html&gt;false&lt;/has_custom_html&gt;&lt;has_image_link&gt;false&lt;/has_image_link&gt;&lt;image/&gt;&lt;image_alt/&gt;&lt;image_link/&gt;&lt;open_in&gt;new_tab&lt;/open_in&gt;&lt;options/&gt;&lt;order/&gt;&lt;records/&gt;&lt;related_content/&gt;&lt;resource_id&gt;d28e1295&lt;/resource_id&gt;&lt;subtitle/&gt;&lt;sys_class_name&gt;help_content&lt;/sys_class_name&gt;&lt;sys_created_by&gt;system&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-22 22:12:29&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;4d2d7636db630110633d3fd3e29619ff&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Oracle Cloud Infrastructure service account
+                                fields&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;help_content_4d2d7636db630110633d3fd3e29619ff&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-21 05:54:33&lt;/sys_updated_on&gt;&lt;table_name/&gt;&lt;text/&gt;&lt;title&gt;Oracle Cloud Infrastructure service account
+                                fields&lt;/title&gt;&lt;type&gt;table&lt;/type&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;url/&gt;&lt;version/&gt;&lt;video_alt/&gt;&lt;video_link/&gt;&lt;view/&gt;&lt;/help_content&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-798616765</payload_hash>
+        <remote_update_set/>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-05-22 22:12:29</sys_created_on>
+        <sys_id>012db636db630110633d3fd3e2961901</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_recorded_at>182bef7983e0000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-08-21 05:54:33</sys_updated_on>
+        <table/>
+        <target_name>Oracle Cloud Infrastructure service account
+                                fields</target_name>
+        <type>Help Content</type>
+        <update_domain>global</update_domain>
+        <update_guid>0bf5c8c0cc611110ec3487f78e6a5abd</update_guid>
+        <update_guid_history>0bf5c8c0cc611110ec3487f78e6a5abd:-798616765,d85690f4f3f01110696c96d77300318a:-1545167009,3e5d767675630110755b9fa803f7f1bc:-139931341,dd2db63636630110327ce655d70b4a1b:-1610414283,512db6362b63011093faa1d109dd1d0e:1509416240,4d2db6363d630110c584c6c8cc6ee700:-839374507</update_guid_history>
+        <update_set display_value="Default">64074e2b4f703200015eab99f110c709</update_set>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:46</sys_created_on>
+        <sys_id>1731873947c4fe1097744049116d43b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>help_content_4d2d7636db630110633d3fd3e29619ff</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_1731873947c4fe1097744049116d43b0</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:46</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

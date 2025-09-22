@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>008a3ae047c25a1037f719b3716d43ff</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;DELETE&lt;/action&gt;
+        &lt;application display_value="GRC: Metrics"&gt;09bd46de537f20104f3eddeeff7b124b&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_documentation_sn_grc_metric_metric_u_metric_reader_group_qbfr&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_documentation action="DELETE" element="u_metric_reader_group" label="Groupe de lecteurs métriques" language="qbfr" table="sn_grc_metric_metric"&gt;&lt;sys_documentation action="DELETE"&gt;&lt;element&gt;u_metric_reader_group&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Groupe de lecteurs métriques&lt;/label&gt;&lt;language&gt;qbfr&lt;/language&gt;&lt;name&gt;sn_grc_metric_metric&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;james.pollock@energir.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-29 19:55:03&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;2a253042475c1a9097744049116d43b8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Groupe de lecteurs métriques&lt;/sys_name&gt;&lt;sys_package display_value="GRC: Metrics" source="sn_grc_metric"&gt;09bd46de537f20104f3eddeeff7b124b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="GRC: Metrics"&gt;09bd46de537f20104f3eddeeff7b124b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_documentation_sn_grc_metric_metric_u_metric_reader_group_qbfr&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;james.pollock@energir.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-29 19:55:03&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;/sys_documentation&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-1799351556&lt;/payload_hash&gt;
+        &lt;remote_update_set display_value="ESG-STRY0029725-JP-V1-Controlling view access to metrics"&gt;c48a3ae047c25a1037f719b3716d43da&lt;/remote_update_set&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;bcrepeault_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-11-20 13:36:12&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;008a3ae047c25a1037f719b3716d43ff&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;1922e88f57f0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;bcrepeault_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-11-20 13:36:12&lt;/sys_updated_on&gt;
+        &lt;table&gt;sn_grc_metric_metric&lt;/table&gt;
+        &lt;target_name&gt;Metric.Metric reader group&lt;/target_name&gt;
+        &lt;type&gt;Field Label&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;43c53482bc5c1a90265db369c6a6493b&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;43c53482bc5c1a90265db369c6a6493b:-1799351556,9045b042935c1a908f511c78fa6fa4c5:962354916&lt;/update_guid_history&gt;
+        &lt;update_set/&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:32:48</sys_created_on>
+        <sys_id>dac003f547c4fe1097744049116d438a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_documentation_sn_grc_metric_metric_u_metric_reader_group_qbfr</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_dac003f547c4fe1097744049116d438a</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:32:48</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

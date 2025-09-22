@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00d0bf5c2fe72110a70eddda2799b67e</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;help_guidance_08d0bf5c2fe72110a70eddda2799b67c&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="help_guidance"&gt;&lt;help_guidance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;app_route&gt;now/vendor-management&lt;/app_route&gt;&lt;auto_launch_order/&gt;&lt;checklist/&gt;&lt;context&gt;record&lt;/context&gt;&lt;description&gt;Create an improvement initiative for a vendor to track and manage tasks for improving a service, process, or tasks related to vendors.&lt;/description&gt;&lt;eh_content display_value="create-new-improvement-initiative"&gt;c4d0bf5c2fe72110a70eddda2799b656&lt;/eh_content&gt;&lt;name&gt;Create a new improvement initiative&lt;/name&gt;&lt;order&gt;200&lt;/order&gt;&lt;roles/&gt;&lt;route_params&gt;{"params":{"table":"sn_cim_register"}}&lt;/route_params&gt;&lt;snc_created&gt;false&lt;/snc_created&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;help_guidance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;system&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-06-16 23:55:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path/&gt;&lt;sys_id&gt;08d0bf5c2fe72110a70eddda2799b67c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create a new improvement initiative&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;help_guidance_08d0bf5c2fe72110a70eddda2799b67c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-06-16 23:55:45&lt;/sys_updated_on&gt;&lt;topic_id&gt;create-new-improvement-initiative&lt;/topic_id&gt;&lt;type&gt;embedded_help&lt;/type&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;version&gt;utah&lt;/version&gt;&lt;/help_guidance&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;915792449&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;system&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2023-06-16 23:55:45&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00d0bf5c2fe72110a70eddda2799b67e&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;188c6a2e91b0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2023-06-16 23:55:45&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;Create a new improvement initiative&lt;/target_name&gt;
+        &lt;type&gt;Guidance&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;80d0bf5cd7e721101c558e7631f2e982&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;80d0bf5cd7e721101c558e7631f2e982:915792449,4cd0bf5ca1e72110d11eb4f3cf0d077d:1566705254&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:33:37</sys_created_on>
+        <sys_id>def0cbf547c4fe1097744049116d435c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>help_guidance_08d0bf5c2fe72110a70eddda2799b67c</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_def0cbf547c4fe1097744049116d435c</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:33:37</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

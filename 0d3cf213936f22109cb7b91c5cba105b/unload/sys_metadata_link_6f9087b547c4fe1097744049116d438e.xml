@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00626a07dbe01410a8d8757a8c9619f8</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_ui_section_dd6b5e87db5f0890555768d35b9619b9&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_ui_section caption="Owners" section_id="dd6b5e87db5f0890555768d35b9619b9" sys_domain="global" table="cmdb_ci_business_app" version="3" view="business_app_mgmt"&gt;&lt;sys_ui_element action="INSERT_OR_UPDATE"&gt;&lt;element&gt;owned_by&lt;/element&gt;&lt;position&gt;0&lt;/position&gt;&lt;sys_created_by&gt;Joel.Dion@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-05-07 23:11:19&lt;/sys_created_on&gt;&lt;sys_id&gt;07226683db60d410555768d35b9619d1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_ui_formatter/&gt;&lt;sys_ui_section caption="Owners" display_value="Owners" name="cmdb_ci_business_app" sys_domain="global" view="b53a12c3db5f0890555768d35b961915"&gt;dd6b5e87db5f0890555768d35b9619b9&lt;/sys_ui_section&gt;&lt;sys_updated_by&gt;Joel.Dion@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-05-07 23:11:19&lt;/sys_updated_on&gt;&lt;sys_user/&gt;&lt;type/&gt;&lt;/sys_ui_element&gt;&lt;sys_ui_element action="INSERT_OR_UPDATE"&gt;&lt;element&gt;.split&lt;/element&gt;&lt;position&gt;1&lt;/position&gt;&lt;sys_created_by&gt;Joel.Dion@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-05-07 23:11:19&lt;/sys_created_on&gt;&lt;sys_id&gt;8b226683db60d410555768d35b9619d1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_ui_formatter/&gt;&lt;sys_ui_section caption="Owners" display_value="Owners" name="cmdb_ci_business_app" sys_domain="global" view="b53a12c3db5f0890555768d35b961915"&gt;dd6b5e87db5f0890555768d35b9619b9&lt;/sys_ui_section&gt;&lt;sys_updated_by&gt;Joel.Dion@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-05-07 23:11:19&lt;/sys_updated_on&gt;&lt;sys_user/&gt;&lt;type&gt;.split&lt;/type&gt;&lt;/sys_ui_element&gt;&lt;sys_ui_element action="INSERT_OR_UPDATE"&gt;&lt;element&gt;it_application_owner&lt;/element&gt;&lt;position&gt;2&lt;/position&gt;&lt;sys_created_by&gt;Joel.Dion@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-05-07 23:11:19&lt;/sys_created_on&gt;&lt;sys_id&gt;03226683db60d410555768d35b9619d2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_ui_formatter/&gt;&lt;sys_ui_section caption="Owners" display_value="Owners" name="cmdb_ci_business_app" sys_domain="global" view="b53a12c3db5f0890555768d35b961915"&gt;dd6b5e87db5f0890555768d35b9619b9&lt;/sys_ui_section&gt;&lt;sys_updated_by&gt;Joel.Dion@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-05-07 23:11:19&lt;/sys_updated_on&gt;&lt;sys_user/&gt;&lt;type/&gt;&lt;/sys_ui_element&gt;&lt;sys_ui_section action="INSERT_OR_UPDATE"&gt;&lt;caption&gt;Owners&lt;/caption&gt;&lt;header&gt;false&lt;/header&gt;&lt;name&gt;cmdb_ci_business_app&lt;/name&gt;&lt;roles/&gt;&lt;sys_class_name&gt;sys_ui_section&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Ludovic.Andre@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-06 19:23:14&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;dd6b5e87db5f0890555768d35b9619b9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Owners&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_section_dd6b5e87db5f0890555768d35b9619b9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Ludovic.Andre@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-06 19:23:14&lt;/sys_updated_on&gt;&lt;sys_user/&gt;&lt;title&gt;false&lt;/title&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;view display_value="Business App Mgmt" name="business_app_mgmt"&gt;b53a12c3db5f0890555768d35b961915&lt;/view&gt;&lt;view_name/&gt;&lt;/sys_ui_section&gt;&lt;/sys_ui_section&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-1338726492&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;Joel.Dion@fxinnovation.com&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-05-07 23:12:13&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00626a07dbe01410a8d8757a8c9619f8&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;171f16928c70000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;Joel.Dion@fxinnovation.com&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-05-07 23:12:13&lt;/sys_updated_on&gt;
+        &lt;table&gt;cmdb_ci_business_app&lt;/table&gt;
+        &lt;target_name&gt;Business Application&lt;/target_name&gt;
+        &lt;type&gt;Form Layout&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;47226683e160d4101ff5c7aebd4e46d3&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;47226683e160d4101ff5c7aebd4e46d3:-1338726492,5812a2831160d4108b54e8a455b8a8b3:1200451166,32215570b9a300500a30da183998ec70:-1338726492,a403b43ca2afcc10a6ef84ffc92eb250:677090404,e4e2b03cffafcc106e184f881f98a08f:-1009184546,179b2207cddf0890af8c1d86adcbb8af:1842518195,aa7bd647385f08904e25052155220263:1223376009&lt;/update_guid_history&gt;
+        &lt;update_set display_value="BBA management view"&gt;88626a07dbe01410a8d8757a8c9619f6&lt;/update_set&gt;
+        &lt;view&gt;business_app_mgmt&lt;/view&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:32:04</sys_created_on>
+        <sys_id>6f9087b547c4fe1097744049116d438e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_ui_section_dd6b5e87db5f0890555768d35b9619b9</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_6f9087b547c4fe1097744049116d438e</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:32:04</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

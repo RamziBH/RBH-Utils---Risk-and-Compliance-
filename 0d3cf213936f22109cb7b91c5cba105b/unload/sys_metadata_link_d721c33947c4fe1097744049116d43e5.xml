@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>011bfa1893f31a509cb7b91c5cba1002</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Atlassian Jira Integrations Common">91d8b97fb732330001078ef6ee11a9ab</application>
+        <category>customer</category>
+        <comments/>
+        <name>sys_security_acl_2cd97a984733d21497744049116d4354</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="DELETE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;false&lt;/admin_overrides&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;applies_to/&gt;&lt;condition/&gt;&lt;decision_type&gt;allow&lt;/decision_type&gt;&lt;description/&gt;&lt;local_or_existing&gt;Local&lt;/local_or_existing&gt;&lt;name&gt;sn_jira_int_board&lt;/name&gt;&lt;operation display_value="create"&gt;create&lt;/operation&gt;&lt;script&gt;&lt;![CDATA[false; // This ACL was created by uninstall. DO NOT EDIT]]&gt;&lt;/script&gt;&lt;security_attribute/&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-14 18:44:38&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;2cd97a984733d21497744049116d4354&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;sn_jira_int_board&lt;/sys_name&gt;&lt;sys_package display_value="Atlassian Jira Integrations Common" source="sn_jira_int"&gt;91d8b97fb732330001078ef6ee11a9ab&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Atlassian Jira Integrations Common"&gt;91d8b97fb732330001078ef6ee11a9ab&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_2cd97a984733d21497744049116d4354&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-02-14 18:44:38&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;/sys_security_acl&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1656351038</payload_hash>
+        <remote_update_set/>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>sgomez_admin</sys_created_by>
+        <sys_created_on>2025-02-14 18:50:08</sys_created_on>
+        <sys_id>011bfa1893f31a509cb7b91c5cba1002</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19505cbf8610000001</sys_recorded_at>
+        <sys_updated_by>sgomez_admin</sys_updated_by>
+        <sys_updated_on>2025-02-14 18:50:08</sys_updated_on>
+        <table>sn_jira_int_board</table>
+        <target_name>sn_jira_int_board</target_name>
+        <type>Access Control</type>
+        <update_domain>global</update_domain>
+        <update_guid>4d1bfa183ef31a502506a95b8a838701</update_guid>
+        <update_guid_history>4d1bfa183ef31a502506a95b8a838701:1656351038,451bba1821f31a500517c2166695fdf1:1369856970</update_guid_history>
+        <update_set display_value="Default">64074e2b4f703200015eab99f110c709</update_set>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:30</sys_created_on>
+        <sys_id>d721c33947c4fe1097744049116d43e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_security_acl_2cd97a984733d21497744049116d4354</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_d721c33947c4fe1097744049116d43e5</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:30</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

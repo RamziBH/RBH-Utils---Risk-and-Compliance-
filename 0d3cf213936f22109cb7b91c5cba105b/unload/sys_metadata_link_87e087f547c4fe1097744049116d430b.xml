@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00bf8016db782c50b8e7a3764896196b</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>sysauto_script_5d263761db706850555768d35b961953</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sysauto_script"&gt;&lt;sysauto_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;business_calendar/&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;entered_time/&gt;&lt;name&gt;Close change after Review&lt;/name&gt;&lt;run_as/&gt;&lt;run_as_tz/&gt;&lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;&lt;run_dayofweek&gt;1&lt;/run_dayofweek&gt;&lt;run_period/&gt;&lt;run_start&gt;2020-11-30 18:20:44&lt;/run_start&gt;&lt;run_time&gt;1970-01-01 13:05:00&lt;/run_time&gt;&lt;run_type&gt;daily&lt;/run_type&gt;&lt;script&gt;&lt;![CDATA[var succDays = 5; //Close code = Successful;
+var grCR = new GlideRecord('change_request');
+grCR.addEncodedQuery("active=true^state=70^close_code=successful^end_dateRELATIVELT@hour@ago@"+succDays);
+grCR.query();
+while (grCR.next()) {
+	grCR.state = '80';
+	grCR.work_notes = 'Fermeture automatique ' + succDays + ' jours après la revue du changement avec un code de fermeture : Réussi.';
+	grCR.active = false;
+	grCR.update();
+    gs.logs('***Fermeture automatique ' + succDays + ' jours après la revue du changement : ' + grCR.getValue('number'));
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sysauto_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-30 19:54:10&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;5d263761db706850555768d35b961953&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Close change after Review&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysauto_script_5d263761db706850555768d35b961953&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-30 19:57:32&lt;/sys_updated_on&gt;&lt;time_zone/&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;upgrade_safe&gt;false&lt;/upgrade_safe&gt;&lt;/sysauto_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1515184100</payload_hash>
+        <remote_update_set display_value="FX-CS0010396-01-MR">33af8016db782c50b8e7a37648961952</remote_update_set>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>martin.roux@fxinnovation.com</sys_created_by>
+        <sys_created_on>2020-12-02 11:02:44</sys_created_on>
+        <sys_id>00bf8016db782c50b8e7a3764896196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1761ac6a6550000001</sys_recorded_at>
+        <sys_updated_by>martin.roux@fxinnovation.com</sys_updated_by>
+        <sys_updated_on>2020-12-02 11:02:44</sys_updated_on>
+        <table/>
+        <target_name>Close change after Review</target_name>
+        <type>Scheduled Script Execution</type>
+        <update_domain>global</update_domain>
+        <update_guid>4cc97365b970685040661cce9d944654</update_guid>
+        <update_guid_history>4cc97365b970685040661cce9d944654:1515184100</update_guid_history>
+        <update_set/>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:33:24</sys_created_on>
+        <sys_id>87e087f547c4fe1097744049116d430b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sysauto_script_5d263761db706850555768d35b961953</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_87e087f547c4fe1097744049116d430b</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:33:24</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

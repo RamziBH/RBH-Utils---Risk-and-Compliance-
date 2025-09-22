@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>013ff74adb7e13007e24de82ca9619e4</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;catalog_ui_policy_action_527dfaaa0f078a00f4c66509b1050e61&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;catalog_ui_policy_action action="INSERT_OR_UPDATE"&gt;
+&lt;catalog_item display_value="Nouvel employé (externe/interne)"&gt;7603f9c20fa10e0049346509b1050e68&lt;/catalog_item&gt;
+&lt;catalog_variable&gt;IO:68ea3e2a0f078a00f4c66509b1050ecd&lt;/catalog_variable&gt;
+&lt;disabled&gt;ignore&lt;/disabled&gt;
+&lt;field/&gt;
+&lt;mandatory&gt;ignore&lt;/mandatory&gt;
+&lt;sys_class_name&gt;catalog_ui_policy_action&lt;/sys_class_name&gt;
+&lt;sys_created_by&gt;plepine_admin&lt;/sys_created_by&gt;
+&lt;sys_created_on&gt;2015-10-15 04:50:19&lt;/sys_created_on&gt;
+&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;
+&lt;sys_id&gt;527dfaaa0f078a00f4c66509b1050e61&lt;/sys_id&gt;
+&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+&lt;sys_name&gt;id_centre_appel&lt;/sys_name&gt;
+&lt;sys_package display_value="Global"&gt;global&lt;/sys_package&gt;
+&lt;sys_policy/&gt;
+&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;
+&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;
+&lt;sys_update_name&gt;catalog_ui_policy_action_527dfaaa0f078a00f4c66509b1050e61&lt;/sys_update_name&gt;
+&lt;sys_updated_by&gt;plepine_admin&lt;/sys_updated_by&gt;
+&lt;sys_updated_on&gt;2015-10-15 04:50:19&lt;/sys_updated_on&gt;
+&lt;table/&gt;
+&lt;ui_policy display_value="Centre d'appels"&gt;4aa74a3c0fcf0600caa5a218b1050e06&lt;/ui_policy&gt;
+&lt;variable&gt;id_centre_appel&lt;/variable&gt;
+&lt;variable_set display_value=""/&gt;
+&lt;visible&gt;true&lt;/visible&gt;
+&lt;/catalog_ui_policy_action&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-989135983&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;landre_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2018-06-21 15:00:31&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;013ff74adb7e13007e24de82ca9619e4&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;16422dc79780000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;landre_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2018-06-21 15:00:31&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;id_centre_appel&lt;/target_name&gt;
+        &lt;type&gt;Catalog UI Policy Action&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;4d3ff74a9c7e13008d1eec8aab8f78e3&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;4d3ff74a9c7e13008d1eec8aab8f78e3:-989135983&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:58</sys_created_on>
+        <sys_id>06414b3947c4fe1097744049116d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>catalog_ui_policy_action_527dfaaa0f078a00f4c66509b1050e61</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_06414b3947c4fe1097744049116d430d</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:58</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

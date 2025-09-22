@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>0131cad9db5b1b80fd756451ca96196d</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="CCR"&gt;2a97bef70f899f80eea6a218b1050e87&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_app_module_0f9231bc0fd513c0eea6a218b1050ed8&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_app_module"&gt;&lt;sys_app_module action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;application display_value="CCR logbook"&gt;2e97bef70f899f80eea6a218b1050e95&lt;/application&gt;&lt;assessment/&gt;&lt;content_page/&gt;&lt;device_type/&gt;&lt;filter/&gt;&lt;hint/&gt;&lt;homepage/&gt;&lt;image/&gt;&lt;link_type&gt;LIST&lt;/link_type&gt;&lt;map_page/&gt;&lt;mobile_title&gt;Station operations&lt;/mobile_title&gt;&lt;mobile_view_name&gt;Mobile&lt;/mobile_view_name&gt;&lt;name&gt;x_gamlp_ccr_station_operation&lt;/name&gt;&lt;order&gt;30&lt;/order&gt;&lt;override_menu_roles&gt;false&lt;/override_menu_roles&gt;&lt;query/&gt;&lt;report/&gt;&lt;roles/&gt;&lt;survey/&gt;&lt;survey_overwrite&gt;true&lt;/survey_overwrite&gt;&lt;sys_class_name&gt;sys_app_module&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-04-03 17:59:40&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;0f9231bc0fd513c0eea6a218b1050ed8&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Stations operations&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="CCR" source="x_gamlp_ccr"&gt;2a97bef70f899f80eea6a218b1050e87&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="CCR"&gt;2a97bef70f899f80eea6a218b1050e87&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_app_module_0f9231bc0fd513c0eea6a218b1050ed8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-04-25 12:39:18&lt;/sys_updated_on&gt;&lt;timeline_page/&gt;&lt;title&gt;Stations operations&lt;/title&gt;&lt;u_basic_module/&gt;&lt;u_count_color&gt;blue&lt;/u_count_color&gt;&lt;u_count_filter/&gt;&lt;u_count_text_color&gt;White&lt;/u_count_text_color&gt;&lt;u_ixl_count_color/&gt;&lt;u_ixl_count_query/&gt;&lt;u_ixl_count_style/&gt;&lt;u_ixl_count_table/&gt;&lt;u_ixl_show_count&gt;false&lt;/u_ixl_show_count&gt;&lt;u_refresh_interval&gt;6000&lt;/u_refresh_interval&gt;&lt;u_show_count&gt;false&lt;/u_show_count&gt;&lt;u_sort_order/&gt;&lt;u_tablet_only&gt;false&lt;/u_tablet_only&gt;&lt;uncancelable&gt;false&lt;/uncancelable&gt;&lt;view_name/&gt;&lt;window_name/&gt;&lt;/sys_app_module&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash/&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2018-07-13 18:25:59&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0131cad9db5b1b80fd756451ca96196d&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;16494e47af90000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2018-07-13 18:25:59&lt;/sys_updated_on&gt;
+        &lt;table&gt;x_gamlp_ccr_station_operation&lt;/table&gt;
+        &lt;target_name&gt;Stations operations&lt;/target_name&gt;
+        &lt;type&gt;Module&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid/&gt;
+        &lt;update_guid_history/&gt;
+        &lt;update_set display_value="CCR_v1.0.0"&gt;30318ad9db5b1b80fd756451ca96192d&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:50</sys_created_on>
+        <sys_id>0441c73947c4fe1097744049116d4323</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_app_module_0f9231bc0fd513c0eea6a218b1050ed8</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_0441c73947c4fe1097744049116d4323</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:50</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

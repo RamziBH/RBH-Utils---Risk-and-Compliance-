@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>008cee0a47647150c6170f9e436d4319</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Investissement"&gt;fa6e86ca47607150c6170f9e436d434f&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;par_dashboard_widget_8c8cee0a47647150c6170f9e436d4317&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="par_dashboard_widget"&gt;&lt;par_dashboard_widget action="INSERT_OR_UPDATE"&gt;&lt;canvas display_value=""&gt;f4b4268a47247150c6170f9e436d4350&lt;/canvas&gt;&lt;component display_value=""&gt;d24d53f60350de7a652caf3188a46ed2&lt;/component&gt;&lt;component_props&gt;{"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"newReporting":false,"showSparkline":false,"dataPassthrough":null,"configVersion":"23.0.0-ci-SNAPSHOT","groupBy":null,"trendBy":null,"showMaximumRange":false,"enableRealTimeUpdate":false,"scoreType":null,"showScoreUpdateTime":false,"colorConfig":{"type":"default"},"showHeader":true,"showHeaderSeparator":true,"headerTitle":"Nombre de projets en cours","showBorder":true,"bareBorder":false,"showFilterIcon":true,"followFilters":true,"applyDateRange":false,"showChange":false,"showTarget":false,"showGapPercentage":false,"showScoreDate":false,"showChangePercentage":false,"showChangeFrom":false,"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Investissement","sourceType":"table","tableOrViewName":"x_gamlp_investis_0_investissement","filterQuery":"statut=in_progress","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4X2dhbWxwX2ludmVzdGlzXzBfaW52ZXN0aXNzZW1lbnQxNjkxNzA2MzY4MjA4","dataCategories":["trend","group","simple"]}],"metrics":[{"dataSource":"dGFibGV4X2dhbWxwX2ludmVzdGlzXzBfaW52ZXN0aXNzZW1lbnQxNjkxNzA2MzY4MjA4","id":"ZEdGaWJHVjRYMmRoYld4d1gybHVkbVZ6ZEdselh6QmZhVzUyWlhOMGFYTnpaVzFsYm5ReE5qa3hOekEyTXpZNE1qQTQxNjkxNzA2MzY5MDAz","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"showZero":true,"enableCustomEmptyState":false,"scoreSize":"sm","scoreIcon":"","showDataPassthrough":false,"headingPosition":"top"}&lt;/component_props&gt;&lt;h&gt;7&lt;/h&gt;&lt;name/&gt;&lt;sys_class_name&gt;par_dashboard_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-08-10 22:29:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;8c8cee0a47647150c6170f9e436d4317&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Investissement" source="x_gamlp_investis_0"&gt;fa6e86ca47607150c6170f9e436d434f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Investissement"&gt;fa6e86ca47607150c6170f9e436d434f&lt;/sys_scope&gt;&lt;sys_update_name&gt;par_dashboard_widget_8c8cee0a47647150c6170f9e436d4317&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-10 22:29:25&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;visualization/&gt;&lt;w&gt;16&lt;/w&gt;&lt;x&gt;0&lt;/x&gt;&lt;y&gt;25&lt;/y&gt;&lt;/par_dashboard_widget&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;1489312404&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2023-08-10 22:29:25&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;008cee0a47647150c6170f9e436d4319&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;189e191a5650000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2023-08-10 22:29:25&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name/&gt;
+        &lt;type&gt;PAR Dashboard Widget&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;4c8cee0a14647150937c7e553346dc18&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;4c8cee0a14647150937c7e553346dc18:1489312404&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;fe6e86ca47607150c6170f9e436d4351&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:32:49</sys_created_on>
+        <sys_id>aec003f547c4fe1097744049116d4396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>par_dashboard_widget_8c8cee0a47647150c6170f9e436d4317</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_aec003f547c4fe1097744049116d4396</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:32:49</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

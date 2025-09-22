@@ -12,21 +12,16 @@ groupe (Administrateurs de risques SGSOP)</description>
         <sys_class_name>sys_properties</sys_class_name>
         <sys_created_by>rben-hassine_admin</sys_created_by>
         <sys_created_on>2025-09-11 20:42:34</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>d1c8e7eb93736e109cb7b91c5cba10ef</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>x_gamlp_irm_risk_c.energir_new_x_risk_groupe_sgsop</sys_name>
         <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
         <sys_update_name>sys_properties_d1c8e7eb93736e109cb7b91c5cba10ef</sys_update_name>
         <sys_updated_by>rben-hassine_admin</sys_updated_by>
         <sys_updated_on>2025-09-11 20:44:13</sys_updated_on>
         <type>string</type>
-        <u_fx_inactive>false</u_fx_inactive>
-        <u_source/>
-        <u_target/>
         <value>1e29a1da47eb62d097744049116d43a3</value>
         <write_roles/>
     </sys_properties>

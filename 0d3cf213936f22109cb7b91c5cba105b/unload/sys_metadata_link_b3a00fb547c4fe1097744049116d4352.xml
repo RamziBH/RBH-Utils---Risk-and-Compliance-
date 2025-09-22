@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>007f704693b9a2109cb7b91c5cba1036</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management - Énergir">b47d074e87ce3d107f7d20e5cebb3584</application>
+        <category>customer</category>
+        <comments/>
+        <name>sys_decision_multi_result_61a69759936ad6109cb7b91c5cba10ff</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_decision_multi_result"&gt;&lt;sys_decision_multi_result action="DELETE"&gt;&lt;decision_table display_value="Certificat : Déterminer Épic à utiliser pour la Story"&gt;e074d3cc87de3910124b7777dabb35ca&lt;/decision_table&gt;&lt;label&gt;Créer une Story: false, Épic dans Jira: 173393&lt;/label&gt;&lt;result_elements/&gt;&lt;sys_class_name&gt;sys_decision_multi_result&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c_01206adm&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-17 20:06:01&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;61a69759936ad6109cb7b91c5cba10ff&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Créer une Story: false, Épic dans Jira: 173393&lt;/sys_name&gt;&lt;sys_package display_value="Certificate Inventory and Management - Énergir" source="x_gamlp_cert_mng"&gt;b47d074e87ce3d107f7d20e5cebb3584&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Certificate Inventory and Management - Énergir"&gt;b47d074e87ce3d107f7d20e5cebb3584&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_decision_multi_result_61a69759936ad6109cb7b91c5cba10ff&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;c_01206adm&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-17 20:06:01&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;/sys_decision_multi_result&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=61a69759936ad6109cb7b91c5cba10ff"/&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Certificate Inventory and Management - Énergir"&gt;b47d074e87ce3d107f7d20e5cebb3584&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;f6a3d7e86f63a14005beccac5d3ee462&lt;/instance_id&gt;&lt;instance_name&gt;gazmetdev&lt;/instance_name&gt;&lt;name&gt;sys_decision_multi_result_61a69759936ad6109cb7b91c5cba10ff&lt;/name&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_decision_multi_result"&gt;
+    &lt;sys_decision_multi_result action="INSERT_OR_UPDATE"&gt;
+        &lt;decision_table display_value="Certificat : Déterminer Épic à utiliser pour la Story"&gt;e074d3cc87de3910124b7777dabb35ca&lt;/decision_table&gt;
+        &lt;label&gt;Créer une Story: false, Épic dans Jira: 173393&lt;/label&gt;
+        &lt;result_elements/&gt;
+        &lt;sys_class_name&gt;sys_decision_multi_result&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;c_01206adm&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-12-17 20:06:01&lt;/sys_created_on&gt;
+        &lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_id&gt;61a69759936ad6109cb7b91c5cba10ff&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;Créer une Story: false, Épic dans Jira: 173393&lt;/sys_name&gt;
+        &lt;sys_package display_value="Certificate Inventory and Management - Énergir" source="x_gamlp_cert_mng"&gt;b47d074e87ce3d107f7d20e5cebb3584&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;
+        &lt;sys_scope display_value="Certificate Inventory and Management - Énergir"&gt;b47d074e87ce3d107f7d20e5cebb3584&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sys_decision_multi_result_61a69759936ad6109cb7b91c5cba10ff&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;c_01206adm&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-12-17 20:06:01&lt;/sys_updated_on&gt;
+        &lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;
+        &lt;u_source/&gt;
+        &lt;u_target/&gt;
+    &lt;/sys_decision_multi_result&gt;
+    &lt;sys_variable_value action="delete_multiple" query="document_key=61a69759936ad6109cb7b91c5cba10ff"/&gt;
+    &lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;
+        &lt;document&gt;sys_decision_multi_result&lt;/document&gt;
+        &lt;document_key&gt;61a69759936ad6109cb7b91c5cba10ff&lt;/document_key&gt;
+        &lt;order&gt;300&lt;/order&gt;
+        &lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;c_01206adm&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-12-17 20:06:01&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;65a6d759936ad6109cb7b91c5cba1000&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;c_01206adm&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-12-17 20:06:01&lt;/sys_updated_on&gt;
+        &lt;value&gt;0&lt;/value&gt;
+        &lt;variable display_value="Créer une Story"&gt;184104e0871ab910124b7777dabb35ea&lt;/variable&gt;
+    &lt;/sys_variable_value&gt;
+    &lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;
+        &lt;document&gt;sys_decision_multi_result&lt;/document&gt;
+        &lt;document_key&gt;61a69759936ad6109cb7b91c5cba10ff&lt;/document_key&gt;
+        &lt;order&gt;200&lt;/order&gt;
+        &lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;c_01206adm&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-12-17 20:06:01&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;ada6d759936ad6109cb7b91c5cba1000&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;c_01206adm&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-12-17 20:06:01&lt;/sys_updated_on&gt;
+        &lt;value&gt;6339ee4a476db190c6170f9e436d4362&lt;/value&gt;
+        &lt;variable display_value="Épic dans Jira"&gt;92c75fc087127910124b7777dabb3558&lt;/variable&gt;
+    &lt;/sys_variable_value&gt;
+&lt;/record_update&gt;]]&gt;&lt;/payload&gt;&lt;payload_hash&gt;-851665550&lt;/payload_hash&gt;&lt;record_name&gt;Créer une Story: false, Épic dans Jira: 173393&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;e89d3f07936ce2109cb7b91c5cba10aa&lt;/source&gt;&lt;source_table&gt;sys_upgrade_history&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;c_01206adm&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-04-01 19:31:03&lt;/sys_created_on&gt;&lt;sys_id&gt;4d9d7f07936ce2109cb7b91c5cba1069&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;195f2d5f7790000001&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;c_01206adm&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-04-01 19:31:03&lt;/sys_updated_on&gt;&lt;type&gt;Decision Table Multiple Result&lt;/type&gt;&lt;update_guid&gt;099d7f07206ce2106193c66312e9d169&lt;/update_guid&gt;&lt;update_guid_history&gt;099d7f07206ce2106193c66312e9d169:0,9700483211a0a210e51cb21ac4d6abad:-1078315547,d3004832a2a0a21079daa6ba002ca8a9:-1264880257&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete/&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c_01206adm&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 06:24:53&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_db_object display_value="" name="sys_decision_multi_result"&gt;sys_decision_multi_result&lt;/sys_db_object&gt;&lt;sys_id&gt;07e5072607a644189b51240fae000240&lt;/sys_id&gt;&lt;sys_metadata&gt;61a69759936ad6109cb7b91c5cba10ff&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Créer une Story: false, Épic dans Jira: 173393&lt;/sys_name&gt;&lt;sys_package display_value="Certificate Inventory and Management - Énergir" source="x_gamlp_cert_mng"&gt;b47d074e87ce3d107f7d20e5cebb3584&lt;/sys_package&gt;&lt;sys_parent/&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Certificate Inventory and Management - Énergir"&gt;b47d074e87ce3d107f7d20e5cebb3584&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;020d2302f86a4500800647fdfc717900&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;sys_decision_multi_result_61a69759936ad6109cb7b91c5cba10ff&lt;/sys_update_name&gt;&lt;sys_update_version display_value="sys_decision_multi_result_61a69759936ad6109cb7b91c5cba10ff"&gt;4d9d7f07936ce2109cb7b91c5cba1069&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;c_01206adm&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 06:24:53&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>501521873</payload_hash>
+        <remote_update_set/>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 06:24:53</sys_created_on>
+        <sys_id>007f704693b9a2109cb7b91c5cba1036</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1971fdd6a410000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 06:24:53</sys_updated_on>
+        <table/>
+        <target_name>Créer une Story: false, Épic dans Jira: 173393</target_name>
+        <type>Decision Table Multiple Result</type>
+        <update_domain>global</update_domain>
+        <update_guid>4c7f704671b9a2107c6687c12e563c35</update_guid>
+        <update_guid_history>4c7f704671b9a2107c6687c12e563c35:501521873,099d7f07206ce2106193c66312e9d169:0,9700483211a0a210e51cb21ac4d6abad:-1078315547,d3004832a2a0a21079daa6ba002ca8a9:-1264880257</update_guid_history>
+        <update_set display_value="Default">64074e2b4f703200015eab99f110c709</update_set>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:32:22</sys_created_on>
+        <sys_id>b3a00fb547c4fe1097744049116d4352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_decision_multi_result_61a69759936ad6109cb7b91c5cba10ff</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_b3a00fb547c4fe1097744049116d4352</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:32:22</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

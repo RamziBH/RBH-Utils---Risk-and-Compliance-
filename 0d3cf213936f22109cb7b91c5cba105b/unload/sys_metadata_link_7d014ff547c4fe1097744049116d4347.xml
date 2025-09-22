@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00e38687db93e850633d3fd3e2961916</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sc_cat_item_category_b8a4f8e6db97a850555768d35b961937&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sc_cat_item_category"&gt;&lt;sc_cat_item_category action="INSERT_OR_UPDATE"&gt;&lt;sc_cat_item display_value="Confluence - Access"&gt;3f447066db97a850555768d35b9619e2&lt;/sc_cat_item&gt;&lt;sc_category display_value="Atlassian"&gt;cf8d882bdbfa6c10555768d35b9619d8&lt;/sc_category&gt;&lt;sys_class_name&gt;sc_cat_item_category&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-06 14:59:36&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;b8a4f8e6db97a850555768d35b961937&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Atlassian.Confluence - Access&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sc_cat_item_category_b8a4f8e6db97a850555768d35b961937&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-06 14:59:36&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;/sc_cat_item_category&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-1413089040&lt;/payload_hash&gt;
+        &lt;remote_update_set display_value="SG - SNOW-670 - Créer le formulaire et WF pour les demandes d'accès Confluence"&gt;dbd34687db93e850633d3fd3e29619ba&lt;/remote_update_set&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-04-08 10:02:46&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00e38687db93e850633d3fd3e2961916&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;178a7b2327a0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-04-08 10:02:46&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;Atlassian.Confluence - Access&lt;/target_name&gt;
+        &lt;type&gt;Catalog Item Category&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;b0a4f8e6c197a8501f3b94b731f5063a&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;b0a4f8e6c197a8501f3b94b731f5063a:-1413089040&lt;/update_guid_history&gt;
+        &lt;update_set/&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:33:51</sys_created_on>
+        <sys_id>7d014ff547c4fe1097744049116d4347</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sc_cat_item_category_b8a4f8e6db97a850555768d35b961937</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_7d014ff547c4fe1097744049116d4347</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:33:51</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

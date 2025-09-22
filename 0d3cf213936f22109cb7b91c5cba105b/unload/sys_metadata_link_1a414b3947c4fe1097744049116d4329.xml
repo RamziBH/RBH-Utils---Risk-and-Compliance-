@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>014047b61be829105c5d42a7bc4bcb47</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;catalog_ui_policy_action_53daf18787d4a910124b7777dabb35c1&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="catalog_ui_policy_action"&gt;&lt;catalog_ui_policy_action action="INSERT_OR_UPDATE"&gt;&lt;catalog_item display_value="Copy of Bitbucket - Access"&gt;72da794787d4a910124b7777dabb3513&lt;/catalog_item&gt;&lt;catalog_variable&gt;IO:4fdaf18787d4a910124b7777dabb357e&lt;/catalog_variable&gt;&lt;cleared&gt;false&lt;/cleared&gt;&lt;disabled&gt;true&lt;/disabled&gt;&lt;field/&gt;&lt;mandatory&gt;ignore&lt;/mandatory&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;catalog_ui_policy_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-01-14 14:59:38&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;53daf18787d4a910124b7777dabb35c1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;ad_group_description&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_ui_policy_action_53daf18787d4a910124b7777dabb35c1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-01-14 14:59:38&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;ui_policy display_value="Champs Lecture seule"&gt;97daf18787d4a910124b7777dabb35bc&lt;/ui_policy&gt;&lt;variable&gt;ad_group_description&lt;/variable&gt;&lt;variable_set/&gt;&lt;visible&gt;ignore&lt;/visible&gt;&lt;/catalog_ui_policy_action&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-115321654&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2023-01-26 11:40:05&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;014047b61be829105c5d42a7bc4bcb47&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;185ede0b6f60000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2023-01-26 11:40:05&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;ad_group_description&lt;/target_name&gt;
+        &lt;type&gt;Catalog UI Policy Action&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;d3daf18766d4a9108f94d0897e0f39d1&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;d3daf18766d4a9108f94d0897e0f39d1:-115321654&lt;/update_guid_history&gt;
+        &lt;update_set display_value="FX-CS0205276-01"&gt;894007b61be829105c5d42a7bc4bcbad&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:59</sys_created_on>
+        <sys_id>1a414b3947c4fe1097744049116d4329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>catalog_ui_policy_action_53daf18787d4a910124b7777dabb35c1</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_1a414b3947c4fe1097744049116d4329</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:59</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

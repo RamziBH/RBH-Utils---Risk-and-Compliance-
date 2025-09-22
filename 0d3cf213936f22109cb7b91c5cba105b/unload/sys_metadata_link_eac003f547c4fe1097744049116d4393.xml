@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>008cde78db2f9f807e24de82ca961927</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>customer</category>
+        <comments/>
+        <name>asmt_metric_142a2c44d7211100158ba6859e6103a4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;asmt_metric action="INSERT_OR_UPDATE"&gt;
+&lt;active&gt;true&lt;/active&gt;
+&lt;allow_not_applicable&gt;false&lt;/allow_not_applicable&gt;
+&lt;auto_gen&gt;false&lt;/auto_gen&gt;
+&lt;category display_value="Service Desk Satisfaction Survey"&gt;142a2c44d7211100158ba6859e6103a3&lt;/category&gt;
+&lt;cond_question&gt;always&lt;/cond_question&gt;
+&lt;correct_answer/&gt;
+&lt;correct_answer_checkbox&gt;1&lt;/correct_answer_checkbox&gt;
+&lt;correct_answer_choice display_value=""/&gt;
+&lt;correct_answer_template display_value=""/&gt;
+&lt;correct_answer_yesno&gt;1&lt;/correct_answer_yesno&gt;
+&lt;datatype&gt;long&lt;/datatype&gt;
+&lt;default_value_field/&gt;
+&lt;depends_on display_value=""/&gt;
+&lt;description/&gt;
+&lt;details/&gt;
+&lt;displayed_when/&gt;
+&lt;displayed_when_checkbox/&gt;
+&lt;displayed_when_template/&gt;
+&lt;displayed_when_yesno/&gt;
+&lt;duration/&gt;
+&lt;mandatory&gt;false&lt;/mandatory&gt;
+&lt;max&gt;6&lt;/max&gt;
+&lt;max_weight&gt;60&lt;/max_weight&gt;
+&lt;method&gt;assessment&lt;/method&gt;
+&lt;metric_type display_value="Service Desk Satisfaction Survey"&gt;502a2c44d7211100158ba6859e6103a3&lt;/metric_type&gt;
+&lt;min&gt;1&lt;/min&gt;
+&lt;name&gt;How courteous and respectful was the technician who responded? (1=poor, 6=excellent)&lt;/name&gt;
+&lt;order&gt;200&lt;/order&gt;
+&lt;plugin/&gt;
+&lt;question&gt;How courteous and respectful was the technician who responded? (1=poor, 6=excellent)&lt;/question&gt;
+&lt;randomize_answers&gt;false&lt;/randomize_answers&gt;
+&lt;reference_table/&gt;
+&lt;scale&gt;high&lt;/scale&gt;
+&lt;scored&gt;false&lt;/scored&gt;
+&lt;script&gt;&lt;![CDATA[// The following variables are available: 
+ // - primary: contains the sys_id of the assessable object to be evaluated 
+ // - actual_result: the script sets the actual value for this metric to this variable 
+ // - scaled_result: the script sets the scaled value (used in calculations) for this metric to this variable 
+ // 
+ // For example:
+ // var gr = new GlideRecord('cmdb_ci');
+ // gr.addQuery('manufacturer', primary);
+ // gr.query();
+ // actual_result = gr.getRowCount();
+ // if (actual_result &amp;gt; 100) scaled_result = 5;
+ // else scaled_result = 1;]]&gt;&lt;/script&gt;
+&lt;string_option&gt;short&lt;/string_option&gt;
+&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+&lt;sys_created_on&gt;2013-12-04 21:34:01&lt;/sys_created_on&gt;
+&lt;sys_domain&gt;global&lt;/sys_domain&gt;
+&lt;sys_id&gt;142a2c44d7211100158ba6859e6103a4&lt;/sys_id&gt;
+&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;
+&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+&lt;sys_updated_on&gt;2013-12-04 21:45:09&lt;/sys_updated_on&gt;
+&lt;template display_value=""/&gt;
+&lt;weight&gt;10&lt;/weight&gt;
+&lt;/asmt_metric&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1258549340</payload_hash>
+        <remote_update_set/>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>Ludovic.Andre@fxinnovation.com</sys_created_by>
+        <sys_created_on>2018-07-24 17:23:58</sys_created_on>
+        <sys_id>008cde78db2f9f807e24de82ca961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>164cd51aaee0000001</sys_recorded_at>
+        <sys_updated_by>Ludovic.Andre@fxinnovation.com</sys_updated_by>
+        <sys_updated_on>2018-07-24 17:23:58</sys_updated_on>
+        <table/>
+        <target_name>How courteous and respectful was the technician who responded? (1=poor, 6=excellent)</target_name>
+        <type>Assessment Metric</type>
+        <update_domain>global</update_domain>
+        <update_guid>8c8cde783c2f9f80a1f44eac19a41126</update_guid>
+        <update_guid_history>8c8cde783c2f9f80a1f44eac19a41126:1258549340,0c8cde78282f9f809b4911603f388b1d:-1091547117</update_guid_history>
+        <update_set display_value="Default">64074e2b4f703200015eab99f110c709</update_set>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:32:49</sys_created_on>
+        <sys_id>eac003f547c4fe1097744049116d4393</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>asmt_metric_142a2c44d7211100158ba6859e6103a4</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_eac003f547c4fe1097744049116d4393</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:32:49</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

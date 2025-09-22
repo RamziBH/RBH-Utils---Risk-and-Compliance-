@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>009d6cd0936baa509cb7b91c5cba10b7</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="GRC: Advanced Risk"&gt;7443d9ba7373230055e9d8b0caf6a7b0&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sn_risk_advanced_rating_criteria_32e06ec54722aa1097744049116d4362&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_risk_advanced_rating_criteria"&gt;&lt;sn_risk_advanced_rating_criteria action="INSERT_OR_UPDATE"&gt;&lt;assessment_type display_value="Inherent Assessment"&gt;e5e0eac54722aa1097744049116d43a4&lt;/assessment_type&gt;&lt;background_color&gt;#FF0000&lt;/background_color&gt;&lt;concat_rating_overridden_score&gt;Critique (Score: 4)&lt;/concat_rating_overridden_score&gt;&lt;lower_interval&gt;4&lt;/lower_interval&gt;&lt;overridden_score&gt;4&lt;/overridden_score&gt;&lt;rating&gt;Critique&lt;/rating&gt;&lt;risk_appetite_scale/&gt;&lt;risk_color_style display_value="Energir - High Risk"&gt;17351bb34754d2d097744049116d43aa&lt;/risk_color_style&gt;&lt;sys_class_name&gt;sn_risk_advanced_rating_criteria&lt;/sys_class_name&gt;&lt;sys_created_by&gt;rben-hassine_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-03 17:43:56&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;32e06ec54722aa1097744049116d4362&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Critique (Score: 4)&lt;/sys_name&gt;&lt;sys_package display_value="GRC: Advanced Risk" source="sn_risk_advanced"&gt;7443d9ba7373230055e9d8b0caf6a7b0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="GRC: Advanced Risk"&gt;7443d9ba7373230055e9d8b0caf6a7b0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_risk_advanced_rating_criteria_32e06ec54722aa1097744049116d4362&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;rben-hassine_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-19 18:27:18&lt;/sys_updated_on&gt;&lt;text_color&gt;#2E2E2E&lt;/text_color&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;/sn_risk_advanced_rating_criteria&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;282302669&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;rben-hassine_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-08-19 18:27:18&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;009d6cd0936baa509cb7b91c5cba10b7&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;198c3e361850000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;rben-hassine_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-08-19 19:51:55&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;Critique (Score: 4)&lt;/target_name&gt;
+        &lt;type&gt;Qualitative Rating Criteria&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;e3e00914912faa501a9527fa0feb849c&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;e3e00914912faa501a9527fa0feb849c:282302669,4c9d6cd0a16baa50b365a9c7bf1862b6:282302669,3ae06ec52422aa10228b908e1f926d63:-1983247856&lt;/update_guid_history&gt;
+        &lt;update_set display_value="COLLAB-6434 - RBH - V.1.0"&gt;104da4d0936baa509cb7b91c5cba105c&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:32:58</sys_created_on>
+        <sys_id>bcd083f547c4fe1097744049116d4323</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_risk_advanced_rating_criteria_32e06ec54722aa1097744049116d4362</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_bcd083f547c4fe1097744049116d4323</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:32:58</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

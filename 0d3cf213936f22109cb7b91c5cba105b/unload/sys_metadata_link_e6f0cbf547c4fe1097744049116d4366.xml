@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00d41dd42ff63110a70eddda2799b671</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;help_guidance_08d41dd42ff63110a70eddda2799b66f&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="help_guidance"&gt;&lt;help_guidance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;app_route&gt;now/devops/config&lt;/app_route&gt;&lt;auto_launch_order/&gt;&lt;checklist/&gt;&lt;context&gt;cdm-application&lt;/context&gt;&lt;description&gt;The Config data tab contains a read-only tree view structure containing all of the config data for the application relating to its deployables, collections, and components.&lt;/description&gt;&lt;eh_content display_value="dcfg-ws-cdm-app-configdata-tab"&gt;0cd41dd42ff63110a70eddda2799b66e&lt;/eh_content&gt;&lt;name&gt;Config data&lt;/name&gt;&lt;order&gt;400&lt;/order&gt;&lt;roles/&gt;&lt;route_params/&gt;&lt;snc_created&gt;false&lt;/snc_created&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;help_guidance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;system&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-11-25 01:58:13&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path/&gt;&lt;sys_id&gt;08d41dd42ff63110a70eddda2799b66f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Config data&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;help_guidance_08d41dd42ff63110a70eddda2799b66f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-11-25 01:58:13&lt;/sys_updated_on&gt;&lt;topic_id&gt;dcfg-ws-cdm-app-configdata-tab&lt;/topic_id&gt;&lt;type&gt;embedded_help&lt;/type&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;version&gt;vancouver&lt;/version&gt;&lt;/help_guidance&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-392000962&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;system&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2023-11-25 01:58:13&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00d41dd42ff63110a70eddda2799b671&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;18c0432e5fd0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2023-11-25 01:58:13&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;Config data&lt;/target_name&gt;
+        &lt;type&gt;Guidance&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;c4d41dd44ef63110687774bf8348559a&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;c4d41dd44ef63110687774bf8348559a:-392000962,4cd41dd4faf631108edf62b3efc5cf70:-1924262941&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:33:38</sys_created_on>
+        <sys_id>e6f0cbf547c4fe1097744049116d4366</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>help_guidance_08d41dd42ff63110a70eddda2799b66f</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_e6f0cbf547c4fe1097744049116d4366</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:33:38</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>01396d9edb39f9d0622d450b139619c1</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;pa_widgets_1ba65441736423005660ef6bcaf6a7e8&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="pa_widgets"&gt;&lt;pa_widgets action="INSERT_OR_UPDATE"&gt;&lt;aggregate/&gt;&lt;alignment/&gt;&lt;breakdown/&gt;&lt;breakdown_level2/&gt;&lt;breakdown_page_size&gt;5&lt;/breakdown_page_size&gt;&lt;chart_color/&gt;&lt;color_scheme/&gt;&lt;coloring_method&gt;score&lt;/coloring_method&gt;&lt;column_bulletchart&gt;false&lt;/column_bulletchart&gt;&lt;column_change&gt;false&lt;/column_change&gt;&lt;column_change_perc&gt;false&lt;/column_change_perc&gt;&lt;column_current&gt;true&lt;/column_current&gt;&lt;column_gap&gt;false&lt;/column_gap&gt;&lt;column_gap_perc&gt;false&lt;/column_gap_perc&gt;&lt;column_multiple&gt;false&lt;/column_multiple&gt;&lt;column_steps&gt;1&lt;/column_steps&gt;&lt;column_stepsize&gt;1&lt;/column_stepsize&gt;&lt;column_target&gt;false&lt;/column_target&gt;&lt;column_trend&gt;true&lt;/column_trend&gt;&lt;compare_main_label/&gt;&lt;compare_number_of_periods/&gt;&lt;compare_period&gt;year&lt;/compare_period&gt;&lt;cube_facts_table&gt;change_request&lt;/cube_facts_table&gt;&lt;cutoff&gt;1&lt;/cutoff&gt;&lt;cutoff_condition/&gt;&lt;cutoff_type/&gt;&lt;date_from&gt;00000000&lt;/date_from&gt;&lt;date_to&gt;00000000&lt;/date_to&gt;&lt;default_indicator/&gt;&lt;description/&gt;&lt;element/&gt;&lt;element_level2/&gt;&lt;elements_filter/&gt;&lt;field/&gt;&lt;filter/&gt;&lt;flip_axes&gt;false&lt;/flip_axes&gt;&lt;follow_element&gt;true&lt;/follow_element&gt;&lt;follow_managed_element&gt;false&lt;/follow_managed_element&gt;&lt;followed_breakdown/&gt;&lt;followed_breakdown_relation/&gt;&lt;gauge_autoscale&gt;false&lt;/gauge_autoscale&gt;&lt;gauge_from/&gt;&lt;gauge_to/&gt;&lt;include_comments&gt;false&lt;/include_comments&gt;&lt;include_confidence&gt;false&lt;/include_confidence&gt;&lt;include_forecast&gt;false&lt;/include_forecast&gt;&lt;include_prediction_interval&gt;false&lt;/include_prediction_interval&gt;&lt;include_target&gt;false&lt;/include_target&gt;&lt;include_thresholds&gt;false&lt;/include_thresholds&gt;&lt;include_trend&gt;false&lt;/include_trend&gt;&lt;indicator display_value="PPM - Number of Projects With Critical Change Requests"&gt;f0d92005736423005660ef6bcaf6a7fa&lt;/indicator&gt;&lt;is_compare_chart&gt;false&lt;/is_compare_chart&gt;&lt;lastscore_compare&gt;previous_score&lt;/lastscore_compare&gt;&lt;lastscore_periods_back/&gt;&lt;limit&gt;50&lt;/limit&gt;&lt;lookup_name&gt;PPM - Project with Critical Project Change Requests&lt;/lookup_name&gt;&lt;manual_elements&gt;false&lt;/manual_elements&gt;&lt;max_color/&gt;&lt;multiple_elements_view/&gt;&lt;name&gt;Projects with Critical CRs&lt;/name&gt;&lt;number_of_records&gt;5&lt;/number_of_records&gt;&lt;overlap_data_labels&gt;false&lt;/overlap_data_labels&gt;&lt;percentages&gt;no_percentages&lt;/percentages&gt;&lt;period&gt;7d&lt;/period&gt;&lt;pivot_breakdown/&gt;&lt;pivot_elements_filter/&gt;&lt;related_dashboards&gt;2&lt;/related_dashboards&gt;&lt;score_font_size/&gt;&lt;scorecard_options&gt;all&lt;/scorecard_options&gt;&lt;show_bar&gt;false&lt;/show_bar&gt;&lt;show_breakdown_selector&gt;true&lt;/show_breakdown_selector&gt;&lt;show_change&gt;false&lt;/show_change&gt;&lt;show_change_perc&gt;false&lt;/show_change_perc&gt;&lt;show_comparison_date&gt;false&lt;/show_comparison_date&gt;&lt;show_data_labels&gt;false&lt;/show_data_labels&gt;&lt;show_empty_elements&gt;true&lt;/show_empty_elements&gt;&lt;show_gap&gt;false&lt;/show_gap&gt;&lt;show_gap_perc&gt;false&lt;/show_gap_perc&gt;&lt;show_legend&gt;true&lt;/show_legend&gt;&lt;show_on_click_link_label&gt;false&lt;/show_on_click_link_label&gt;&lt;show_range_selector&gt;false&lt;/show_range_selector&gt;&lt;show_target&gt;false&lt;/show_target&gt;&lt;show_top_x/&gt;&lt;show_total&gt;false&lt;/show_total&gt;&lt;show_trend&gt;false&lt;/show_trend&gt;&lt;show_visualization_selector&gt;true&lt;/show_visualization_selector&gt;&lt;sort_direction&gt;asc&lt;/sort_direction&gt;&lt;sort_on&gt;value&lt;/sort_on&gt;&lt;subtitle/&gt;&lt;sys_class_name&gt;pa_widgets&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-12 19:20:33&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;1ba65441736423005660ef6bcaf6a7e8&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;Projects with Critical CRs&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Performance Analytics - Content Pack - PPM Standard" source="com.snc.pa.pmo_dashboards"&gt;cf5de016db011010c672d12c5e9619e3&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;pa_widgets_1ba65441736423005660ef6bcaf6a7e8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mbeauchamp_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-10-12 15:32:22&lt;/sys_updated_on&gt;&lt;tag/&gt;&lt;template&gt;template2&lt;/template&gt;&lt;treemap_max_color display_value="Green"&gt;65b302aea9fe3dba00a530d65ecc2106&lt;/treemap_max_color&gt;&lt;treemap_min_color display_value="Red"&gt;65b30395a9fe3dba003277a7b660b5db&lt;/treemap_min_color&gt;&lt;type&gt;score&lt;/type&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;visualization&gt;latest&lt;/visualization&gt;&lt;words_in_trendline&gt;5&lt;/words_in_trendline&gt;&lt;yaxis2_from/&gt;&lt;yaxis2_title/&gt;&lt;yaxis2_to/&gt;&lt;yaxis_from/&gt;&lt;yaxis_title/&gt;&lt;yaxis_to/&gt;&lt;/pa_widgets&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=1ba65441736423005660ef6bcaf6a7e8"/&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-459433110&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;mbeauchamp_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2023-10-12 15:32:22&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;01396d9edb39f9d0622d450b139619c1&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;18b248476180000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;mbeauchamp_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2023-10-12 15:32:22&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;Projects with Critical CRs&lt;/target_name&gt;
+        &lt;type&gt;Widgets&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;8d396d9e5e39f9d0296e7276e6ccb3c0&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;8d396d9e5e39f9d0296e7276e6ccb3c0:-459433110,05396d9ebb39f9d0adf5feb0bdedf3bf:-7362071&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:54</sys_created_on>
+        <sys_id>0941c73947c4fe1097744049116d43fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>pa_widgets_1ba65441736423005660ef6bcaf6a7e8</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_0941c73947c4fe1097744049116d43fa</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:54</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

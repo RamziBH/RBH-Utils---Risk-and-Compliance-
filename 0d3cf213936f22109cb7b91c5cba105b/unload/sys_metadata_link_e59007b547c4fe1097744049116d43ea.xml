@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00596c8cdbe9c6d0622d450b139619bb</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;DELETE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_grid_canvas_pane_cc596c8cdbe9c6d0622d450b139619b8&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_grid_canvas_pane"&gt;&lt;sys_grid_canvas_pane action="DELETE"&gt;&lt;grid_canvas display_value="PA Projets Majeurs – Nouvel onglet"&gt;af6456942f50ce90a70eddda2799b608&lt;/grid_canvas&gt;&lt;height&gt;10&lt;/height&gt;&lt;portal_widget display_value=""&gt;4c596c8cdbe9c6d0622d450b139619b5&lt;/portal_widget&gt;&lt;posx&gt;0&lt;/posx&gt;&lt;posy&gt;26&lt;/posy&gt;&lt;sys_class_name&gt;sys_grid_canvas_pane&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sd85349&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-04-08 21:02:21&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;cc596c8cdbe9c6d0622d450b139619b8&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;af6456942f50ce90a70eddda2799b608&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_grid_canvas_pane_cc596c8cdbe9c6d0622d450b139619b8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sd85349&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-04-08 21:07:05&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;width&gt;12&lt;/width&gt;&lt;/sys_grid_canvas_pane&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;161609178&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;sd85349&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-04-08 21:02:21&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00596c8cdbe9c6d0622d450b139619bb&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;18ebf89b6d40000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;sd85349&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-04-08 21:07:37&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;af6456942f50ce90a70eddda2799b608&lt;/target_name&gt;
+        &lt;type&gt;Grid Canvas Pane&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;8d8a6c04282dc6d01f4d999610af84a6&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;8d8a6c04282dc6d01f4d999610af84a6:161609178,9d6ae4043f2dc6d0e9473672622303a6:-2140787244,655a2804902dc6d04d15c06112f8dcae:-1576597009,0c596c8c17e9c6d0da268b36d788c3ba:1780795756&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:56</sys_created_on>
+        <sys_id>e59007b547c4fe1097744049116d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_grid_canvas_pane_cc596c8cdbe9c6d0622d450b139619b8</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_e59007b547c4fe1097744049116d43ea</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:56</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00a38fc0dbd2b810633d3fd3e2961913</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;question_choice_f4cad09f87e1f0507f7d20e5cebb3552&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="question_choice"&gt;&lt;question_choice action="INSERT_OR_UPDATE"&gt;&lt;inactive&gt;false&lt;/inactive&gt;&lt;order&gt;300&lt;/order&gt;&lt;published_ref/&gt;&lt;question display_value="Type of rights"&gt;5e6a5c1f87e1f0507f7d20e5cebb3517&lt;/question&gt;&lt;sys_class_name&gt;question_choice&lt;/sys_class_name&gt;&lt;sys_created_by&gt;havaiki.lamberty@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-07-29 17:23:48&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;f4cad09f87e1f0507f7d20e5cebb3552&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Administrator&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;question_choice_f4cad09f87e1f0507f7d20e5cebb3552&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;havaiki.lamberty@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-07-29 17:23:48&lt;/sys_updated_on&gt;&lt;text&gt;Administrator&lt;/text&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;value&gt;administrator&lt;/value&gt;&lt;/question_choice&gt;&lt;fx_price action="delete_multiple" query="id=f4cad09f87e1f0507f7d20e5cebb3552"/&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-529888043&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-08-26 10:07:53&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00a38fc0dbd2b810633d3fd3e2961913&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;17b81ee25840000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-08-26 10:07:53&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;Administrator&lt;/target_name&gt;
+        &lt;type&gt;Question Choice&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;68ea189f76e1f05024e151e436cc5ddf&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;68ea189f76e1f05024e151e436cc5ddf:-529888043&lt;/update_guid_history&gt;
+        &lt;update_set display_value="FX-CS0066199-HL-01"&gt;73934fc0dbd2b810633d3fd3e2961920&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:33:02</sys_created_on>
+        <sys_id>71d083f547c4fe1097744049116d43e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>question_choice_f4cad09f87e1f0507f7d20e5cebb3552</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_71d083f547c4fe1097744049116d43e1</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:33:02</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

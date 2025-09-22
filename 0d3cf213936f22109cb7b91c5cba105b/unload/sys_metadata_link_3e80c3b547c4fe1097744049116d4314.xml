@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>0045c37c47635d10c6170f9e436d43fd</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>customer</category>
+        <comments/>
+        <name>asmt_metric_type_4845c37c47635d10c6170f9e436d43f9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="asmt_metric_type"&gt;&lt;asmt_metric_type action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;allow_public&gt;false&lt;/allow_public&gt;&lt;allow_retake&gt;false&lt;/allow_retake&gt;&lt;anonymize&gt;false&lt;/anonymize&gt;&lt;business_rule/&gt;&lt;chat_survey&gt;false&lt;/chat_survey&gt;&lt;condition table="asmt_metric_type"&gt;sys_id=4845c37c47635d10c6170f9e436d43f9^EQ&lt;item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="false" value="4845c37c47635d10c6170f9e436d43f9"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;default_filter/&gt;&lt;delete_business_rule/&gt;&lt;description&gt;Contrôle de qualité interne&lt;/description&gt;&lt;disable_ui_action/&gt;&lt;display_all_filters&gt;false&lt;/display_all_filters&gt;&lt;display_field&gt;name&lt;/display_field&gt;&lt;duration&gt;1970-01-26 00:00:00&lt;/duration&gt;&lt;enable_ui_action/&gt;&lt;end_note/&gt;&lt;enforce_condition&gt;false&lt;/enforce_condition&gt;&lt;evaluation_method&gt;survey&lt;/evaluation_method&gt;&lt;filter_condition/&gt;&lt;filter_table/&gt;&lt;introduction&gt;&lt;![CDATA[&lt;h2 class="MsoNormal"&gt;Contrôle de qualité interne&lt;/h2&gt;
+&lt;div id="gtx-trans" style="position: absolute; left: -70px; top: 25px;"&gt; &lt;/div&gt;]]&gt;&lt;/introduction&gt;&lt;job display_value="Contrôle de qualité Interne - Route D08 "&gt;ad5940c547af5d10c6170f9e436d43f8&lt;/job&gt;&lt;live_feed&gt;false&lt;/live_feed&gt;&lt;name&gt;Contrôle de qualité Interne - Route D08&lt;/name&gt;&lt;not_show_intro_note&gt;true&lt;/not_show_intro_note&gt;&lt;notify_if_overdue&gt;false&lt;/notify_if_overdue&gt;&lt;notify_user&gt;true&lt;/notify_user&gt;&lt;one_click_survey&gt;false&lt;/one_click_survey&gt;&lt;overdue_notify_user/&gt;&lt;portal_pagination&gt;category&lt;/portal_pagination&gt;&lt;publish_state&gt;published&lt;/publish_state&gt;&lt;roles&gt;survey_admin,survey_reader&lt;/roles&gt;&lt;sample_metric/&gt;&lt;scale_factor&gt;10&lt;/scale_factor&gt;&lt;schedule_period&gt;4&lt;/schedule_period&gt;&lt;schedule_type&gt;on_demand&lt;/schedule_type&gt;&lt;scoring_type&gt;percent&lt;/scoring_type&gt;&lt;signature/&gt;&lt;source_table/&gt;&lt;survey_owners&gt;40248536dbae8b004f04f3a31d9619b6,ea60fc510f89750049346509b1050e8a&lt;/survey_owners&gt;&lt;sys_class_name&gt;asmt_metric_type&lt;/sys_class_name&gt;&lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-12-01 13:51:14&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;4845c37c47635d10c6170f9e436d43f9&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;Contrôle de qualité Interne - Route D08&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;asmt_metric_type_4845c37c47635d10c6170f9e436d43f9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-05-29 13:19:16&lt;/sys_updated_on&gt;&lt;table&gt;asmt_metric_type&lt;/table&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;url/&gt;&lt;user_field/&gt;&lt;user_field_business_rule/&gt;&lt;/asmt_metric_type&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=4845c37c47635d10c6170f9e436d43f9"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1412060308</payload_hash>
+        <remote_update_set/>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>martin.roux@fxinnovation.com</sys_created_by>
+        <sys_created_on>2022-12-01 13:51:14</sys_created_on>
+        <sys_id>0045c37c47635d10c6170f9e436d43fd</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_recorded_at>18867a9bb8b0000001</sys_recorded_at>
+        <sys_updated_by>martin.roux@fxinnovation.com</sys_updated_by>
+        <sys_updated_on>2023-05-29 13:19:16</sys_updated_on>
+        <table>asmt_metric_type</table>
+        <target_name>Contrôle de qualité Interne - Route D08</target_name>
+        <type>Assessment Metric Type</type>
+        <update_domain>global</update_domain>
+        <update_guid>51823cea980fe110c3b12aa57acd289e</update_guid>
+        <update_guid_history>51823cea980fe110c3b12aa57acd289e:1412060308,a962734d9cd961100bdf4a86ff802a16:-1105035084,24d1b70d5bd96110b8a645f7bc713f20:-1531372679,14cfaf784934e550e6fc7ddd5f2845d1:-882801096,839504119a671150364d733e5e147134:-1612068427,55958cdd10271150a38b187b0f233be7:-777367448,ee75849da32711502e9dfdb8493f777d:-1612068427,8b618491e2271150d33db0dbefa5e6d7:-1214754445,ef89400969af5d10250131e522989ab4:-690230327,615940c573af5d100a01da72bc1ed7fb:-1618215300,d96543bcf9635d10c3004659fbd7027a:763070814,0445c37c78635d10803d6581a62960ff:-1018104454,8c45c37c7b635d1068019a0fa00d86fc:1287024830,8845c37cfe635d10b730ee1ae1208efb:-1018104454</update_guid_history>
+        <update_set display_value="Default">64074e2b4f703200015eab99f110c709</update_set>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:45</sys_created_on>
+        <sys_id>3e80c3b547c4fe1097744049116d4314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>asmt_metric_type_4845c37c47635d10c6170f9e436d43f9</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_3e80c3b547c4fe1097744049116d4314</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:45</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

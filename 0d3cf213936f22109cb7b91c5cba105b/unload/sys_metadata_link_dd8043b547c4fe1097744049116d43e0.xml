@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00331ccf47cf5a1097744049116d437f</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;catalog_ui_policy_action_970ff7f893825e509cb7b91c5cba1035&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="catalog_ui_policy_action"&gt;&lt;catalog_ui_policy_action action="INSERT_OR_UPDATE"&gt;&lt;catalog_item display_value="Access to ServiceNow"&gt;b29759f4db3b8814555768d35b961957&lt;/catalog_item&gt;&lt;catalog_variable&gt;IO:bd9e37b893825e509cb7b91c5cba10a0&lt;/catalog_variable&gt;&lt;cleared&gt;false&lt;/cleared&gt;&lt;disabled&gt;ignore&lt;/disabled&gt;&lt;field/&gt;&lt;field_message&gt;Note: c'est la valeur par défaut pour la gestion de la capacité des consultants.&lt;/field_message&gt;&lt;field_message_type&gt;info&lt;/field_message_type&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;catalog_ui_policy_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;rben-hassine_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-21 13:14:20&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;970ff7f893825e509cb7b91c5cba1035&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;number_of_vacation_days&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_ui_policy_action_970ff7f893825e509cb7b91c5cba1035&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;rben-hassine_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-08 13:20:12&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;ui_policy display_value="Consultant complete time sheet is True"&gt;48acd94a876c6d50124b7777dabb35b8&lt;/ui_policy&gt;&lt;value&gt;20&lt;/value&gt;&lt;value_action&gt;set_value&lt;/value_action&gt;&lt;variable&gt;number_of_vacation_days&lt;/variable&gt;&lt;variable_set/&gt;&lt;visible&gt;true&lt;/visible&gt;&lt;/catalog_ui_policy_action&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;1854821770&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;rben-hassine_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-01-16 12:52:49&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00331ccf47cf5a1097744049116d437f&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;1946f2c68fa0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;rben-hassine_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-01-16 12:52:49&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;number_of_vacation_days&lt;/target_name&gt;
+        &lt;type&gt;Catalog UI Policy Action&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;27bc0b58f54b96104236c337538e314f&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;27bc0b58f54b96104236c337538e314f:1854821770,0eb61ac6768b12500e9123a781d12c82:1580017321,27bc0b58f54b96104236c337538e314f:1854821770,f39c0758cc4b961055c6b8c38dabbe19:-441728078,e91ff7f8cb825e50360727c88912d5dc:1580017321&lt;/update_guid_history&gt;
+        &lt;update_set display_value="COLLAB-5452-RBH- v1.0"&gt;4c3358cf47cf5a1097744049116d4360&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:38</sys_created_on>
+        <sys_id>dd8043b547c4fe1097744049116d43e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>catalog_ui_policy_action_970ff7f893825e509cb7b91c5cba1035</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_dd8043b547c4fe1097744049116d43e0</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:38</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

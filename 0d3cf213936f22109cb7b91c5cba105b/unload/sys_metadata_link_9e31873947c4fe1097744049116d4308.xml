@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>01274c824707b9d03ef68d57536d43b5</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_hub_flow_block_0b993ad787fe35d07f7d20e5cebb35ce&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow_block"&gt;&lt;sys_hub_flow_block action="INSERT_OR_UPDATE"&gt;&lt;label_cache/&gt;&lt;name/&gt;&lt;sys_class_name&gt;sys_hub_flow_block&lt;/sys_class_name&gt;&lt;sys_created_by&gt;onguyen_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-12-04 17:00:24&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;0b993ad787fe35d07f7d20e5cebb35ce&lt;/sys_id&gt;&lt;sys_mod_count&gt;126&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;onguyen_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-08 01:46:45&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;/sys_hub_flow_block&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;91103403&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;onguyen_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2023-12-12 17:03:56&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;01274c824707b9d03ef68d57536d43b5&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;18c5efc38c30000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;onguyen_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2023-12-12 17:04:08&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name/&gt;
+        &lt;type&gt;Flow Block&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;3edec0e00187b9d029a3ee23cc1e7476&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;3edec0e00187b9d029a3ee23cc1e7476:91103403&lt;/update_guid_history&gt;
+        &lt;update_set display_value="COLLAB_4079_CatItemO365_Global_ON_V1"&gt;05274c824707b9d03ef68d57536d43a2&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:43</sys_created_on>
+        <sys_id>9e31873947c4fe1097744049116d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_hub_flow_block_0b993ad787fe35d07f7d20e5cebb35ce</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_9e31873947c4fe1097744049116d4308</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:43</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

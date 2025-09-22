@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00e62f6c1b7f0e5006256465624bcbe7</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>sys_ui_action_13283b8a47df4a1097744049116d433e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;current.canCreate()&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;true&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Export Project Charter to PDF&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[var getTemplate = new GlideRecord("sysevent_email_template");
+getTemplate.addQuery("sys_id", "ae5bd05e47978a1097744049116d4343");
+getTemplate.query();
+if (getTemplate.next()) {
+    var temp = getTemplate.message_html;
+    var updatedHTML = temp.replace(/\bProjet\b/g, current.getDisplayValue('number'));
+    updatedHTML = updatedHTML.replace('nom du projet', current.getDisplayValue('short_description'));
+    updatedHTML = updatedHTML.replace('Portfeuille est vide', current.getDisplayValue('primary_portfolio'));
+    updatedHTML = updatedHTML.replace('Programme est vide', current.getDisplayValue('primary_program'));
+    updatedHTML = updatedHTML.replace('date de debut reelle', current.getDisplayValue('work_start'));
+
+    updatedHTML = updatedHTML.replace('descriptionduprojet', current.getDisplayValue('description'));
+    updatedHTML = updatedHTML.replace('Gestionnaire du projet est vide', current.getDisplayValue('project_manager'));
+    updatedHTML = updatedHTML.replace('Mise en contexte du projet est vide', current.getDisplayValue('u_contextualization'));
+    updatedHTML = updatedHTML.replace('creepar', gs.getUserDisplayName());
+    //////////////////////////////////////////// date - time ////////////////////////////////////////////
+    var gdt = new GlideDateTime();
+    var localDate = gdt.getLocalDate().toString();
+    var localTime = gdt.getUserFormattedLocalTime();
+    var formattedDateTime = localDate + ' ' + localTime;
+    updatedHTML = updatedHTML.replace('dateheure', formattedDateTime);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+    updatedHTML = updatedHTML.replace("Objectifs du projet est vide", current.getDisplayValue('u_project_objectives'));
+    updatedHTML = updatedHTML.replace("Facteurs critiques de succes est vide", current.getDisplayValue('u_critical_success_factors_charte'));
+    updatedHTML = updatedHTML.replace('Approche de livraison est vide', current.getDisplayValue('u_delivery_approach_charte'));
+    updatedHTML = updatedHTML.replace('Grand livrables est vide', current.getDisplayValue('u_major_deliverables'));
+    updatedHTML = updatedHTML.replace('Resume des benefices est vide', current.getDisplayValue('u_summary_of_benefits'));
+    updatedHTML = updatedHTML.replace('inclusions est vide', current.getDisplayValue('u_inclusion_charte'));
+    updatedHTML = updatedHTML.replace('exclusions est vide', current.getDisplayValue('u_exclusion_charte'));
+    updatedHTML = updatedHTML.replace('containtes est vide', current.getDisplayValue('u_constraints_charte'));
+    updatedHTML = updatedHTML.replace('risques est vide', current.getDisplayValue('u_risks_charte'));
+    updatedHTML = updatedHTML.replace('Hypotheses est vide', current.getDisplayValue('u_assumptions'));
+    /////////////////////////////////////////// parties prenantes ////////////////////////////////////
+    var partiePrenante = '';
+    var functionP = '';
+    var partieP = new GlideRecord('pm_m2m_project_stakeholder');
+    partieP.addQuery('project', current.sys_id.toString());
+    partieP.query();
+    while (partieP.next()) {
+        var stakeholder = partieP.stakeholder.getDisplayValue().trim();
+        var expectation = partieP.expectation.getDisplayValue().trim();
+        if (stakeholder !== '') {
+            partiePrenante += '&lt;br&gt; - ' + stakeholder;
+        }
+        if (expectation !== '') {
+            functionP += '&lt;br&gt; - ' + expectation;
+        }
+    }
+    updatedHTML = updatedHTML.replace('Partie prenante est vide', partiePrenante);
+    updatedHTML = updatedHTML.replace('Fonction est vide', functionP);
+}
+var v = new sn_pdfgeneratorutils.PDFGenerationAPI();
+var result = v.convertToPDF(updatedHTML, "pm_project", current.sys_id, "Charte de Projet Numéro:" + current.number);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+if (result) {
+    var sysAttachmentGR = new GlideRecord('sys_attachment');
+    sysAttachmentGR.addQuery('table_name', 'pm_project');
+    sysAttachmentGR.addQuery('table_sys_id', current.sys_id);
+    sysAttachmentGR.addQuery('file_name', 'Charte de Projet Numéro:' + current.number + '.pdf');
+    sysAttachmentGR.query();
+    if (sysAttachmentGR.next()) {
+        var attachmentSysId = sysAttachmentGR.sys_id.toString();
+        action.setRedirectURL('/sys_attachment.do?sys_id=' + attachmentSysId + '&amp;view=true');
+    }
+}
+
+
+///////////////////////////////// Convert to word ///////////
+/*
+var attachmentName = "Charte de Projet Numéro: " + current.number.toString() + ".doc";
+var gsa = new GlideSysAttachment();
+ gsa.write(current, attachmentName, 'text/plain', updatedHTML);
+action.setRedirectURL(current); */
+
+// gs.sleep(8000);
+sysAttachmentGR.table_sys_id = '';
+sysAttachmentGR.update();]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;rben-hassine_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-11 17:09:48&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;13283b8a47df4a1097744049116d433e&lt;/sys_id&gt;&lt;sys_mod_count&gt;63&lt;/sys_mod_count&gt;&lt;sys_name&gt;Export Project Charter to PDF&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_13283b8a47df4a1097744049116d433e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;rben-hassine_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-17 13:12:15&lt;/sys_updated_on&gt;&lt;table&gt;pm_project&lt;/table&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1833878805</payload_hash>
+        <remote_update_set display_value="COLLAB-4676-RBH - v1.0">7fd62f6c1b7f0e5006256465624bcb75</remote_update_set>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2024-07-31 20:28:49</sys_created_on>
+        <sys_id>00e62f6c1b7f0e5006256465624bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190c1ecffa00000001</sys_recorded_at>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2024-07-31 20:28:49</sys_updated_on>
+        <table>pm_project</table>
+        <target_name>Export Project Charter to PDF</target_name>
+        <type>UI Action</type>
+        <update_domain>global</update_domain>
+        <update_guid>b8f003c89aeb02109b0477494b9f236a</update_guid>
+        <update_guid_history>b8f003c89aeb02109b0477494b9f236a:-1833878805,1e524b08222fc2504fccd33a83cce1c0:1553939831,5d9ebd403da70210bc8548c51fdd5166:-1833878805,e0bcf58c03670210a615310f90684b93:-1833878805,571cbd0c67670210970eaade47780930:-1844561529,701635008567021027154160487a5578:-1833878805,e69f694477270210dad6ac18ea37aa07:-158667308,6c7f61446b27021055868e35f32f5f97:-1052520850,f63fe5c0df270210973869c92f70532d:-1902245615,a70f69c07f270210af16aa1308846526:-1201835002,3cfe218047270210726e6fee3328e3ed:-716866218,cd27343be2dfc210d3794949b114710a:-993549734,155670b715dfc210391f760868748c32:-763853802,05d57077f5dfc2101e863592e88db68e:-993549734,88c53077d7dfc2106adf579b0c992317:-77921014,1775b4770cdfc210a3b69c1dc35bc3e1:225958672,3c7474f3d8dfc210ef26d74e47d77976:-553509306,b07a89af0617c650ac5fffdcd79e0423:-1260267568,5e3a8d6f5817c6504383c926a0385352:-2113534288,cf8901eb5717c650af692e7a44bbf2e5:-1260267568,5b198d6b0917c6500007dcef833b966d:498992798,63c8852ba717c6507e63960775cc5eed:-325435799,ce9881e71f17c650c211881e77cfc360:1737099495,f06881a74d17c650b4d7ad1e48cdef15:-1002220053,04084d273817c650ebf4b60cd38a122d:-107670980,eea78de37117c6506126c9075f8634d0:823802468,1b8eb8eb4793c6505a5af0f7dbc6dd3e:-1719962357,abddbc2b8d93c6508334239593e5cb10:-1084731550,21adb82bfd93c65008a11e81648c400f:762391426,428cfc67e493c650cfc411b5be4fd232:1792701008,308bf8e38d93c650fbaf71021cbbdf03:1022322612,7d5a7063ca93c650f7f599f68ab6e4cf:-683601835,840a786fd053c6502750ccb20b13a1a9:-2025564043,dfb9671f09178650dc87717ee3cbfdeb:-791863993,4e9967db85178650101a6253c8cfd450:1156018757,5608671b101786500f2600eba86808ac:-791863993,b0e62b5794178650abe4655d43c23b9e:991772982,81766357e9178650b462182a62d05fa7:-2118079791,b4a52bd3bd178650b532c076686d2675:-1648215173,6e756f93201786503581f7dba58136f5:-1907561154,6345a39327178650b31dfafef7f66527:-1986182742,6f742f133c1786509e8141d1996ff62c:622274919,3a23ab5f8cd38650e1461a360e2f3cc1:-1648215173,6eb2271f77d38650035b3f97b7f76d1a:1271393311,5c82a31f0fd38650084357e5e456c4f6:1202805252,1dd1a39b69d386509ae118582548505e:868884248,1147d0665b1b0e10f8868e52e1705610:-700625892,4eb65426cc1b0e108430bcabb5998b36:-2071771486,58c554264c1b0e10f8752003179b2d66:1558049514,3d3510e2661b0e10d88f7239ec141d31:-1191954417,0f3494220f1b0e10c3b89b462e1033a3:1619511209,6a6310eeedd70e10f4eecf73ba6d2294:786428861,8eb2906e9cd70e10b3a6c44420b627c0:569575735,e572d06e4fd70e1033452132fac934b8:1619839333,e852506e88d70e10c678e004d9523106:1177607716,c2b0d0aa64d70e10ac5a5228986b53e5:2119637447,c45f082aef970e101337339178da8b27:-1870713343,79ee44e247970e1068771aed2ff66650:767046522,824e886e7a170e1025c7d875f7423c50:1002834744,1a12a052f99b8a10d15fae300cda80ae:-908984708,3601685a165b8a101c1cd48a1a064a59:1626216160,2199909ad3578a10c6409966ba4f3c02:1338899097,01f8d81a61578a1064bbb3c453b5d197:1887661752,ebd8941afd578a104772251a45c91b15:497764702,93b9b74ebcdf4a10d94af99ba66ba3e4:1338899097,b589b70e5cdf4a1077d69a4022527134:2101916044</update_guid_history>
+        <update_set/>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:33:54</sys_created_on>
+        <sys_id>1a014ff547c4fe1097744049116d43ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_ui_action_13283b8a47df4a1097744049116d433e</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_1a014ff547c4fe1097744049116d43ac</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:33:54</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

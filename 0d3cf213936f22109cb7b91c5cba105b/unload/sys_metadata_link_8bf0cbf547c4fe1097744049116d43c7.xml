@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00d6d3af93066a109cb7b91c5cba106c</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;DELETE&lt;/action&gt;
+        &lt;application display_value="Service Operations Workspace Alert Automation API"&gt;65038d85c3d63110d1bdf2ff050131b4&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_user_role_contains_52671bef67845210351df94ad8f9228d&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_user_role_contains"&gt;&lt;sys_user_role_contains action="DELETE"&gt;&lt;contains display_value="sn_sow_alert_rules.automation_create_nonglobal" name="sn_sow_alert_rules.automation_create_nonglobal"&gt;0852e2cd771631103911f392fe5a9965&lt;/contains&gt;&lt;role display_value=""&gt;6692657167fb0210351df94ad8f922ec&lt;/role&gt;&lt;sys_class_name&gt;sys_user_role_contains&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-22 13:18:53&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;52671bef67845210351df94ad8f9228d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;sn_sow_alert_rules.automation_create_nonglobal.evt_team_operator&lt;/sys_name&gt;&lt;sys_package display_value="Service Operations Workspace Alert Automation API" source="sn_sow_alert_auto"&gt;65038d85c3d63110d1bdf2ff050131b4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Service Operations Workspace Alert Automation API"&gt;65038d85c3d63110d1bdf2ff050131b4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_user_role_contains_52671bef67845210351df94ad8f9228d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-22 13:18:53&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;/sys_user_role_contains&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;1716834935&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;bcrepeault_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-06-16 19:32:50&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00d6d3af93066a109cb7b91c5cba106c&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;1977a3ae9030000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;bcrepeault_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-06-16 19:32:50&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;sn_sow_alert_rules.automation_create_nonglobal.evt_team_operator&lt;/target_name&gt;
+        &lt;type&gt;Contained Role&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;4cd6d3afb9066a109b85b308b3556a6b&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;4cd6d3afb9066a109b85b308b3556a6b:1716834935,80d6d3afb6066a10db12a32d9cc8d567:-530841597&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;77b69f6f93066a109cb7b91c5cba109a&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:33:40</sys_created_on>
+        <sys_id>8bf0cbf547c4fe1097744049116d43c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_user_role_contains_52671bef67845210351df94ad8f9228d</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_8bf0cbf547c4fe1097744049116d43c7</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:33:40</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

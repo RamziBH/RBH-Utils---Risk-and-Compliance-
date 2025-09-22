@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>01318ad9db5b1b80fd756451ca9619ff</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="CCR"&gt;2a97bef70f899f80eea6a218b1050e87&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;pa_dashboards_permissions_9e2a92e30f29130449346509b1050e45&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="pa_dashboards_permissions"&gt;&lt;pa_dashboards_permissions action="INSERT_OR_UPDATE"&gt;&lt;dashboard display_value="Opérateurs du CCR"&gt;f594d2ef0fe5130449346509b1050e64&lt;/dashboard&gt;&lt;delete&gt;false&lt;/delete&gt;&lt;group display_value="Gestion CCR" name="Gestion CCR"&gt;5834b6e20fbb8700eea6a218b1050eb0&lt;/group&gt;&lt;identity&gt;5834b6e20fbb8700eea6a218b1050eb0&lt;/identity&gt;&lt;read&gt;true&lt;/read&gt;&lt;role/&gt;&lt;sys_class_name&gt;pa_dashboards_permissions&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-04-24 20:11:27&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;9e2a92e30f29130449346509b1050e45&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;5834b6e20fbb8700eea6a218b1050eb0&lt;/sys_name&gt;&lt;sys_package display_value="CCR" source="x_gamlp_ccr"&gt;2a97bef70f899f80eea6a218b1050e87&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="CCR"&gt;2a97bef70f899f80eea6a218b1050e87&lt;/sys_scope&gt;&lt;sys_update_name&gt;pa_dashboards_permissions_9e2a92e30f29130449346509b1050e45&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-04-24 20:11:27&lt;/sys_updated_on&gt;&lt;type&gt;2&lt;/type&gt;&lt;user/&gt;&lt;write&gt;false&lt;/write&gt;&lt;/pa_dashboards_permissions&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash/&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2018-07-13 18:25:58&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;01318ad9db5b1b80fd756451ca9619ff&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;16494e4788c0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2018-07-13 18:25:58&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;5834b6e20fbb8700eea6a218b1050eb0&lt;/target_name&gt;
+        &lt;type&gt;Dashboard Permissions&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid/&gt;
+        &lt;update_guid_history&gt;c3f48704ffc71f007be1826597019521:1474479708&lt;/update_guid_history&gt;
+        &lt;update_set display_value="CCR_v1.0.0"&gt;30318ad9db5b1b80fd756451ca96192d&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:49</sys_created_on>
+        <sys_id>7b31c73947c4fe1097744049116d4309</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>pa_dashboards_permissions_9e2a92e30f29130449346509b1050e45</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_7b31c73947c4fe1097744049116d4309</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:49</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

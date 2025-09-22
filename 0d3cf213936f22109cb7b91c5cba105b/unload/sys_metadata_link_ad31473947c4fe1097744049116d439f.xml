@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>0122dd32dbc70010f2b13a0f9d9619ec</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sp_column_e8ab8a64dbee0810858c2c23ca9619c9&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_column"&gt;&lt;sp_column action="INSERT_OR_UPDATE"&gt;&lt;class_name/&gt;&lt;order&gt;1&lt;/order&gt;&lt;size&gt;3&lt;/size&gt;&lt;size_lg/&gt;&lt;size_sm/&gt;&lt;size_xs/&gt;&lt;sp_row display_value="1"&gt;6cab4264dbee0810858c2c23ca96198c&lt;/sp_row&gt;&lt;sys_class_name&gt;sp_column&lt;/sys_class_name&gt;&lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-21 17:02:27&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;e8ab8a64dbee0810858c2c23ca9619c9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;1&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_column_e8ab8a64dbee0810858c2c23ca9619c9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-21 17:02:27&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;/sp_column&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-1375398988&lt;/payload_hash&gt;
+        &lt;remote_update_set display_value="FX - RITM0102914 - 1 - MR"&gt;8122dd32dbc70010f2b13a0f9d961977&lt;/remote_update_set&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;Boyoti.Degbe@fxinnovation.com&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-02-22 09:09:00&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0122dd32dbc70010f2b13a0f9d9619ec&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;170203173100000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;Boyoti.Degbe@fxinnovation.com&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-02-22 09:09:00&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;1&lt;/target_name&gt;
+        &lt;type&gt;Column&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;68ab8a64ddee0810f8a53c147acc22ca&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;68ab8a64ddee0810f8a53c147acc22ca:-1375398988&lt;/update_guid_history&gt;
+        &lt;update_set/&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:39</sys_created_on>
+        <sys_id>ad31473947c4fe1097744049116d439f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sp_column_e8ab8a64dbee0810858c2c23ca9619c9</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_ad31473947c4fe1097744049116d439f</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:39</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

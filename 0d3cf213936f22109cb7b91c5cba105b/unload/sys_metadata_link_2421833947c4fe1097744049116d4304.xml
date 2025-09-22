@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>010a00b347c39190c6170f9e436d439d</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>asmt_metric_17249ed0879ad910124b7777dabb35a2</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="asmt_metric"&gt;&lt;asmt_metric action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_info_label&gt;Additional Information&lt;/add_info_label&gt;&lt;allow_add_info&gt;false&lt;/allow_add_info&gt;&lt;allow_not_applicable&gt;true&lt;/allow_not_applicable&gt;&lt;auto_gen&gt;false&lt;/auto_gen&gt;&lt;category display_value="Corridor / Aire commune"&gt;cf249ed0879ad910124b7777dabb3535&lt;/category&gt;&lt;cond_question&gt;always&lt;/cond_question&gt;&lt;condition/&gt;&lt;context/&gt;&lt;correct_answer/&gt;&lt;correct_answer_checkbox/&gt;&lt;correct_answer_choice/&gt;&lt;correct_answer_template/&gt;&lt;correct_answer_yesno/&gt;&lt;custom_metric/&gt;&lt;datatype&gt;choice&lt;/datatype&gt;&lt;default_value_field/&gt;&lt;depends_on/&gt;&lt;description/&gt;&lt;details/&gt;&lt;displayed_when/&gt;&lt;displayed_when_checkbox/&gt;&lt;displayed_when_template/&gt;&lt;displayed_when_yesno/&gt;&lt;duration/&gt;&lt;field_validation/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max&gt;9&lt;/max&gt;&lt;max_weight/&gt;&lt;maximum_normalization_input&gt;false&lt;/maximum_normalization_input&gt;&lt;method&gt;assessment&lt;/method&gt;&lt;metric_type display_value="Contrôle de qualité Interne - Route B03"&gt;e388a39e874299107f7d20e5cebb35c6&lt;/metric_type&gt;&lt;min&gt;0&lt;/min&gt;&lt;name&gt;Absence d'odeurs désagréables qui émanent des poubelles&lt;/name&gt;&lt;order&gt;8100&lt;/order&gt;&lt;plugin/&gt;&lt;question&gt;Absence d'odeurs désagréables qui émanent des poubelles&lt;/question&gt;&lt;randomize_answers&gt;false&lt;/randomize_answers&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;reference_table/&gt;&lt;scale&gt;low&lt;/scale&gt;&lt;scored&gt;false&lt;/scored&gt;&lt;script&gt;&lt;![CDATA[// The following variables are available:  // - primary: contains the sys_id of the assessable object to be evaluated  // - string_result: the script sets the display string value for this metric to this variable  // - actual_result: the script sets the actual value for this metric to this variable  // - scaled_result: the script sets the scaled value (used in calculations) for this metric to this variable  //  // For example: // var gr = new GlideRecord('cmdb_ci'); // gr.addQuery('manufacturer', primary); // gr.query(); // actual_result = gr.getRowCount(); // string_result = actual_result + ''; // if (actual_result &amp;gt; 100) scaled_result = 5; // else scaled_result = 1;]]&gt;&lt;/script&gt;&lt;source_field/&gt;&lt;string_option&gt;wide&lt;/string_option&gt;&lt;sys_class_name&gt;asmt_metric&lt;/sys_class_name&gt;&lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-28 17:41:22&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;17249ed0879ad910124b7777dabb35a2&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;Absence d'odeurs désagréables qui émanent des poubelles&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;asmt_metric_17249ed0879ad910124b7777dabb35a2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-11-07 13:59:29&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_subcategory&gt;002&lt;/u_subcategory&gt;&lt;u_target/&gt;&lt;value_parameters/&gt;&lt;weight&gt;10&lt;/weight&gt;&lt;/asmt_metric&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=17249ed0879ad910124b7777dabb35a2"/&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;17249ed0879ad910124b7777dabb35a2&lt;/documentkey&gt;&lt;fieldname&gt;add_info_label&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;mg83368&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-28 17:54:15&lt;/sys_created_on&gt;&lt;sys_id&gt;4027d218879ad910124b7777dabb35a1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;mg83368&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-28 17:54:15&lt;/sys_updated_on&gt;&lt;tablename&gt;asmt_metric&lt;/tablename&gt;&lt;value&gt;Additional Information&lt;/value&gt;&lt;/sys_translated_text&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;17249ed0879ad910124b7777dabb35a2&lt;/documentkey&gt;&lt;fieldname&gt;description&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;mg83368&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-28 17:54:15&lt;/sys_created_on&gt;&lt;sys_id&gt;4827d218879ad910124b7777dabb35a3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;mg83368&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-28 17:54:15&lt;/sys_updated_on&gt;&lt;tablename&gt;asmt_metric&lt;/tablename&gt;&lt;value/&gt;&lt;/sys_translated_text&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;17249ed0879ad910124b7777dabb35a2&lt;/documentkey&gt;&lt;fieldname&gt;details&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;mg83368&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-28 17:54:15&lt;/sys_created_on&gt;&lt;sys_id&gt;4c27d218879ad910124b7777dabb359e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;mg83368&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-28 17:54:15&lt;/sys_updated_on&gt;&lt;tablename&gt;asmt_metric&lt;/tablename&gt;&lt;value/&gt;&lt;/sys_translated_text&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;17249ed0879ad910124b7777dabb35a2&lt;/documentkey&gt;&lt;fieldname&gt;question&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;mg83368&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-28 17:54:15&lt;/sys_created_on&gt;&lt;sys_id&gt;c027d218879ad910124b7777dabb35a6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;mg83368&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-28 17:54:15&lt;/sys_updated_on&gt;&lt;tablename&gt;asmt_metric&lt;/tablename&gt;&lt;value&gt;Absence d'odeurs désagréables qui émanent des poubelles&lt;/value&gt;&lt;/sys_translated_text&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>646316666</payload_hash>
+        <remote_update_set display_value="FX-CS0173424-03-Survey">ac0a00b347c39190c6170f9e436d4340</remote_update_set>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>martin.roux@fxinnovation.com</sys_created_by>
+        <sys_created_on>2022-11-15 11:23:34</sys_created_on>
+        <sys_id>010a00b347c39190c6170f9e436d439d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1845263971e0000001</sys_recorded_at>
+        <sys_updated_by>martin.roux@fxinnovation.com</sys_updated_by>
+        <sys_updated_on>2022-11-15 11:23:34</sys_updated_on>
+        <table/>
+        <target_name>Absence d'odeurs désagréables qui émanent des poubelles</target_name>
+        <type>Assessment Metric</type>
+        <update_domain>global</update_domain>
+        <update_guid>f2f023813d87d5103ecc6b0509cfabf0</update_guid>
+        <update_guid_history>f2f023813d87d5103ecc6b0509cfabf0:646316666,4027d218449ad91039782a7844a273a8:646316666,0427d218d49ad9102e08ebae022ee7a5:1741903977,4827d218439ad910dc10be9e3acdf1a2:527199001,8027d218109ad9105593a7ad891329a0:1468592882,6c741614219ad91037a68dcde7e971a7:-34380649,7c341214159ad910501b98fd3319ea7e:625930265,6b249ed0ec9ad9108484f1c9b888afb4:56133023,d3249ed0299ad91097d2dd972a4a56af:1602648516,df249ed0009ad910448b5aadab9756a9:-291445413,17249ed0b99ad9108ad958b29c75fba6:56133023</update_guid_history>
+        <update_set/>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:19</sys_created_on>
+        <sys_id>2421833947c4fe1097744049116d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>asmt_metric_17249ed0879ad910124b7777dabb35a2</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_2421833947c4fe1097744049116d4304</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:19</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,1749 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>01371531dba7e300858c2c23ca9619ff</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>customer</category>
+        <comments/>
+        <name>sys_script_include_8df5f6d6db5c2b401561622dca96193e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.GAZMET_TimeCardReport_Extract&lt;/api_name&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;GAZMET_TimeCardReport_Extract&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var GAZMET_TimeCardReport_Extract = Class.create();
+
+
+GAZMET_TimeCardReport_Extract.prototype = {
+	initialize: function() {
+	},
+	
+	/*****************************************************************************************************************
+	Fonction: generateInternalReport
+	Paramètre: pSemaine = Date format AAAA-MM-JJ
+	Critères:
+	- Feuilles de temps approuvées
+	- Employés internes
+	- Semaine sélectionnée (une à la fois)
+ 	*****************************************************************************************************************/
+	
+	generateInternalReport : function( dateFrom, dateTo, datePeriodeComptable ) {
+		//Ecriture dans la table u_rapport_heures_sap_extract
+		var rapport = new GlideRecord( 'u_rapport_heures_sap_extract' );
+		rapport.addQuery( 'u_interne', true );
+		rapport.deleteMultiple();
+		rapport.initialize();
+		gs.log('SG - Step 1');
+		
+		var timestamp = this.getTimeStamp();
+		
+		//Lecture de toutes les time_cards Demandes
+		var tc = new GlideRecord( 'u_gm_time_card_demand' );
+		tc.addQuery('usrtbl_u_internal_employee', true);
+		tc.addQuery( 'tc_week_starts_on', '&gt;=', dateFrom );
+		tc.addQuery( 'tc_week_starts_on', '&lt;=', dateTo );
+		tc.addQuery( 'tc_user.name', 'DOES NOT CONTAIN', '(admin)' );
+		tc.addNotNullQuery( 'dmntbl_u_otp' );
+		tc.query();
+		
+		while( tc.next() )
+			{
+			rapport.u_periode = datePeriodeComptable; //Période
+			rapport.u_utilisateur = tc.usrtbl_sys_id;
+			rapport.u_otp = tc.dmntbl_u_otp;
+			if( tc.tasktbl_u_numero_element == '' )
+				rapport.u_noelement = tc.cap_u_numero_element;
+			else
+				rapport.u_noelement = tc.tasktbl_u_numero_element;
+			rapport.u_centrecout = tc.usrtbl_cost_center;
+			rapport.u_interne = true;
+			rapport.u_timestamp = timestamp;
+			rapport.u_timecard = tc.tc_sys_id;
+			rapport.u_state = tc.ft_state;
+			rapport.u_estcap = "";
+			//rapport.u_rate_type = tc.tc_rate_type.getDisplayValue();
+			
+			var dateJour = new GlideDateTime( tc.tc_week_starts_on );
+			//gs.print('SG: Date du jour: ' + dateJour);
+			var capitalisable = tc.dmntbl_u_imputation;
+			if( capitalisable == "Immobilisation" || capitalisable == "Capitalisable" )
+				rapport.u_estcap = "X";
+			
+			//Lundi
+			if( tc.tc_monday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_monday;
+				//gs.print('SG: Date du lundi: ' + rapport.u_semaine);
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mardi
+			if( tc.tc_tuesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_tuesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mercredi
+			if( tc.tc_wednesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_wednesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Jeudi
+			if( tc.tc_thursday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_thursday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Vendredi
+			if( tc.tc_friday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_friday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Samedi
+			if( tc.tc_saturday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_saturday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Dimanche
+			if( tc.tc_sunday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_sunday;
+				rapport.insert();
+			}
+			
+		}
+		
+		//Lecture de toutes les time_cards Changements
+		var tc = new GlideRecord( 'u_gm_time_card_change' );
+		tc.addQuery('usrtbl_u_internal_employee',true);
+		tc.addQuery( 'tc_week_starts_on', '&gt;=', dateFrom );
+		tc.addQuery( 'tc_week_starts_on', '&lt;=', dateTo );
+		tc.addQuery( 'tc_user.name', 'DOES NOT CONTAIN', '(admin)' );
+		tc.addNotNullQuery( 'dmntbl_u_otp' );
+		tc.query();
+		
+		while( tc.next() )
+			{
+			rapport.u_periode = datePeriodeComptable; //Période
+			rapport.u_utilisateur = tc.usrtbl_sys_id;
+			rapport.u_otp = tc.dmntbl_u_otp;
+			if( tc.tasktbl_u_numero_element == '' )
+				rapport.u_noelement = tc.cap_u_numero_element;
+			else
+				rapport.u_noelement = tc.tasktbl_u_numero_element;
+			rapport.u_centrecout = tc.usrtbl_cost_center;
+			rapport.u_interne = true;
+			rapport.u_timestamp = timestamp;
+			rapport.u_timecard = tc.tc_sys_id;
+			rapport.u_state = tc.ft_state;
+			rapport.u_estcap = "";
+			//rapport.u_rate_type = tc.tc_rate_type.getDisplayValue();
+			
+			var dateJour = new GlideDateTime( tc.tc_week_starts_on );
+			var capitalisable = tc.dmntbl_u_imputation;
+			if( capitalisable == "Immobilisation" || capitalisable == "Capitalisable" )
+				rapport.u_estcap = "X";
+			
+			//Lundi
+			if( tc.tc_monday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_monday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mardi
+			if( tc.tc_tuesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_tuesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mercredi
+			if( tc.tc_wednesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_wednesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Jeudi
+			if( tc.tc_thursday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_thursday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Vendredi
+			if( tc.tc_friday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_friday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Samedi
+			if( tc.tc_saturday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_saturday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Dimanche
+			if( tc.tc_sunday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_sunday;
+				rapport.insert();
+			}
+			
+		}
+		
+		//Lecture de toutes les time_cards Projets
+		var tc = new GlideRecord( 'u_gm_time_card_project' );
+		tc.addQuery( 'usrtbl_u_internal_employee', true );
+		tc.addQuery( 'tc_week_starts_on', '&gt;=', dateFrom );
+		tc.addQuery( 'tc_week_starts_on', '&lt;=', dateTo );
+		tc.addQuery( 'tc_user.name', 'DOES NOT CONTAIN', '(admin)' );
+		tc.addNotNullQuery( 'prjtbl_u_otp' );
+		tc.addEncodedQuery('tasktbl_u_tache_principale.ref_dmn_demand...ISEMPTY');
+		tc.query();
+		
+		while( tc.next() )
+			{
+			rapport.u_periode = datePeriodeComptable; //Période
+			rapport.u_utilisateur = tc.usrtbl_sys_id;
+			rapport.u_otp = tc.prjtbl_u_otp;
+			if( tc.tasktbl_u_numero_element == '' )
+				rapport.u_noelement = tc.task_cap_u_numero_element;
+			else
+				rapport.u_noelement = tc.tasktbl_u_numero_element;
+			rapport.u_centrecout = tc.usrtbl_cost_center;
+			rapport.u_interne = true;
+			rapport.u_timestamp = timestamp;
+			rapport.u_timecard = tc.tc_sys_id;
+			rapport.u_state = tc.ft_state;
+			rapport.u_estcap = "";
+			//rapport.u_rate_type = tc.tc_rate_type.getDisplayValue();
+				
+			var dateJour = new GlideDateTime( tc.tc_week_starts_on );
+			var capitalisable = tc.prjtbl_u_imputation;
+			if( capitalisable == "Immobilisation" || capitalisable == "Capitalisable" )
+				rapport.u_estcap = "X";
+			
+			//Lundi
+			if( tc.tc_monday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_monday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mardi
+			if( tc.tc_tuesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_tuesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mercredi
+			if( tc.tc_wednesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_wednesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Jeudi
+			if( tc.tc_thursday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_thursday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Vendredi
+			if( tc.tc_friday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_friday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Samedi
+			if( tc.tc_saturday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_saturday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Dimanche
+			if( tc.tc_sunday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_sunday;
+				rapport.insert();
+			}
+			
+		}
+		
+		
+		//Lecture de toutes les time_cards Stories des Projets
+		var tc = new GlideRecord( 'u_gm_time_card_story_prj' );
+		tc.addQuery( 'usrtbl_u_internal_employee', true );
+		tc.addQuery( 'tc_week_starts_on', '&gt;=', dateFrom );
+		tc.addQuery( 'tc_week_starts_on', '&lt;=', dateTo );
+		tc.addQuery( 'tc_user.name', 'DOES NOT CONTAIN', '(admin)' );
+		tc.addNotNullQuery( 'prjtbl_u_otp' );
+		tc.query();
+		
+		while( tc.next() )
+			{
+			rapport.u_periode = datePeriodeComptable; //Période
+			rapport.u_utilisateur = tc.usrtbl_sys_id;
+			rapport.u_otp = tc.prjtbl_u_otp;
+			//if( tc.tasktbl_u_numero_element == '' ) 
+			rapport.u_noelement = tc.cap_u_numero_element;
+			//else
+				//rapport.u_noelement = tc.tasktbl_u_numero_element;
+			rapport.u_centrecout = tc.usrtbl_cost_center;
+			rapport.u_interne = true;
+			rapport.u_timestamp = timestamp;
+			rapport.u_timecard = tc.tc_sys_id;
+			rapport.u_state = tc.ft_state;
+			rapport.u_estcap = "";
+			//rapport.u_rate_type = tc.tc_rate_type.getDisplayValue();
+				
+			var dateJour = new GlideDateTime( tc.tc_week_starts_on );
+			var capitalisable = tc.prjtbl_u_imputation;
+			if( capitalisable == "Immobilisation" || capitalisable == "Capitalisable" )
+				rapport.u_estcap = "X";
+			
+			//Lundi
+			if( tc.tc_monday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_monday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mardi
+			if( tc.tc_tuesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_tuesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mercredi
+			if( tc.tc_wednesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_wednesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Jeudi
+			if( tc.tc_thursday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_thursday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Vendredi
+			if( tc.tc_friday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_friday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Samedi
+			if( tc.tc_saturday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_saturday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Dimanche
+			if( tc.tc_sunday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_sunday;
+				rapport.insert();
+			}
+			
+		}
+		
+		//Lecture de toutes les time_cards Stories des Demandes
+		var tc = new GlideRecord( 'u_gm_time_card_story_dmn' );
+		tc.addQuery( 'usrtbl_u_internal_employee', true );
+		tc.addQuery( 'tc_week_starts_on', '&gt;=', dateFrom );
+		tc.addQuery( 'tc_week_starts_on', '&lt;=', dateTo );
+		tc.addQuery( 'tc_user.name', 'DOES NOT CONTAIN', '(admin)' );
+		tc.addNotNullQuery( 'dmntbl_u_otp' );
+		tc.query();
+		
+		while( tc.next() )
+			{
+			rapport.u_periode = datePeriodeComptable; //Période
+			rapport.u_utilisateur = tc.usrtbl_sys_id;
+			rapport.u_otp = tc.dmntbl_u_otp;
+			//if( tc.tasktbl_u_numero_element == '' ) 
+			rapport.u_noelement = tc.cap_u_numero_element;
+			//else
+				//rapport.u_noelement = tc.tasktbl_u_numero_element;
+			rapport.u_centrecout = tc.usrtbl_cost_center;
+			rapport.u_interne = true;
+			rapport.u_timestamp = timestamp;
+			rapport.u_timecard = tc.tc_sys_id;
+			rapport.u_state = tc.ft_state;
+			rapport.u_estcap = "";
+			//rapport.u_rate_type = tc.tc_rate_type.getDisplayValue();
+				
+			var dateJour = new GlideDateTime( tc.tc_week_starts_on );
+			var capitalisable = tc.dmntbl_u_imputation;
+			if( capitalisable == "Immobilisation" || capitalisable == "Capitalisable" )
+				rapport.u_estcap = "X";
+			
+			//Lundi
+			if( tc.tc_monday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_monday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mardi
+			if( tc.tc_tuesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_tuesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mercredi
+			if( tc.tc_wednesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_wednesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Jeudi
+			if( tc.tc_thursday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_thursday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Vendredi
+			if( tc.tc_friday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_friday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Samedi
+			if( tc.tc_saturday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_saturday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Dimanche
+			if( tc.tc_sunday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_sunday;
+				rapport.insert();
+			}
+			
+		}
+		
+		//Lecture de toutes les time_cards Stories des Problèmes
+		var tc = new GlideRecord( 'u_gm_time_card_story_prb' );
+		tc.addQuery( 'usrtbl_u_internal_employee', true );
+		tc.addQuery( 'tc_week_starts_on', '&gt;=', dateFrom );
+		tc.addQuery( 'tc_week_starts_on', '&lt;=', dateTo );
+		tc.addQuery( 'tc_user.name', 'DOES NOT CONTAIN', '(admin)' );
+		//tc.addNotNullQuery( 'prbtbl_u_otp' ); // Il n'y a pas d'OTP pour un problème
+		tc.query();
+		
+		while( tc.next() )
+			{
+			rapport.u_periode = datePeriodeComptable; //Période
+			rapport.u_utilisateur = tc.usrtbl_sys_id;
+			//rapport.u_otp = tc.prbtbl_u_otp; // Il n'y a pas d'OTP pour un problème
+			//if( tc.tasktbl_u_numero_element == '' ) 
+			rapport.u_noelement = tc.cap_u_numero_element;
+			//else
+				//rapport.u_noelement = tc.tasktbl_u_numero_element;
+			rapport.u_centrecout = tc.usrtbl_cost_center;
+			rapport.u_interne = true;
+			rapport.u_timestamp = timestamp;
+			rapport.u_timecard = tc.tc_sys_id;
+			rapport.u_state = tc.ft_state;
+			rapport.u_estcap = "";
+			//rapport.u_rate_type = tc.tc_rate_type.getDisplayValue();
+				
+			var dateJour = new GlideDateTime( tc.tc_week_starts_on );
+			//var capitalisable = tc.prbtbl_u_imputation; // Il n'y a pas d'imputation pour un problème
+			//if( capitalisable == "Immobilisation" || capitalisable == "Capitalisable" )
+				//rapport.u_estcap = "X";
+			
+			//Lundi
+			if( tc.tc_monday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_monday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mardi
+			if( tc.tc_tuesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_tuesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mercredi
+			if( tc.tc_wednesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_wednesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Jeudi
+			if( tc.tc_thursday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_thursday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Vendredi
+			if( tc.tc_friday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_friday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Samedi
+			if( tc.tc_saturday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_saturday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Dimanche
+			if( tc.tc_sunday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tc_sunday;
+				rapport.insert();
+			}
+			
+		}
+		
+		
+		//Summarize
+		var ga = new GlideAggregate('u_rapport_heures_sap_extract');
+		ga.addAggregate( 'SUM', 'u_nbrheures' );
+		ga.groupBy('u_utilisateur');
+		ga.groupBy('u_otp');
+		ga.groupBy('u_noelement');
+		ga.groupBy('u_centrecout');
+		ga.groupBy( 'u_noelement' );
+		ga.groupBy( 'u_estcap' );
+		ga.addQuery('u_interne', true);
+		ga.query();
+		
+		while( ga.next() ) {
+			if( ga.u_otp.trim() != "" ) {
+				rapport.u_timestamp = timestamp;
+				rapport.u_utilisateur = ga.u_utilisateur;
+				rapport.u_otp = ga.u_otp;
+				rapport.u_nbrheures = ga.getAggregate('SUM', 'u_nbrheures' );
+				rapport.u_noelement = ga.u_noelement;
+				rapport.u_centrecout = ga.u_centrecout;
+				rapport.u_summary = true;
+				rapport.u_interne = true;
+				rapport.u_immobilisation = ga.u_immobilisation;
+				rapport.u_frais_reporte = ga.u_frais_reporte;
+				rapport.u_estcap = ga.u_estcap;
+				rapport.insert();
+			}
+		}
+	},
+	
+	/*****************************************************************************************************************
+	Fonction: generateExternalReport
+	Paramètre: month_year = Date format AAAA-MM-JJ
+	Critères:
+	- Feuilles de temps (peu importe le statut)
+	- Employés externes
+	- Tous les jours du mois/année sélectionné (un mois à la fois)
+ 	*****************************************************************************************************************/
+	generateExternalReport : function( dateFrom, dateTo, month ) {
+		//Ecriture dans la table u_rapport_heures_sap_extract
+		var rapport = new GlideRecord( 'u_rapport_heures_sap_extract' );
+		rapport.addQuery('u_interne', false );
+		rapport.deleteMultiple();
+		rapport.initialize();
+		
+		var timestamp = this.getTimeStamp();
+		var premierLundi = this.firstMonday( dateFrom );
+		
+		//Lecture de toutes les time_cards Demandes
+		var tcDemExt = new GlideRecord( 'u_gm_time_card_demand' );
+		tcDemExt.addQuery('usrtbl_u_internal_employee',false);
+		tcDemExt.addQuery( 'tc_week_starts_on', '&gt;=', dateFrom );
+		tcDemExt.addQuery( 'tc_week_starts_on', '&lt;=', dateTo );
+		tcDemExt.addQuery( 'tc_user.name', 'DOES NOT CONTAIN', '(admin)' );
+		tcDemExt.query();
+		
+		while( tcDemExt.next() )
+			{
+			rapport.u_periode = dateTo; //Période
+			rapport.u_timestamp = timestamp;
+			rapport.u_utilisateur = tcDemExt.usrtbl_sys_id;
+			rapport.u_otp = tcDemExt.dmntbl_u_otp;
+			if( tcDemExt.tasktbl_u_numero_element == '' )
+				rapport.u_noelement = tcDemExt.cap_u_numero_element;
+			else
+				rapport.u_noelement = tcDemExt.tasktbl_u_numero_element;
+			rapport.u_centrecout = tcDemExt.usrtbl_cost_center;
+			rapport.u_interne = false;
+			rapport.u_timecard = tcDemExt.tc_sys_id;
+			rapport.u_numero_commande = tcDemExt.usrtbl_u_numero_commande;
+			rapport.u_numero_poste = tcDemExt.usrtbl_u_numero_poste;
+			rapport.u_state = tcDemExt.ft_state;
+			//rapport.u_rate_type = tc.tc_rate_type.getDisplayValue();
+				
+			var dateJour = new GlideDateTime( tcDemExt.tc_week_starts_on );
+			//gs.print('SG date joue EXT' + dateJour);
+				
+			rapport.u_estcap = "";
+			var capitalisable = tcDemExt.dmntbl_u_imputation;
+			if( capitalisable == "Immobilisation" || capitalisable == "Capitalisable" )
+				rapport.u_estcap = "X";
+			
+			
+			//Lundi
+			//gs.print('SG Date du jour' + dateJour +  ' mois du jour' + dateJour.getMonthUTC() + ' mois' + month);
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcDemExt.tc_monday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcDemExt.tc_monday;
+				//gs.print('SG date lundi EXT' + rapport.u_semaine);
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mardi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcDemExt.tc_tuesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcDemExt.tc_tuesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mercredi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcDemExt.tc_wednesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcDemExt.tc_wednesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Jeudi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcDemExt.tc_thursday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcDemExt.tc_thursday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Vendredi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcDemExt.tc_friday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcDemExt.tc_friday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Samedi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcDemExt.tc_saturday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcDemExt.tc_saturday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Dimanche
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcDemExt.tc_sunday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcDemExt.tc_sunday;
+				rapport.insert();
+			}
+		}
+		
+		//Lecture de toutes les time_cards Changements
+		var tcChgExt = new GlideAggregate( 'u_gm_time_card_change' );
+		tcChgExt.addQuery('usrtbl_u_internal_employee','false');
+		tcChgExt.addQuery( 'tc_week_starts_on', '&gt;=', dateFrom );
+		tcChgExt.addQuery( 'tc_week_starts_on', '&lt;=', dateTo );
+		tcChgExt.addQuery( 'tc_user.name', 'DOES NOT CONTAIN', '(admin)' );
+		tcChgExt.query();
+		
+		while( tcChgExt.next() )
+			{
+			rapport.u_periode = dateTo; //Période
+			rapport.u_timestamp = timestamp;
+			rapport.u_utilisateur = tcChgExt.usrtbl_sys_id;
+			rapport.u_otp = tcChgExt.dmntbl_u_otp; // OTP va venir de la Demande
+			if( tcChgExt.tasktbl_u_numero_element == '' )
+				rapport.u_noelement = tcChgExt.cap_u_numero_element;
+			else
+				rapport.u_noelement = tcChgExt.tasktbl_u_numero_element;
+			rapport.u_centrecout = tcChgExt.usrtbl_cost_center;
+			rapport.u_timecard = tcChgExt.tc_sys_id;
+			rapport.u_numero_commande = tcChgExt.usrtbl_u_numero_commande; // Toujours ça
+			rapport.u_numero_poste = tcChgExt.usrtbl_u_numero_poste; // Toujours ça
+			rapport.u_interne = false;
+			rapport.u_state = tcChgExt.ft_state;
+			//rapport.u_rate_type = tc.tc_rate_type.getDisplayValue();
+			
+			var dateJour = new GlideDateTime( tcChgExt.tc_week_starts_on );
+			
+			rapport.u_estcap = "";
+			var capitalisable = tcChgExt.dmntbl_u_imputation; // Imputation va venir de la Demande
+			if( capitalisable == "Immobilisation" || capitalisable == "Capitalisable" )
+				rapport.u_estcap = "X";
+			
+			
+			//Lundi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcChgExt.tc_monday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcChgExt.tc_monday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mardi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcChgExt.tc_tuesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcChgExt.tc_tuesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mercredi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcChgExt.tc_wednesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcChgExt.tc_wednesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Jeudi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcChgExt.tc_thursday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcChgExt.tc_thursday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Vendredi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcChgExt.tc_friday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcChgExt.tc_friday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Samedi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcChgExt.tc_saturday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcChgExt.tc_saturday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Dimanche
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcChgExt.tc_sunday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcChgExt.tc_sunday;
+				rapport.insert();
+			}
+		}
+		
+		//Lecture de toutes les time_cards Projets
+		var tcPrjExt = new GlideAggregate( 'u_gm_time_card_project' );
+		tcPrjExt.addQuery('usrtbl_u_internal_employee',false);
+		tcPrjExt.addQuery( 'tc_week_starts_on', '&gt;=', dateFrom );
+		tcPrjExt.addQuery( 'tc_week_starts_on', '&lt;=', dateTo );
+		tcPrjExt.addQuery( 'tc_user.name', 'DOES NOT CONTAIN', '(admin)' );
+		tcPrjExt.query();
+		
+		while( tcPrjExt.next() )
+			{
+			rapport.u_periode = dateTo; //Période
+			rapport.u_timestamp = timestamp;
+			rapport.u_utilisateur = tcPrjExt.usrtbl_sys_id;
+			rapport.u_otp = tcPrjExt.prjtbl_u_otp;
+			if( tcPrjExt.tasktbl_u_numero_element == '' )
+				rapport.u_noelement = tcPrjExt.cap_u_numero_element;
+			else
+				rapport.u_noelement = tcPrjExt.tasktbl_u_numero_element;
+			rapport.u_centrecout = tcPrjExt.usrtbl_cost_center;
+			rapport.u_timecard = tcPrjExt.tc_sys_id;
+			rapport.u_numero_commande = tcPrjExt.usrtbl_u_numero_commande;
+			rapport.u_numero_poste = tcPrjExt.usrtbl_u_numero_poste;
+			rapport.u_interne = false;
+			rapport.u_state = tcPrjExt.ft_state;
+			//rapport.u_rate_type = tc.tc_rate_type.getDisplayValue();
+			
+			var dateJour = new GlideDateTime( tcPrjExt.tc_week_starts_on );
+			
+			rapport.u_estcap = "";
+			var capitalisable = tcPrjExt.prjtbl_u_imputation;
+			if( capitalisable == "Immobilisation" || capitalisable == "Capitalisable" )
+				rapport.u_estcap = "X";
+			
+			//Lundi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcPrjExt.tc_monday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcPrjExt.tc_monday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mardi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcPrjExt.tc_tuesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcPrjExt.tc_tuesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mercredi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcPrjExt.tc_wednesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcPrjExt.tc_wednesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Jeudi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcPrjExt.tc_thursday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcPrjExt.tc_thursday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Vendredi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcPrjExt.tc_friday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcPrjExt.tc_friday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Samedi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcPrjExt.tc_saturday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcPrjExt.tc_saturday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Dimanche
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcPrjExt.tc_sunday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcPrjExt.tc_sunday;
+				rapport.insert();
+			}
+		}
+		
+		
+		//Lecture de toutes les time_cards Stories des Projets
+		var tcStrExt = new GlideAggregate( 'u_gm_time_card_story_prj' );
+		tcStrExt.addQuery('usrtbl_u_internal_employee',false);
+		tcStrExt.addQuery( 'tc_week_starts_on', '&gt;=', dateFrom );
+		tcStrExt.addQuery( 'tc_week_starts_on', '&lt;=', dateTo );
+		tcStrExt.addQuery( 'tc_user.name', 'DOES NOT CONTAIN', '(admin)' );
+		tcStrExt.query();
+		
+		while( tcStrExt.next() )
+			{
+			rapport.u_periode = dateTo; //Période
+			rapport.u_timestamp = timestamp;
+			rapport.u_utilisateur = tcStrExt.usrtbl_sys_id;
+			rapport.u_otp = tcStrExt.prjtbl_u_otp;
+			//if( tcStrExt.tasktbl_u_numero_element == '' )
+			rapport.u_noelement = tcStrExt.cap_u_numero_element;
+			//else
+				//rapport.u_noelement = tcStrExt.tasktbl_u_numero_element;
+			rapport.u_centrecout = tcStrExt.usrtbl_cost_center;
+			rapport.u_timecard = tcStrExt.tc_sys_id;
+			rapport.u_numero_commande = tcStrExt.usrtbl_u_numero_commande;
+			rapport.u_numero_poste = tcStrExt.usrtbl_u_numero_poste;
+			rapport.u_interne = false;
+			rapport.u_state = tcStrExt.ft_state;
+			//rapport.u_rate_type = tc.tc_rate_type.getDisplayValue();
+			
+			var dateJour = new GlideDateTime( tcStrExt.tc_week_starts_on );
+			
+			rapport.u_estcap = "";
+			var capitalisable = tcStrExt.prjtbl_u_imputation;
+			if( capitalisable == "Immobilisation" || capitalisable == "Capitalisable" )
+				rapport.u_estcap = "X";
+			
+			//Lundi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_monday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_monday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mardi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_tuesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_tuesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mercredi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_wednesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_wednesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Jeudi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_thursday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_thursday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Vendredi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_friday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_friday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Samedi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_saturday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_saturday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Dimanche
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_sunday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_sunday;
+				rapport.insert();
+			}
+		}
+		
+		//Lecture de toutes les time_cards Stories des Demandes
+		var tcStrExt = new GlideAggregate( 'u_gm_time_card_story_dmn' );
+		tcStrExt.addQuery('usrtbl_u_internal_employee',false);
+		tcStrExt.addQuery( 'tc_week_starts_on', '&gt;=', dateFrom );
+		tcStrExt.addQuery( 'tc_week_starts_on', '&lt;=', dateTo );
+		tcStrExt.addQuery( 'tc_user.name', 'DOES NOT CONTAIN', '(admin)' );
+		tcStrExt.query();
+		
+		while( tcStrExt.next() )
+			{
+			rapport.u_periode = dateTo; //Période
+			rapport.u_timestamp = timestamp;
+			rapport.u_utilisateur = tcStrExt.usrtbl_sys_id;
+			rapport.u_otp = tcStrExt.dmntbl_u_otp;
+			//if( tcStrExt.tasktbl_u_numero_element == '' )
+			rapport.u_noelement = tcStrExt.cap_u_numero_element;
+			//else
+				//rapport.u_noelement = tcStrExt.tasktbl_u_numero_element;
+			rapport.u_centrecout = tcStrExt.usrtbl_cost_center;
+			rapport.u_timecard = tcStrExt.tc_sys_id;
+			rapport.u_numero_commande = tcStrExt.usrtbl_u_numero_commande;
+			rapport.u_numero_poste = tcStrExt.usrtbl_u_numero_poste;
+			rapport.u_interne = false;
+			rapport.u_state = tcStrExt.ft_state;
+			//rapport.u_rate_type = tc.tc_rate_type.getDisplayValue();
+			
+			var dateJour = new GlideDateTime( tcStrExt.tc_week_starts_on );
+			
+			rapport.u_estcap = "";
+			var capitalisable = tcStrExt.dmntbl_u_imputation;
+			if( capitalisable == "Immobilisation" || capitalisable == "Capitalisable" )
+				rapport.u_estcap = "X";
+			
+			//Lundi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_monday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_monday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mardi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_tuesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_tuesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mercredi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_wednesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_wednesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Jeudi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_thursday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_thursday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Vendredi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_friday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_friday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Samedi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_saturday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_saturday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Dimanche
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_sunday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_sunday;
+				rapport.insert();
+			}
+		}
+		
+		//Lecture de toutes les time_cards Stories des Problèmes
+		var tcStrExt = new GlideAggregate( 'u_gm_time_card_story_prb' );
+		tcStrExt.addQuery('usrtbl_u_internal_employee',false);
+		tcStrExt.addQuery( 'tc_week_starts_on', '&gt;=', dateFrom );
+		tcStrExt.addQuery( 'tc_week_starts_on', '&lt;=', dateTo );
+		tcStrExt.addQuery( 'tc_user.name', 'DOES NOT CONTAIN', '(admin)' );
+		tcStrExt.query();
+		
+		while( tcStrExt.next() )
+			{
+			rapport.u_periode = dateTo; //Période
+			rapport.u_timestamp = timestamp;
+			rapport.u_utilisateur = tcStrExt.usrtbl_sys_id;
+			//rapport.u_otp = tcStrExt.prbtbl_u_otp; // // Il n'y a pas d'OTP pour un problème
+			//if( tcStrExt.tasktbl_u_numero_element == '' )
+			rapport.u_noelement = tcStrExt.cap_u_numero_element;
+			//else
+				//rapport.u_noelement = tcStrExt.tasktbl_u_numero_element;
+			rapport.u_centrecout = tcStrExt.usrtbl_cost_center;
+			rapport.u_timecard = tcStrExt.tc_sys_id;
+			rapport.u_numero_commande = tcStrExt.usrtbl_u_numero_commande;
+			rapport.u_numero_poste = tcStrExt.usrtbl_u_numero_poste;
+			rapport.u_interne = false;
+			rapport.u_state = tcStrExt.ft_state;
+			//rapport.u_rate_type = tc.tc_rate_type.getDisplayValue();
+			
+			var dateJour = new GlideDateTime( tcStrExt.tc_week_starts_on );
+			
+			rapport.u_estcap = "";
+			//var capitalisable = tcStrExt.prbtbl_u_imputation; // // Il n'y a pas d'imputation pour un problème
+			//if( capitalisable == "Immobilisation" || capitalisable == "Capitalisable" )
+				//rapport.u_estcap = "X";
+			
+			//Lundi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_monday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_monday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mardi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_tuesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_tuesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mercredi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_wednesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_wednesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Jeudi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_thursday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_thursday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Vendredi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_friday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_friday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Samedi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_saturday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_saturday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Dimanche
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcStrExt.tc_sunday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcStrExt.tc_sunday;
+				rapport.insert();
+			}
+		}
+		
+		
+		//Lecture de toutes les time_cards Incident, Problème, Tâches de catalogue et MEP
+		var tcIncPrbSctExt = new GlideRecord( 'time_card' );
+		var qc = tcIncPrbSctExt.addQuery( 'task.sys_class_name', 'problem_task' );
+		qc.addOrCondition( 'task.sys_class_name', 'incident_task' );
+		qc.addOrCondition( 'task.sys_class_name','sc_task' );
+		qc.addOrCondition( 'task.sys_class_name','rm_release' );
+		tcIncPrbSctExt.addQuery( 'user.u_internal_employee', false );
+		tcIncPrbSctExt.addQuery( 'week_starts_on', '&gt;=', dateFrom );
+		tcIncPrbSctExt.addQuery( 'week_starts_on', '&lt;=', dateTo );
+		tcIncPrbSctExt.addQuery( 'user.name', 'DOES NOT CONTAIN', '(admin)' );
+		tcIncPrbSctExt.query();
+		
+		while( tcIncPrbSctExt.next() )
+			{
+			rapport.u_periode = dateTo; //Période
+			rapport.u_timestamp = timestamp;
+			rapport.u_utilisateur = tcIncPrbSctExt.user.sys_id;
+			rapport.u_otp = '';
+			rapport.u_noelement = '';
+			rapport.u_centrecout = tcIncPrbSctExt.user.cost_center;
+			rapport.u_timecard = tcIncPrbSctExt.sys_id;
+			rapport.u_numero_commande = tcIncPrbSctExt.user.u_numero_commande;
+			rapport.u_numero_poste = tcIncPrbSctExt.user.u_numero_poste;
+			rapport.u_interne = false;
+			rapport.u_state = tcIncPrbSctExt.state;
+			//rapport.u_rate_type = tc.getDisplayValue('rate_type');
+			
+			var dateJour = new GlideDateTime( tcIncPrbSctExt.week_starts_on );
+			
+			rapport.u_estcap = "";
+			
+			//Lundi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcIncPrbSctExt.monday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcIncPrbSctExt.monday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mardi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcIncPrbSctExt.tuesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcIncPrbSctExt.tuesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mercredi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcIncPrbSctExt.wednesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcIncPrbSctExt.wednesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Jeudi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcIncPrbSctExt.thursday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcIncPrbSctExt.thursday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Vendredi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcIncPrbSctExt.friday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcIncPrbSctExt.friday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Samedi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcIncPrbSctExt.saturday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcIncPrbSctExt.saturday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Dimanche
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcIncPrbSctExt.sunday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcIncPrbSctExt.sunday;
+				rapport.insert();
+			}
+		}
+		
+		//Lecture de toutes les autres time_cards
+		var tcOtherExt = new GlideAggregate( 'time_card' );
+		tcOtherExt.addQuery( 'user.u_internal_employee', false);
+		tcOtherExt.addQuery( 'category', '&gt;', 'aaaaaa').addOrCondition('category', 'IN', '9700');
+		tcOtherExt.addQuery( 'category', '!=', 'task_work');
+		tcOtherExt.addQuery( 'category', '!=', 'project_work');
+		tcOtherExt.addQuery( 'week_starts_on', '&gt;=', dateFrom );
+		tcOtherExt.addQuery( 'week_starts_on', '&lt;=', dateTo );
+		tcOtherExt.addQuery( 'user.name', 'DOES NOT CONTAIN', '(admin)' );
+		tcOtherExt.addQuery( 'total', '!=', 0 );
+		tcOtherExt.query();
+		
+		while( tcOtherExt.next() )
+			{
+			rapport.u_periode = dateTo; //Période
+			rapport.u_timestamp = timestamp;
+			rapport.u_utilisateur = tcOtherExt.user.sys_id;
+			rapport.u_otp = '';
+			rapport.u_noelement = '';
+			rapport.u_centrecout = tcOtherExt.user.cost_center;
+			rapport.u_timecard = tcOtherExt.sys_id;
+			rapport.u_numero_commande = tcOtherExt.user.u_numero_commande;
+			rapport.u_numero_poste = tcOtherExt.user.u_numero_poste;
+			rapport.u_interne = false;
+			rapport.u_state = tcOtherExt.state;
+			rapport.u_typetache = tcOtherExt.category.getChoiceValue();
+			//rapport.u_rate_type = tc.getDisplayValue('rate_type');
+				
+			var dateJour = new GlideDateTime( tcOtherExt.week_starts_on );
+			rapport.u_estcap = "";
+			
+			//Lundi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcOtherExt.monday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcOtherExt.monday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mardi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcOtherExt.tuesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcOtherExt.tuesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mercredi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcOtherExt.wednesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcOtherExt.wednesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Jeudi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcOtherExt.thursday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcOtherExt.thursday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Vendredi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcOtherExt.friday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcOtherExt.friday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Samedi
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcOtherExt.saturday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Dimanche
+			if( dateJour.getMonthUTC() == month &amp;&amp; tcOtherExt.sunday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tcOtherExt.sunday;
+				rapport.insert();
+			}
+		}
+		
+		
+		//Summarize
+		var gaExt = new GlideAggregate('u_rapport_heures_sap_extract');
+		gaExt.addAggregate( 'SUM', 'u_nbrheures' );
+		gaExt.groupBy('u_utilisateur');
+		gaExt.groupBy('u_otp');
+		gaExt.groupBy('u_noelement');
+		gaExt.groupBy('u_centrecout');
+		gaExt.groupBy( 'u_numero_commande');
+		gaExt.groupBy( 'u_numero_poste');
+		gaExt.groupBy( 'u_estcap');
+		gaExt.groupBy( 'u_typetache');
+		gaExt.addQuery('u_summary', false);
+		gaExt.addQuery('u_interne', false);
+		gaExt.query();
+		
+		while( gaExt.next() )
+			{
+			rapport.u_timestamp = timestamp;
+			rapport.u_semaine = dateTo;
+			rapport.u_utilisateur = gaExt.u_utilisateur;
+			rapport.u_otp = gaExt.u_otp;
+			rapport.u_nbrheures = gaExt.getAggregate('SUM', 'u_nbrheures' );
+			rapport.u_noelement = gaExt.u_noelement;
+			rapport.u_centrecout = gaExt.u_centrecout;
+			rapport.u_summary = true;
+			rapport.u_interne = false;
+			rapport.u_numero_commande = gaExt.u_numero_commande;
+			rapport.u_numero_poste = gaExt.u_numero_poste;
+			rapport.u_estcap = gaExt.u_estcap;
+			rapport.u_typetache = gaExt.u_typetache;
+			rapport.insert();
+		}
+	},
+	
+	/*****************************************************************************************************************
+	Fonction: generateTimeOffReport
+	Paramètre: month_year = Date format AAAA-MM-JJ
+	Critères:
+	- Feuilles de temps (peu importe le statut)
+	- Employés externes
+	- Tous les jours du mois/année sélectionné (un mois à la fois)
+ 	*****************************************************************************************************************/
+	
+// 	generateTimeOffReportHolidays : function( week_day ) {
+// 		//gs.print('SG3 OFF: week_day: ' + week_day);
+// 		//Ecriture dans la table u_rapport_heures_off
+// 		var rapport = new GlideRecord( 'u_rapport_heures_off_extract' );
+// 		rapport.initialize();
+		
+		
+// 		//Get first monday of this week
+// 		var premierLundi = this.firstDayOfWeek( week_day );
+// 		//gs.print('SG4 OFF:  premier lundi: ' + premierLundi);
+// 		var dateDebut = new GlideDateTime(premierLundi);
+// 		var timestamp = this.getTimeStamp();
+		
+		
+// 		//Lecture de toutes les time_cards
+// 		var tc = new GlideRecord( 'time_card' );
+// 		tc.addQuery( 'user.u_internal_employee', 'true' );
+// 		tc.addQuery( 'week_starts_on', premierLundi );
+// 		tc.addQuery( 'category', '&lt;=', 'aaaaaa' );
+// 		tc.query();
+		
+// 		while( tc.next() )
+// 			{
+// 			rapport.u_timestamp = timestamp;
+// 			rapport.u_employee = tc.user;
+// 			rapport.u_category = tc.category.getChoiceValue();
+// 			rapport.u_typetache = tc.getValue('category');
+// 			rapport.u_centrecout = tc.user.cost_center.code;
+// 			rapport.u_state = tc.ft_u_state;
+			
+// 			var dateJour = new GlideDateTime(premierLundi);
+// 			//var dateJour = new GlideDateTime(week_day);
+			
+// 			//Lundi
+// 			if( tc.monday != 0 )
+// 				{
+// 				rapport.u_semaine = this.convertDateToString( dateJour );
+// 				rapport.u_nbrheures = tc.monday;
+// 				rapport.insert();
+// 			}
+// 			dateJour.addDays( 1 );
+			
+// 			//Mardi
+// 			if( tc.tuesday != 0 )
+// 				{
+// 				rapport.u_semaine = this.convertDateToString( dateJour );
+// 				rapport.u_nbrheures = tc.tuesday;
+// 				rapport.insert();
+// 			}
+// 			dateJour.addDays( 1 );
+			
+// 			//Mercredi
+// 			if( tc.wednesday != 0 )
+// 				{
+// 				rapport.u_semaine = this.convertDateToString( dateJour );
+// 				rapport.u_nbrheures = tc.wednesday;
+// 				rapport.insert();
+// 			}
+// 			dateJour.addDays( 1 );
+			
+// 			//Jeudi
+// 			if( tc.thursday != 0 )
+// 				{
+// 				rapport.u_semaine = this.convertDateToString( dateJour );
+// 				rapport.u_nbrheures = tc.thursday;
+// 				rapport.insert();
+// 			}
+// 			dateJour.addDays( 1 );
+			
+// 			//Vendredi
+// 			if( tc.friday != 0 )
+// 				{
+// 				rapport.u_semaine = this.convertDateToString( dateJour );
+// 				rapport.u_nbrheures = tc.friday;
+// 				rapport.insert();
+// 			}
+// 			dateJour.addDays( 1 );
+			
+// 			//Samedi
+// 			if( tc.saturday != 0 )
+// 				{
+// 				rapport.u_semaine = this.convertDateToString( dateJour );
+// 				rapport.u_nbrheures = tc.saturday;
+// 				rapport.insert();
+// 			}
+// 			dateJour.addDays( 1 );
+			
+// 			//Dimanche
+// 			if( tc.sunday != 0 )
+// 				{
+// 				rapport.u_semaine = this.convertDateToString( dateJour );
+// 				rapport.u_nbrheures = tc.sunday;
+// 				rapport.insert();
+// 			}
+// 		}
+// 	},
+	
+	
+	generateTimeOffReport : function( week_day ) {
+		//gs.print('SG3 OFF: week_day: ' + week_day);
+		//Ecriture dans la table u_rapport_heures_off
+		var rapport = new GlideRecord( 'u_rapport_heures_off_extract' );
+		rapport.deleteMultiple();
+		rapport.initialize();
+		
+		
+		//Get first monday of this week
+		var premierLundi = this.firstDayOfWeek( week_day );
+		//gs.print('SG4 OFF:  premier lundi: ' + premierLundi);
+		var dateDebut = new GlideDateTime(premierLundi);
+		var timestamp = this.getTimeStamp();
+		
+		
+		//Lecture de toutes les time_cards
+		var timeOffQuery = "user.u_internal_employee=true^week_starts_on=" + premierLundi + "^category&lt;aaaaaa^NQuser.u_internal_employee=true^week_starts_on=" + premierLundi + "^category&gt;=aaaaaa^rate_type!=be4717fe0b623200bcdced3ab4673a1f";
+		
+		var tc = new GlideRecord( 'time_card' );
+		tc.addEncodedQuery(timeOffQuery);
+		//tc.addQuery( 'user.u_internal_employee', 'true' );
+		//tc.addQuery( 'week_starts_on', premierLundi );
+		//tc.addQuery( 'category', '&lt;=', 'aaaaaa' ).addOrCondition('rate_type.sys_id', '!=', 'be4717fe0b623200bcdced3ab4673a1f');
+		tc.query();
+		
+		while( tc.next() )
+			{
+			rapport.u_timestamp = timestamp;
+			rapport.u_employee = tc.user;
+			rapport.u_category = tc.category.getChoiceValue();
+			//if(tc.category == 'project_work' || tc.category == 'task_work') {
+			if(tc.category &gt;= 'aaaaaa') {
+				rapport.u_typetache = tc.rate_type.u_code;
+			} else {
+				rapport.u_typetache = tc.getValue('category');
+			}
+			rapport.u_centrecout = tc.user.cost_center.code;
+			rapport.u_state = tc.ft_u_state;
+			
+			var dateJour = new GlideDateTime(premierLundi);
+			
+			//Lundi
+			if( tc.monday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.monday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mardi
+			if( tc.tuesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.tuesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Mercredi
+			if( tc.wednesday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.wednesday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Jeudi
+			if( tc.thursday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.thursday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Vendredi
+			if( tc.friday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.friday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Samedi
+			if( tc.saturday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.saturday;
+				rapport.insert();
+			}
+			dateJour.addDays( 1 );
+			
+			//Dimanche
+			if( tc.sunday != 0 )
+				{
+				rapport.u_semaine = this.convertDateToString( dateJour );
+				rapport.u_nbrheures = tc.sunday;
+				rapport.insert();
+			}
+		}
+	},
+	
+	
+	firstDayOfWeek : function ( week_day ) {
+		var gdt = new GlideDateTime( week_day );
+		//var day = gdt.getDayOfWeek();
+		var day = gdt.getDayOfWeekUTC();
+		//gdt.addDays( 1 - day );
+		gdt.addDaysUTC( 1 - day );
+		return gdt.getDate();
+	},
+	
+	
+	getTimeStamp : function () {
+		var gdt = gs.nowDateTime();
+		var sReturn = gdt.toString();
+		sReturn = sReturn.replace( " ", "_" );
+		sReturn = sReturn.replace( "-", "" );
+		sReturn = sReturn.replace( "-", "" );
+		sReturn = sReturn.replace( ":", "" );
+		sReturn = sReturn.replace( ":", "" );
+		sReturn = '"' + sReturn + '"';
+		return sReturn;
+	},
+	
+	
+	convertDateToString : function( uneDate )
+	{
+		var sReturn = uneDate.toString();
+		sReturn = sReturn.replace( "-", "" );
+		sReturn = sReturn.replace( "-", "" );
+		sReturn = sReturn.replace( " 00:00:00", "" );
+		return sReturn;
+	},
+	
+	
+	type: 'GAZMET_TimeCardReport_Extract'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-04 17:53:09&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;8df5f6d6db5c2b401561622dca96193e&lt;/sys_id&gt;&lt;sys_mod_count&gt;68&lt;/sys_mod_count&gt;&lt;sys_name&gt;GAZMET_TimeCardReport_Extract&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_8df5f6d6db5c2b401561622dca96193e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;ndeye.ndiaye@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-01-24 11:42:38&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-415280417</payload_hash>
+        <remote_update_set display_value="FX - INC0082844- NAN - 1">89371531dba7e300858c2c23ca9619fe</remote_update_set>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>mroux_admin</sys_created_by>
+        <sys_created_on>2019-02-11 11:06:17</sys_created_on>
+        <sys_id>01371531dba7e300858c2c23ca9619ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1687fab4ac00000001</sys_recorded_at>
+        <sys_updated_by>mroux_admin</sys_updated_by>
+        <sys_updated_on>2019-02-11 11:06:17</sys_updated_on>
+        <table/>
+        <target_name>GAZMET_TimeCardReport_Extract</target_name>
+        <type>Script Include</type>
+        <update_domain>global</update_domain>
+        <update_guid>dae23c80c05fef008d264c75c2ea2922</update_guid>
+        <update_guid_history>dae23c80c05fef008d264c75c2ea2922:-415280417,41d62a23090a23007988905badac6a7b:1353676437,f7c6842501ca2f00058a43ea501d2145:86404849,fe99bb95e28a2f0079d2c0545959c302:266589011,77b7f3955b8a2f006cf746cb14d65a44:2081235646,97b103fd3471a300b0ac82bbb947de68:411755612,82e0473dd771a300da9a74d1231e5267:1265830534,896083798b71a300ca4580ade3ec48ab:411755612,fcef02713ef16300d42b3e1be93a6ef6:-1524171949,259d86b9f2b16300c238c5aa220c7949:1625919954,0dc452e4cb31ab0062e4f2f9ca328e87:-212635880,fc4f8d12a12da7400ae1d89de88600c6:-231737731,67aa0f84a95d2b00ecb319cdad2dd35f:-386671138</update_guid_history>
+        <update_set/>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:53</sys_created_on>
+        <sys_id>fc41c73947c4fe1097744049116d43e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_script_include_8df5f6d6db5c2b401561622dca96193e</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_fc41c73947c4fe1097744049116d43e3</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:53</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>0122734edbfa13007e24de82ca96196d</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sc_cat_item_content_e1ff4eddeb030100d4360c505206fe32&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sc_cat_item_content action="INSERT_OR_UPDATE"&gt;
+&lt;active&gt;true&lt;/active&gt;
+&lt;availability&gt;on_desktop&lt;/availability&gt;
+&lt;billable&gt;false&lt;/billable&gt;
+&lt;category display_value="Knowledge Base"&gt;bb46f55deb030100d4360c505206feca&lt;/category&gt;
+&lt;content_type&gt;module&lt;/content_type&gt;
+&lt;cost&gt;0&lt;/cost&gt;
+&lt;custom_cart display_value=""/&gt;
+&lt;delivery_plan display_value="DEFAULT"&gt;523da512c611228900811a37c97c2014&lt;/delivery_plan&gt;
+&lt;delivery_plan_script/&gt;
+&lt;delivery_time&gt;1970-01-03 00:00:00&lt;/delivery_time&gt;
+&lt;description/&gt;
+&lt;entitlement_script/&gt;
+&lt;group display_value=""/&gt;
+&lt;icon/&gt;
+&lt;ignore_price&gt;false&lt;/ignore_price&gt;
+&lt;image/&gt;
+&lt;kb_article display_value=""/&gt;
+&lt;list_price&gt;0&lt;/list_price&gt;
+&lt;location display_value=""/&gt;
+&lt;meta/&gt;
+&lt;mobile_hide_price&gt;false&lt;/mobile_hide_price&gt;
+&lt;mobile_picture/&gt;
+&lt;mobile_picture_type&gt;use_desktop_picture&lt;/mobile_picture_type&gt;
+&lt;model display_value=""/&gt;
+&lt;module display_value="Journal des recherches"&gt;75af5d9bc0a80166007573e5670c2993&lt;/module&gt;
+&lt;name&gt;Search Log&lt;/name&gt;
+&lt;no_cart&gt;false&lt;/no_cart&gt;
+&lt;no_order&gt;false&lt;/no_order&gt;
+&lt;no_order_now&gt;false&lt;/no_order_now&gt;
+&lt;no_proceed_checkout&gt;false&lt;/no_proceed_checkout&gt;
+&lt;no_quantity&gt;false&lt;/no_quantity&gt;
+&lt;no_search&gt;false&lt;/no_search&gt;
+&lt;omit_price&gt;false&lt;/omit_price&gt;
+&lt;order&gt;4&lt;/order&gt;
+&lt;ordered_item_link display_value=""/&gt;
+&lt;picture/&gt;
+&lt;preview&gt;JavaScript: popupOpenStandard("./ts_query_kb_list.do?sysparm_userpref_module=75af5d9bc0a80166007573e5670c2993&amp;amp;sysparm_preview=true", "summary");&lt;/preview&gt;
+&lt;price&gt;0&lt;/price&gt;
+&lt;recurring_frequency/&gt;
+&lt;recurring_price&gt;0&lt;/recurring_price&gt;
+&lt;roles&gt;admin&lt;/roles&gt;
+&lt;sc_catalogs&gt;0b22fd2ad7021100b9a5c7400e610319&lt;/sc_catalogs&gt;
+&lt;sc_ic_item_staging display_value=""/&gt;
+&lt;sc_ic_version/&gt;
+&lt;short_description/&gt;
+&lt;show_variable_help_on_load&gt;false&lt;/show_variable_help_on_load&gt;
+&lt;start_closed&gt;false&lt;/start_closed&gt;
+&lt;sys_class_name&gt;sc_cat_item_content&lt;/sys_class_name&gt;
+&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+&lt;sys_created_on&gt;2013-08-06 19:34:36&lt;/sys_created_on&gt;
+&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;
+&lt;sys_id&gt;e1ff4eddeb030100d4360c505206fe32&lt;/sys_id&gt;
+&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;
+&lt;sys_name&gt;Search Log&lt;/sys_name&gt;
+&lt;sys_package display_value="Admin Homepage Shared Components"&gt;c66dd3e00f232100541fa218b1050e10&lt;/sys_package&gt;
+&lt;sys_policy/&gt;
+&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;
+&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;
+&lt;sys_update_name&gt;sc_cat_item_content_e1ff4eddeb030100d4360c505206fe32&lt;/sys_update_name&gt;
+&lt;sys_updated_by&gt;jared.laethem&lt;/sys_updated_by&gt;
+&lt;sys_updated_on&gt;2014-01-13 18:37:52&lt;/sys_updated_on&gt;
+&lt;target&gt;internal&lt;/target&gt;
+&lt;template display_value=""/&gt;
+&lt;type&gt;item&lt;/type&gt;
+&lt;u_approval_group display_value=""/&gt;
+&lt;u_categorie_sla/&gt;
+&lt;u_derogation_ti_necessaire&gt;false&lt;/u_derogation_ti_necessaire&gt;
+&lt;u_ignorerapprobationgazmet&gt;false&lt;/u_ignorerapprobationgazmet&gt;
+&lt;u_requestautoclose&gt;false&lt;/u_requestautoclose&gt;
+&lt;url/&gt;
+&lt;use_sc_layout&gt;true&lt;/use_sc_layout&gt;
+&lt;vendor display_value=""/&gt;
+&lt;visible_bundle&gt;true&lt;/visible_bundle&gt;
+&lt;visible_guide&gt;true&lt;/visible_guide&gt;
+&lt;visible_standalone&gt;true&lt;/visible_standalone&gt;
+&lt;workflow display_value=""/&gt;
+&lt;/sc_cat_item_content&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-1134970522&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;landre_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2018-06-21 14:03:27&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0122734edbfa13007e24de82ca96196d&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;166878312fc0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;Ludovic.Andre@fxinnovation.com&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2018-10-18 14:10:06&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;Search Log&lt;/target_name&gt;
+        &lt;type&gt;Content Item&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;36d8a0e0d9d5af00fbfc113dbed44426&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;36d8a0e0d9d5af00fbfc113dbed44426:-1134970522,8922734edafa1300b1e8f0f07462086c:88901193,268506353:268506353&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:38</sys_created_on>
+        <sys_id>d931473947c4fe1097744049116d435d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sc_cat_item_content_e1ff4eddeb030100d4360c505206fe32</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_d931473947c4fe1097744049116d435d</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:38</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

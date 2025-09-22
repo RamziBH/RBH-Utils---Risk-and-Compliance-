@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>0038081297ef8514073975f3a253af4f</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>customer</category>
+        <comments/>
+        <name>sc_cat_item_producer_ddaf0d091b88d0908f8b404cbc4bcbf5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sc_cat_item_producer"&gt;&lt;sc_cat_item_producer action="INSERT_OR_UPDATE"&gt;&lt;access_type&gt;restricted&lt;/access_type&gt;&lt;active&gt;false&lt;/active&gt;&lt;allow_edit&gt;false&lt;/allow_edit&gt;&lt;availability&gt;on_desktop&lt;/availability&gt;&lt;billable&gt;false&lt;/billable&gt;&lt;can_cancel&gt;false&lt;/can_cancel&gt;&lt;category display_value="I want to open an IT improvement demand"&gt;5dadb4481b445c508f8b404cbc4bcbb6&lt;/category&gt;&lt;checked_out/&gt;&lt;cost&gt;0&lt;/cost&gt;&lt;custom_cart/&gt;&lt;delivery_plan/&gt;&lt;delivery_plan_script/&gt;&lt;delivery_time&gt;1970-01-03 00:00:00&lt;/delivery_time&gt;&lt;description&gt;&lt;![CDATA[&lt;p&gt;Open an improvement request for the application SAP - Environement Test&lt;/p&gt;
+&lt;div id="gtx-trans" style="position: absolute; left: -120px; top: 25px;"&gt;
+&lt;div class="gtx-trans-icon"&gt; &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;&lt;display_price_property&gt;non_zero&lt;/display_price_property&gt;&lt;entitlement_script/&gt;&lt;flow_designer_flow/&gt;&lt;fulfillment_automation_level&gt;unspecified&lt;/fulfillment_automation_level&gt;&lt;group/&gt;&lt;hide_sp&gt;false&lt;/hide_sp&gt;&lt;icon/&gt;&lt;ignore_price&gt;false&lt;/ignore_price&gt;&lt;image/&gt;&lt;list_price&gt;0&lt;/list_price&gt;&lt;location/&gt;&lt;mandatory_attachment&gt;false&lt;/mandatory_attachment&gt;&lt;meta/&gt;&lt;mobile_hide_price&gt;false&lt;/mobile_hide_price&gt;&lt;mobile_picture/&gt;&lt;mobile_picture_type&gt;use_desktop_picture&lt;/mobile_picture_type&gt;&lt;model/&gt;&lt;name&gt;SAP - Environement Test&lt;/name&gt;&lt;no_attachment_v2&gt;false&lt;/no_attachment_v2&gt;&lt;no_cart&gt;false&lt;/no_cart&gt;&lt;no_cart_v2&gt;false&lt;/no_cart_v2&gt;&lt;no_delivery_time_v2&gt;false&lt;/no_delivery_time_v2&gt;&lt;no_order&gt;false&lt;/no_order&gt;&lt;no_order_now&gt;false&lt;/no_order_now&gt;&lt;no_proceed_checkout&gt;false&lt;/no_proceed_checkout&gt;&lt;no_quantity&gt;false&lt;/no_quantity&gt;&lt;no_quantity_v2&gt;false&lt;/no_quantity_v2&gt;&lt;no_search&gt;false&lt;/no_search&gt;&lt;no_wishlist_v2&gt;false&lt;/no_wishlist_v2&gt;&lt;omit_price&gt;false&lt;/omit_price&gt;&lt;order&gt;0&lt;/order&gt;&lt;ordered_item_link/&gt;&lt;owner/&gt;&lt;picture/&gt;&lt;post_insert_script/&gt;&lt;preview&gt;JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;amp;sysparm_id=ddaf0d091b88d0908f8b404cbc4bcbf5&amp;amp;sysparm_preview=true", "summary");&lt;/preview&gt;&lt;price&gt;0&lt;/price&gt;&lt;published_ref/&gt;&lt;recurring_frequency/&gt;&lt;recurring_price&gt;0&lt;/recurring_price&gt;&lt;redirect_url&gt;generated_record&lt;/redirect_url&gt;&lt;request_method/&gt;&lt;roles/&gt;&lt;save_options/&gt;&lt;save_script/&gt;&lt;sc_catalogs&gt;e0d08b13c3330100c8b837659bba8fb4&lt;/sc_catalogs&gt;&lt;sc_ic_item_staging/&gt;&lt;sc_ic_version/&gt;&lt;sc_template/&gt;&lt;script&gt;&lt;![CDATA[// Set user language
+	var myUserObject = gs.getUser();
+	var Ulang = myUserObject.getLanguage();
+	var userID = gs.getUserID();
+
+// Set Opened by &amp; 
+	current.opened_by = gs.getUserID();
+	current.submitter = gs.getUserID();
+
+// Set configuration item
+var grSCIP = new GlideRecord('sc_cat_item_producer');
+var isd = RP.getParameterValue('sysparm_id');
+grSCIP.addQuery("sys_id", isd ); 
+grSCIP.query();
+while (grSCIP.next()) {
+    current.cmdb_ci = grSCIP.u_ci;
+}
+// Set secteur de priorisation le besoin
+current.u_prioritization_sector = producer.which_sector_mainly_affect;
+
+// Set Assignment Group
+if (current.cmdb_ci.support_group == '') {
+    group = '29f7f3740fc17500eea6a218b1050ea5'; //Représentant CSTI
+} else {
+    group = current.cmdb_ci.support_group; // CI Support Group 
+}
+	current.assignment_group = group;
+
+// Set Short Description
+	if (Ulang == 'en') {
+		current.short_description = "New demand " + current.cmdb_ci.getDisplayValue() + " for " + current.opened_by.getDisplayValue() + " (Service Portal)";
+	} else {
+		current.short_description = "Nouvelle demande " + current.cmdb_ci.getDisplayValue() + " pour " + current.opened_by.getDisplayValue() + " (Portail de services)";
+	}
+
+// Set Description
+var desc ='';
+desc += 'Quel est votre besoin ? : \n' + producer.business_need;
+desc += '\n\nPouvez-vous décrire le contexte du besoin ? : \n' + producer.describe_your_need;
+desc += '\n\nQuel sera le ou les bénéfices tangibles ? : \n' + producer.what_tangible_benefit;
+desc += '\n\nQuel sera le ou les bénéfices intangibles ?: \n' + producer.what_intangible_benefits;
+current.description = desc;]]&gt;&lt;/script&gt;&lt;short_description&gt;Open an improvement request for the application SAP - Environement Test&lt;/short_description&gt;&lt;show_variable_help_on_load&gt;false&lt;/show_variable_help_on_load&gt;&lt;start_closed&gt;false&lt;/start_closed&gt;&lt;state/&gt;&lt;sys_class_name&gt;sc_cat_item_producer&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Modou.Ndiaye@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-04-06 15:31:31&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;ddaf0d091b88d0908f8b404cbc4bcbf5&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;SAP - Environement Test&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sc_cat_item_producer_ddaf0d091b88d0908f8b404cbc4bcbf5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-05-20 19:44:56&lt;/sys_updated_on&gt;&lt;table_name&gt;dmn_demand&lt;/table_name&gt;&lt;taxonomy_topic/&gt;&lt;template/&gt;&lt;template_manager_roles/&gt;&lt;type&gt;item&lt;/type&gt;&lt;u_approval_group/&gt;&lt;u_categorie_sla/&gt;&lt;u_ci display_value="SAP - Environement Test"&gt;b1e752c40f667100f4c66509b1050e6a&lt;/u_ci&gt;&lt;u_derogation_ti_necessaire&gt;false&lt;/u_derogation_ti_necessaire&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_ignorerapprobationgazmet&gt;false&lt;/u_ignorerapprobationgazmet&gt;&lt;u_mim_integration/&gt;&lt;u_requestautoclose&gt;false&lt;/u_requestautoclose&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;use_sc_layout&gt;true&lt;/use_sc_layout&gt;&lt;vendor/&gt;&lt;view/&gt;&lt;visible_bundle&gt;true&lt;/visible_bundle&gt;&lt;visible_guide&gt;true&lt;/visible_guide&gt;&lt;visible_standalone&gt;true&lt;/visible_standalone&gt;&lt;workflow/&gt;&lt;/sc_cat_item_producer&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=ddaf0d091b88d0908f8b404cbc4bcbf5"/&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;ddaf0d091b88d0908f8b404cbc4bcbf5&lt;/documentkey&gt;&lt;fieldname&gt;description&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;Modou.Ndiaye@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-04-06 15:32:12&lt;/sys_created_on&gt;&lt;sys_id&gt;67cf8d491b88d0908f8b404cbc4bcbfb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Modou.Ndiaye@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-04-06 15:32:12&lt;/sys_updated_on&gt;&lt;tablename&gt;sc_cat_item_producer&lt;/tablename&gt;&lt;value&gt;&amp;lt;p&amp;gt;Ouvrir une demande d'am&amp;amp;eacute;lioration pour l'application SAP - Environement Test&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;div id="gtx-trans" style="position: absolute; left: -120px; top: 25px;"&amp;gt;&amp;#13;
+&amp;lt;div class="gtx-trans-icon"&amp;gt;&amp;amp;nbsp;&amp;lt;/div&amp;gt;&amp;#13;
+&amp;lt;/div&amp;gt;&lt;/value&gt;&lt;/sys_translated_text&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;ddaf0d091b88d0908f8b404cbc4bcbf5&lt;/documentkey&gt;&lt;fieldname&gt;name&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;Modou.Ndiaye@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-04-06 15:32:12&lt;/sys_created_on&gt;&lt;sys_id&gt;dfcf89491b88d0908f8b404cbc4bcb70&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Modou.Ndiaye@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-04-06 15:32:12&lt;/sys_updated_on&gt;&lt;tablename&gt;sc_cat_item_producer&lt;/tablename&gt;&lt;value&gt;SAP - Environement Test&lt;/value&gt;&lt;/sys_translated_text&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;ddaf0d091b88d0908f8b404cbc4bcbf5&lt;/documentkey&gt;&lt;fieldname&gt;short_description&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;Modou.Ndiaye@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-04-06 15:32:12&lt;/sys_created_on&gt;&lt;sys_id&gt;ebcf89491b88d0908f8b404cbc4bcb73&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Modou.Ndiaye@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-04-06 15:32:12&lt;/sys_updated_on&gt;&lt;tablename&gt;sc_cat_item_producer&lt;/tablename&gt;&lt;value&gt;Ouvrir une demande d'amélioration pour l'application SAP - Environement Test&lt;/value&gt;&lt;/sys_translated_text&gt;&lt;fx_price action="delete_multiple" query="id=ddaf0d091b88d0908f8b404cbc4bcbf5"/&gt;&lt;fx_price action="INSERT_OR_UPDATE"&gt;&lt;amount&gt;0&lt;/amount&gt;&lt;currency display_value="CAD"&gt;CAD&lt;/currency&gt;&lt;field&gt;price&lt;/field&gt;&lt;id&gt;ddaf0d091b88d0908f8b404cbc4bcbf5&lt;/id&gt;&lt;parent/&gt;&lt;reference_amount&gt;0&lt;/reference_amount&gt;&lt;reference_currency display_value="CAD"&gt;CAD&lt;/reference_currency&gt;&lt;sys_created_by&gt;Modou.Ndiaye@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-04-06 15:31:31&lt;/sys_created_on&gt;&lt;sys_id&gt;11af0d091b88d0908f8b404cbc4bcbf7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Modou.Ndiaye@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-04-06 15:31:31&lt;/sys_updated_on&gt;&lt;table&gt;sc_cat_item_producer&lt;/table&gt;&lt;type&gt;calculated&lt;/type&gt;&lt;/fx_price&gt;&lt;fx_price action="INSERT_OR_UPDATE"&gt;&lt;amount&gt;0&lt;/amount&gt;&lt;currency display_value="CAD"&gt;CAD&lt;/currency&gt;&lt;field&gt;recurring_price&lt;/field&gt;&lt;id&gt;ddaf0d091b88d0908f8b404cbc4bcbf5&lt;/id&gt;&lt;parent/&gt;&lt;reference_amount&gt;0&lt;/reference_amount&gt;&lt;reference_currency display_value="CAD"&gt;CAD&lt;/reference_currency&gt;&lt;sys_created_by&gt;Modou.Ndiaye@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-04-06 15:31:31&lt;/sys_created_on&gt;&lt;sys_id&gt;59af0d091b88d0908f8b404cbc4bcbf7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Modou.Ndiaye@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-04-06 15:31:31&lt;/sys_updated_on&gt;&lt;table&gt;sc_cat_item_producer&lt;/table&gt;&lt;type&gt;calculated&lt;/type&gt;&lt;/fx_price&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>542639195</payload_hash>
+        <remote_update_set/>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>sgomez_admin</sys_created_by>
+        <sys_created_on>2022-05-20 19:44:56</sys_created_on>
+        <sys_id>0038081297ef8514073975f3a253af4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>180e30067bd0000001</sys_recorded_at>
+        <sys_updated_by>sgomez_admin</sys_updated_by>
+        <sys_updated_on>2022-05-20 19:44:56</sys_updated_on>
+        <table>dmn_demand</table>
+        <target_name>SAP - Environement Test</target_name>
+        <type>Record Producer</type>
+        <update_domain>global</update_domain>
+        <update_guid>8c38081244ef851477b0a1fa1a79ca4e</update_guid>
+        <update_guid_history>8c38081244ef851477b0a1fa1a79ca4e:542639195,67cfcd494c88d09019d80224a52f9a02:-688836746,2bcf8d49ef88d09058f6b9166a67c5fd:-688836746,a7cf8d49b688d0908abaa68c0fcb56fa:-1942014056,2fcf89495f88d09006d3211022cf0272:-556293228,e1af05498488d09037cfb6a4e7fdb131:-2015843428</update_guid_history>
+        <update_set display_value="Default">64074e2b4f703200015eab99f110c709</update_set>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:39</sys_created_on>
+        <sys_id>e98083b547c4fe1097744049116d4338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sc_cat_item_producer_ddaf0d091b88d0908f8b404cbc4bcbf5</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_e98083b547c4fe1097744049116d4338</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:39</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

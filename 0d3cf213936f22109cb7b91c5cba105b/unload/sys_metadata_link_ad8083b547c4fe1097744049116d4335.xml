@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>003793b52fe631d0a70eddda2799b635</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_grid_canvas_pane_3f2793b52fe631d0a70eddda2799b633&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_grid_canvas_pane"&gt;&lt;sys_grid_canvas_pane action="INSERT_OR_UPDATE"&gt;&lt;grid_canvas display_value="PA Clients &amp;amp; nouvelles  – Nouvel onglet"&gt;32b613752fe631d0a70eddda2799b607&lt;/grid_canvas&gt;&lt;height&gt;5&lt;/height&gt;&lt;portal_widget display_value="Créé 2023-11-17 12:03:01"&gt;7b2793b52fe631d0a70eddda2799b631&lt;/portal_widget&gt;&lt;posx&gt;0&lt;/posx&gt;&lt;posy&gt;0&lt;/posy&gt;&lt;sys_class_name&gt;sys_grid_canvas_pane&lt;/sys_class_name&gt;&lt;sys_created_by&gt;cm90664&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-11-17 17:03:01&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;3f2793b52fe631d0a70eddda2799b633&lt;/sys_id&gt;&lt;sys_mod_count&gt;23&lt;/sys_mod_count&gt;&lt;sys_name&gt;32b613752fe631d0a70eddda2799b607&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_grid_canvas_pane_3f2793b52fe631d0a70eddda2799b633&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;ov87056&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-19 15:24:05&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;width&gt;3&lt;/width&gt;&lt;/sys_grid_canvas_pane&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-1382932675&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;cm90664&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2023-11-17 17:03:01&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;003793b52fe631d0a70eddda2799b635&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;23&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;18c82ad4e3f0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;ov87056&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2023-12-19 15:24:05&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;32b613752fe631d0a70eddda2799b607&lt;/target_name&gt;
+        &lt;type&gt;Grid Canvas Pane&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;de63b78c55d3b510e1690978b87cec32&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;de63b78c55d3b510e1690978b87cec32:-1382932675,2f53f78c16d3b5102e3abb18dbb2552e:702083924,6e43338c56d3b510350df01aa60d204a:1575828628,fd52f70c92d3b510ac08ad0904e8714d:-1382932675,1712ffc8e1d3b510a1a55eb8d7df7e6d:180164380,06023fc818d3b5109e6f49a379996b43:-1507770219,e7c5c7423336bd106098f586ace3726b:180164380,171ff1f5eaf63950f39ed0a149be991e:-1382932675,0e1ff5f55bf63950960d7134ce516573:1557628943,584941f9c17ef5508971fa4c7b3ba5b1:-706920809,d652e4314736f5503e0d59b684f3d0f0:-1382932675,7a32e8bdcdf2f5500ce9bcba4169e0bd:1575828628,e238df396ae631d0fb8fcda12b28f0ca:-1382932675,1b9793f512e631d0742f8e76b4091e27:1348937566,929717f51ce631d06879b46ed8a00af8:222337815,938717f503e631d0e740055133713eb1:-1293953277,fe7713f50ce631d004a76b3ae3956fc5:1471830768,2c77d7b50de631d025734be34087a8a3:-2118276207,da679fb5bee631d0ffa49429c605b622:-1413415886,3e5717b5dfe631d0a172b4ff79cacacb:-708555565,ec5753b520e631d0bb281dcd8c1fd89c:-3695244,1a471bb590e631d0bae526705e217e71:701165077,3047d7b5e6e631d007b269ebd0dafaab:1406025398,4c3793b536e631d05cd3cdd749992d34:1625801529&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:39</sys_created_on>
+        <sys_id>ad8083b547c4fe1097744049116d4335</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_grid_canvas_pane_3f2793b52fe631d0a70eddda2799b633</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_ad8083b547c4fe1097744049116d4335</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:39</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

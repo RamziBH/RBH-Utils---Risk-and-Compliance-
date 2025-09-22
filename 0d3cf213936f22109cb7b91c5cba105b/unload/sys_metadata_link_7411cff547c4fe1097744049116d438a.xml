@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00f7a83147b6f5503ef68d57536d4334</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_report_users_groups_c0f7a83147b6f5503ef68d57536d4332&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_report_users_groups"&gt;&lt;sys_report_users_groups action="INSERT_OR_UPDATE"&gt;&lt;group_id/&gt;&lt;report_id display_value="Backlog - Idées - Liste (Clients)"&gt;73e7a83147b6f5503ef68d57536d432d&lt;/report_id&gt;&lt;sys_class_name&gt;sys_report_users_groups&lt;/sys_class_name&gt;&lt;sys_created_by&gt;ov87056&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-11-29 14:33:03&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;c0f7a83147b6f5503ef68d57536d4332&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;73e7a83147b6f5503ef68d57536d432d&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_report_users_groups_c0f7a83147b6f5503ef68d57536d4332&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;ov87056&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-11-29 14:33:03&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;user_id display_value="Christian Melançon"&gt;c19b5e7fdb124910633d3fd3e296192d&lt;/user_id&gt;&lt;/sys_report_users_groups&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;524038639&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;ov87056&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2023-11-29 14:33:03&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00f7a83147b6f5503ef68d57536d4334&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;18c1b7f66f80000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;ov87056&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2023-11-29 14:33:03&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;73e7a83147b6f5503ef68d57536d432d&lt;/target_name&gt;
+        &lt;type&gt;Report Users and Groups&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;4cf7a8314eb6f550382c5b0462b45c33&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;4cf7a8314eb6f550382c5b0462b45c33:524038639&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:04</sys_created_on>
+        <sys_id>7411cff547c4fe1097744049116d438a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_report_users_groups_c0f7a83147b6f5503ef68d57536d4332</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_7411cff547c4fe1097744049116d438a</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:04</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>

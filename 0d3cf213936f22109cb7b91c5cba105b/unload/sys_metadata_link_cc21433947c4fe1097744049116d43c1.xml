@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>010a00b347c39190c6170f9e436d438e</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>asmt_metric_5c221e50879ad910124b7777dabb3573</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="asmt_metric"&gt;&lt;asmt_metric action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_info_label&gt;Additional Information&lt;/add_info_label&gt;&lt;allow_add_info&gt;false&lt;/allow_add_info&gt;&lt;allow_not_applicable&gt;true&lt;/allow_not_applicable&gt;&lt;auto_gen&gt;false&lt;/auto_gen&gt;&lt;category display_value="Salle de réunion / Travail"&gt;47719a10879ad910124b7777dabb35c7&lt;/category&gt;&lt;cond_question&gt;always&lt;/cond_question&gt;&lt;condition/&gt;&lt;context/&gt;&lt;correct_answer/&gt;&lt;correct_answer_checkbox/&gt;&lt;correct_answer_choice/&gt;&lt;correct_answer_template/&gt;&lt;correct_answer_yesno/&gt;&lt;custom_metric/&gt;&lt;datatype&gt;choice&lt;/datatype&gt;&lt;default_value_field/&gt;&lt;depends_on/&gt;&lt;description/&gt;&lt;details/&gt;&lt;displayed_when/&gt;&lt;displayed_when_checkbox/&gt;&lt;displayed_when_template/&gt;&lt;displayed_when_yesno/&gt;&lt;duration/&gt;&lt;field_validation/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max&gt;9&lt;/max&gt;&lt;max_weight/&gt;&lt;maximum_normalization_input&gt;false&lt;/maximum_normalization_input&gt;&lt;method&gt;assessment&lt;/method&gt;&lt;metric_type display_value="Contrôle de qualité Interne - Route B03"&gt;e388a39e874299107f7d20e5cebb35c6&lt;/metric_type&gt;&lt;min&gt;0&lt;/min&gt;&lt;name&gt;Absence de taches ou de souillures&lt;/name&gt;&lt;order&gt;6000&lt;/order&gt;&lt;plugin/&gt;&lt;question&gt;Absence de taches ou de souillures&lt;/question&gt;&lt;randomize_answers&gt;false&lt;/randomize_answers&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;reference_table/&gt;&lt;scale&gt;low&lt;/scale&gt;&lt;scored&gt;false&lt;/scored&gt;&lt;script&gt;&lt;![CDATA[// The following variables are available:  // - primary: contains the sys_id of the assessable object to be evaluated  // - string_result: the script sets the display string value for this metric to this variable  // - actual_result: the script sets the actual value for this metric to this variable  // - scaled_result: the script sets the scaled value (used in calculations) for this metric to this variable  //  // For example: // var gr = new GlideRecord('cmdb_ci'); // gr.addQuery('manufacturer', primary); // gr.query(); // actual_result = gr.getRowCount(); // string_result = actual_result + ''; // if (actual_result &amp;gt; 100) scaled_result = 5; // else scaled_result = 1;]]&gt;&lt;/script&gt;&lt;source_field/&gt;&lt;string_option&gt;wide&lt;/string_option&gt;&lt;sys_class_name&gt;asmt_metric&lt;/sys_class_name&gt;&lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-28 17:32:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5c221e50879ad910124b7777dabb3573&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;Absence de taches ou de souillures&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;asmt_metric_5c221e50879ad910124b7777dabb3573&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-11-07 13:59:27&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_subcategory&gt;003&lt;/u_subcategory&gt;&lt;u_target/&gt;&lt;value_parameters/&gt;&lt;weight&gt;10&lt;/weight&gt;&lt;/asmt_metric&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5c221e50879ad910124b7777dabb3573"/&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;5c221e50879ad910124b7777dabb3573&lt;/documentkey&gt;&lt;fieldname&gt;add_info_label&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;mg83368&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-28 17:54:06&lt;/sys_created_on&gt;&lt;sys_id&gt;3d171218879ad910124b7777dabb35d4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;mg83368&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-28 17:54:06&lt;/sys_updated_on&gt;&lt;tablename&gt;asmt_metric&lt;/tablename&gt;&lt;value&gt;Additional Information&lt;/value&gt;&lt;/sys_translated_text&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;5c221e50879ad910124b7777dabb3573&lt;/documentkey&gt;&lt;fieldname&gt;description&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;mg83368&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-28 17:54:06&lt;/sys_created_on&gt;&lt;sys_id&gt;35171218879ad910124b7777dabb35d7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;mg83368&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-28 17:54:06&lt;/sys_updated_on&gt;&lt;tablename&gt;asmt_metric&lt;/tablename&gt;&lt;value/&gt;&lt;/sys_translated_text&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;5c221e50879ad910124b7777dabb3573&lt;/documentkey&gt;&lt;fieldname&gt;details&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;mg83368&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-28 17:54:06&lt;/sys_created_on&gt;&lt;sys_id&gt;39171218879ad910124b7777dabb35d2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;mg83368&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-28 17:54:06&lt;/sys_updated_on&gt;&lt;tablename&gt;asmt_metric&lt;/tablename&gt;&lt;value/&gt;&lt;/sys_translated_text&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;5c221e50879ad910124b7777dabb3573&lt;/documentkey&gt;&lt;fieldname&gt;question&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;mg83368&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-28 17:54:06&lt;/sys_created_on&gt;&lt;sys_id&gt;bd171218879ad910124b7777dabb35d9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;mg83368&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-28 17:54:06&lt;/sys_updated_on&gt;&lt;tablename&gt;asmt_metric&lt;/tablename&gt;&lt;value&gt;Absence de taches ou de souillures&lt;/value&gt;&lt;/sys_translated_text&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>559937043</payload_hash>
+        <remote_update_set display_value="FX-CS0173424-03-Survey">ac0a00b347c39190c6170f9e436d4340</remote_update_set>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>martin.roux@fxinnovation.com</sys_created_by>
+        <sys_created_on>2022-11-15 11:23:34</sys_created_on>
+        <sys_id>010a00b347c39190c6170f9e436d438e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18452638e930000001</sys_recorded_at>
+        <sys_updated_by>martin.roux@fxinnovation.com</sys_updated_by>
+        <sys_updated_on>2022-11-15 11:23:34</sys_updated_on>
+        <table/>
+        <target_name>Absence de taches ou de souillures</target_name>
+        <type>Assessment Metric</type>
+        <update_domain>global</update_domain>
+        <update_guid>56f02381a787d510b4803d475428a319</update_guid>
+        <update_guid_history>56f02381a787d510b4803d475428a319:559937043,0e1712189c9ad91045e903b72338b7db:559937043,fd171218639ad910b65dbfa2ae07bfd8:2021809984,35171218169ad9104a6c6e764da0ccd6:788478138,7d171218f79ad910d603d829351e3cd3:-498466295,a8059e14f79ad91035ede5cb73b2c631:304517655,02241ed0ae9ad910bba226d4a565dded:2017012730,a4221e502e9ad910a58ff8f5af26dad5:963351455,90221e50bc9ad910328d2a24eb41e586:-1776889933,1c221e50ac9ad9108bfc290acf7db980:1856390894,18221e50a19ad910cfe7fb3344e7867b:-851962313,5c221e503d9ad910ed179ba1a5cabb77:-1776889933</update_guid_history>
+        <update_set/>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:18</sys_created_on>
+        <sys_id>cc21433947c4fe1097744049116d43c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>asmt_metric_5c221e50879ad910124b7777dabb3573</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_cc21433947c4fe1097744049116d43c1</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:18</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+    </sys_metadata_link>
+</record_update>
