@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Delete EntityType Popup default">1895340b47fb6a1097744049116d43e4</macroponent>
+        <name>Preview deactivating/retiring items</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.imports
+ */
+function evaluateProperty({
+    api
+}) {
+    if (api.data.delete_entity_types.output && api.data.delete_entity_types.output["deactivated-retired"]) {
+        const items = [];
+        let associatedItems = api.data.delete_entity_types.output["deactivated-retired"];
+        let keys = Object.keys(associatedItems);
+        var workspaceURL = api.data.delete_entity_types.output["pageURL"];
+        
+        for (let i = 0; i < keys.length; i++) {
+            var link = associatedItems[keys[i]].link;
+            var title = associatedItems[keys[i]].label;
+            var url = link;
+            if(link.includes("sysparm_query=")){
+                var query = link.substr(link.indexOf('sysparm_query=') + 'sysparm_query='.length);
+                url = `/now/${workspaceURL}/list-view/${keys[i]}/params/listTitle/${title}/query/${query}`; 
+            }
+            
+            var item = {
+                label: associatedItems[keys[i]].label,
+                value: {
+                    type: 'text-link',
+                    label: associatedItems[keys[i]].number,
+                    href: url,
+                    underlined: true,
+                    opensWindow: true
+                }
+            };
+            items.push(item);
+        }
+        return items;
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d095340b47fb6a1097744049116d43f2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Preview deactivating/retiring items</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_client_script_d095340b47fb6a1097744049116d43f2</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:15</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_client_script>
+</record_update>

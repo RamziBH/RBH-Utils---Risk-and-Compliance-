@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_declarative_action_assignment">
+    <sys_declarative_action_assignment action="INSERT_OR_UPDATE">
+        <action/>
+        <action_attributes/>
+        <action_name>new_risk_statement</action_name>
+        <action_payload/>
+        <action_type>type</action_type>
+        <active>true</active>
+        <animate_icon>false</animate_icon>
+        <button_type>primary</button_type>
+        <client_action/>
+        <client_conditions/>
+        <client_conditions_on_fields/>
+        <client_script><![CDATA[function onClick() { }]]></client_script>
+        <confirmation_message/>
+        <confirmation_required>false</confirmation_required>
+        <create_access>false</create_access>
+        <declarative_action_render_mode/>
+        <declarative_action_type>server_script</declarative_action_type>
+        <delete_access>false</delete_access>
+        <dependency/>
+        <description/>
+        <design_icon/>
+        <dynamic_record_condition/>
+        <dynamic_script_condition/>
+        <enable_dynamic_evaluation>false</enable_dynamic_evaluation>
+        <enable_for_all_experiences>true</enable_for_all_experiences>
+        <enabled>true</enabled>
+        <experience_restricted>false</experience_restricted>
+        <field_name/>
+        <field_type>glide_date</field_type>
+        <form_fields_required>false</form_fields_required>
+        <form_position>action_bar</form_position>
+        <group/>
+        <group_by>false</group_by>
+        <icon/>
+        <label>New Risk</label>
+        <model display_value="Form">360935e9534723003eddddeeff7b127d</model>
+        <model_conditions/>
+        <model_field_required/>
+        <order>0</order>
+        <payload_map/>
+        <read_access>false</read_access>
+        <record_conditions table="x_gamlp_irm_risk_c_risk">state=accepted^riskISEMPTY^EQ<item display_value="Accepted" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="accepted"/>
+            <item endquery="false" field="risk" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </record_conditions>
+        <record_selection_required>false</record_selection_required>
+        <required_roles/>
+        <required_translations/>
+        <required_user_role_names/>
+        <requires_value>false</requires_value>
+        <script_condition/>
+        <scripted_client_condition/>
+        <server_script><![CDATA[var risk = new GlideRecord('sn_risk_risk');
+risk.newRecord();
+risk.name = current.name;
+risk.description = current.description;
+risk.sync_with_entity_owner = false;
+risk.instance = false;
+risk.u_caracteristiques_du_risque = (current.risk_type == 'temporaire') ? '2' : '1';
+risk.insert();
+current.setValue('risk', risk.sys_id);
+current.update();
+action.openGlideRecord(risk);]]></server_script>
+        <specificity>11</specificity>
+        <sys_class_name>sys_declarative_action_assignment</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-12 15:07:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>46e52f3b9377ee109cb7b91c5cba1057</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>new_risk_statement</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_declarative_action_assignment_46e52f3b9377ee109cb7b91c5cba1057</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 13:58:20</sys_updated_on>
+        <table>x_gamlp_irm_risk_c_risk</table>
+        <tooltip/>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+        <ui_component/>
+        <view/>
+        <workspace/>
+        <write_access>false</write_access>
+    </sys_declarative_action_assignment>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>46e52f3b9377ee109cb7b91c5cba1057</id>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-12 15:23:53</sys_created_on>
+        <sys_id>d7b9abbf9377ee109cb7b91c5cba1090</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 15:23:53</sys_updated_on>
+        <table>sys_declarative_action_assignment</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

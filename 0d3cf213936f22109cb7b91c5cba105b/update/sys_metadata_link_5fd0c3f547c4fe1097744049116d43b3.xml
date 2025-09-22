@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00a69ace93f5e2109cb7b91c5cba10b9</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;discovery_ptrn_lnch_param_2a965ace93f5e2109cb7b91c5cba10ed&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="discovery_ptrn_lnch_param"&gt;&lt;discovery_ptrn_lnch_param action="INSERT_OR_UPDATE"&gt;&lt;param display_value="start_offset"&gt;1d91dfc287027d107f7d20e5cebb355e&lt;/param&gt;&lt;pattern_launcher display_value="Domain Controller Auth (Kerberos)"&gt;1976928e93f5e2109cb7b91c5cba101e&lt;/pattern_launcher&gt;&lt;sys_class_name&gt;discovery_ptrn_lnch_param&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcrepeault_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 12:45:42&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;2a965ace93f5e2109cb7b91c5cba10ed&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;1&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;discovery_ptrn_lnch_param_2a965ace93f5e2109cb7b91c5cba10ed&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bcrepeault_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 12:45:49&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;value&gt;1&lt;/value&gt;&lt;/discovery_ptrn_lnch_param&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;121208093&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;bcrepeault_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-05-30 12:45:49&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00a69ace93f5e2109cb7b91c5cba10b9&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;197213a29180000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;bcrepeault_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-05-30 12:45:49&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;1&lt;/target_name&gt;
+        &lt;type&gt;Discovery Pattern Parameters&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;4ca69ace88f5e210fd4f9422d20620b8&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;4ca69ace88f5e210fd4f9422d20620b8:121208093,48a6928e76f5e21090b9fa2ef2742285:1367221007&lt;/update_guid_history&gt;
+        &lt;update_set display_value="SECOPS-1063 - BC Découverte des certificats v1"&gt;baf212c693f5e2109cb7b91c5cba102b&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:33:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5fd0c3f547c4fe1097744049116d43b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>discovery_ptrn_lnch_param_2a965ace93f5e2109cb7b91c5cba10ed</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_5fd0c3f547c4fe1097744049116d43b3</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:33:08</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

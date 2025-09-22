@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00eb3134db370450a8d8757a8c961991</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;item_option_new_b14831d80f74324049346509b1050eef&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="item_option_new"&gt;&lt;item_option_new action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;attributes/&gt;&lt;cat_item display_value="New SAP access for consultant"&gt;9efa50f40f8ac24049346509b1050e75&lt;/cat_item&gt;&lt;category/&gt;&lt;choice_direction&gt;down&lt;/choice_direction&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;create_roles/&gt;&lt;default_html_value/&gt;&lt;default_value/&gt;&lt;delete_roles/&gt;&lt;delivery_plan/&gt;&lt;description/&gt;&lt;display_title&gt;false&lt;/display_title&gt;&lt;do_not_select_first&gt;false&lt;/do_not_select_first&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;example_text/&gt;&lt;field/&gt;&lt;global&gt;false&lt;/global&gt;&lt;help_tag&gt;More information&lt;/help_tag&gt;&lt;help_text/&gt;&lt;include_none&gt;false&lt;/include_none&gt;&lt;instructions/&gt;&lt;layout&gt;normal&lt;/layout&gt;&lt;list_table/&gt;&lt;lookup_label/&gt;&lt;lookup_price/&gt;&lt;lookup_table/&gt;&lt;lookup_unique&gt;false&lt;/lookup_unique&gt;&lt;lookup_value/&gt;&lt;macro/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;map_to_field&gt;false&lt;/map_to_field&gt;&lt;mask_use_confirmation&gt;false&lt;/mask_use_confirmation&gt;&lt;mask_use_encryption&gt;false&lt;/mask_use_encryption&gt;&lt;name&gt;emp_deja_gazmetro&lt;/name&gt;&lt;order&gt;1&lt;/order&gt;&lt;price_if_checked&gt;0&lt;/price_if_checked&gt;&lt;pricing_implications&gt;false&lt;/pricing_implications&gt;&lt;question_text&gt;Est-ce un employé déjà à l'embauche d'Energir?&lt;/question_text&gt;&lt;read_roles/&gt;&lt;rec_lookup_price/&gt;&lt;rec_price_if_checked&gt;0&lt;/rec_price_if_checked&gt;&lt;record/&gt;&lt;record_producer_table/&gt;&lt;reference/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;scale_max&gt;5&lt;/scale_max&gt;&lt;scale_min&gt;0&lt;/scale_min&gt;&lt;show_help&gt;false&lt;/show_help&gt;&lt;show_help_on_load&gt;false&lt;/show_help_on_load&gt;&lt;sp_widget/&gt;&lt;summary_macro/&gt;&lt;sys_class_name&gt;item_option_new&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-03 16:16:32&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;b14831d80f74324049346509b1050eef&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Est-ce un employé déjà à l'embauche d'Energir?&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;item_option_new_b14831d80f74324049346509b1050eef&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-08 17:46:05&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;tooltip/&gt;&lt;type&gt;1&lt;/type&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;ui_page/&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;validate_regex/&gt;&lt;variable_name/&gt;&lt;variable_set/&gt;&lt;variable_width/&gt;&lt;visibility&gt;1&lt;/visibility&gt;&lt;visible_bundle&gt;true&lt;/visible_bundle&gt;&lt;visible_guide&gt;true&lt;/visible_guide&gt;&lt;visible_standalone&gt;true&lt;/visible_standalone&gt;&lt;visible_summary&gt;true&lt;/visible_summary&gt;&lt;write_roles/&gt;&lt;/item_option_new&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=b14831d80f74324049346509b1050eef"/&gt;&lt;fx_price action="delete_multiple" query="id=b14831d80f74324049346509b1050eef"/&gt;&lt;fx_price action="INSERT_OR_UPDATE"&gt;&lt;amount&gt;0&lt;/amount&gt;&lt;currency display_value="CAD"&gt;CAD&lt;/currency&gt;&lt;field&gt;price_if_checked&lt;/field&gt;&lt;id&gt;b14831d80f74324049346509b1050eef&lt;/id&gt;&lt;parent/&gt;&lt;reference_amount&gt;0&lt;/reference_amount&gt;&lt;reference_currency display_value="CAD"&gt;CAD&lt;/reference_currency&gt;&lt;sys_created_by&gt;system&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-06-21 15:02:37&lt;/sys_created_on&gt;&lt;sys_id&gt;3baff70edb36d300fd756451ca96194f&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-08 17:45:01&lt;/sys_updated_on&gt;&lt;table&gt;item_option_new&lt;/table&gt;&lt;type&gt;calculated&lt;/type&gt;&lt;/fx_price&gt;&lt;fx_price action="INSERT_OR_UPDATE"&gt;&lt;amount&gt;0&lt;/amount&gt;&lt;currency display_value="CAD"&gt;CAD&lt;/currency&gt;&lt;field&gt;rec_price_if_checked&lt;/field&gt;&lt;id&gt;b14831d80f74324049346509b1050eef&lt;/id&gt;&lt;parent/&gt;&lt;reference_amount&gt;0&lt;/reference_amount&gt;&lt;reference_currency display_value="CAD"&gt;CAD&lt;/reference_currency&gt;&lt;sys_created_by&gt;system&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-06-21 15:02:37&lt;/sys_created_on&gt;&lt;sys_id&gt;fbaff70edb36d300fd756451ca96194c&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-08 17:45:01&lt;/sys_updated_on&gt;&lt;table&gt;item_option_new&lt;/table&gt;&lt;type&gt;calculated&lt;/type&gt;&lt;/fx_price&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;436248434&lt;/payload_hash&gt;
+        &lt;remote_update_set display_value="FX - RITM0101121 - MR - 1 - Consultation Acheteur"&gt;c0eb3134db370450a8d8757a8c96196c&lt;/remote_update_set&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-03-24 13:50:35&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00eb3134db370450a8d8757a8c961991&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;170202b94b00000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-03-24 13:50:35&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;Est-ce un employé déjà à l'embauche d'Energir?&lt;/target_name&gt;
+        &lt;type&gt;Variable&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;cdf89fdcdbd20410a9d3c922859c0d64&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;cdf89fdcdbd20410a9d3c922859c0d64:436248434,59b897dcb7d204106881d992ab2c58c1:-1704584386,d3dd77d58b18bf000aac171f16f3099f:-538401671,791c09ca8190f304db2c4de74ba08662:1969718087,791c09ca8490f304c483adabcfa92f54:1566475079,251c09caf290f30452d60a2aba5a6750:158951381,749f3f8a7f7e130028e361e88a958c5d:752536956&lt;/update_guid_history&gt;
+        &lt;update_set/&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:33:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4f018ff547c4fe1097744049116d4330</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>item_option_new_b14831d80f74324049346509b1050eef</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_4f018ff547c4fe1097744049116d4330</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:33:57</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

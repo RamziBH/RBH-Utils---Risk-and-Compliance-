@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>002539391be021105c5d42a7bc4bcb3a</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;help_content_882539391be021105c5d42a7bc4bcb38&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="help_content"&gt;&lt;help_content action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;configuration_types&gt;custom&lt;/configuration_types&gt;&lt;custom_html/&gt;&lt;default_content&gt;false&lt;/default_content&gt;&lt;field_name/&gt;&lt;filter/&gt;&lt;footer/&gt;&lt;guidance_step/&gt;&lt;has_custom_html&gt;false&lt;/has_custom_html&gt;&lt;has_image_link&gt;false&lt;/has_image_link&gt;&lt;image/&gt;&lt;image_alt&gt;Filter schedule&lt;/image_alt&gt;&lt;image_link/&gt;&lt;open_in&gt;new_tab&lt;/open_in&gt;&lt;options/&gt;&lt;order/&gt;&lt;records/&gt;&lt;related_content/&gt;&lt;resource_id&gt;image_cdm_vlm_2tb&lt;/resource_id&gt;&lt;subtitle/&gt;&lt;sys_class_name&gt;help_content&lt;/sys_class_name&gt;&lt;sys_created_by&gt;system&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-01-23 03:37:51&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;882539391be021105c5d42a7bc4bcb38&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Filter schedule&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;help_content_882539391be021105c5d42a7bc4bcb38&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-01-23 03:37:51&lt;/sys_updated_on&gt;&lt;table_name/&gt;&lt;text/&gt;&lt;title&gt;Filter schedule&lt;/title&gt;&lt;type&gt;text&lt;/type&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;url/&gt;&lt;version&gt;tokyo&lt;/version&gt;&lt;video_alt/&gt;&lt;video_link/&gt;&lt;view/&gt;&lt;/help_content&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-860378530&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;system&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2023-01-23 03:37:51&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;002539391be021105c5d42a7bc4bcb3a&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;185dcb426430000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2023-01-23 03:37:51&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;Filter schedule&lt;/target_name&gt;
+        &lt;type&gt;Help Content&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;80253939f9e021101863347b7c65926e&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;80253939f9e021101863347b7c65926e:-860378530,80253939f9e02110af90c07e7e0c0753:-111495692,4c2539395be02110bb10ba1f7c754b39:419291183&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0c808f7547c4fe1097744049116d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>help_content_882539391be021105c5d42a7bc4bcb38</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_0c808f7547c4fe1097744049116d436c</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:33</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

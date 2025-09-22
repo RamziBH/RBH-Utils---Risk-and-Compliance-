@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_condition">
+    <sys_ux_screen_condition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions_params_mapping/>
+        <is_result_memoizable>false</is_result_memoizable>
+        <screen display_value="Risk event side bar">8585300b47fb6a1097744049116d43b6</screen>
+        <screen_condition/>
+        <script><![CDATA[(function validate(params) {
+    // TODO: Add validations
+    if (params.sysId == -1)
+        return false;
+    else {
+        if (params.table == 'sn_risk_advanced_event') {
+
+            var riskEvent = new GlideRecord('sn_risk_advanced_event');
+            riskEvent.get(params.sysId);
+            if (riskEvent.canRead()) {
+                if (gs.getProperty('sn_risk_advanced.show_basel_attr_reports', false) == 'true') {
+                    var primaryEntity = new GlideRecord('sn_grc_profile');
+                    primaryEntity.get(riskEvent.primary_profile + '');
+                    var baseBaselBusinessLine = primaryEntity.sn_risk_advanced_basel_business_line;
+
+                    if (!baseBaselBusinessLine.nil()) {
+                        return true;
+                    }
+                }
+
+
+                var addedRisksRelatedToPrimaryEntity = new GlideRecord('sn_risk_advanced_m2m_event_risk');
+                addedRisksRelatedToPrimaryEntity.addQuery('risk_event', riskEvent.getUniqueValue());
+                addedRisksRelatedToPrimaryEntity.addQuery('risk.profile', riskEvent.primary_profile);
+                addedRisksRelatedToPrimaryEntity.query();
+
+                while (addedRisksRelatedToPrimaryEntity.next()) {
+                    var curRiskStatement = addedRisksRelatedToPrimaryEntity.risk.statement;
+                    if (!curRiskStatement.nil()) {
+                        return true;
+                    }
+                }
+
+                return false;
+            } else
+                return false;
+        } else {
+            return false;
+        }
+    }
+})(inputProperties);]]></script>
+        <scripted_condition>true</scripted_condition>
+        <sys_class_name>sys_ux_screen_condition</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8985300b47fb6a1097744049116d43bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_screen_condition_8985300b47fb6a1097744049116d43bb</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:02</sys_updated_on>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_screen_condition>
+</record_update>

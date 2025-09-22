@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>0030da2147107114c6170f9e436d438b</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Microsoft Active Directory v2 Spoke"&gt;bcfbc4241b4d2010dd8e0e16ec4bcba5&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;ecc_agent_script_file_b7a019fa87b111107701ed3e0ebb35af&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="ecc_agent_script_file"&gt;&lt;ecc_agent_script_file action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;checksum&gt;TBpM47XLmE8FfG/TQ//yOw==&lt;/checksum&gt;&lt;description&gt;Retrieves group details from Active Directory&lt;/description&gt;&lt;directory&gt;false&lt;/directory&gt;&lt;name&gt;ActionLookupGroup_AD_v2.ps1&lt;/name&gt;&lt;parent display_value="ADv2Spoke"&gt;8ed69ce81b8d2010dd8e0e16ec4bcb48&lt;/parent&gt;&lt;script&gt; Import-Module ActiveDirectory -WarningAction SilentlyContinue&amp;#13;
+&amp;#13;
+&amp;#13;
+if (test-path env:\SNC_groupName) {&amp;#13;
+    $groupname = $env:SNC_groupName;&amp;#13;
+}&amp;#13;
+&amp;#13;
+If(-Not $groupname){&amp;#13;
+    $result = "Group Name field is empty"&amp;#13;
+    $status = "Error"  &amp;#13;
+} &amp;#13;
+Else{&amp;#13;
+    $groupname = $groupname -replace "%27", "'";&amp;#13;
+ &amp;#13;
+    try {&amp;#13;
+         $groupcategory = @{&amp;#13;
+            n = "GroupCategory"&amp;#13;
+            e = {&amp;#13;
+                    If($_.GroupCategory -eq 1) {&amp;#13;
+                        return "Security"&amp;#13;
+                    }&amp;#13;
+                    ElseIf($_.GroupCategory -eq 0) {&amp;#13;
+                        return "Distribution"&amp;#13;
+                    }&amp;#13;
+            }&amp;#13;
+        }&amp;#13;
+        $groupscope = @{&amp;#13;
+            n = "GroupScope"&amp;#13;
+            e = {&amp;#13;
+                    If($_.GroupScope -eq 0){&amp;#13;
+                        return "Domain Local"&amp;#13;
+                    }&amp;#13;
+                    ElseIf($_.GroupScope -eq 1) {&amp;#13;
+                        return "Global"&amp;#13;
+                    }&amp;#13;
+                    ELseIf($_.GroupScope -eq 2){&amp;#13;
+                        return "Universal"&amp;#13;
+                    }&amp;#13;
+            }&amp;#13;
+        }&amp;#13;
+        $grouptype = @{&amp;#13;
+            n = "GroupType"&amp;#13;
+            e = {&amp;#13;
+                    If($_.GroupType -eq 2) {&amp;#13;
+                            return "Global Distribution Group"&amp;#13;
+                    }&amp;#13;
+                    ElseIf($_.GroupType -eq 4) {&amp;#13;
+                            return "Domain Local Distribution Group"&amp;#13;
+                    }&amp;#13;
+                    ElseIf($_.GroupType -eq 8) {&amp;#13;
+                            return "Universal Distribution Group"&amp;#13;
+                    }&amp;#13;
+                    ElseIf($_.GroupType -eq -2147483646) {&amp;#13;
+                            return "Global Security Group"&amp;#13;
+                    }&amp;#13;
+                    ElseIf($_.GroupType -eq -2147483644) {&amp;#13;
+                            return "Domain Local Security Group"&amp;#13;
+                    }&amp;#13;
+                    ElseIf($_.GroupType -eq -2147483640) {&amp;#13;
+                            return "Universal Security Group"&amp;#13;
+                    }&amp;#13;
+            }&amp;#13;
+        } &amp;#13;
+        $groupdetails = Get-ADGroup -Identity $groupname -Credential $cred -Server $computer -Properties * | Select-Object Name, DistinguishedName, DisplayName, ObjectGUID, SAMAccountName, CanonicalName, ManagedBy, $GroupScope, $GroupCategory, $GroupType, Description, @{n='OU';e={(($_.distinguishedName.Split(",",2)[1]))}}, MemberOf, Members&amp;#13;
+        $result = $groupdetails&amp;#13;
+        $status = "Success"&amp;#13;
+    }&amp;#13;
+    catch {&amp;#13;
+        $result = $_.Exception.Message&amp;#13;
+        $status = "Error"&amp;#13;
+    }&amp;#13;
+}&amp;#13;
+&amp;#13;
+$response = @{&amp;#13;
+    status = $status&amp;#13;
+    body   = $result&amp;#13;
+} | convertTo-Json&amp;#13;
+&amp;#13;
+Write-Output $response&lt;/script&gt;&lt;script_attachment/&gt;&lt;source/&gt;&lt;sys_class_name&gt;ecc_agent_script_file&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-11 10:39:54&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;b7a019fa87b111107701ed3e0ebb35af&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;ActionLookupGroup_AD_v2.ps1&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Microsoft Active Directory v2 Spoke" source="sn_ms_ad_v2_spoke"&gt;bcfbc4241b4d2010dd8e0e16ec4bcba5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Microsoft Active Directory v2 Spoke"&gt;bcfbc4241b4d2010dd8e0e16ec4bcba5&lt;/sys_scope&gt;&lt;sys_update_name&gt;ecc_agent_script_file_b7a019fa87b111107701ed3e0ebb35af&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-07-27 20:53:05&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;use_attachment&gt;false&lt;/use_attachment&gt;&lt;version/&gt;&lt;/ecc_agent_script_file&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;433010868&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;system&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2023-07-27 20:53:05&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0030da2147107114c6170f9e436d438b&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;189992068da0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2023-07-27 20:53:05&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;ActionLookupGroup_AD_v2.ps1&lt;/target_name&gt;
+        &lt;type&gt;MID Server Script File&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;8c30da21381071147cc89d368e220a8a&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;8c30da21381071147cc89d368e220a8a:433010868,4830da219e1071147d83b1d98b99e288:979575537&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c98043b547c4fe1097744049116d4391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ecc_agent_script_file_b7a019fa87b111107701ed3e0ebb35af</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_c98043b547c4fe1097744049116d4391</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:37</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

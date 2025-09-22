@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>0001dfcddbb23410521260ab139619b8</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>sc_cat_item_producer_23473b6f0f79834049346509b1050efb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sc_cat_item_producer"&gt;&lt;sc_cat_item_producer action="INSERT_OR_UPDATE"&gt;&lt;access_type&gt;restricted&lt;/access_type&gt;&lt;active&gt;true&lt;/active&gt;&lt;allow_edit&gt;false&lt;/allow_edit&gt;&lt;availability&gt;on_both&lt;/availability&gt;&lt;billable&gt;false&lt;/billable&gt;&lt;can_cancel&gt;false&lt;/can_cancel&gt;&lt;category display_value="Immeubles nouvel employé"&gt;71ffb2a70ff5834049346509b1050e00&lt;/category&gt;&lt;checked_out/&gt;&lt;cost&gt;0&lt;/cost&gt;&lt;custom_cart/&gt;&lt;delivery_plan display_value="DEFAULT"&gt;523da512c611228900811a37c97c2014&lt;/delivery_plan&gt;&lt;delivery_plan_script/&gt;&lt;delivery_time&gt;1970-01-03 00:00:00&lt;/delivery_time&gt;&lt;description/&gt;&lt;display_price_property&gt;non_zero&lt;/display_price_property&gt;&lt;entitlement_script/&gt;&lt;flow_designer_flow/&gt;&lt;group/&gt;&lt;hide_sp&gt;false&lt;/hide_sp&gt;&lt;icon/&gt;&lt;ignore_price&gt;true&lt;/ignore_price&gt;&lt;image/&gt;&lt;list_price&gt;0&lt;/list_price&gt;&lt;location/&gt;&lt;mandatory_attachment&gt;false&lt;/mandatory_attachment&gt;&lt;meta/&gt;&lt;mobile_hide_price&gt;false&lt;/mobile_hide_price&gt;&lt;mobile_picture/&gt;&lt;mobile_picture_type&gt;use_desktop_picture&lt;/mobile_picture_type&gt;&lt;model display_value="Plaque et nom"&gt;23473b6f0f79834049346509b1050efa&lt;/model&gt;&lt;name&gt;Plate and name&lt;/name&gt;&lt;no_attachment_v2&gt;false&lt;/no_attachment_v2&gt;&lt;no_cart&gt;false&lt;/no_cart&gt;&lt;no_cart_v2&gt;false&lt;/no_cart_v2&gt;&lt;no_delivery_time_v2&gt;false&lt;/no_delivery_time_v2&gt;&lt;no_order&gt;false&lt;/no_order&gt;&lt;no_order_now&gt;false&lt;/no_order_now&gt;&lt;no_proceed_checkout&gt;false&lt;/no_proceed_checkout&gt;&lt;no_quantity&gt;false&lt;/no_quantity&gt;&lt;no_quantity_v2&gt;false&lt;/no_quantity_v2&gt;&lt;no_search&gt;false&lt;/no_search&gt;&lt;no_wishlist_v2&gt;false&lt;/no_wishlist_v2&gt;&lt;omit_price&gt;false&lt;/omit_price&gt;&lt;order&gt;0&lt;/order&gt;&lt;ordered_item_link/&gt;&lt;owner/&gt;&lt;picture/&gt;&lt;post_insert_script/&gt;&lt;preview&gt;JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;amp;sysparm_id=23473b6f0f79834049346509b1050efb&amp;amp;sysparm_preview=true", "summary");&lt;/preview&gt;&lt;price&gt;0&lt;/price&gt;&lt;published_ref/&gt;&lt;recurring_frequency/&gt;&lt;recurring_price&gt;0&lt;/recurring_price&gt;&lt;redirect_url&gt;generated_record&lt;/redirect_url&gt;&lt;request_method/&gt;&lt;roles/&gt;&lt;save_options/&gt;&lt;save_script/&gt;&lt;sc_catalogs&gt;e009c323ff031100a0a5ffffffffff37&lt;/sc_catalogs&gt;&lt;sc_ic_item_staging/&gt;&lt;sc_ic_version/&gt;&lt;sc_template/&gt;&lt;script&gt;&lt;![CDATA[// (new global.SMTemplates()).newFromCatalogItem(current, gs, 'e009c323ff031100a0a5ffffffffff37', 
+// 'The Facilities Management department has been contacted regarding your request&lt;br/&gt;The \'Self Service - My Requests\' module provides access to this, and all of your other open requests&lt;br/&gt;', producer);
+
+(new global.SMTemplates()).newFromCatalogItem(current, gs, 'e009c323ff031100a0a5ffffffffff37', 
+"Veuillez prendre note que la plaque sera remise par le service des Immeubles", producer);
+
+current.u_demande_pour = producer.newemp_superieur;
+current.caller = producer.newemp_superieur;
+current.category = 'need_equipement';
+current.subcategory = 'plate_name';
+current.short_description = "Plaque et nom pour un nouvel employé";
+
+//Pour copier toute l'information dans le champ 'Description' car dans la demande les variables ne s'affichent pas dans le bon ordre
+
+var description = "Détails de la demande:\n\n";
+description += "- Nom de l'employé: " + producer.emp_nom + '\n';
+description += "- Prénom de l'employé: " + producer.emp_prenom + '\n';
+description += "- Titre de l'employé: " + producer.emp_title + '\n';
+description += "- Date d'arrivée de l'employé: " + producer.date_arrivee_employe + '\n';
+description += "- Bureau d'affaires: " + producer.emp_emplacement.name + '\n';
+current.description = description;]]&gt;&lt;/script&gt;&lt;short_description&gt;Plate and name for a new employee&lt;/short_description&gt;&lt;show_variable_help_on_load&gt;false&lt;/show_variable_help_on_load&gt;&lt;start_closed&gt;false&lt;/start_closed&gt;&lt;state/&gt;&lt;sys_class_name&gt;sc_cat_item_producer&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-10-20 17:02:56&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;23473b6f0f79834049346509b1050efb&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;Plaque et nom&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sc_cat_item_producer_23473b6f0f79834049346509b1050efb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Eric.Teamotuaitau@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-09-17 16:50:26&lt;/sys_updated_on&gt;&lt;table_name&gt;facilities_request&lt;/table_name&gt;&lt;template/&gt;&lt;template_manager_roles/&gt;&lt;type&gt;item&lt;/type&gt;&lt;u_approval_group/&gt;&lt;u_categorie_sla/&gt;&lt;u_ci/&gt;&lt;u_derogation_ti_necessaire&gt;false&lt;/u_derogation_ti_necessaire&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_ignorerapprobationgazmet&gt;false&lt;/u_ignorerapprobationgazmet&gt;&lt;u_mim_integration/&gt;&lt;u_requestautoclose&gt;false&lt;/u_requestautoclose&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;use_sc_layout&gt;true&lt;/use_sc_layout&gt;&lt;vendor/&gt;&lt;view/&gt;&lt;visible_bundle&gt;true&lt;/visible_bundle&gt;&lt;visible_guide&gt;true&lt;/visible_guide&gt;&lt;visible_standalone&gt;true&lt;/visible_standalone&gt;&lt;workflow/&gt;&lt;/sc_cat_item_producer&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=23473b6f0f79834049346509b1050efb"/&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;23473b6f0f79834049346509b1050efb&lt;/documentkey&gt;&lt;fieldname&gt;description&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-10-11 12:36:40&lt;/sys_created_on&gt;&lt;sys_id&gt;7550dc9adb0167003ef82a36ca9619b9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-10-11 12:36:40&lt;/sys_updated_on&gt;&lt;tablename&gt;sc_cat_item_producer&lt;/tablename&gt;&lt;value/&gt;&lt;/sys_translated_text&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;23473b6f0f79834049346509b1050efb&lt;/documentkey&gt;&lt;fieldname&gt;name&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-10-11 12:36:39&lt;/sys_created_on&gt;&lt;sys_id&gt;b5509c9adb0167003ef82a36ca961925&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-10-11 12:36:39&lt;/sys_updated_on&gt;&lt;tablename&gt;sc_cat_item_producer&lt;/tablename&gt;&lt;value&gt;Plaque et nom&lt;/value&gt;&lt;/sys_translated_text&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;23473b6f0f79834049346509b1050efb&lt;/documentkey&gt;&lt;fieldname&gt;short_description&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-10-11 12:36:40&lt;/sys_created_on&gt;&lt;sys_id&gt;f5509c9adb0167003ef82a36ca961928&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-10-11 12:36:40&lt;/sys_updated_on&gt;&lt;tablename&gt;sc_cat_item_producer&lt;/tablename&gt;&lt;value&gt;Plaque et nom pour un nouvel employé&lt;/value&gt;&lt;/sys_translated_text&gt;&lt;fx_price action="delete_multiple" query="id=23473b6f0f79834049346509b1050efb"/&gt;&lt;fx_price action="INSERT_OR_UPDATE"&gt;&lt;amount&gt;0&lt;/amount&gt;&lt;currency display_value="USD"&gt;USD&lt;/currency&gt;&lt;field&gt;price&lt;/field&gt;&lt;id&gt;23473b6f0f79834049346509b1050efb&lt;/id&gt;&lt;parent/&gt;&lt;reference_amount&gt;0&lt;/reference_amount&gt;&lt;reference_currency display_value="CAD"&gt;CAD&lt;/reference_currency&gt;&lt;sys_created_by&gt;landre_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-06-21 14:36:47&lt;/sys_created_on&gt;&lt;sys_id&gt;91c97b42db7e13007e24de82ca96199a&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-12-18 18:18:16&lt;/sys_updated_on&gt;&lt;table&gt;sc_cat_item_producer&lt;/table&gt;&lt;type&gt;calculated&lt;/type&gt;&lt;/fx_price&gt;&lt;fx_price action="INSERT_OR_UPDATE"&gt;&lt;amount&gt;0&lt;/amount&gt;&lt;currency display_value="USD"&gt;USD&lt;/currency&gt;&lt;field&gt;recurring_price&lt;/field&gt;&lt;id&gt;23473b6f0f79834049346509b1050efb&lt;/id&gt;&lt;parent/&gt;&lt;reference_amount&gt;0&lt;/reference_amount&gt;&lt;reference_currency display_value="CAD"&gt;CAD&lt;/reference_currency&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-10-11 12:36:39&lt;/sys_created_on&gt;&lt;sys_id&gt;39509c9adb0167003ef82a36ca961920&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-12-18 18:18:16&lt;/sys_updated_on&gt;&lt;table&gt;sc_cat_item_producer&lt;/table&gt;&lt;type&gt;calculated&lt;/type&gt;&lt;/fx_price&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>332647120</payload_hash>
+        <remote_update_set/>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>martin.roux@fxinnovation.com</sys_created_by>
+        <sys_created_on>2021-09-23 10:11:38</sys_created_on>
+        <sys_id>0001dfcddbb23410521260ab139619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c1223a75f0000001</sys_recorded_at>
+        <sys_updated_by>martin.roux@fxinnovation.com</sys_updated_by>
+        <sys_updated_on>2021-09-23 10:11:38</sys_updated_on>
+        <table>facilities_request</table>
+        <target_name>Plate and name</target_name>
+        <type>Record Producer</type>
+        <update_domain>global</update_domain>
+        <update_guid>67b2f91f032234109b0ee170020c8d37</update_guid>
+        <update_guid_history>67b2f91f032234109b0ee170020c8d37:332647120,7f32b11fcd223410028f07184503ea0b:-595550551,23e6dfe5af3504d086a19e1b39e2ea01:322298820,54d6d6c4f19fc8100634857d31721383:951871552,0929ac242cd5af00fa1d6e85519c070f:485622071,b950dc9ad10167004fb68ebe118df4c4:841180070,f550dc9abe0167007c0fa90e3ebd90bb:841180070,b5509c9acd016700dbcef1cf67d4bd2a:1723811911,79509c9a39016700deb416be9ba9b027:1062115844,3956bf82cc3e1300ff7ecac35303f19a:485622071</update_guid_history>
+        <update_set display_value="FX- CS0087074 2">8001dfcddbb23410521260ab1396191b</update_set>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5f604b7547c4fe1097744049116d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sc_cat_item_producer_23473b6f0f79834049346509b1050efb</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_5f604b7547c4fe1097744049116d43a8</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:14</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

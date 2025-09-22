@@ -1,0 +1,1388 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <bundles/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[
+    {
+        "definition": {
+            "id": "d356d14b6e293a3020a244b63d278d8f",
+            "type": "MACROPONENT"
+        },
+        "elementId": "7a7a9dd953462010567cddeeff7b123d_Main",
+        "elementLabel": "Main",
+        "eventMappings": [],
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "overrides": {
+            "composition": [
+                {
+                    "definition": {
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "main_container",
+                    "elementLabel": "Main container",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "script": {
+                            "apiVersion": "1.0.0",
+                            "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n  if(api.state.isLoading){\n    return true;\n  }\n\treturn false;\n}"
+                        },
+                        "type": "CLIENT_TRANSFORM_SCRIPT"
+                    },
+                    "isNonDestructive": false,
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "d356d14b6e293a3020a244b63d278d8f",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "main_container_Main",
+                                "elementLabel": "Main",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "overrides": {
+                                    "composition": [
+                                        {
+                                            "definition": {
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "highlighted_details_heading",
+                                            "elementLabel": "Highlighted details heading",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "propertyValues": {
+                                                "configAria": {
+                                                    "container": {
+                                                        "input": {
+                                                            "container": {
+                                                                "aria-label": {
+                                                                    "type": "TRANSLATION_LITERAL",
+                                                                    "value": {
+                                                                        "code": null,
+                                                                        "comment": "",
+                                                                        "message": "Highlighted details"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "type": "MAP_CONTAINER"
+                                                        }
+                                                    },
+                                                    "type": "MAP_CONTAINER"
+                                                },
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* {\n    font-size: var(--now-global-font-size--xl, 24px);\n    font-family: var(--now-font-family, \"Source Sans Pro\", Arial, sans-serif);\n    color: RGB(var(--now-color--text-secondary, #425051));\n    line-height: var(--now-line-height, 1.25);\n}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "span"
+                                                },
+                                                "text": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "comment": "",
+                                                        "message": "Highlighted details"
+                                                    }
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "hierarchy_label",
+                                            "elementLabel": "Hierarchy label",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "propertyValues": {
+                                                "configAria": {
+                                                    "container": {
+                                                        "input": {
+                                                            "container": {
+                                                                "aria-label": {
+                                                                    "type": "TRANSLATION_LITERAL",
+                                                                    "value": {
+                                                                        "code": null,
+                                                                        "comment": "",
+                                                                        "message": "Hierarchy"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "type": "MAP_CONTAINER"
+                                                        }
+                                                    },
+                                                    "type": "MAP_CONTAINER"
+                                                },
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* {\n font-size:var(--now-global-font-size--sm, 12px);\ncolor: RGB(var(--now-color--text-secondary, #425051));\n}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "span"
+                                                },
+                                                "text": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "comment": "",
+                                                        "message": "Hierarchy"
+                                                    }
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "citation_hierarchy_none_text",
+                                            "elementLabel": "Citation hierarchy none",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "binding": {
+                                                    "address": [
+                                                        "get_data_related_to_citation_sidebar",
+                                                        "output",
+                                                        "hideHierarchyNone"
+                                                    ]
+                                                },
+                                                "type": "DATA_OUTPUT_BINDING"
+                                            },
+                                            "isNonDestructive": false,
+                                            "overrides": null,
+                                            "propertyValues": {
+                                                "configAria": {
+                                                    "container": {
+                                                        "input": {
+                                                            "container": {
+                                                                "aria-label": {
+                                                                    "type": "TRANSLATION_LITERAL",
+                                                                    "value": {
+                                                                        "code": null,
+                                                                        "comment": "",
+                                                                        "message": "None"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "type": "MAP_CONTAINER"
+                                                        }
+                                                    },
+                                                    "type": "MAP_CONTAINER"
+                                                },
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* { \n     font-size: var(--now-global-font-size--md, 16px);\n}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "div"
+                                                },
+                                                "text": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "comment": "",
+                                                        "message": "None"
+                                                    }
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "71baad1870878aa2e853a2d9a3373f84",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "citation_hierarchy",
+                                            "elementLabel": "Citation hierarchy",
+                                            "eventMappings": [
+                                                {
+                                                    "eventMappingId": "ckkmuiyguaaaaaaqddghhwjxtiffddscc",
+                                                    "isConfiguration": false,
+                                                    "offRowStorageId": null,
+                                                    "sourceEventApiName": "sn_content_tree.NOW_CONTENT_TREE#ACTIONABLE_ITEM_CLICKED",
+                                                    "sourceEventCorrelationId": null,
+                                                    "sourceEventDefinition": {
+                                                        "apiName": "sn_content_tree.NOW_CONTENT_TREE#ACTIONABLE_ITEM_CLICKED",
+                                                        "id": null,
+                                                        "type": "UXEVENT"
+                                                    },
+                                                    "sourceEventSysId": null,
+                                                    "targets": [
+                                                        {
+                                                            "broker": null,
+                                                            "clientScript": {
+                                                                "sysId": "9095340b47fb6a1097744049116d43d4"
+                                                            },
+                                                            "declarativeAction": null,
+                                                            "event": null,
+                                                            "operation": null,
+                                                            "targetId": "ckrbvdyffraaaabbaddhhhsjbbffezrib",
+                                                            "type": "CLIENT_SCRIPT"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "isHidden": {
+                                                "script": {
+                                                    "apiVersion": "1.0.0",
+                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n  if(api.data.get_data_related_to_citation_sidebar.output.hideHierarchyNone){\n    return false;\n  }\n\treturn true;\n}"
+                                                },
+                                                "type": "CLIENT_TRANSFORM_SCRIPT"
+                                            },
+                                            "isNonDestructive": false,
+                                            "overrides": null,
+                                            "propertyValues": {
+                                                "activeRoute": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": {
+                                                        "0": "j",
+                                                        "routeType": ""
+                                                    }
+                                                },
+                                                "configAria": {
+                                                    "container": {
+                                                        "tree": {
+                                                            "container": {
+                                                                "aria-label": {
+                                                                    "type": "TRANSLATION_LITERAL",
+                                                                    "value": {
+                                                                        "code": null,
+                                                                        "comment": "",
+                                                                        "message": "Citation hierarchy"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "type": "MAP_CONTAINER"
+                                                        }
+                                                    },
+                                                    "type": "MAP_CONTAINER"
+                                                },
+                                                "expandedItems": {
+                                                    "script": {
+                                                        "apiVersion": "2.0.0",
+                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {any} params.imports\n */\nfunction evaluateProperty({\n    api\n}) {\n\n    var expandedItems = api.data.get_data_related_to_citation_sidebar.output.hierarchy.expandedItems;\n\n    for (var i = 0; i &lt; expandedItems.length; i++) {\n      expandedItems[i].unshift(api.data.get_data_related_to_citation_sidebar.output.adSysId);\n    }\n\n    return api.data.get_data_related_to_citation_sidebar.output.expandedItems;\n}"
+                                                    },
+                                                    "type": "CLIENT_TRANSFORM_SCRIPT"
+                                                },
+                                                "highlightSelectedParent": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "items": {
+                                                    "script": {
+                                                        "apiVersion": "2.0.0",
+                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {any} params.imports\n */\nfunction evaluateProperty({\n    api\n}) {\n\n    if (api.data.get_data_related_to_citation_sidebar.output) {\n        var transformItems = api.data.get_data_related_to_citation_sidebar.output.hierarchy.items;\n        if (api.data.get_data_related_to_citation_sidebar.output.adSysId) {\n\n            var authorityDocumentItems = [{\n                \"actionable\": true,\n                \"children\": transformItems,\n                \"highlightedValueProps\": [],\n                \"table\": \"sn_compliance_authority_document\",\n                \"identifierProps\": {\n                    \"icon\": \"document-outline\"\n                },\n                \"id\": api.data.get_data_related_to_citation_sidebar.output.adSysId,\n                \"label\": api.data.get_data_related_to_citation_sidebar.output.adName\n            }];\n            return authorityDocumentItems;\n        } else return transformItems;\n    }\n}"
+                                                    },
+                                                    "type": "CLIENT_TRANSFORM_SCRIPT"
+                                                },
+                                                "loadingItems": {
+                                                    "container": [],
+                                                    "type": "LIST_CONTAINER"
+                                                },
+                                                "overflow": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "truncate"
+                                                },
+                                                "searchTerm": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "select": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "single"
+                                                },
+                                                "selectedItems": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "get_data_related_to_citation_sidebar",
+                                                            "output",
+                                                            "hierarchy",
+                                                            "selectedItems"
+                                                        ]
+                                                    },
+                                                    "type": "DATA_OUTPUT_BINDING"
+                                                },
+                                                "showActionsOnHover": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "showDividers": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "showPresencePattern": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "size": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "md"
+                                                },
+                                                "triggerIcon": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "chevron"
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "addressed_by_label",
+                                            "elementLabel": "Addressed by label",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "propertyValues": {
+                                                "configAria": {
+                                                    "container": {
+                                                        "input": {
+                                                            "container": {
+                                                                "aria-label": {
+                                                                    "type": "TRANSLATION_LITERAL",
+                                                                    "value": {
+                                                                        "code": null,
+                                                                        "comment": "",
+                                                                        "message": "Addressed by"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "type": "MAP_CONTAINER"
+                                                        }
+                                                    },
+                                                    "type": "MAP_CONTAINER"
+                                                },
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* {\n    font-size: var(--now-global-font-size--sm, 12px);\n    color: RGB(var(--now-color--text-secondary, #425051));\n}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "span"
+                                                },
+                                                "text": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "comment": "",
+                                                        "message": "Addressed by"
+                                                    }
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "addressed_by_none_text",
+                                            "elementLabel": "Addressed by none text",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "binding": {
+                                                    "address": [
+                                                        "get_data_related_to_citation_sidebar",
+                                                        "output",
+                                                        "hideControlObjNone"
+                                                    ]
+                                                },
+                                                "type": "DATA_OUTPUT_BINDING"
+                                            },
+                                            "isNonDestructive": false,
+                                            "overrides": null,
+                                            "propertyValues": {
+                                                "configAria": {
+                                                    "container": {
+                                                        "input": {
+                                                            "container": {
+                                                                "aria-label": {
+                                                                    "type": "TRANSLATION_LITERAL",
+                                                                    "value": {
+                                                                        "code": null,
+                                                                        "comment": "",
+                                                                        "message": "None"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "type": "MAP_CONTAINER"
+                                                        }
+                                                    },
+                                                    "type": "MAP_CONTAINER"
+                                                },
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* {\n    font-size: var(--now-global-font-size--md, 16px);\n    color: RGB(var(--now-color--text-secondary, #425051));\n}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "div"
+                                                },
+                                                "text": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "comment": "",
+                                                        "message": "None"
+                                                    }
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "b83fb1af6e8e84e024d4057df053038b",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "addressed_by_link_set",
+                                            "elementLabel": "Addressed by link set",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "binding": {
+                                                    "address": [
+                                                        "get_data_related_to_citation_sidebar",
+                                                        "output",
+                                                        "hideControlObj"
+                                                    ]
+                                                },
+                                                "type": "DATA_OUTPUT_BINDING"
+                                            },
+                                            "isNonDestructive": false,
+                                            "overrides": null,
+                                            "propertyValues": {
+                                                "browseLink": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "get_data_related_to_citation_sidebar",
+                                                            "output",
+                                                            "controlObjectiveViewAllLink"
+                                                        ]
+                                                    },
+                                                    "type": "DATA_OUTPUT_BINDING"
+                                                },
+                                                "heading": {
+                                                    "container": {},
+                                                    "type": "MAP_CONTAINER"
+                                                },
+                                                "indentLinks": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": true
+                                                },
+                                                "links": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "get_data_related_to_citation_sidebar",
+                                                            "output",
+                                                            "controlObjectiveLinkSetData"
+                                                        ]
+                                                    },
+                                                    "type": "DATA_OUTPUT_BINDING"
+                                                },
+                                                "minWidth": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "150"
+                                                },
+                                                "size": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "md"
+                                                },
+                                                "variant": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "primary"
+                                                },
+                                                "width": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "related_risks_label",
+                                            "elementLabel": "Related risks label",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "propertyValues": {
+                                                "configAria": {
+                                                    "container": {
+                                                        "input": {
+                                                            "container": {
+                                                                "aria-label": {
+                                                                    "type": "TRANSLATION_LITERAL",
+                                                                    "value": {
+                                                                        "code": null,
+                                                                        "comment": "",
+                                                                        "message": "Related risks"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "type": "MAP_CONTAINER"
+                                                        }
+                                                    },
+                                                    "type": "MAP_CONTAINER"
+                                                },
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* {\n    font-size: var(--now-global-font-size--sm, 12px);\n    color: RGB(var(--now-color--text-secondary, #425051));\n}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "span"
+                                                },
+                                                "text": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "comment": "",
+                                                        "message": "Related risks"
+                                                    }
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "related_risks_none",
+                                            "elementLabel": "Related risks none",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "binding": {
+                                                    "address": [
+                                                        "get_data_related_to_citation_sidebar",
+                                                        "output",
+                                                        "hideRelatedRiskNone"
+                                                    ]
+                                                },
+                                                "type": "DATA_OUTPUT_BINDING"
+                                            },
+                                            "isNonDestructive": false,
+                                            "overrides": null,
+                                            "propertyValues": {
+                                                "configAria": {
+                                                    "container": {
+                                                        "input": {
+                                                            "container": {
+                                                                "aria-label": {
+                                                                    "type": "TRANSLATION_LITERAL",
+                                                                    "value": {
+                                                                        "code": null,
+                                                                        "comment": "",
+                                                                        "message": "None"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "type": "MAP_CONTAINER"
+                                                        }
+                                                    },
+                                                    "type": "MAP_CONTAINER"
+                                                },
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* {\n    font-size: var(--now-global-font-size--md, 16px);\n    color: RGB(var(--now-color--text-secondary, #425051));\n}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "div"
+                                                },
+                                                "text": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "comment": "",
+                                                        "message": "None"
+                                                    }
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "b83fb1af6e8e84e024d4057df053038b",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "related_risks_link_set",
+                                            "elementLabel": "Related risks link set",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "binding": {
+                                                    "address": [
+                                                        "get_data_related_to_citation_sidebar",
+                                                        "output",
+                                                        "hideRelatedRisk"
+                                                    ]
+                                                },
+                                                "type": "DATA_OUTPUT_BINDING"
+                                            },
+                                            "isNonDestructive": false,
+                                            "overrides": null,
+                                            "propertyValues": {
+                                                "browseLink": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "get_data_related_to_citation_sidebar",
+                                                            "output",
+                                                            "relatedRiskViewAllLink"
+                                                        ]
+                                                    },
+                                                    "type": "DATA_OUTPUT_BINDING"
+                                                },
+                                                "heading": {
+                                                    "container": {},
+                                                    "type": "MAP_CONTAINER"
+                                                },
+                                                "indentLinks": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": true
+                                                },
+                                                "links": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "get_data_related_to_citation_sidebar",
+                                                            "output",
+                                                            "riskLinkSetData"
+                                                        ]
+                                                    },
+                                                    "type": "DATA_OUTPUT_BINDING"
+                                                },
+                                                "minWidth": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": 150
+                                                },
+                                                "size": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "md"
+                                                },
+                                                "variant": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "primary"
+                                                },
+                                                "width": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "taxonomy_label",
+                                            "elementLabel": "Taxonomy label",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "propertyValues": {
+                                                "configAria": {
+                                                    "container": {
+                                                        "input": {
+                                                            "container": {
+                                                                "aria-label": {
+                                                                    "type": "TRANSLATION_LITERAL",
+                                                                    "value": {
+                                                                        "code": null,
+                                                                        "comment": "",
+                                                                        "message": "Taxonomy"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "type": "MAP_CONTAINER"
+                                                        }
+                                                    },
+                                                    "type": "MAP_CONTAINER"
+                                                },
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* {\n    font-size: var(--now-global-font-size--sm, 12px);\n    color: RGB(var(--now-color--text-secondary, #425051));\n}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "span"
+                                                },
+                                                "text": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "comment": "",
+                                                        "message": "Taxonomy"
+                                                    }
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "taxonomy_hierarchy_none_text",
+                                            "elementLabel": "Taxonomy hierarchy none text",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "script": {
+                                                    "apiVersion": "1.0.0",
+                                                    "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {any} params.imports\n */\nfunction evaluateProperty({\n    api\n}) {\n    if (api.data.get_taxonomy_hierarchy.output.tree.length &gt; 0) {\n        return true;\n    }\n    return false;\n}"
+                                                },
+                                                "type": "CLIENT_TRANSFORM_SCRIPT"
+                                            },
+                                            "isNonDestructive": false,
+                                            "overrides": null,
+                                            "propertyValues": {
+                                                "configAria": {
+                                                    "container": {
+                                                        "input": {
+                                                            "container": {
+                                                                "aria-label": {
+                                                                    "type": "TRANSLATION_LITERAL",
+                                                                    "value": {
+                                                                        "code": null,
+                                                                        "comment": "",
+                                                                        "message": "None"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "type": "MAP_CONTAINER"
+                                                        }
+                                                    },
+                                                    "type": "MAP_CONTAINER"
+                                                },
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* {\n    font-size: var(--now-global-font-size--md, 16px);\n    color: RGB(var(--now-color--text-secondary, #425051));\n}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "span"
+                                                },
+                                                "text": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "comment": "",
+                                                        "message": "None"
+                                                    }
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "71baad1870878aa2e853a2d9a3373f84",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "taxonomy_hierarchy",
+                                            "elementLabel": "Taxonomy hierarchy",
+                                            "eventMappings": [
+                                                {
+                                                    "eventMappingId": "ckrgbrggwmaaaaddzddhiibbyzjidnqo",
+                                                    "isConfiguration": false,
+                                                    "offRowStorageId": null,
+                                                    "sourceEventApiName": "sn_content_tree.NOW_CONTENT_TREE#ACTIONABLE_ITEM_CLICKED",
+                                                    "sourceEventCorrelationId": null,
+                                                    "sourceEventDefinition": {
+                                                        "apiName": "sn_content_tree.NOW_CONTENT_TREE#ACTIONABLE_ITEM_CLICKED",
+                                                        "id": null,
+                                                        "type": "UXEVENT"
+                                                    },
+                                                    "sourceEventSysId": null,
+                                                    "targets": [
+                                                        {
+                                                            "broker": null,
+                                                            "clientScript": {
+                                                                "sysId": "5035e3f707913010400790a30ad3006a"
+                                                            },
+                                                            "declarativeAction": null,
+                                                            "event": null,
+                                                            "operation": null,
+                                                            "targetId": "ckrgbrggwmaaaaeeaaddhiibbrjhwxpny",
+                                                            "type": "CLIENT_SCRIPT"
+                                                        },
+                                                        {
+                                                            "broker": null,
+                                                            "clientScript": {
+                                                                "sysId": "9095340b47fb6a1097744049116d43d4"
+                                                            },
+                                                            "declarativeAction": null,
+                                                            "event": null,
+                                                            "operation": null,
+                                                            "targetId": "ckrlltddcxaaaaccyddhhhsgbbjjkffjcs",
+                                                            "type": "CLIENT_SCRIPT"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": false
+                                            },
+                                            "isNonDestructive": false,
+                                            "overrides": null,
+                                            "propertyValues": {
+                                                "activeRoute": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": {
+                                                        "0": "@",
+                                                        "routeType": ""
+                                                    }
+                                                },
+                                                "configAria": {
+                                                    "container": {
+                                                        "tree": {
+                                                            "container": {
+                                                                "aria-label": {
+                                                                    "type": "TRANSLATION_LITERAL",
+                                                                    "value": {
+                                                                        "code": null,
+                                                                        "comment": "",
+                                                                        "message": "Taxonomy hierarchy"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "type": "MAP_CONTAINER"
+                                                        }
+                                                    },
+                                                    "type": "MAP_CONTAINER"
+                                                },
+                                                "expandedItems": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "get_taxonomy_hierarchy",
+                                                            "output",
+                                                            "expandedItems"
+                                                        ]
+                                                    },
+                                                    "type": "DATA_OUTPUT_BINDING"
+                                                },
+                                                "highlightSelectedParent": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "items": null,
+                                                "loadingItems": {
+                                                    "container": [],
+                                                    "type": "LIST_CONTAINER"
+                                                },
+                                                "overflow": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "truncate"
+                                                },
+                                                "searchTerm": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "select": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "none"
+                                                },
+                                                "selectedItems": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "get_taxonomy_hierarchy",
+                                                            "output",
+                                                            "selectedItems"
+                                                        ]
+                                                    },
+                                                    "type": "DATA_OUTPUT_BINDING"
+                                                },
+                                                "showActionsOnHover": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "showDividers": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "showPresencePattern": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "size": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "md"
+                                                },
+                                                "triggerIcon": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "chevron"
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        }
+                                    ],
+                                    "layout": {
+                                        "default": {
+                                            "children": null,
+                                            "items": [
+                                                {
+                                                    "element_id": "highlighted_details_heading",
+                                                    "styles": {
+                                                        "margin-bottom": "var(--now-global-space--sm, 8px)"
+                                                    }
+                                                },
+                                                {
+                                                    "element_id": "hierarchy_label",
+                                                    "styles": {
+                                                        "margin-bottom": "var(--now-global-space--sm, 8px)"
+                                                    }
+                                                },
+                                                {
+                                                    "element_id": "citation_hierarchy_none_text",
+                                                    "rules": {},
+                                                    "styles": {
+                                                        "margin-bottom": "var(--now-global-space--lg, 16px)",
+                                                        "margin-top": "var(--now-global-space--sm, 8px)"
+                                                    }
+                                                },
+                                                {
+                                                    "element_id": "citation_hierarchy",
+                                                    "rules": {},
+                                                    "styles": {
+                                                        "margin-bottom": "var(--now-global-space--xxl, 32px)"
+                                                    }
+                                                },
+                                                {
+                                                    "element_id": "addressed_by_label",
+                                                    "styles": {
+                                                        "margin-bottom": "var(--now-global-space--sm, 8px)"
+                                                    }
+                                                },
+                                                {
+                                                    "element_id": "addressed_by_none_text",
+                                                    "rules": {},
+                                                    "styles": {
+                                                        "margin-bottom": "var(--now-global-space--lg, 16px)",
+                                                        "margin-top": "var(--now-global-space--sm, 8px)"
+                                                    }
+                                                },
+                                                {
+                                                    "element_id": "addressed_by_link_set",
+                                                    "rules": {},
+                                                    "styles": {
+                                                        "margin-bottom": "var(--now-global-space--lg, 16px)"
+                                                    }
+                                                },
+                                                {
+                                                    "element_id": "related_risks_label",
+                                                    "styles": {
+                                                        "margin-bottom": "var(--now-global-space--sm, 8px)"
+                                                    }
+                                                },
+                                                {
+                                                    "element_id": "related_risks_none",
+                                                    "rules": {},
+                                                    "styles": {
+                                                        "margin-top": "var(--now-global-space--sm, 8px)"
+                                                    }
+                                                },
+                                                {
+                                                    "element_id": "related_risks_link_set",
+                                                    "rules": {},
+                                                    "styles": {}
+                                                },
+                                                {
+                                                    "element_id": "taxonomy_label",
+                                                    "styles": {
+                                                        "margin-bottom": "var(--now-global-space--sm, 8px)",
+                                                        "margin-top": "var(--now-global-space--lg, 16px)"
+                                                    }
+                                                },
+                                                {
+                                                    "element_id": "taxonomy_hierarchy_none_text",
+                                                    "rules": {},
+                                                    "styles": {}
+                                                },
+                                                {
+                                                    "element_id": "taxonomy_hierarchy",
+                                                    "rules": {},
+                                                    "styles": {}
+                                                }
+                                            ],
+                                            "root": null,
+                                            "rules": {},
+                                            "styles": {
+                                                "display": "flex",
+                                                "flex-direction": "column",
+                                                "height": "100%"
+                                            },
+                                            "type": "flex"
+                                        },
+                                        "version": "3.0.0"
+                                    }
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "ariaRegionHeadingLevel": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "1"
+                                    },
+                                    "ariaRegionName": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": ""
+                                        }
+                                    },
+                                    "ariaRole": {
+                                        "type": "JSON_LITERAL",
+                                        "value": ""
+                                    },
+                                    "hideEmptyStateUi": {
+                                        "type": "JSON_LITERAL",
+                                        "value": true
+                                    },
+                                    "includeAriaHeading": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "slotWrapperBehavior": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "fullheight"
+                                    },
+                                    "type": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "section"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "main_container_Main",
+                                        "rules": {},
+                                        "styles": {
+                                            "flex": "1",
+                                            "height": "100%"
+                                        }
+                                    }
+                                ],
+                                "root": null,
+                                "rules": null,
+                                "styles": {
+                                    "align-items": "stretch",
+                                    "flex-flow": "row nowrap",
+                                    "height": "100%"
+                                },
+                                "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                "type": "flex"
+                            },
+                            "version": "3.0.0"
+                        }
+                    },
+                    "propertyValues": {},
+                    "slot": null,
+                    "styles": null
+                }
+            ],
+            "layout": {
+                "default": {
+                    "children": null,
+                    "items": [
+                        {
+                            "element_id": "main_container",
+                            "rules": {},
+                            "styles": {
+                                "height": "100%",
+                                "width": "100%"
+                            }
+                        }
+                    ],
+                    "root": null,
+                    "rules": {},
+                    "styles": {
+                        "display": "flex",
+                        "flex-direction": "column",
+                        "width": "100%"
+                    },
+                    "type": "flex"
+                },
+                "version": "3.0.0"
+            }
+        },
+        "preset": null,
+        "propertyValues": {
+            "ariaRegionHeadingLevel": {
+                "type": "JSON_LITERAL",
+                "value": "1"
+            },
+            "ariaRegionName": {
+                "type": "TRANSLATION_LITERAL",
+                "value": {
+                    "code": null,
+                    "comment": "",
+                    "message": ""
+                }
+            },
+            "ariaRole": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "hideEmptyStateUi": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "includeAriaHeading": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "slotWrapperBehavior": {
+                "type": "JSON_LITERAL",
+                "value": "fullheight"
+            },
+            "type": {
+                "type": "JSON_LITERAL",
+                "value": "section"
+            }
+        },
+        "slot": null,
+        "styles": null
+    }
+]</composition>
+        <da_relay_models/>
+        <data>[
+    {
+        "definition": {
+            "id": "9eca551d53462010567cddeeff7b12fa",
+            "type": "TRANSFORM"
+        },
+        "elementId": "get_data_related_to_citation_sidebar",
+        "elementLabel": "Get data related to citation sidebar",
+        "eventMappings": [],
+        "inputValues": {
+            "citationSysId": {
+                "binding": {
+                    "address": [
+                        "sysId"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "176d9e94073120103a2990a30ad300bb",
+            "type": "TRANSFORM"
+        },
+        "elementId": "get_taxonomy_hierarchy",
+        "elementLabel": "Get taxonomy hierarchy",
+        "eventMappings": [],
+        "inputValues": {
+            "m2mTable": {
+                "type": "JSON_LITERAL",
+                "value": "sn_compliance_m2m_citation_taxonomy"
+            },
+            "parentReferenceColumn": {
+                "type": "JSON_LITERAL",
+                "value": "citation"
+            },
+            "parentTable": {
+                "binding": {
+                    "address": [
+                        "table"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "sysId": {
+                "binding": {
+                    "address": [
+                        "sysId"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    }
+]</data>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events/>
+        <events/>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{}</internal_event_mappings>
+        <layout>{
+    "default": {
+        "children": null,
+        "items": [
+            {
+                "element_id": "7a7a9dd953462010567cddeeff7b123d_Main",
+                "rules": {},
+                "styles": {
+                    "height": "100%"
+                }
+            }
+        ],
+        "root": null,
+        "rules": null,
+        "styles": {
+            "grid-gap": "1rem",
+            "grid-template-areas": "\"main\"",
+            "grid-template-columns": "1fr",
+            "grid-template-rows": "minmax(400px,auto)",
+            "height": "100%"
+        },
+        "templateId": "28bde4cd53431010e6bcddeeff7b12cc",
+        "type": "grid"
+    },
+    "version": "3.0.0"
+}</layout>
+        <macroponent_dependencies/>
+        <name>Citation sidebar</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "",
+        "description": "",
+        "fieldType": "string",
+        "label": "Tableau",
+        "mandatory": false,
+        "name": "table",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "",
+        "fieldType": "string",
+        "label": "SysId",
+        "mandatory": false,
+        "name": "sysId",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ {
+  "message" : "Addressed by",
+  "comment" : ""
+}, {
+  "message" : "Citation hierarchy",
+  "comment" : ""
+}, {
+  "message" : "Hierarchy",
+  "comment" : ""
+}, {
+  "message" : "Highlighted details",
+  "comment" : ""
+}, {
+  "message" : "None",
+  "comment" : ""
+}, {
+  "message" : "Related risks",
+  "comment" : ""
+}, {
+  "message" : "Taxonomy",
+  "comment" : ""
+}, {
+  "message" : "Taxonomy hierarchy",
+  "comment" : ""
+} ]</required_translations>
+        <root_component/>
+        <root_component_config>{}</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties>[
+    {
+        "description": "",
+        "fieldType": "",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": "sn_compliance_citation"
+        },
+        "label": "treeTable",
+        "name": "treeTable",
+        "shape": "",
+        "valueType": ""
+    }
+]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8095340b47fb6a1097744049116d43aa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Citation sidebar</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_macroponent_8095340b47fb6a1097744049116d43aa</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:15</sys_updated_on>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_macroponent>
+</record_update>

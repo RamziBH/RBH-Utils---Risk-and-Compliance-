@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00f49cf2db8de054633d3fd3e2961978</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="PGL">6292b379db203f80858c2c23ca9619de</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>sys_relationship_72a1a361dbda7700555768d35b9619dc</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_relationship"&gt;&lt;sys_relationship action="INSERT_OR_UPDATE"&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;apply_to/&gt;&lt;basic_apply_to&gt;x_gamlp_pgl_lab&lt;/basic_apply_to&gt;&lt;basic_query_from&gt;x_gamlp_pgl_preparation&lt;/basic_query_from&gt;&lt;insert_callback/&gt;&lt;name&gt;Equipements&lt;/name&gt;&lt;query_from/&gt;&lt;query_with&gt;&lt;![CDATA[(function refineQuery(current, parent) {
+	var type = x_gamlp_pgl.DatabaseViewsUtilities.TYPES.equipement;
+	var filter = new x_gamlp_pgl.DatabaseViewsUtilities(type);
+	filter.filter(current, parent);
+})(current, parent);]]&gt;&lt;/query_with&gt;&lt;reference_field&gt;prep_u_vendor&lt;/reference_field&gt;&lt;related_list/&gt;&lt;simple_reference&gt;false&lt;/simple_reference&gt;&lt;sys_class_name&gt;sys_relationship&lt;/sys_class_name&gt;&lt;sys_created_by&gt;obousquet_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-27 19:26:23&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;72a1a361dbda7700555768d35b9619dc&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;Equipements&lt;/sys_name&gt;&lt;sys_package display_value="PGL" source="x_gamlp_pgl"&gt;6292b379db203f80858c2c23ca9619de&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="PGL"&gt;6292b379db203f80858c2c23ca9619de&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_relationship_72a1a361dbda7700555768d35b9619dc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;obousquet_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-27 16:53:03&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;/sys_relationship&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=72a1a361dbda7700555768d35b9619dc"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1487868058</payload_hash>
+        <remote_update_set display_value="KER-KTSD-591 Rapport de lab - Ajouter liste de matériels et de consommables 2">00f49cf2db8de054633d3fd3e2961976</remote_update_set>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>martin.roux@fxinnovation.com</sys_created_by>
+        <sys_created_on>2020-12-16 10:58:19</sys_created_on>
+        <sys_id>00f49cf2db8de054633d3fd3e2961978</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1760a9f57540000001</sys_recorded_at>
+        <sys_updated_by>martin.roux@fxinnovation.com</sys_updated_by>
+        <sys_updated_on>2020-12-16 10:58:19</sys_updated_on>
+        <table/>
+        <target_name>Equipements</target_name>
+        <type>Relationship</type>
+        <update_domain>global</update_domain>
+        <update_guid>8befe72c6ff06450578bb339203c3f97</update_guid>
+        <update_guid_history>8befe72c6ff06450578bb339203c3f97:-1487868058,309be9c8117ca05067f18589bb76e378:-1434320288,592b21c8277ca0506e0bde19560b3327:-1971549253,02eae588ef7ca050266c4a8cd99e50be:1410558363,fdcaa1c8ad7ca050779ea38cb5d3dc7f:-494782408,347ae188a37ca050040aec084809beb5:-1492266962,ab892d484c7ca0506600103e21cc0d57:1150398944,2359e148627ca05045f627922ccd4d47:-1620271240,a8c56584427ca0500f3dc0828c5bef02:-151401764,c5a561444e7ca0503c00f87fee54a902:970743521,0d75ad448f7ca0503f7fefa09eb3b38e:-58308687,4d75ad44ce7ca0505e631a124686f18c:1701135901</update_guid_history>
+        <update_set/>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d811cff547c4fe1097744049116d4344</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_relationship_72a1a361dbda7700555768d35b9619dc</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_d811cff547c4fe1097744049116d4344</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:01</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>012153ff47531510c6170f9e436d4365</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>customer</category>
+        <comments/>
+        <name>asmt_metric_8d2153ff47531510c6170f9e436d4360</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="asmt_metric"&gt;&lt;asmt_metric action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_info_label&gt;Additional Information&lt;/add_info_label&gt;&lt;allow_add_info&gt;false&lt;/allow_add_info&gt;&lt;allow_not_applicable&gt;true&lt;/allow_not_applicable&gt;&lt;auto_gen&gt;false&lt;/auto_gen&gt;&lt;category display_value="Commentaires et observations"&gt;812153ff47531510c6170f9e436d4357&lt;/category&gt;&lt;cond_question&gt;always&lt;/cond_question&gt;&lt;condition/&gt;&lt;context/&gt;&lt;correct_answer/&gt;&lt;correct_answer_checkbox/&gt;&lt;correct_answer_choice/&gt;&lt;correct_answer_template/&gt;&lt;correct_answer_yesno/&gt;&lt;custom_metric/&gt;&lt;datatype&gt;date&lt;/datatype&gt;&lt;default_value_field/&gt;&lt;depends_on/&gt;&lt;description/&gt;&lt;details/&gt;&lt;displayed_when/&gt;&lt;displayed_when_checkbox/&gt;&lt;displayed_when_template/&gt;&lt;displayed_when_yesno/&gt;&lt;duration/&gt;&lt;field_validation/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max&gt;10&lt;/max&gt;&lt;max_weight/&gt;&lt;maximum_normalization_input&gt;false&lt;/maximum_normalization_input&gt;&lt;method&gt;assessment&lt;/method&gt;&lt;metric_type display_value="Contrôle de qualité Interne - Route C06 "&gt;452193bf47531510c6170f9e436d4359&lt;/metric_type&gt;&lt;min&gt;1&lt;/min&gt;&lt;name&gt;Formulaire a été complété&lt;/name&gt;&lt;order&gt;8700&lt;/order&gt;&lt;plugin/&gt;&lt;question&gt;Formulaire a été complété&lt;/question&gt;&lt;randomize_answers&gt;false&lt;/randomize_answers&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;reference_table/&gt;&lt;scale&gt;low&lt;/scale&gt;&lt;scored&gt;false&lt;/scored&gt;&lt;script&gt;&lt;![CDATA[// The following variables are available:  // - primary: contains the sys_id of the assessable object to be evaluated  // - string_result: the script sets the display string value for this metric to this variable  // - actual_result: the script sets the actual value for this metric to this variable  // - scaled_result: the script sets the scaled value (used in calculations) for this metric to this variable  //  // For example: // var gr = new GlideRecord('cmdb_ci'); // gr.addQuery('manufacturer', primary); // gr.query(); // actual_result = gr.getRowCount(); // string_result = actual_result + ''; // if (actual_result &amp;gt; 100) scaled_result = 5; // else scaled_result = 1;]]&gt;&lt;/script&gt;&lt;source_field/&gt;&lt;string_option&gt;wide&lt;/string_option&gt;&lt;sys_class_name&gt;asmt_metric&lt;/sys_class_name&gt;&lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-11-28 12:09:15&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;8d2153ff47531510c6170f9e436d4360&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Formulaire a été complété&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;asmt_metric_8d2153ff47531510c6170f9e436d4360&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-12-09 19:57:33&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_subcategory&gt;009&lt;/u_subcategory&gt;&lt;u_target/&gt;&lt;value_parameters/&gt;&lt;weight&gt;10&lt;/weight&gt;&lt;/asmt_metric&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=8d2153ff47531510c6170f9e436d4360"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1111737775</payload_hash>
+        <remote_update_set/>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>martin.roux@fxinnovation.com</sys_created_by>
+        <sys_created_on>2022-11-28 12:09:16</sys_created_on>
+        <sys_id>012153ff47531510c6170f9e436d4365</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_recorded_at>184f876e98e0000001</sys_recorded_at>
+        <sys_updated_by>martin.roux@fxinnovation.com</sys_updated_by>
+        <sys_updated_on>2022-12-09 19:57:33</sys_updated_on>
+        <table/>
+        <target_name>Formulaire a été complété</target_name>
+        <type>Assessment Metric</type>
+        <update_domain>global</update_domain>
+        <update_guid>58d5a1ab77e79d10ba99a684278a958a</update_guid>
+        <update_guid_history>58d5a1ab77e79d10ba99a684278a958a:-1111737775,37c4009dae27115063b49a18f6138823:1690330362,5a740bb87c635d10b1f66faf21cf262a:1696256839,4d2153ff8a531510fd8ec1a9c0a86064:1588364377</update_guid_history>
+        <update_set display_value="Default">64074e2b4f703200015eab99f110c709</update_set>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1c31073947c4fe1097744049116d438a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>asmt_metric_8d2153ff47531510c6170f9e436d4360</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_1c31073947c4fe1097744049116d438a</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:35</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

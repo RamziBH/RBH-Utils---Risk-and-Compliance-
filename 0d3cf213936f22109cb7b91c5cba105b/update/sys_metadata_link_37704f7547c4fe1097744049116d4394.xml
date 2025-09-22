@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>0021d8d147c47a1097744049116d438f</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="GRC: Advanced Risk"&gt;7443d9ba7373230055e9d8b0caf6a7b0&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sn_risk_advanced_heatmap_color_matrix_4c21d8d147c47a1097744049116d438d&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_risk_advanced_heatmap_color_matrix"&gt;&lt;sn_risk_advanced_heatmap_color_matrix action="INSERT_OR_UPDATE"&gt;&lt;assessment_type display_value="Target Assessment"&gt;8012a766472ae61097744049116d438a&lt;/assessment_type&gt;&lt;display_order&gt;25&lt;/display_order&gt;&lt;risk_color_style display_value="Energir - Moderate Risk"&gt;9b159bf34754d2d097744049116d435f&lt;/risk_color_style&gt;&lt;sys_class_name&gt;sn_risk_advanced_heatmap_color_matrix&lt;/sys_class_name&gt;&lt;sys_created_by&gt;rben-hassine_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-09-16 15:28:23&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;4c21d8d147c47a1097744049116d438d&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;9b159bf34754d2d097744049116d435f&lt;/sys_name&gt;&lt;sys_package display_value="GRC: Advanced Risk" source="sn_risk_advanced"&gt;7443d9ba7373230055e9d8b0caf6a7b0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="GRC: Advanced Risk"&gt;7443d9ba7373230055e9d8b0caf6a7b0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_risk_advanced_heatmap_color_matrix_4c21d8d147c47a1097744049116d438d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;rben-hassine_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-09-16 15:28:23&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;x_axis_factor_score&gt;5&lt;/x_axis_factor_score&gt;&lt;y_axis_factor_score&gt;Rare&lt;/y_axis_factor_score&gt;&lt;/sn_risk_advanced_heatmap_color_matrix&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;624345011&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;rben-hassine_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-09-16 15:28:23&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0021d8d147c47a1097744049116d438f&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;1995327d88f0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;rben-hassine_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-09-16 15:32:24&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;9b159bf34754d2d097744049116d435f&lt;/target_name&gt;
+        &lt;type&gt;Heatmap Colors&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;cf021c5551c47a103b5adb2678b5e7bd&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;cf021c5551c47a103b5adb2678b5e7bd:624345011,1821d8d135c47a102d31a0a8e7863eba:624345011,0c21d8d158c47a10f24c8cf9860ea48e:-1283315960&lt;/update_guid_history&gt;
+        &lt;update_set display_value="COLLAB-6494-RBH-IRM"&gt;fe60b6f49300b6109cb7b91c5cba1064&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>37704f7547c4fe1097744049116d4394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_risk_advanced_heatmap_color_matrix_4c21d8d147c47a1097744049116d438d</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_37704f7547c4fe1097744049116d4394</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:32</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

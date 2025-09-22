@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>001c9fdbdb302b00d345de82ca96198b</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>customer</category>
+        <comments/>
+        <name>sysevent_email_action_0194b19dd7220100c11180f29e6103fe</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Assessment" name="Assessment"&gt;a69d02137f232200ee2e108c3ffa9124&lt;/category&gt;&lt;collection&gt;asmt_assessment_instance&lt;/collection&gt;&lt;condition table="asmt_assessment_instance"&gt;metric_type.evaluation_method=assessment^userISNOTEMPTY^EQ&lt;item endquery="false" field="metric_type.evaluation_method" goto="false" newquery="false" operator="=" or="false" value="assessment"/&gt;&lt;item endquery="false" field="user" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;content_type&gt;multipart/mixed&lt;/content_type&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;br&gt;&lt;hr&gt;&lt;br&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;event_name&gt;assessment.reminder&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;event&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;message&gt;&lt;![CDATA[You have been designated as an assessment participant on ${metric_type} due to your role in the organization and subject matter knowledge. As required by management, please follow the link below and complete the assessment by ${due_date}. You can save your responses until you are ready to submit them. When you are satisfied with your responses, submit the assessment.
+
+Click here to take your assessment: &lt;mail_script&gt;
+var link = new AssessmentUtils().getAssessmentInstanceURL(current.sys_id);
+var url =  '&lt;a href="' + link + '"&gt;' + link + '&lt;/a&gt;';
+template.print(url);
+&lt;/mail_script&gt;
+
+To view your assessment queue at any time, sign in and navigate to Self-Service &gt; My Assessments &amp; Surveys.]]&gt;&lt;/message&gt;&lt;message_html/&gt;&lt;message_list&gt;3040c70253020200601fa3fc9ec58731&lt;/message_list&gt;&lt;message_text/&gt;&lt;name&gt;Remind assessment user&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields&gt;user&lt;/recipient_fields&gt;&lt;recipient_groups/&gt;&lt;recipient_users/&gt;&lt;reply_to/&gt;&lt;send_self&gt;false&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;Assessment reminder: Assessment on ${metric_type} - due by ${due_date}&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-12 21:21:59&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;0194b19dd7220100c11180f29e6103fe&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;Remind assessment user&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Mobile UI" source="com.glide.ui.m"&gt;540242674f303200015eab99f110c785&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_0194b19dd7220100c11180f29e6103fe&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-27 16:51:21&lt;/sys_updated_on&gt;&lt;sys_version/&gt;&lt;template display_value="Unsubscribe and Preferences"&gt;7ed0481f3b0b2200c869c2c703efc487&lt;/template&gt;&lt;type&gt;email&lt;/type&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1001688762</payload_hash>
+        <remote_update_set display_value="FX - Notifications - 20180929">081c9fdbdb302b00d345de82ca96198a</remote_update_set>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>martin.roux@fxinnovation.com</sys_created_by>
+        <sys_created_on>2018-10-02 19:44:58</sys_created_on>
+        <sys_id>001c9fdbdb302b00d345de82ca96198b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1661bf128410000001</sys_recorded_at>
+        <sys_updated_by>martin.roux@fxinnovation.com</sys_updated_by>
+        <sys_updated_on>2018-10-02 19:44:58</sys_updated_on>
+        <table>asmt_assessment_instance</table>
+        <target_name>Remind assessment user</target_name>
+        <type>Notification</type>
+        <update_domain>global</update_domain>
+        <update_guid>0864417163f02700048df00fbe005a3b</update_guid>
+        <update_guid_history>0864417163f02700048df00fbe005a3b:1001688762,c064417168f027007a014a7342ee2a3a:944793239</update_guid_history>
+        <update_set/>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9b700f7547c4fe1097744049116d4357</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sysevent_email_action_0194b19dd7220100c11180f29e6103fe</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_9b700f7547c4fe1097744049116d4357</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:30</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

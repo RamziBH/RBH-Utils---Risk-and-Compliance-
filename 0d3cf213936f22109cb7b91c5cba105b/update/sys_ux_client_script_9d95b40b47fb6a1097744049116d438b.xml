@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Issue Sidebar">1595b40b47fb6a1097744049116d4387</macroponent>
+        <name>related_to_none/NODE__isHidden</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+  var data = api.data.issue_side_panel.output;
+  if(data && data.details){
+    var controls = data.details.control.length;
+    var risks = data.details.risk.length;
+    var policies = data.details.policy.length;
+    var authDocs = data.details.authorityDocument.length;
+    var engagements = data.details.engagement.length;
+    var regTasks = data.details.regTask.length;
+    var remTasks = data.details.remediationTask.length;
+    var riskEvents = data.details.riskEvent.length;
+
+    if(controls == 0 && risks == 0 && policies == 0 && authDocs == 0 && engagements == 0 && regTasks == 0 && remTasks == 0 && riskEvents == 0){
+      return false;
+    }
+    return true;
+  }
+	return true;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9d95b40b47fb6a1097744049116d438b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>related_to_none/NODE__isHidden</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_client_script_9d95b40b47fb6a1097744049116d438b</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:19</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_client_script>
+</record_update>

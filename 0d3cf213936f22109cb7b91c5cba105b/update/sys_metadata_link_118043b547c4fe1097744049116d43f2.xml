@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>0036dba14787f5d03ef68d57536d43e9</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_report_users_groups_8c36dba14787f5d03ef68d57536d43e7&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_report_users_groups"&gt;&lt;sys_report_users_groups action="INSERT_OR_UPDATE"&gt;&lt;group_id display_value="Ressources DBA (5)" name="Ressources DBA (5)"&gt;b0f72c391b9f11d05c5d42a7bc4bcbb1&lt;/group_id&gt;&lt;report_id display_value="Infra - Changements à approuver"&gt;8036dba14787f5d03ef68d57536d4347&lt;/report_id&gt;&lt;sys_class_name&gt;sys_report_users_groups&lt;/sys_class_name&gt;&lt;sys_created_by&gt;ds90622&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-12-11 18:51:35&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;8c36dba14787f5d03ef68d57536d43e7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;8036dba14787f5d03ef68d57536d4347&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_report_users_groups_8c36dba14787f5d03ef68d57536d43e7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;ds90622&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-11 18:51:35&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;user_id/&gt;&lt;/sys_report_users_groups&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-843472667&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;ds90622&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2023-12-11 18:51:35&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0036dba14787f5d03ef68d57536d43e9&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;18c5a3867e60000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;ds90622&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2023-12-11 18:51:35&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;8036dba14787f5d03ef68d57536d4347&lt;/target_name&gt;
+        &lt;type&gt;Report Users and Groups&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;4c36dba13f87f5d04dcf4925aaaabfe8&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;4c36dba13f87f5d04dcf4925aaaabfe8:-843472667&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>118043b547c4fe1097744049116d43f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_report_users_groups_8c36dba14787f5d03ef68d57536d43e7</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_118043b547c4fe1097744049116d43f2</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:39</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

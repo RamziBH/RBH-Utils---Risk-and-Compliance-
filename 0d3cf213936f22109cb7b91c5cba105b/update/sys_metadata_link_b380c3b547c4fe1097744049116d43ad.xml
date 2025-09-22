@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>004dbe36db630110633d3fd3e2961932</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;help_guidance_084dbe36db630110633d3fd3e2961930&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="help_guidance"&gt;&lt;help_guidance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;app_route&gt;now/experience/manager&lt;/app_route&gt;&lt;auto_launch_order/&gt;&lt;checklist/&gt;&lt;context&gt;mg-list-page&lt;/context&gt;&lt;description&gt;Monitor agent calls when they are resolving issues for external callers by using Workforce Optimization for ITSM.&lt;/description&gt;&lt;eh_content display_value="listen-in-agent-call"&gt;884dbe36db630110633d3fd3e296192f&lt;/eh_content&gt;&lt;name&gt;Listen in to an agent call&lt;/name&gt;&lt;order&gt;200&lt;/order&gt;&lt;roles/&gt;&lt;route_params&gt;{"params":{"listTitle":"Active Calls","table":"interaction"}}&lt;/route_params&gt;&lt;snc_created&gt;true&lt;/snc_created&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;help_guidance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;system&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-22 22:12:57&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;084dbe36db630110633d3fd3e2961930&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Listen in to an agent call&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;help_guidance_084dbe36db630110633d3fd3e2961930&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-05-22 22:13:37&lt;/sys_updated_on&gt;&lt;topic_id&gt;listen-in-agent-call&lt;/topic_id&gt;&lt;type&gt;embedded_help&lt;/type&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;version&gt;sandiego&lt;/version&gt;&lt;/help_guidance&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-131736062&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;system&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-05-22 22:12:57&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;004dbe36db630110633d3fd3e2961932&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;180edd5423c0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-05-22 22:13:37&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;Listen in to an agent call&lt;/target_name&gt;
+        &lt;type&gt;Guidance&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;f56dba76e4630110053326617fce4301&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;f56dba76e4630110053326617fce4301:-131736062,0c4dbe36df630110b40d7539ff578035:-1156442030,4c4dbe36466301104d59a83df2e73131:-1942422985&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b380c3b547c4fe1097744049116d43ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>help_guidance_084dbe36db630110633d3fd3e2961930</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_b380c3b547c4fe1097744049116d43ad</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:49</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

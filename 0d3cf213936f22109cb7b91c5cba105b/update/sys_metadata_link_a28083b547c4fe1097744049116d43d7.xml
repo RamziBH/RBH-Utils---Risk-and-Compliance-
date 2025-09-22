@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>004139a9dbb780902d9958eadc9619eb</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sc_cat_item_guide_items_c18ec4e2db26cc10858c2c23ca9619a7&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sc_cat_item_guide_items"&gt;&lt;sc_cat_item_guide_items action="INSERT_OR_UPDATE"&gt;&lt;condition&gt;IO:9da83e3cdbb3c814555768d35b96190f=lightweight_laptop^EQ&lt;/condition&gt;&lt;guide display_value="TI"&gt;688ecceedbe2cc10858c2c23ca96194c&lt;/guide&gt;&lt;ignore_mandatory_eval&gt;false&lt;/ignore_mandatory_eval&gt;&lt;item display_value="Ordinateur portable léger"&gt;143a7e180fba8600eea6a218b1050e2a&lt;/item&gt;&lt;order&gt;20&lt;/order&gt;&lt;quantity&gt;1&lt;/quantity&gt;&lt;requested_by/&gt;&lt;requested_for/&gt;&lt;show_quantity&gt;false&lt;/show_quantity&gt;&lt;sys_class_name&gt;sc_cat_item_guide_items&lt;/sys_class_name&gt;&lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-27 13:03:39&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;c18ec4e2db26cc10858c2c23ca9619a7&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;688ecceedbe2cc10858c2c23ca96194c&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sc_cat_item_guide_items_c18ec4e2db26cc10858c2c23ca9619a7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-25 12:56:23&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;use_sc_layout&gt;true&lt;/use_sc_layout&gt;&lt;/sc_cat_item_guide_items&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;1358144770&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-03-26 20:59:36&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;004139a9dbb780902d9958eadc9619eb&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;17118a4a70b0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-03-26 20:59:36&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;688ecceedbe2cc10858c2c23ca96194c&lt;/target_name&gt;
+        &lt;type&gt;Rule&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;441936c1917b0c1455e52d3aa610ce5e&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;441936c1917b0c1455e52d3aa610ce5e:1358144770,0f6f08262326cc10f5a34513878fbaf8:-2066860150,8d8ec4e29026cc10e7abbbad6c4ae4a9:722993242&lt;/update_guid_history&gt;
+        &lt;update_set display_value="FX - RITM0107139-01 - MR"&gt;ff31f5a9dbb780902d9958eadc9619e4&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a28083b547c4fe1097744049116d43d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sc_cat_item_guide_items_c18ec4e2db26cc10858c2c23ca9619a7</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_a28083b547c4fe1097744049116d43d7</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:43</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

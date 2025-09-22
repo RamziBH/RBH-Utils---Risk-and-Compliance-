@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>007a36e047c25a1037f719b3716d4378</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_portal_642b96c547b0d21097744049116d4362&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_portal"&gt;&lt;sys_portal action="INSERT_OR_UPDATE"&gt;&lt;dropzone/&gt;&lt;offset/&gt;&lt;page display_value="New Tab 1"&gt;688ea44d4738921097744049116d4388&lt;/page&gt;&lt;summary&gt;Reporting classification&lt;/summary&gt;&lt;sys_created_by&gt;james.pollock@energir.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-20 21:17:38&lt;/sys_created_on&gt;&lt;sys_id&gt;642b96c547b0d21097744049116d4362&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;james.pollock@energir.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-20 21:27:01&lt;/sys_updated_on&gt;&lt;/sys_portal&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;1507918768&lt;/payload_hash&gt;
+        &lt;remote_update_set display_value="ESG-STRY0029123-JP-V1-Tableau de bord Dashboard Global"&gt;bb6a36e047c25a1037f719b3716d434f&lt;/remote_update_set&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;bcrepeault_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-11-20 13:35:55&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;007a36e047c25a1037f719b3716d4378&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;192337dc97b0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;bcrepeault_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-11-20 13:35:55&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;642b96c547b0d21097744049116d4362&lt;/target_name&gt;
+        &lt;type&gt;Portal&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;9b53ec97737856909c9ce93919b8ccd4&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;9b53ec97737856909c9ce93919b8ccd4:1507918768&lt;/update_guid_history&gt;
+        &lt;update_set/&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:32:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4ba08bb547c4fe1097744049116d43e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_portal_642b96c547b0d21097744049116d4362</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_4ba08bb547c4fe1097744049116d43e5</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:32:19</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

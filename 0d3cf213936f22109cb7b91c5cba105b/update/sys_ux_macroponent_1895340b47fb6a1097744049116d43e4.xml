@@ -1,0 +1,1409 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <bundles/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[
+    {
+        "definition": {
+            "id": "d356d14b6e293a3020a244b63d278d8f",
+            "type": "MACROPONENT"
+        },
+        "elementId": "f8ab252a077020102bb2f4ce0ad30044_Row_1",
+        "elementLabel": "Row 1",
+        "eventMappings": [],
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "overrides": {
+            "composition": [
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "remove_association",
+                    "elementLabel": "Remove association",
+                    "eventMappings": [],
+                    "extensionPoints": [],
+                    "isHero": false,
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": ""
+                    },
+                    "isNonDestructive": false,
+                    "items": [],
+                    "overrides": null,
+                    "propertyValues": {
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* { \n    color: RGB(var(--now-color_text--primary, 22, 27, 28));\n    font-size: var(--now-global-font-size--xl, 24px);\n    font-weight: 600;\n    margin: 0px;\n}"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "p"
+                        },
+                        "text": {
+                            "binding": {
+                                "address": [
+                                    "heading"
+                                ]
+                            },
+                            "type": "STATE_BINDING"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                }
+            ],
+            "layout": {
+                "default": {
+                    "children": null,
+                    "items": [
+                        {
+                            "element_id": "remove_association",
+                            "rules": {},
+                            "styles": {}
+                        }
+                    ],
+                    "root": null,
+                    "rules": {},
+                    "styles": {
+                        "align-items": "stretch",
+                        "display": "flex",
+                        "flex-direction": "column",
+                        "height": "100%",
+                        "justify-content": "flex-start"
+                    },
+                    "type": "flex"
+                },
+                "version": "3.0.0"
+            }
+        },
+        "preset": null,
+        "propertyValues": {
+            "ariaRegionHeadingLevel": {
+                "type": "JSON_LITERAL",
+                "value": "1"
+            },
+            "ariaRegionName": {
+                "type": "TRANSLATION_LITERAL",
+                "value": {
+                    "code": null,
+                    "comment": "",
+                    "message": ""
+                }
+            },
+            "ariaRole": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "hideEmptyStateUi": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "includeAriaHeading": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "slotWrapperBehavior": {
+                "type": "JSON_LITERAL",
+                "value": "fullheight"
+            },
+            "type": {
+                "type": "JSON_LITERAL",
+                "value": "section"
+            }
+        },
+        "slot": null,
+        "styles": null
+    },
+    {
+        "definition": {
+            "id": "d356d14b6e293a3020a244b63d278d8f",
+            "type": "MACROPONENT"
+        },
+        "elementId": "f8ab252a077020102bb2f4ce0ad30044_Row_2",
+        "elementLabel": "Row 2",
+        "eventMappings": [],
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "overrides": {
+            "composition": [
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "stylized_text_2",
+                    "elementLabel": "Item generation message",
+                    "eventMappings": [],
+                    "extensionPoints": [],
+                    "isHero": false,
+                    "isHidden": {
+                        "binding": {
+                            "address": [
+                                "itemGeneratingHide"
+                            ]
+                        },
+                        "type": "STATE_BINDING"
+                    },
+                    "isNonDestructive": false,
+                    "items": [],
+                    "overrides": null,
+                    "propertyValues": {
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* {\n    color: RGB(var(--now-color_text--primary, 22, 27, 28));\n    font-size: var(--now-global-font-size--md, 16px);\n    font-weight: normal;\n    margin: 0px;\n    padding-right: var(--now-global-space--xl, 24px);\n}"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "p"
+                        },
+                        "text": {
+                            "binding": {
+                                "address": [
+                                    "delete_entity_types",
+                                    "output",
+                                    "generationMessage"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "stylized_text_1",
+                    "elementLabel": "Delete confirmation message",
+                    "eventMappings": [],
+                    "extensionPoints": [],
+                    "isHero": false,
+                    "isHidden": {
+                        "binding": {
+                            "address": [
+                                "deleteAndDeactivateHide"
+                            ]
+                        },
+                        "type": "STATE_BINDING"
+                    },
+                    "isNonDestructive": false,
+                    "items": [],
+                    "overrides": null,
+                    "propertyValues": {
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* {\n    color: RGB(var(--now-color_text--primary, 22, 27, 28));\n    font-size: var(--now-global-font-size--md,16px);\n    font-weight: normal;\n    margin: 0px;\n }"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "p"
+                        },
+                        "text": {
+                            "binding": {
+                                "address": [
+                                    "deleteAndDeactivateMsg"
+                                ]
+                            },
+                            "type": "STATE_BINDING"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "delete_header",
+                    "elementLabel": "Delete Header",
+                    "eventMappings": [],
+                    "extensionPoints": [],
+                    "isHero": false,
+                    "isHidden": {
+                        "binding": {
+                            "address": [
+                                "deleteHide"
+                            ]
+                        },
+                        "type": "STATE_BINDING"
+                    },
+                    "isNonDestructive": false,
+                    "items": [],
+                    "overrides": null,
+                    "propertyValues": {
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* { \n    color: RGB(var(--now-color_text--primary, 22, 27, 28));\n    font-size: var(--now-global-font-size--md,16px);\n    font-weight: normal;\n    margin: 0px;\n}"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "p"
+                        },
+                        "text": {
+                            "binding": {
+                                "address": [
+                                    "deleteHeader"
+                                ]
+                            },
+                            "type": "STATE_BINDING"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "07639c819178b528f1ece9228c9629b1",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "label_value_tabbed_1",
+                    "elementLabel": "Label value tabbed 1",
+                    "eventMappings": [],
+                    "extensionPoints": [],
+                    "isHero": false,
+                    "isHidden": {
+                        "binding": {
+                            "address": [
+                                "deleteHide"
+                            ]
+                        },
+                        "type": "STATE_BINDING"
+                    },
+                    "isNonDestructive": false,
+                    "items": [],
+                    "overrides": null,
+                    "propertyValues": {
+                        "delimiter": {
+                            "type": "JSON_LITERAL",
+                            "value": ","
+                        },
+                        "items": {
+                            "script": {
+                                "apiVersion": "1.0.0",
+                                "controllerElementId": null,
+                                "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {any} params.imports\n */\nfunction evaluateProperty({\n    api\n}) {\n    if (api.data.delete_entity_types.output &amp;&amp; api.data.delete_entity_types.output[\"deleted\"]) {\n        const items = [];\n        let associatedItems = api.data.delete_entity_types.output[\"deleted\"];\n        let keys = Object.keys(associatedItems);\n\n        for (let i = 0; i &lt; keys.length; i++) {\n            var link = associatedItems[keys[i]].link;\n            var title = associatedItems[keys[i]].label;\n\n            var item = {\n                label: associatedItems[keys[i]].label,\n                value: {\n                    type: 'text-link',\n                    label: associatedItems[keys[i]].number,\n                    href: link,\n                    underlined: true,\n                    opensWindow: true\n                }\n            };\n\n            items.push(item);\n        }\n        return items;\n    }\n}",
+                                "scriptSysId": null,
+                                "target": null
+                            },
+                            "type": "CLIENT_TRANSFORM_SCRIPT"
+                        },
+                        "size": {
+                            "type": "JSON_LITERAL",
+                            "value": "sm"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "deactivate_header",
+                    "elementLabel": "Deactivate Header",
+                    "eventMappings": [],
+                    "extensionPoints": [],
+                    "isHero": false,
+                    "isHidden": {
+                        "binding": {
+                            "address": [
+                                "deactivateHide"
+                            ]
+                        },
+                        "type": "STATE_BINDING"
+                    },
+                    "isNonDestructive": false,
+                    "items": [],
+                    "overrides": null,
+                    "propertyValues": {
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* { \n    color: RGB(var(--now-color_text--primary, 22, 27, 28));\n    font-size: var(--now-global-font-size--md,16px);\n    font-weight: normal;\n    margin: 0px;\n}"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "p"
+                        },
+                        "text": {
+                            "binding": {
+                                "address": [
+                                    "deactivateRetireHeader"
+                                ]
+                            },
+                            "type": "STATE_BINDING"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "07639c819178b528f1ece9228c9629b1",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "label_value_tabbed_2",
+                    "elementLabel": "Label value tabbed 2",
+                    "eventMappings": [],
+                    "extensionPoints": [],
+                    "isHero": false,
+                    "isHidden": {
+                        "binding": {
+                            "address": [
+                                "deactivateHide"
+                            ]
+                        },
+                        "type": "STATE_BINDING"
+                    },
+                    "isNonDestructive": false,
+                    "items": [],
+                    "overrides": null,
+                    "propertyValues": {
+                        "delimiter": {
+                            "type": "JSON_LITERAL",
+                            "value": ","
+                        },
+                        "items": {
+                            "script": {
+                                "apiVersion": "2.0.0",
+                                "controllerElementId": null,
+                                "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {any} params.imports\n */\nfunction evaluateProperty({\n    api\n}) {\n    if (api.data.delete_entity_types.output &amp;&amp; api.data.delete_entity_types.output[\"deactivated-retired\"]) {\n        const items = [];\n        let associatedItems = api.data.delete_entity_types.output[\"deactivated-retired\"];\n        let keys = Object.keys(associatedItems);\n        var workspaceURL = api.data.delete_entity_types.output[\"pageURL\"];\n        \n        for (let i = 0; i &lt; keys.length; i++) {\n            var link = associatedItems[keys[i]].link;\n            var title = associatedItems[keys[i]].label;\n            var url = link;\n            if(link.includes(\"sysparm_query=\")){\n                var query = link.substr(link.indexOf('sysparm_query=') + 'sysparm_query='.length);\n                url = `/now/${workspaceURL}/list-view/${keys[i]}/params/listTitle/${title}/query/${query}`; \n            }\n            \n            var item = {\n                label: associatedItems[keys[i]].label,\n                value: {\n                    type: 'text-link',\n                    label: associatedItems[keys[i]].number,\n                    href: url,\n                    underlined: true,\n                    opensWindow: true\n                }\n            };\n            items.push(item);\n        }\n        return items;\n    }\n}",
+                                "scriptSysId": "d095340b47fb6a1097744049116d43f2",
+                                "target": null
+                            },
+                            "type": "CLIENT_TRANSFORM_SCRIPT"
+                        },
+                        "size": {
+                            "type": "JSON_LITERAL",
+                            "value": "sm"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "additional_info",
+                    "elementLabel": "Additional Info",
+                    "eventMappings": [],
+                    "extensionPoints": [],
+                    "isHero": false,
+                    "isHidden": {
+                        "binding": {
+                            "address": [
+                                "additionalInfoHide"
+                            ]
+                        },
+                        "type": "STATE_BINDING"
+                    },
+                    "isNonDestructive": false,
+                    "items": [],
+                    "overrides": {},
+                    "preset": null,
+                    "propertyValues": {
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* { }"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "p"
+                        },
+                        "text": {
+                            "binding": {
+                                "address": [
+                                    "additionalInfo"
+                                ]
+                            },
+                            "type": "STATE_BINDING"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                }
+            ],
+            "layout": {
+                "default": {
+                    "children": null,
+                    "items": [
+                        {
+                            "element_id": "stylized_text_2",
+                            "rules": {},
+                            "styles": {
+                                "margin-top": "var(--now-global-space-xl, 24px)"
+                            }
+                        },
+                        {
+                            "element_id": "stylized_text_1",
+                            "rules": {},
+                            "styles": {
+                                "margin-top": "var(--now-global-space-xl, 24px)"
+                            }
+                        },
+                        {
+                            "element_id": "delete_header",
+                            "rules": {},
+                            "styles": {
+                                "margin-top": "var(--now-global-space-xl, 24px)"
+                            }
+                        },
+                        {
+                            "element_id": "label_value_tabbed_1",
+                            "rules": {},
+                            "styles": {
+                                "margin-top": "var(--now-global-space--lg,16px)"
+                            }
+                        },
+                        {
+                            "element_id": "deactivate_header",
+                            "rules": {},
+                            "styles": {
+                                "margin-top": "var(--now-global-space-xl, 24px)"
+                            }
+                        },
+                        {
+                            "element_id": "label_value_tabbed_2",
+                            "rules": {},
+                            "styles": {
+                                "margin-top": "var(--now-global-space--lg,16px)"
+                            }
+                        },
+                        {
+                            "element_id": "additional_info",
+                            "rules": {},
+                            "styles": {
+                                "margin-top": "var(--now-global-space-xl, 24px)"
+                            }
+                        }
+                    ],
+                    "root": null,
+                    "rules": {},
+                    "styles": {
+                        "align-items": "stretch",
+                        "display": "flex",
+                        "flex-direction": "column",
+                        "height": "100%",
+                        "justify-content": "flex-start"
+                    },
+                    "type": "flex"
+                },
+                "version": "3.0.0"
+            }
+        },
+        "preset": null,
+        "propertyValues": {
+            "ariaRegionHeadingLevel": {
+                "type": "JSON_LITERAL",
+                "value": "1"
+            },
+            "ariaRegionName": {
+                "type": "TRANSLATION_LITERAL",
+                "value": {
+                    "code": null,
+                    "comment": "",
+                    "message": ""
+                }
+            },
+            "ariaRole": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "hideEmptyStateUi": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "includeAriaHeading": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "slotWrapperBehavior": {
+                "type": "JSON_LITERAL",
+                "value": "fullheight"
+            },
+            "type": {
+                "type": "JSON_LITERAL",
+                "value": "section"
+            }
+        },
+        "slot": null,
+        "styles": null
+    },
+    {
+        "definition": {
+            "id": "d356d14b6e293a3020a244b63d278d8f",
+            "type": "MACROPONENT"
+        },
+        "elementId": "f8ab252a077020102bb2f4ce0ad30044_Row_3",
+        "elementLabel": "Row 3",
+        "eventMappings": [],
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "overrides": {
+            "composition": [
+                {
+                    "definition": {
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "container_1",
+                    "elementLabel": "Container 1",
+                    "eventMappings": [],
+                    "extensionPoints": [],
+                    "isHero": false,
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": ""
+                    },
+                    "isNonDestructive": false,
+                    "items": [],
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "d356d14b6e293a3020a244b63d278d8f",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "container_1_Main",
+                                "elementLabel": "Main",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "overrides": {
+                                    "composition": [
+                                        {
+                                            "definition": {
+                                                "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "remove",
+                                            "elementLabel": "Remove",
+                                            "eventMappings": [
+                                                {
+                                                    "eventMappingId": "ckkwkvgehaaaabbggddghhrccxnrwffcy",
+                                                    "isConfiguration": false,
+                                                    "offRowStorageId": null,
+                                                    "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                    "sourceEventCorrelationId": null,
+                                                    "sourceEventDefinition": {
+                                                        "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                        "id": null,
+                                                        "type": "UXEVENT"
+                                                    },
+                                                    "sourceEventSysId": null,
+                                                    "targets": [
+                                                        {
+                                                            "broker": null,
+                                                            "clientScript": {
+                                                                "sysId": "d895340b47fb6a1097744049116d43fa"
+                                                            },
+                                                            "conditional": null,
+                                                            "declarativeAction": null,
+                                                            "event": null,
+                                                            "operation": null,
+                                                            "targetId": "ckkwkvgehaaaabbhhddghhrqdpxqhfn",
+                                                            "type": "CLIENT_SCRIPT"
+                                                        },
+                                                        {
+                                                            "broker": null,
+                                                            "clientScript": null,
+                                                            "conditional": null,
+                                                            "declarativeAction": null,
+                                                            "event": {
+                                                                "apiName": "sn_grc_workspace.RECORD#_RELATED_LIST_REFRESH_REQUESTED_RELAY_21fcdb090f572010878cddcd58767e27",
+                                                                "payload": {
+                                                                    "container": {
+                                                                        "relatedListName": {
+                                                                            "binding": {
+                                                                                "address": [
+                                                                                    "relatedListName"
+                                                                                ],
+                                                                                "category": "props"
+                                                                            },
+                                                                            "type": "CONTEXT_BINDING"
+                                                                        }
+                                                                    },
+                                                                    "type": "MAP_CONTAINER"
+                                                                },
+                                                                "sysId": "f098315da1d82510f8770f1225e2c35d"
+                                                            },
+                                                            "operation": null,
+                                                            "targetId": "clcxyggyxsaaaaddhddbhhrsdhhmjjxqk",
+                                                            "type": "EVENT"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "extensionPoints": [],
+                                            "isHero": false,
+                                            "isHidden": {
+                                                "binding": {
+                                                    "address": [
+                                                        "deleteAndDeactivateHide"
+                                                    ]
+                                                },
+                                                "type": "STATE_BINDING"
+                                            },
+                                            "isNonDestructive": false,
+                                            "items": [],
+                                            "overrides": null,
+                                            "propertyValues": {
+                                                "configAria": {
+                                                    "container": {
+                                                        "aria-label": {
+                                                            "type": "TRANSLATION_LITERAL",
+                                                            "value": {
+                                                                "code": null,
+                                                                "comment": "",
+                                                                "message": "Remove entity type association"
+                                                            }
+                                                        }
+                                                    },
+                                                    "type": "MAP_CONTAINER"
+                                                },
+                                                "disabled": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "icon": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "label": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "operationLabel"
+                                                        ]
+                                                    },
+                                                    "type": "STATE_BINDING"
+                                                },
+                                                "size": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "md"
+                                                },
+                                                "tooltipContent": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "comment": "",
+                                                        "message": "Remove"
+                                                    }
+                                                },
+                                                "variant": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "primary-negative"
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "go_back",
+                                            "elementLabel": "Go back",
+                                            "eventMappings": [
+                                                {
+                                                    "eventMappingId": "ckkwkxmggjaaaabbjjddghhrffsaaeycs",
+                                                    "isConfiguration": false,
+                                                    "offRowStorageId": null,
+                                                    "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                    "sourceEventCorrelationId": null,
+                                                    "sourceEventDefinition": {
+                                                        "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                        "id": null,
+                                                        "type": "UXEVENT"
+                                                    },
+                                                    "sourceEventSysId": null,
+                                                    "targets": [
+                                                        {
+                                                            "broker": null,
+                                                            "clientScript": {
+                                                                "sysId": "1c95340b47fb6a1097744049116d43e9"
+                                                            },
+                                                            "conditional": null,
+                                                            "declarativeAction": null,
+                                                            "event": null,
+                                                            "operation": null,
+                                                            "targetId": "ckkwkxmggjaaaabbaddghhrddvinkddaw",
+                                                            "type": "CLIENT_SCRIPT"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "extensionPoints": [],
+                                            "isHero": false,
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": ""
+                                            },
+                                            "isNonDestructive": false,
+                                            "items": [],
+                                            "overrides": null,
+                                            "propertyValues": {
+                                                "configAria": {
+                                                    "container": {
+                                                        "aria-label": {
+                                                            "type": "TRANSLATION_LITERAL",
+                                                            "value": {
+                                                                "code": null,
+                                                                "comment": "",
+                                                                "message": "Cancel"
+                                                            }
+                                                        }
+                                                    },
+                                                    "type": "MAP_CONTAINER"
+                                                },
+                                                "disabled": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "icon": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "label": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "comment": "",
+                                                        "message": "Cancel"
+                                                    }
+                                                },
+                                                "size": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "md"
+                                                },
+                                                "tooltipContent": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "comment": "",
+                                                        "message": "Go back"
+                                                    }
+                                                },
+                                                "variant": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "secondary"
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        }
+                                    ],
+                                    "layout": {
+                                        "default": {
+                                            "children": null,
+                                            "items": [
+                                                {
+                                                    "element_id": "remove",
+                                                    "rules": {},
+                                                    "styles": {}
+                                                },
+                                                {
+                                                    "element_id": "go_back",
+                                                    "rules": {},
+                                                    "styles": {
+                                                        "padding-left": "1rem"
+                                                    }
+                                                }
+                                            ],
+                                            "root": null,
+                                            "rules": {},
+                                            "styles": {
+                                                "display": "flex",
+                                                "flex-direction": "row",
+                                                "height": "100%",
+                                                "justify-content": "flex-end"
+                                            },
+                                            "type": "flex"
+                                        },
+                                        "version": "3.0.0"
+                                    }
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "ariaRegionHeadingLevel": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "1"
+                                    },
+                                    "ariaRegionName": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": ""
+                                        }
+                                    },
+                                    "ariaRole": {
+                                        "type": "JSON_LITERAL",
+                                        "value": ""
+                                    },
+                                    "hideEmptyStateUi": {
+                                        "type": "JSON_LITERAL",
+                                        "value": true
+                                    },
+                                    "includeAriaHeading": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "slotWrapperBehavior": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "fullheight"
+                                    },
+                                    "type": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "section"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "isInline": null,
+                                "items": [
+                                    {
+                                        "element_id": "container_1_Main",
+                                        "rules": {},
+                                        "styles": {
+                                            "grid-area": "main",
+                                            "height": "100%",
+                                            "margin-right": "4rem"
+                                        }
+                                    }
+                                ],
+                                "root": null,
+                                "rules": null,
+                                "styles": {
+                                    "grid-gap": "1rem",
+                                    "grid-template-areas": "\"main\"",
+                                    "grid-template-columns": "1fr",
+                                    "grid-template-rows": "auto",
+                                    "height": "100%"
+                                },
+                                "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                "type": "grid"
+                            },
+                            "version": "3.0.0"
+                        }
+                    },
+                    "propertyValues": {
+                        "ariaRegionHeadingLevel": {
+                            "type": "JSON_LITERAL",
+                            "value": "1"
+                        },
+                        "ariaRegionName": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": ""
+                            }
+                        },
+                        "ariaRole": {
+                            "type": "JSON_LITERAL",
+                            "value": ""
+                        },
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "includeAriaHeading": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "type": {
+                            "type": "JSON_LITERAL",
+                            "value": "section"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                }
+            ],
+            "layout": {
+                "default": {
+                    "children": null,
+                    "items": [
+                        {
+                            "element_id": "container_1",
+                            "rules": {},
+                            "styles": {
+                                "margin-top": "var(--now-global-space--3xl, 40px)",
+                                "width": "100%"
+                            }
+                        }
+                    ],
+                    "root": null,
+                    "rules": {},
+                    "styles": {
+                        "align-items": "stretch",
+                        "display": "flex",
+                        "flex-direction": "row",
+                        "height": "100%",
+                        "justify-content": "flex-end"
+                    },
+                    "type": "flex"
+                },
+                "version": "3.0.0"
+            }
+        },
+        "preset": null,
+        "propertyValues": {
+            "ariaRegionHeadingLevel": {
+                "type": "JSON_LITERAL",
+                "value": "1"
+            },
+            "ariaRegionName": {
+                "type": "TRANSLATION_LITERAL",
+                "value": {
+                    "code": null,
+                    "comment": "",
+                    "message": ""
+                }
+            },
+            "ariaRole": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "hideEmptyStateUi": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "includeAriaHeading": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "slotWrapperBehavior": {
+                "type": "JSON_LITERAL",
+                "value": "fullheight"
+            },
+            "type": {
+                "type": "JSON_LITERAL",
+                "value": "section"
+            }
+        },
+        "slot": null,
+        "styles": null
+    }
+]</composition>
+        <da_relay_models/>
+        <data>[
+    {
+        "definition": {
+            "id": "9b1079ea077020102bb2f4ce0ad30022",
+            "type": "TRANSFORM"
+        },
+        "dependencies": {},
+        "elementId": "delete_entity_types",
+        "elementLabel": "Get Associated items",
+        "eventMappings": [
+            {
+                "eventMappingId": "ckksffwjeecaaaaggeddghhrlyccyifhd",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": {
+                            "sysId": "1095340b47fb6a1097744049116d43ee"
+                        },
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "ckksffwjeecaaaaggfddghhrjqpokdku",
+                        "type": "CLIENT_SCRIPT"
+                    }
+                ]
+            }
+        ],
+        "inputValues": {
+            "routeConfigID": {
+                "binding": {
+                    "address": [
+                        "routeConfigId"
+                    ],
+                    "category": "app"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "routeConfigId": {
+                "binding": {
+                    "address": [
+                        "routeConfigId"
+                    ],
+                    "category": "app"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "sysIds": {
+                "binding": {
+                    "address": [
+                        "sysIds"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "table": {
+                "binding": {
+                    "address": [
+                        "table"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "3b68e51a077420102bb2f4ce0ad30029",
+            "type": "TRANSFORM"
+        },
+        "dependencies": {},
+        "elementId": "delete_records",
+        "elementLabel": "Delete Records",
+        "eventMappings": [],
+        "inputValues": {},
+        "readEvaluationMode": "EXPLICIT"
+    }
+]</data>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events>5a979750533f101035beddeeff7b1231,0d78e8db0f0210107d20409dc4767ea1,f098315da1d82510f8770f1225e2c35d,4ca30091533210109706ddeeff7b12e6</dispatched_events>
+        <events/>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{
+    "MACROPONENT_READY": [
+        {
+            "broker": null,
+            "clientScript": {
+                "sysId": "9495340b47fb6a1097744049116d43f6"
+            },
+            "conditional": null,
+            "declarativeAction": null,
+            "event": null,
+            "operation": null,
+            "targetId": "ckksffwbbueaaaaggjjddghhrmqqxneetn",
+            "type": "CLIENT_SCRIPT"
+        },
+        {
+            "broker": null,
+            "clientScript": null,
+            "conditional": null,
+            "declarativeAction": null,
+            "event": {
+                "apiName": null,
+                "payload": {
+                    "type": "JSON_LITERAL",
+                    "value": {}
+                },
+                "sysId": null
+            },
+            "operation": null,
+            "targetId": "ckksggiggrccaaaahhpddghhroddlvcwddf",
+            "type": "EVENT"
+        }
+    ]
+}</internal_event_mappings>
+        <layout>{
+    "default": {
+        "children": null,
+        "isInline": null,
+        "items": [
+            {
+                "element_id": "f8ab252a077020102bb2f4ce0ad30044_Row_1",
+                "rules": {},
+                "styles": {
+                    "grid-area": "row1",
+                    "height": "auto"
+                }
+            },
+            {
+                "element_id": "f8ab252a077020102bb2f4ce0ad30044_Row_2",
+                "rules": {},
+                "styles": {
+                    "grid-area": "row2",
+                    "height": "100%",
+                    "width": "auto"
+                }
+            },
+            {
+                "element_id": "f8ab252a077020102bb2f4ce0ad30044_Row_3",
+                "rules": {},
+                "styles": {
+                    "grid-area": "row3",
+                    "height": "100%"
+                }
+            }
+        ],
+        "root": null,
+        "rules": null,
+        "styles": {
+            "grid-template-areas": "\"row1\" \"row2\" \"row3\" ",
+            "grid-template-columns": "100%",
+            "height": "auto",
+            "padding": "var(--now-global-space--xl, 24px)",
+            "width": "100%"
+        },
+        "templateId": "1afa9dc153c31010e6bcddeeff7b1280",
+        "type": "grid"
+    },
+    "version": "3.0.0"
+}</layout>
+        <macroponent_dependencies/>
+        <name>Delete EntityType Popup default</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "",
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "relatedListName",
+        "mandatory": false,
+        "name": "relatedListName",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "Nombre",
+        "mandatory": false,
+        "name": "count",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "Tableau",
+        "mandatory": false,
+        "name": "table",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "sysIds",
+        "mandatory": false,
+        "name": "sysIds",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ {
+  "message" : "Cancel",
+  "comment" : ""
+}, {
+  "message" : "Go back",
+  "comment" : ""
+}, {
+  "message" : "Remove",
+  "comment" : ""
+}, {
+  "message" : "Remove entity type association",
+  "comment" : ""
+} ]</required_translations>
+        <root_component/>
+        <root_component_config>{}</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties>[
+    {
+        "description": "",
+        "fieldType": "",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "label": "deleteHeader",
+        "name": "deleteHeader",
+        "shape": "",
+        "valueType": ""
+    },
+    {
+        "description": "",
+        "fieldType": "",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "label": "deactivateRetireHeader",
+        "name": "deactivateRetireHeader",
+        "shape": "",
+        "valueType": ""
+    },
+    {
+        "description": "",
+        "fieldType": "boolean",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": true
+        },
+        "label": "deleteHide",
+        "name": "deleteHide",
+        "shape": "",
+        "valueType": "boolean"
+    },
+    {
+        "description": "",
+        "fieldType": "boolean",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": true
+        },
+        "label": "deactivateHide",
+        "name": "deactivateHide",
+        "shape": "",
+        "valueType": "boolean"
+    },
+    {
+        "description": "",
+        "fieldType": "boolean",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": true
+        },
+        "label": "itemGeneratingHide",
+        "name": "itemGeneratingHide",
+        "shape": "",
+        "valueType": "boolean"
+    },
+    {
+        "description": "",
+        "fieldType": "boolean",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": true
+        },
+        "label": "deleteAndDeactivateHide",
+        "name": "deleteAndDeactivateHide",
+        "shape": "",
+        "valueType": "boolean"
+    },
+    {
+        "description": "",
+        "fieldType": "",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "label": "deleteAndDeactivateMsg",
+        "name": "deleteAndDeactivateMsg",
+        "shape": "",
+        "valueType": ""
+    },
+    {
+        "description": "",
+        "fieldType": "",
+        "initialValue": null,
+        "label": "heading",
+        "name": "heading",
+        "shape": "",
+        "valueType": ""
+    },
+    {
+        "description": "",
+        "fieldType": "",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": "Remove"
+        },
+        "label": "operationLabel",
+        "name": "operationLabel",
+        "shape": "",
+        "valueType": ""
+    },
+    {
+        "fieldType": "boolean",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": true
+        },
+        "name": "additionalInfoHide",
+        "shape": "",
+        "valueType": "boolean"
+    },
+    {
+        "initialValue": null,
+        "name": "additionalInfo",
+        "shape": "",
+        "valueType": "string"
+    }
+]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1895340b47fb6a1097744049116d43e4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Delete EntityType Popup default</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_macroponent_1895340b47fb6a1097744049116d43e4</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:16</sys_updated_on>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_macroponent>
+</record_update>

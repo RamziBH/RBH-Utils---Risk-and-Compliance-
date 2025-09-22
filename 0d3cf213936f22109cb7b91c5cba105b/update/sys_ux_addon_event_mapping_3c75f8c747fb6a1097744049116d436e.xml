@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_addon_event_mapping">
+    <sys_ux_addon_event_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <controller/>
+        <description/>
+        <name>Delete policy to Entity type relation from entity type form</name>
+        <parent_macroponent/>
+        <source_component/>
+        <source_da display_value="rm_entity_type_policy_et_form">f3ad1da153a120100b39ddeeff7b1284</source_da>
+        <source_element_id>record_page_tabs_1</source_element_id>
+        <sys_class_name>sys_ux_addon_event_mapping</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-09 18:20:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>3c75f8c747fb6a1097744049116d436e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Delete policy to Entity type relation from entity type form</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_addon_event_mapping_3c75f8c747fb6a1097744049116d436e</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:20:44</sys_updated_on>
+        <target_event display_value="[Record Page] Open modal">509663140f0310107d20409dc4767e00</target_event>
+        <target_payload_mapping>{
+    "container": {
+        "fields": {
+            "container": {
+                "count": {
+                    "binding": {
+                        "address": [
+                            "count"
+                        ]
+                    },
+                    "type": "EVENT_PAYLOAD_BINDING"
+                },
+                "relatedListName": {
+                    "binding": {
+                        "address": [
+                            "relatedListName"
+                        ]
+                    },
+                    "type": "EVENT_PAYLOAD_BINDING"
+                },
+                "sysIds": {
+                    "binding": {
+                        "address": [
+                            "sysIds"
+                        ]
+                    },
+                    "type": "EVENT_PAYLOAD_BINDING"
+                },
+                "table": {
+                    "binding": {
+                        "address": [
+                            "table"
+                        ]
+                    },
+                    "type": "EVENT_PAYLOAD_BINDING"
+                }
+            },
+            "type": "MAP_CONTAINER"
+        },
+        "route": {
+            "type": "JSON_LITERAL",
+            "value": "delete-entitytypes"
+        },
+        "size": {
+            "type": "JSON_LITERAL",
+            "value": "md"
+        }
+    },
+    "type": "MAP_CONTAINER"
+}</target_payload_mapping>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_addon_event_mapping>
+</record_update>

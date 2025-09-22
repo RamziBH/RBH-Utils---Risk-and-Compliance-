@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated">
+    <sys_translated action="INSERT_OR_UPDATE">
+        <element>title</element>
+        <id/>
+        <label>SGSOP – Demandes de création de risque</label>
+        <language>fq</language>
+        <name>sys_ux_list_category</name>
+        <sys_class_name>sys_translated</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 14:42:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>08e9d2fd4740fe1097744049116d43ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SGSOP – Demandes de création de risque</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_translated_08e9d2fd4740fe1097744049116d43ed</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 14:42:48</sys_updated_on>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+        <value>SGSOP – Risk Creation Requests</value>
+    </sys_translated>
+</record_update>

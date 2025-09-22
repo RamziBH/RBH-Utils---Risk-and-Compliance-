@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Delete EntityType Popup default">1895340b47fb6a1097744049116d43e4</macroponent>
+        <name>Set Titles</name>
+        <preset/>
+        <required_translations>[
+    {
+        "message": "Remove entity type association"
+    },
+    {
+        "message": "Delete entity from the entity class"
+    },
+    {
+        "message": "Delete entity filter"
+    }
+]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    let tableName;
+    let count = api.context.props.count;
+    let entitytype = count == 1 ? 'entity type' : 'entity types';
+    let associatedRecord = entitytype;
+    let operationName = "remove";
+    helpers.translate('Remove entity type association').then((val) => {
+        api.setState('heading', val);
+    });
+    api.setState('operationLabel', 'Remove');
+    switch (api.context.props.relatedListName) {
+        case 'sn_grc_profile.profile_class':
+            tableName = "entity class";
+            associatedRecord = count == 1 ? "entity" : "entities";
+            helpers.translate('Delete entity from the entity class').then((val) => {
+                api.setState('heading', val);
+            });
+            api.setState('operationLabel', 'Delete');
+            operationName = "delete";
+            break;
+        case 'sn_grc_enrichment_query.profile_type':
+            tableName = "entity type";
+            associatedRecord = count == 1 ? "entity filter" : "entity filters";
+            helpers.translate('Delete entity filter').then((val) => {
+                api.setState('heading', val);
+            });
+            api.setState('operationLabel', 'Delete');
+            operationName = "delete";
+            break;
+        case 'sn_grc_m2m_profile_profile_type.profile_type':
+            tableName = "entity type";
+            associatedRecord = count == 1 ? "entity" : "entities";
+            break;
+        case 'sn_grc_m2m_profile_profile_type.profile':
+            tableName = "entity";
+            break;
+        case "sn_risk_m2m_risk_definition_profile_type.sn_grc_profile_type":
+            tableName = "entity type";
+            associatedRecord = count == 1 ? "risk statement" : "risk statements";
+            break;
+        case "sn_risk_m2m_risk_definition_profile_type.statement":
+            tableName = "risk statement";
+            break;
+        case "sn_risk_m2m_framework_profile_type.sn_grc_profile_type":
+            tableName = "entity type";
+            associatedRecord = count == 1 ? "risk framework" : "risk frameworks";
+            break;
+        case "sn_risk_m2m_framework_profile_type.sn_risk_framework":
+            tableName = "risk framework";
+            break;
+        case "sn_compliance_m2m_policy_profile_type.sn_grc_profile_type":
+            tableName = 'entity type';
+            associatedRecord = count == 1 ? 'policy' : 'policies';
+            break;
+        case "sn_compliance_m2m_policy_profile_type.sn_compliance_policy":
+            tableName = 'policy';
+            break;
+        case "sn_compliance_m2m_statement_profile_type.sn_grc_profile_type":
+            tableName = "entity type";
+            associatedRecord = count == 1 ? 'control objective' : 'control objectives';
+            break;
+        case "sn_compliance_m2m_statement_profile_type.sn_compliance_statement":
+            tableName = "control objective";
+            break;
+    }
+
+    if(api.context.props.relatedListName == 'sn_grc_enrichment_query.profile_type'){
+        helpers
+            .translate('Are you sure you want to {0} {1} {2}? After deletion, changes to the associated records (if any) will be reflected when the profile generation job runs.', [operationName, api.context.props.count, associatedRecord])
+            .then((val) => {
+                api.setState('deleteAndDeactivateMsg', val);
+            });
+    } else {
+        helpers
+            .translate('Are you sure you want to {0} {1} {2} from this {3}?', [operationName, api.context.props.count, associatedRecord, tableName])
+            .then((val) => {
+                api.setState('deleteAndDeactivateMsg', val);
+            });
+    }
+    helpers
+        .translate('{0}', ["This action will delete the following:"])
+        .then((val) => {
+            api.setState('deleteHeader', val);
+        });
+    helpers
+        .translate('{0}', ["This action will deactivate/retire the following:"])
+        .then((val) => {
+            api.setState('deactivateRetireHeader', val);
+        });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9495340b47fb6a1097744049116d43f6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Set Titles</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_client_script_9495340b47fb6a1097744049116d43f6</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:15</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_client_script>
+</record_update>

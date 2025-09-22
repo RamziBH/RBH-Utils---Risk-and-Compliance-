@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00297777dbb80e90622d450b13961930</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_documentation_dmn_demand_u_alternative_1_en&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_documentation element="u_alternative_1" label="Alternative 1" language="en" table="dmn_demand"&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;u_alternative_1&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Alternative 1&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;dmn_demand&lt;/name&gt;&lt;plural&gt;Alternative 1s&lt;/plural&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;onguyen_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-24 22:31:48&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;4dd792f587604690124b7777dabb3518&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Alternative 1&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_documentation_dmn_demand_u_alternative_1_en&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;onguyen_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-24 22:31:48&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;/sys_documentation&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;407889635&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;onguyen_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-03-14 21:00:26&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00297777dbb80e90622d450b13961930&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;18e3ec42ad10000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;onguyen_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-03-14 21:00:27&lt;/sys_updated_on&gt;
+        &lt;table&gt;dmn_demand&lt;/table&gt;
+        &lt;target_name&gt;Demand.Alternative 1&lt;/target_name&gt;
+        &lt;type&gt;Field Label&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;0dd792f5f7604690420aa0f214fe142b&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;0dd792f5f7604690420aa0f214fe142b:407889635&lt;/update_guid_history&gt;
+        &lt;update_set display_value="COLLAB_4285_Demand_Global_ON_V1"&gt;0c293777dbb80e90622d450b139619cc&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ac80cf7547c4fe1097744049116d4396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_documentation_dmn_demand_u_alternative_1_en</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_ac80cf7547c4fe1097744049116d4396</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:35</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

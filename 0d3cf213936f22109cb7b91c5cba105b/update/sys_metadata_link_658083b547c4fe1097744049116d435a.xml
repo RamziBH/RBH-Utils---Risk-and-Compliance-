@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00392d63dbb53514622d450b139619ab</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>sys_script_9361ee79876dbd107f7d20e5cebb35d7</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident_task&lt;/collection&gt;&lt;condition/&gt;&lt;description&gt;Ajouter le responsable dans le champ des cessionnaires additionnels de l'incident&lt;/description&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="incident_task"&gt;assigned_toVALCHANGES^short_descriptionNOT LIKEFeuille de temps^EQ&lt;item endquery="false" field="assigned_to" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/&gt;&lt;item endquery="false" field="short_description" goto="false" newquery="false" operator="NOT LIKE" or="false" value="Feuille de temps"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Copy Responsible Additional assignee&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var incUsers;
+
+	incUsers = (current.incident.additional_assignee_list + '').split(',');
+	incUsers.push(current.assigned_to.toString());
+	incUsers = new ArrayUtil().unique(incUsers);
+
+	var getInc = current.incident.getRefRecord();
+	if(getInc.isValidRecord()) {
+        getInc.additional_assignee_list = incUsers.toString();
+        getInc.update();
+    }
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-09-28 20:05:21&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9361ee79876dbd107f7d20e5cebb35d7&lt;/sys_id&gt;&lt;sys_mod_count&gt;46&lt;/sys_mod_count&gt;&lt;sys_name&gt;Copy Responsible Additional assignee&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_9361ee79876dbd107f7d20e5cebb35d7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-10-02 16:09:40&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=9361ee79876dbd107f7d20e5cebb35d7"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1115518698</payload_hash>
+        <remote_update_set display_value="SG - COLLAB-3384 - Synchroniser cessionnaires supplémentaires d'un incident v2">44392d63dbb53514622d450b139619aa</remote_update_set>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>ojeffroy_admin</sys_created_by>
+        <sys_created_on>2023-10-16 12:44:42</sys_created_on>
+        <sys_id>00392d63dbb53514622d450b139619ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18af12f5b4e0000001</sys_recorded_at>
+        <sys_updated_by>ojeffroy_admin</sys_updated_by>
+        <sys_updated_on>2023-10-16 12:44:42</sys_updated_on>
+        <table>incident_task</table>
+        <target_name>Copy Responsible Additional assignee</target_name>
+        <type>Business Rule</type>
+        <update_domain>global</update_domain>
+        <update_guid>8ad1968b22ad3550626838492fa8fddf</update_guid>
+        <update_guid_history>8ad1968b22ad3550626838492fa8fddf:-1115518698,bd6d630a732931509af26cec24003def:-717140221,403d27c6e5293150c5107a303f1eb0e3:184131734,0e4c2f4676293150e26fef051d71a805:-643002477,7f2c278678293150951ee0bd3915286a:-524716045,c87b6b4652293150aef528e92ddf6228:-1444447815,9c5bab46d82931503fa1ed2cd60638a4:1787650413,b03b6b465d293150eeb30833de6510a8:1991083440,77592b829b293150e34b2b53a22d98c5:-186750384,ca59a342ec293150aee1f348bad96a92:-263737719,58f823c29f293150b0d5e2f4dfae2ac2:1387027157,5bc86f82c829315094254ee1e80a13b2:811023260,3ea863822c29315075834eebcb558e85:-1488450335,c728ab4249293150d4b7132692815560:811023260,38182382bc293150c408ac6ddfef226e:243047534,8cd66b025929315082be0807870073ed:811023260,89c89f4212e53150fd0c01f2ce0c03ee:911864694,b256938e1da5315087510b48f7d1c8ab:1419877520,2d4693ceefa531502bb1c22cdfaca409:1463039273,3736d38e86a53150ddfe565fcb2cef30:-469047106,9db5df0eeea531504ae0732516757855:-1807061449,9a059f0e61a53150d4daffb89538956f:1419877520,ceb31bcaa3a53150994e14aefb04bc06:59241776,523313ca54a531506acd67efe59e0043:-1707421015,6cf2db8a1fa531502b4a000b4ab2c51a:59241776,29d1174a86a531508b042c1ee21b40c4:584733177,42b01746a4a5315061d13227a821c809:1238427007,bd80d74641a53150ce199ed1d9e78d45:-1558551635,7aeec706e8a531509b2ced77fab522ac:-1597212075,6b8ecbc219a5315026ce40693054b855:596860441,7f2e4b821ba53150e24a90a4c4b9d491:675374151,4bac0742ada53150c7e8133f2da1f577:102446966,60bbc3427ba53150c9a6430e44a443f9:384637452,f32bcb0257a531505e6bcd096ef68c91:1986805252,958a8bce7865315036f5f20848147f4d:-122820556,2e5acbce7a653150a1cf9ef9b78653aa:-1991143808,f34a8bced16531507ad4eeb78864ed46:1454320366,183a878e8c653150a1e52d775578cc86:1975130391,04084bca2765315052eed74a25bf6295:395300069,b8a783caf5653150220daf13fd8282ac:-240434363,4247838ae66531505b6d06fa42ba0b4e:-655369314,e32747ca3a65315084cbb5a762a1089e:-605498677,0bf3a67d246dbd1037791316735b56be:-655369314,dcd3263d876dbd10e7aad03ffebc5b87:-1303252910,cde22a3dca6dbd10ff16a6d56d804e00:814832472,7f81eeb9c26dbd104ff1421f669ad52e:1592109688,d761ee79516dbd10c4b2e40bf523e6d9:-1303252910</update_guid_history>
+        <update_set/>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>658083b547c4fe1097744049116d435a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_script_9361ee79876dbd107f7d20e5cebb35d7</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_658083b547c4fe1097744049116d435a</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:40</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

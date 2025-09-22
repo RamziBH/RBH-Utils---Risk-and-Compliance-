@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>0120529147adde1037f719b3716d433c</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_user_group_5a464cb4936fc2109cb7b91c5cba10b2&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_user_group"&gt;&lt;sys_user_group action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;average_daily_fte/&gt;&lt;cost_center/&gt;&lt;default_assignee/&gt;&lt;description/&gt;&lt;email/&gt;&lt;exclude_manager&gt;false&lt;/exclude_manager&gt;&lt;hourly_rate&gt;0&lt;/hourly_rate&gt;&lt;include_members&gt;false&lt;/include_members&gt;&lt;manager/&gt;&lt;name&gt;ETG - Formateurs externes&lt;/name&gt;&lt;parent/&gt;&lt;points&gt;0&lt;/points&gt;&lt;roles/&gt;&lt;source/&gt;&lt;sys_created_by&gt;bcrepeault_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-19 12:30:56&lt;/sys_created_on&gt;&lt;sys_id&gt;5a464cb4936fc2109cb7b91c5cba10b2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcrepeault_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-19 12:30:56&lt;/sys_updated_on&gt;&lt;type&gt;2cee2898db45720094637b931f961987&lt;/type&gt;&lt;u_homepage_role&gt;false&lt;/u_homepage_role&gt;&lt;u_homepage_role_id/&gt;&lt;u_product_owner/&gt;&lt;u_scrum_master/&gt;&lt;u_support_tier&gt;1&lt;/u_support_tier&gt;&lt;vendors/&gt;&lt;/sys_user_group&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-1943392516&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;bcrepeault_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-10-28 21:55:11&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0120529147adde1037f719b3716d433c&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;192d52038610000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;bcrepeault_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-10-28 21:55:11&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;ETG - Formateurs externes&lt;/target_name&gt;
+        &lt;type&gt;Group&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;bf4fca99e2a19a10052868103ed419fb&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;bf4fca99e2a19a10052868103ed419fb:-1943392516,bd0aedefb13702503a6f9ec304c05c8f:-1943392516,8f664cb4d66fc210cebd76d03763bf74:-1943392516&lt;/update_guid_history&gt;
+        &lt;update_set display_value="COLLAB-4706 - Changements globaux pour l'application Billetterie ETG - v7"&gt;4d20529147adde1037f719b3716d4337&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c031073947c4fe1097744049116d4371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_user_group_5a464cb4936fc2109cb7b91c5cba10b2</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_c031073947c4fe1097744049116d4371</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:34</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

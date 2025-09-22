@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <bundles/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[
+    {
+        "definition": {
+            "id": "d356d14b6e293a3020a244b63d278d8f",
+            "type": "MACROPONENT"
+        },
+        "elementId": "5c6fa3b107513010400790a30ad300b9_Main",
+        "elementLabel": "Main",
+        "eventMappings": [],
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "overrides": {
+            "composition": [
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "highlighted_details_heading",
+                    "elementLabel": "Highlighted details heading",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "configAria": {
+                            "container": {
+                                "input": {
+                                    "container": {
+                                        "aria-label": {
+                                            "type": "TRANSLATION_LITERAL",
+                                            "value": {
+                                                "code": null,
+                                                "comment": "",
+                                                "message": "Highlighted details"
+                                            }
+                                        }
+                                    },
+                                    "type": "MAP_CONTAINER"
+                                }
+                            },
+                            "type": "MAP_CONTAINER"
+                        },
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* {\n    font-size: var(--now-global-font-size--xl, 24px);\n    font-family: var(--now-font-family,\"Source Sans Pro\",Arial,sans-serif);\n    color: RGB(var(--now-color--text-secondary, #425051)); \n    line-height: var(--now-line-height,1.25);\n }"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "span"
+                        },
+                        "text": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "Highlighted details"
+                            }
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "hierarchy_label",
+                    "elementLabel": "Hierarchy label",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "configAria": {
+                            "container": {
+                                "input": {
+                                    "container": {
+                                        "aria-label": {
+                                            "type": "TRANSLATION_LITERAL",
+                                            "value": {
+                                                "code": null,
+                                                "comment": "",
+                                                "message": "Taxonomy"
+                                            }
+                                        }
+                                    },
+                                    "type": "MAP_CONTAINER"
+                                }
+                            },
+                            "type": "MAP_CONTAINER"
+                        },
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* { font-size:var(--now-global-font-size--sm, 12px);\ncolor: RGB(var(--now-color--text-secondary, #425051));}"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "span"
+                        },
+                        "text": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "Taxonomy"
+                            }
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "hierarchy_none_text",
+                    "elementLabel": "Hierarchy none text",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "transform": {
+                            "operands": {
+                                "container": [
+                                    {
+                                        "operation": {
+                                            "left": {
+                                                "binding": {
+                                                    "address": [
+                                                        "get_taxonomy_hierarchy",
+                                                        "output",
+                                                        "tree",
+                                                        "length"
+                                                    ]
+                                                },
+                                                "type": "DATA_OUTPUT_BINDING"
+                                            },
+                                            "operator": "&gt;",
+                                            "right": {
+                                                "type": "JSON_LITERAL",
+                                                "value": 0
+                                            }
+                                        },
+                                        "type": "BINARY"
+                                    },
+                                    {
+                                        "type": "JSON_LITERAL",
+                                        "value": true
+                                    },
+                                    {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    }
+                                ],
+                                "type": "LIST_CONTAINER"
+                            },
+                            "operator": "IF"
+                        },
+                        "type": "CLIENT_TRANSFORM"
+                    },
+                    "isNonDestructive": false,
+                    "overrides": null,
+                    "propertyValues": {
+                        "configAria": {
+                            "container": {
+                                "input": {
+                                    "container": {
+                                        "aria-label": {
+                                            "type": "TRANSLATION_LITERAL",
+                                            "value": {
+                                                "code": null,
+                                                "comment": "",
+                                                "message": "None"
+                                            }
+                                        }
+                                    },
+                                    "type": "MAP_CONTAINER"
+                                }
+                            },
+                            "type": "MAP_CONTAINER"
+                        },
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* { \n     font-size: var(--now-global-font-size--md, 16px);\n     color: RGB(var(--now-color--text-secondary, #425051));}\n}"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "div"
+                        },
+                        "text": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "comment": "",
+                                "message": "None"
+                            }
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "71baad1870878aa2e853a2d9a3373f84",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "taxonomy_hierarchy",
+                    "elementLabel": "Taxonomy hierarchy",
+                    "eventMappings": [
+                        {
+                            "eventMappingId": "ckrgbrggwmaaaaddzddhiibbyzjidnqo",
+                            "isConfiguration": false,
+                            "offRowStorageId": null,
+                            "sourceEventApiName": "sn_content_tree.NOW_CONTENT_TREE#ACTIONABLE_ITEM_CLICKED",
+                            "sourceEventCorrelationId": null,
+                            "sourceEventDefinition": {
+                                "apiName": "sn_content_tree.NOW_CONTENT_TREE#ACTIONABLE_ITEM_CLICKED",
+                                "id": null,
+                                "type": "UXEVENT"
+                            },
+                            "sourceEventSysId": null,
+                            "targets": [
+                                {
+                                    "broker": null,
+                                    "clientScript": {
+                                        "sysId": "5035e3f707913010400790a30ad3006a"
+                                    },
+                                    "declarativeAction": null,
+                                    "event": null,
+                                    "operation": null,
+                                    "targetId": "ckrgbrggwmaaaaeeaaddhiibbrjhwxpny",
+                                    "type": "CLIENT_SCRIPT"
+                                },
+                                {
+                                    "broker": null,
+                                    "clientScript": {
+                                        "sysId": "8685700b47fb6a1097744049116d43d2"
+                                    },
+                                    "declarativeAction": null,
+                                    "event": null,
+                                    "operation": null,
+                                    "targetId": "ckrllpphbbaaaabbwddhhhszzsjjiggns",
+                                    "type": "CLIENT_SCRIPT"
+                                }
+                            ]
+                        }
+                    ],
+                    "isHidden": {
+                        "transform": {
+                            "operands": {
+                                "container": [
+                                    {
+                                        "operation": {
+                                            "left": {
+                                                "binding": {
+                                                    "address": [
+                                                        "get_taxonomy_hierarchy",
+                                                        "output",
+                                                        "tree",
+                                                        "length"
+                                                    ]
+                                                },
+                                                "type": "DATA_OUTPUT_BINDING"
+                                            },
+                                            "operator": "&gt;",
+                                            "right": {
+                                                "type": "JSON_LITERAL",
+                                                "value": 0
+                                            }
+                                        },
+                                        "type": "BINARY"
+                                    },
+                                    {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    {
+                                        "type": "JSON_LITERAL",
+                                        "value": true
+                                    }
+                                ],
+                                "type": "LIST_CONTAINER"
+                            },
+                            "operator": "IF"
+                        },
+                        "type": "CLIENT_TRANSFORM"
+                    },
+                    "isNonDestructive": false,
+                    "overrides": null,
+                    "propertyValues": {
+                        "activeRoute": {
+                            "type": "JSON_LITERAL",
+                            "value": {
+                                "0": "@",
+                                "routeType": ""
+                            }
+                        },
+                        "configAria": {
+                            "container": {
+                                "tree": {
+                                    "container": {
+                                        "aria-label": {
+                                            "type": "TRANSLATION_LITERAL",
+                                            "value": {
+                                                "code": null,
+                                                "comment": "",
+                                                "message": "Taxonomy hierarchy"
+                                            }
+                                        }
+                                    },
+                                    "type": "MAP_CONTAINER"
+                                }
+                            },
+                            "type": "MAP_CONTAINER"
+                        },
+                        "expandedItems": {
+                            "binding": {
+                                "address": [
+                                    "get_taxonomy_hierarchy",
+                                    "output",
+                                    "expandedItems"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "highlightSelectedParent": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "items": {
+                            "binding": {
+                                "address": [
+                                    "get_taxonomy_hierarchy",
+                                    "output",
+                                    "tree"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "loadingItems": {
+                            "container": [],
+                            "type": "LIST_CONTAINER"
+                        },
+                        "overflow": {
+                            "type": "JSON_LITERAL",
+                            "value": "truncate"
+                        },
+                        "searchTerm": {
+                            "type": "JSON_LITERAL",
+                            "value": null
+                        },
+                        "select": {
+                            "type": "JSON_LITERAL",
+                            "value": "none"
+                        },
+                        "selectedItems": {
+                            "binding": {
+                                "address": [
+                                    "get_taxonomy_hierarchy",
+                                    "output",
+                                    "selectedItems"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "showActionsOnHover": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "showDividers": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "showPresencePattern": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "size": {
+                            "type": "JSON_LITERAL",
+                            "value": "md"
+                        },
+                        "triggerIcon": {
+                            "type": "JSON_LITERAL",
+                            "value": "chevron"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                }
+            ],
+            "layout": {
+                "default": {
+                    "children": null,
+                    "items": [
+                        {
+                            "element_id": "highlighted_details_heading",
+                            "styles": {
+                                "margin-bottom": "var(--now-global-space--sm, 8px)"
+                            }
+                        },
+                        {
+                            "element_id": "hierarchy_label",
+                            "styles": {
+                                "margin-bottom": "var(--now-global-space--sm, 8px)"
+                            }
+                        },
+                        {
+                            "element_id": "hierarchy_none_text",
+                            "rules": {},
+                            "styles": {}
+                        },
+                        {
+                            "element_id": "taxonomy_hierarchy",
+                            "rules": {},
+                            "styles": {}
+                        }
+                    ],
+                    "root": null,
+                    "rules": {},
+                    "styles": {
+                        "display": "flex",
+                        "flex-direction": "column",
+                        "height": "100%"
+                    },
+                    "type": "flex"
+                },
+                "version": "3.0.0"
+            }
+        },
+        "preset": null,
+        "propertyValues": {
+            "ariaRegionHeadingLevel": {
+                "type": "JSON_LITERAL",
+                "value": "1"
+            },
+            "ariaRegionName": {
+                "type": "TRANSLATION_LITERAL",
+                "value": {
+                    "code": null,
+                    "comment": "",
+                    "message": "Side bar"
+                }
+            },
+            "ariaRole": {
+                "type": "JSON_LITERAL",
+                "value": "none"
+            },
+            "hideEmptyStateUi": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "includeAriaHeading": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "slotWrapperBehavior": {
+                "type": "JSON_LITERAL",
+                "value": "fullheight"
+            },
+            "type": {
+                "type": "JSON_LITERAL",
+                "value": "section"
+            }
+        },
+        "slot": null,
+        "styles": null
+    }
+]</composition>
+        <da_relay_models/>
+        <data>[
+    {
+        "definition": {
+            "id": "176d9e94073120103a2990a30ad300bb",
+            "type": "TRANSFORM"
+        },
+        "elementId": "get_taxonomy_hierarchy",
+        "elementLabel": "Get taxonomy hierarchy",
+        "eventMappings": [
+            {
+                "eventMappingId": "ckrbbubccceaaaaccbddhiiddcczcciiiuvn",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "propName": "isLoading",
+                                    "value": null
+                                }
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
+                        },
+                        "operation": null,
+                        "targetId": "ckrbbubccceaaaacccddhiiddbqaasgqhhj",
+                        "type": "EVENT"
+                    }
+                ]
+            }
+        ],
+        "inputValues": {
+            "m2mTable": {
+                "type": "JSON_LITERAL",
+                "value": "sn_compliance_m2m_authority_document_taxonomy"
+            },
+            "parentReferenceColumn": {
+                "type": "JSON_LITERAL",
+                "value": "authority_document"
+            },
+            "parentTable": {
+                "binding": {
+                    "address": [
+                        "table"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "sysId": {
+                "binding": {
+                    "address": [
+                        "sysId"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    }
+]</data>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events/>
+        <events/>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{}</internal_event_mappings>
+        <layout>{
+    "default": {
+        "children": null,
+        "items": [
+            {
+                "element_id": "5c6fa3b107513010400790a30ad300b9_Main",
+                "rules": {},
+                "styles": {
+                    "grid-area": "main",
+                    "height": "100%",
+                    "margin": "var(--now-global-space--xl, 24px)"
+                }
+            }
+        ],
+        "root": null,
+        "rules": null,
+        "styles": {
+            "grid-gap": "1rem",
+            "grid-template-areas": "\"main\"",
+            "grid-template-columns": "1fr",
+            "grid-template-rows": "minmax(400px,auto)",
+            "height": "100%"
+        },
+        "templateId": "28bde4cd53431010e6bcddeeff7b12cc",
+        "type": "grid"
+    },
+    "version": "3.0.0"
+}</layout>
+        <macroponent_dependencies/>
+        <name>Authority document side bar</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "",
+        "description": "",
+        "fieldType": "string",
+        "label": "Tableau",
+        "mandatory": false,
+        "name": "table",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "",
+        "fieldType": "string",
+        "label": "SysId",
+        "mandatory": false,
+        "name": "sysId",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ {
+  "message" : "Highlighted details",
+  "comment" : ""
+}, {
+  "message" : "None",
+  "comment" : ""
+}, {
+  "message" : "Side bar",
+  "comment" : ""
+}, {
+  "message" : "Taxonomy",
+  "comment" : ""
+}, {
+  "message" : "Taxonomy hierarchy",
+  "comment" : ""
+} ]</required_translations>
+        <root_component/>
+        <root_component_config>{}</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties>[
+    {
+        "description": "",
+        "fieldType": "boolean",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": true
+        },
+        "label": "isLoading",
+        "name": "isLoading",
+        "shape": "",
+        "valueType": "boolean"
+    }
+]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0e85700b47fb6a1097744049116d43cd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Authority document side bar</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_macroponent_0e85700b47fb6a1097744049116d43cd</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:07</sys_updated_on>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_macroponent>
+</record_update>

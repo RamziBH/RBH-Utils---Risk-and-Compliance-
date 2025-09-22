@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>007ee84b87fc8e908f7275d8dabb351d</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>sys_script_9f4f1c9887e04a507f7d20e5cebb35f3</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;rm_story&lt;/collection&gt;&lt;condition/&gt;&lt;description&gt;Cette règle d'affaire permet de gérer le changement de due date et s'assurer que cette date et bien synchronisé avec Jira.&lt;/description&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="rm_story"&gt;due_dateVALCHANGES^EQ&lt;item endquery="false" field="due_date" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Energir - Correct due date entry&lt;/name&gt;&lt;order&gt;600&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var duedatetime;
+	var newDueDate;
+	if (gs.isInteractive())
+	{
+		duedatetime = new GlideDateTime(current.due_date.getDisplayValue());
+	}
+	else
+	{
+		duedatetime = new GlideDateTime(current.due_date);
+	}
+	newDueDate = new GlideDateTime(duedatetime.getDate() + ' 04:00:00');
+	current.due_date = newDueDate;
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;ojeffroy_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-19 22:01:36&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9f4f1c9887e04a507f7d20e5cebb35f3&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_name&gt;Energir - Correct due date entry&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_9f4f1c9887e04a507f7d20e5cebb35f3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;ojeffroy_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-26 22:43:57&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=9f4f1c9887e04a507f7d20e5cebb35f3"/&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;9f4f1c9887e04a507f7d20e5cebb35f3&lt;/documentkey&gt;&lt;fieldname&gt;message&lt;/fieldname&gt;&lt;language&gt;EN&lt;/language&gt;&lt;sys_created_by&gt;ojeffroy_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-21 16:12:05&lt;/sys_created_on&gt;&lt;sys_id&gt;7124e934872cca507f7d20e5cebb35b1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;ojeffroy_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-21 16:12:05&lt;/sys_updated_on&gt;&lt;tablename&gt;sys_script&lt;/tablename&gt;&lt;value/&gt;&lt;/sys_translated_text&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1981096243</payload_hash>
+        <remote_update_set/>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>ojeffroy_admin</sys_created_by>
+        <sys_created_on>2024-03-11 22:19:26</sys_created_on>
+        <sys_id>007ee84b87fc8e908f7275d8dabb351d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e2f9968130000001</sys_recorded_at>
+        <sys_updated_by>ojeffroy_admin</sys_updated_by>
+        <sys_updated_on>2024-03-11 22:19:26</sys_updated_on>
+        <table>rm_story</table>
+        <target_name>Energir - Correct due date entry</target_name>
+        <type>Business Rule</type>
+        <update_domain>global</update_domain>
+        <update_guid>66cd24a29d680a90676719412aab3ab7</update_guid>
+        <update_guid_history>66cd24a29d680a90676719412aab3ab7:1981096243,3fa4a5745e2cca506fe83b60e9cc924a:223175973,f0a46574632cca5001596a1e04b16ca3:175051096,6444ed346c2cca50e620a2f42dec22b6:223175973,ce342934872cca506e32b3274a7b2c9b:175051096,bd24e934fa2cca504ef2702400ecc8b2:223175973,61968d3c7268ca50c193949dcfd52e1e:-1391294015,8a44cd38e168ca509cfbde1439e7bbaf:1511216543,5e50e5ac4d688a5078dd71e5c1861d53:408932798,366ed52ca8688a50b86cc2f5465be3f2:-811345348,0dcd9de869688a508f26318a9c221d9d:-1916169041,d46d55e850688a5018d6e2cd01b36f0c:-2060899168,f92d59e894688a50bb87b2aac4228f01:1835420735,b5eb5d6868688a50d1fccf74d0d60d6b:347376547,27ab1968b1688a5044748b845c51ab2c:-770022825,1e3b116840688a507a599712ea28ceef:1930258431,9e1a55e491688a50eb064c49ea525d3a:-1378150900,bf0a91e45c688a50a731588ae653fd3e:-872646945,1ed00ce877a08a50879e4af0077f9f6d:847065636,984b6cd4ba244a5038e88179395e4c28:-1641370610,be03a0dc51e04a50a770d37bd90beff7:-1781164185,61e2e89c2fe04a50e7942034565b05c4:-1641370610,92f0a0d82be04a506477cebb05902c32:1956295084</update_guid_history>
+        <update_set display_value="OJ_COLLAB-4157_DueDateSynch">807ee84b87fc8e908f7275d8dabb3519</update_set>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:32:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b7a00fb547c4fe1097744049116d4314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_script_9f4f1c9887e04a507f7d20e5cebb35f3</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_b7a00fb547c4fe1097744049116d4314</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:32:21</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

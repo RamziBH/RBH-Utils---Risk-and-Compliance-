@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Entity side bar">aa85b00b47fb6a1097744049116d4377</macroponent>
+        <name>Content tree load children requested</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+   
+   /* When user requests for more children entity,
+    - Loading icon is shown till we get response from the server
+    - Updating expanded item as selected item
+    */
+
+
+    var selectedItemPath = event.payload.path;
+    api.setState("loadingItems", [{
+        "path": selectedItemPath
+    }]);
+    api.setState("selectedItems", [selectedItemPath]);
+    api.setState("currentPath", selectedItemPath);
+
+    api.data.fetch_more_children_for_given_entity_1.execute({
+        "entityId":event.payload.item.id,
+        "childrenIds":event.payload.item.childrenIds,
+        "remainingChildren":event.payload.item.remainingChildren,
+        "path":event.payload.item.path
+    });
+
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fa85b00b47fb6a1097744049116d43cf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Content tree load children requested</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_client_script_fa85b00b47fb6a1097744049116d43cf</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:09</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_client_script>
+</record_update>

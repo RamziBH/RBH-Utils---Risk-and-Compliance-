@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>01221f84338f16101467e317ee5c7bd6</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;catalog_ui_policy_action_15374c82878bca507f7d20e5cebb3515&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="catalog_ui_policy_action"&gt;&lt;catalog_ui_policy_action action="INSERT_OR_UPDATE"&gt;&lt;catalog_item display_value="Copy of Modifier des accès SAP - Nouvel employé"&gt;b7274802878bca507f7d20e5cebb358f&lt;/catalog_item&gt;&lt;catalog_variable&gt;IO:93a08e070f28be00eea6a218b1050edf&lt;/catalog_variable&gt;&lt;cleared&gt;false&lt;/cleared&gt;&lt;disabled&gt;true&lt;/disabled&gt;&lt;field/&gt;&lt;field_message/&gt;&lt;field_message_type&gt;none&lt;/field_message_type&gt;&lt;mandatory&gt;ignore&lt;/mandatory&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;catalog_ui_policy_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcrepeault_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-28 13:15:23&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;15374c82878bca507f7d20e5cebb3515&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;sap_request_type_transaction_code&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_ui_policy_action_15374c82878bca507f7d20e5cebb3515&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bcrepeault_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-28 13:15:23&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;ui_policy display_value="Lecture seule dans les tâches"&gt;0d370c82878bca507f7d20e5cebb35b7&lt;/ui_policy&gt;&lt;value/&gt;&lt;value_action&gt;ignore&lt;/value_action&gt;&lt;variable&gt;sap_request_type_transaction_code&lt;/variable&gt;&lt;variable_set/&gt;&lt;visible&gt;ignore&lt;/visible&gt;&lt;/catalog_ui_policy_action&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;1168443034&lt;/payload_hash&gt;
+        &lt;remote_update_set display_value="COLLAB-4634 - Modification aux guides de commande BCGM - Addenda 1  "&gt;c9221f84338f16101467e317ee5c7b7f&lt;/remote_update_set&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;bcrepeault_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-01-07 19:05:19&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;01221f84338f16101467e317ee5c7bd6&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;19073a222510000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;bcrepeault_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-01-07 19:05:19&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;sap_request_type_transaction_code&lt;/target_name&gt;
+        &lt;type&gt;Catalog UI Policy Action&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;91374c82398bca50238820c67e1d3428&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;91374c82398bca50238820c67e1d3428:1168443034&lt;/update_guid_history&gt;
+        &lt;update_set/&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4d31473947c4fe1097744049116d4340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>catalog_ui_policy_action_15374c82878bca507f7d20e5cebb3515</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_4d31473947c4fe1097744049116d4340</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:37</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

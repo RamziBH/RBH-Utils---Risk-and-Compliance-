@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00f681181b451e5006256465624bcb65</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="GRC: Advanced Risk"&gt;7443d9ba7373230055e9d8b0caf6a7b0&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_app_module_48552a80875033003058d1a936cb0b5f&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_app_module"&gt;&lt;sys_app_module action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;application display_value="Événements à risque"&gt;20bc51877373230055e9d8b0caf6a7f5&lt;/application&gt;&lt;assessment/&gt;&lt;content_page/&gt;&lt;device_type/&gt;&lt;filter table="sn_grc_issue"&gt;risk_eventISNOTEMPTY^EQ&lt;item endquery="false" field="risk_event" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter&gt;&lt;hint/&gt;&lt;homepage/&gt;&lt;image/&gt;&lt;link_type&gt;LIST&lt;/link_type&gt;&lt;map_page/&gt;&lt;mobile_title&gt;Risk Event&lt;/mobile_title&gt;&lt;mobile_view_name&gt;Mobile&lt;/mobile_view_name&gt;&lt;name&gt;sn_grc_issue&lt;/name&gt;&lt;order&gt;800&lt;/order&gt;&lt;override_menu_roles&gt;false&lt;/override_menu_roles&gt;&lt;query&gt;^ORDERBYDESCnumber&lt;/query&gt;&lt;report/&gt;&lt;require_confirmation&gt;false&lt;/require_confirmation&gt;&lt;roles&gt;sn_risk.reader&lt;/roles&gt;&lt;survey/&gt;&lt;survey_overwrite&gt;false&lt;/survey_overwrite&gt;&lt;sys_class_name&gt;sys_app_module&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-15 13:05:16&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;48552a80875033003058d1a936cb0b5f&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;All Issues&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="GRC: Advanced Risk" source="sn_risk_advanced"&gt;7443d9ba7373230055e9d8b0caf6a7b0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="GRC: Advanced Risk"&gt;7443d9ba7373230055e9d8b0caf6a7b0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_app_module_48552a80875033003058d1a936cb0b5f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-15 00:56:27&lt;/sys_updated_on&gt;&lt;timeline_page/&gt;&lt;title&gt;All Issues&lt;/title&gt;&lt;u_active&gt;false&lt;/u_active&gt;&lt;u_basic_module/&gt;&lt;u_count_color/&gt;&lt;u_count_filter/&gt;&lt;u_count_text_color/&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_homepage/&gt;&lt;u_ixl_count_color/&gt;&lt;u_ixl_count_query/&gt;&lt;u_ixl_count_style/&gt;&lt;u_ixl_count_table/&gt;&lt;u_ixl_show_count&gt;false&lt;/u_ixl_show_count&gt;&lt;u_link_type/&gt;&lt;u_map_page/&gt;&lt;u_query/&gt;&lt;u_report/&gt;&lt;u_show_count&gt;false&lt;/u_show_count&gt;&lt;u_sort_order/&gt;&lt;u_source/&gt;&lt;u_survey/&gt;&lt;u_survey_overwrite&gt;false&lt;/u_survey_overwrite&gt;&lt;u_target/&gt;&lt;u_view_name/&gt;&lt;u_window_name/&gt;&lt;uncancelable&gt;false&lt;/uncancelable&gt;&lt;view_name/&gt;&lt;window_name/&gt;&lt;/sys_app_module&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-684998704&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;system&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-09-30 17:30:02&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00f681181b451e5006256465624bcb65&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;1946776362d0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-01-15 00:56:27&lt;/sys_updated_on&gt;
+        &lt;table&gt;sn_grc_issue&lt;/table&gt;
+        &lt;target_name&gt;All Issues&lt;/target_name&gt;
+        &lt;type&gt;Module&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;85a5ecee1e0312105693127d5b3f00ca&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;85a5ecee1e0312105693127d5b3f00ca:-684998704,4cf6811884451e501d36492620c17f64:-1975553233,c8f6811882451e503a9a85c10135a562:-684998704&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6c11cff547c4fe1097744049116d4383</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_app_module_48552a80875033003058d1a936cb0b5f</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_6c11cff547c4fe1097744049116d4383</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:03</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

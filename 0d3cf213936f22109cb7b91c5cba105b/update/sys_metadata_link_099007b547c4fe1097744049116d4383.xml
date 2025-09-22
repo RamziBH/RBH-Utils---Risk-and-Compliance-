@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00561077dba353007e24de82ca961908</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_template_26f17c210f3f5e0049346509b1050e25&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_template action="INSERT_OR_UPDATE"&gt;
+&lt;active&gt;true&lt;/active&gt;
+&lt;global&gt;false&lt;/global&gt;
+&lt;group display_value=""/&gt;
+&lt;link_element/&gt;
+&lt;name&gt;DBA Incident creation&lt;/name&gt;
+&lt;next display_value=""/&gt;
+&lt;next_child display_value=""/&gt;
+&lt;roles/&gt;
+&lt;short_description&gt;Template pour la création d'incident par courriel pour l'interface technique  DBA&lt;/short_description&gt;
+&lt;show_on_template_bar&gt;true&lt;/show_on_template_bar&gt;
+&lt;stand_alone&gt;false&lt;/stand_alone&gt;
+&lt;sys_class_name&gt;sys_template&lt;/sys_class_name&gt;
+&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;
+&lt;sys_created_on&gt;2016-06-03 19:05:41&lt;/sys_created_on&gt;
+&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;
+&lt;sys_id&gt;26f17c210f3f5e0049346509b1050e25&lt;/sys_id&gt;
+&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;
+&lt;sys_name&gt;DBA Incident creation&lt;/sys_name&gt;
+&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;
+&lt;sys_policy/&gt;
+&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;
+&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;
+&lt;sys_update_name&gt;sys_template_26f17c210f3f5e0049346509b1050e25&lt;/sys_update_name&gt;
+&lt;sys_updated_by&gt;mbeauchamp_admin&lt;/sys_updated_by&gt;
+&lt;sys_updated_on&gt;2018-08-02 14:56:31&lt;/sys_updated_on&gt;
+&lt;table&gt;incident&lt;/table&gt;
+&lt;template&gt;assignment_group=9794f1e50fc9750049346509b1050e6e^caller_id=22b1c2eb0f16420049346509b1050e30^category=Other^cmdb_ci=b86409b90fa60600caa5a218b1050e10^contact_type=event^impact=2^incident_state=2^subcategory=Error^urgency=3^state=2^EQ&lt;/template&gt;
+&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;
+&lt;u_source/&gt;
+&lt;u_target/&gt;
+&lt;user display_value=""/&gt;
+&lt;view/&gt;
+&lt;/sys_template&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-663238101&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;Ludovic.Andre@fxinnovation.com&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2018-08-02 15:19:28&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00561077dba353007e24de82ca961908&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;164fb38e9320000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;Ludovic.Andre@fxinnovation.com&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2018-08-02 15:19:28&lt;/sys_updated_on&gt;
+        &lt;table&gt;incident&lt;/table&gt;
+        &lt;target_name&gt;DBA Incident creation&lt;/target_name&gt;
+        &lt;type&gt;Template&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;4c56107766a3530030baf23d89dcd907&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;4c56107766a3530030baf23d89dcd907:-663238101&lt;/update_guid_history&gt;
+        &lt;update_set display_value="FX demand task 2018-08-02"&gt;a8e933a7db6353007e24de82ca9619c4&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>099007b547c4fe1097744049116d4383</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_template_26f17c210f3f5e0049346509b1050e25</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_099007b547c4fe1097744049116d4383</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:54</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

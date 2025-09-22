@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>300</order>
+        <published_ref/>
+        <question display_value="Risk Type">3162dfdd93ff6e509cb7b91c5cba10eb</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-04 19:21:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b76313d19333ae509cb7b91c5cba108a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>I don’t know</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>question_choice_b76313d19333ae509cb7b91c5cba108a</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 13:22:02</sys_updated_on>
+        <text>I don’t know</text>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+        <value>je_ne_sais_pas</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=b76313d19333ae509cb7b91c5cba108a"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="CAD">CAD</currency>
+        <field>misc</field>
+        <id>b76313d19333ae509cb7b91c5cba108a</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="CAD">CAD</reference_currency>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-04 19:21:50</sys_created_on>
+        <sys_id>437393159373ae509cb7b91c5cba1099</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-04 19:21:50</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="CAD">CAD</currency>
+        <field>rec_misc</field>
+        <id>b76313d19333ae509cb7b91c5cba108a</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="CAD">CAD</reference_currency>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-04 19:21:50</sys_created_on>
+        <sys_id>0b7393159373ae509cb7b91c5cba1098</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-04 19:21:50</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

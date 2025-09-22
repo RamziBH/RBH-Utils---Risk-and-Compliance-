@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>005002ba475a5910c6170f9e436d43e9</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>sys_dictionary_rm_story_project_phase</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="project_phase" table="rm_story"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;edge_encryption_enabled=true&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Project phase&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;project_phase&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;name&gt;rm_story&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="pm_project_task"&gt;pm_project_task&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;true&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual&gt;active=true^EQ&lt;/reference_qual&gt;&lt;reference_qual_condition table="pm_project_task"&gt;active=true^EQ&lt;item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/reference_qual_condition&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;system&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-09-24 06:39:10&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;67c04742db3a9300fd756451ca961978&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Project phase&lt;/sys_name&gt;&lt;sys_package display_value="SDLC Scrum PPM Integration" source="com.snc.sdlc.scrum.ppm_int"&gt;f8dffe46dbf69300fd756451ca9619fc&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_rm_story_project_phase&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;guillaume.vermeersch@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-22 14:42:01&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>193973445</payload_hash>
+        <remote_update_set/>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>martin.roux@fxinnovation.com</sys_created_by>
+        <sys_created_on>2022-10-06 10:39:23</sys_created_on>
+        <sys_id>005002ba475a5910c6170f9e436d43e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183ace0e6e40000001</sys_recorded_at>
+        <sys_updated_by>martin.roux@fxinnovation.com</sys_updated_by>
+        <sys_updated_on>2022-10-06 10:39:23</sys_updated_on>
+        <table>rm_story</table>
+        <target_name>Story.Project phase</target_name>
+        <type>Dictionary</type>
+        <update_domain>global</update_domain>
+        <update_guid>d3480f1cd16dd95078d907256ca42a5a</update_guid>
+        <update_guid_history>d3480f1cd16dd95078d907256ca42a5a:193973445,1408cfd8db6dd950e62c00ceecc59a6a:1347505574,59dfba9c882dd950ee87e1f84195b008:193973445,0f0bc6349dbd095082bc10a274c11e45:516889758,cb0b8ef0ebbd0950e6dbd01c5c5e33cf:275649359</update_guid_history>
+        <update_set display_value="FX-CS0171732-01 - New needs">445002ba475a5910c6170f9e436d43e6</update_set>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dc90c3b547c4fe1097744049116d43d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_dictionary_rm_story_project_phase</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_dc90c3b547c4fe1097744049116d43d0</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:50</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

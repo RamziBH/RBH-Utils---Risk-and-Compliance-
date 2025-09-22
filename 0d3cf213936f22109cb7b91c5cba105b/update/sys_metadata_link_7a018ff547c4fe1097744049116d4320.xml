@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00e9c67ddb2dc490f2b13a0f9d96193a</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Facilities Access Management"&gt;4a1d866adb91c850555768d35b9619f6&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_hub_action_type_definition_0f3a3ebedbd10c50555768d35b96199b&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_hub_action_type_definition"&gt;&lt;sys_hub_action_type_definition action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category display_value="Location Specific Access"&gt;a99ca2bedb910c50555768d35b96198d&lt;/category&gt;&lt;copied_from&gt;8f1a76bedbd10c50555768d35b9619ba&lt;/copied_from&gt;&lt;copied_from_name&gt;Get Specific Access Drummondvill&lt;/copied_from_name&gt;&lt;description/&gt;&lt;internal_name&gt;get_specific_access_granby&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"{{action.facilities_request}}","label":"action➛Facilities request","type":"action","ref":"facilities_request"},{"name":"{{step[8216bb7a-92e8-4c99-8756-9c4bb07a7d45].answer}}","label":"step➛Script step➛answer","type":"step","ref":"cmn_location"}]&lt;/label_cache&gt;&lt;latest_snapshot&gt;d65a32fedbd10c50555768d35b9619ea&lt;/latest_snapshot&gt;&lt;master_snapshot&gt;e25a72fedbd10c50555768d35b961908&lt;/master_snapshot&gt;&lt;name&gt;Get Specific Access Granby&lt;/name&gt;&lt;outputs/&gt;&lt;outputs/&gt;&lt;state&gt;published&lt;/state&gt;&lt;sys_class_name&gt;sys_hub_action_type_definition&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-11-27 16:53:54&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;0f3a3ebedbd10c50555768d35b96199b&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Get Specific Access Granby&lt;/sys_name&gt;&lt;sys_package display_value="Facilities Access Management" source="x_gamlp_facilities"&gt;4a1d866adb91c850555768d35b9619f6&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Facilities Access Management"&gt;4a1d866adb91c850555768d35b9619f6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_action_type_definition_0f3a3ebedbd10c50555768d35b96199b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-11-27 16:54:26&lt;/sys_updated_on&gt;&lt;system_level&gt;false&lt;/system_level&gt;&lt;type/&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;/sys_hub_action_type_definition&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=0f3a3ebedbd10c50555768d35b96199b"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=0f3a3ebedbd10c50555768d35b96199b"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;specific_access_du_havre&lt;/field&gt;&lt;id&gt;0f3a3ebedbd10c50555768d35b96199b&lt;/id&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-11-27 16:53:55&lt;/sys_created_on&gt;&lt;sys_id&gt;5b3a3ebedbd10c50555768d35b9619de&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-11-27 16:54:22&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_0f3a3ebedbd10c50555768d35b96199b&lt;/table&gt;&lt;value&gt;{{step[8216bb7a-92e8-4c99-8756-9c4bb07a7d45].answer}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;478651566&lt;/payload_hash&gt;
+        &lt;remote_update_set display_value="Facilities Access Management"&gt;8cb98a3ddb2dc490f2b13a0f9d9619c0&lt;/remote_update_set&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2019-12-06 21:04:24&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00e9c67ddb2dc490f2b13a0f9d96193a&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;16edcd496ba0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2019-12-06 21:04:24&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;Get Specific Access Granby&lt;/target_name&gt;
+        &lt;type&gt;Action Type&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;763d3db5e12d40507cd66021d2533d1e&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;763d3db5e12d40507cd66021d2533d1e:478651566,805c7d75e52d40506fb2aadb8d540a62:478651566,b25a72fed4d10c50ed89ca2b46bbb241:747269357,695a32fe2dd10c501da11a1736dad85c:795056470,205afebeb9d10c507831582c07013577:1148596085,433a3ebedbd10c50597c292da2c85d9d:795056470&lt;/update_guid_history&gt;
+        &lt;update_set/&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:33:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7a018ff547c4fe1097744049116d4320</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_hub_action_type_definition_0f3a3ebedbd10c50555768d35b96199b</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_7a018ff547c4fe1097744049116d4320</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:33:56</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

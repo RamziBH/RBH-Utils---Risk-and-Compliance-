@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>010a00b347c39190c6170f9e436d4391</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>asmt_metric_92245ed0879ad910124b7777dabb356d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="asmt_metric"&gt;&lt;asmt_metric action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_info_label&gt;Additional Information&lt;/add_info_label&gt;&lt;allow_add_info&gt;false&lt;/allow_add_info&gt;&lt;allow_not_applicable&gt;true&lt;/allow_not_applicable&gt;&lt;auto_gen&gt;false&lt;/auto_gen&gt;&lt;category display_value="Coin-café"&gt;ca241ed0879ad910124b7777dabb35fb&lt;/category&gt;&lt;cond_question&gt;always&lt;/cond_question&gt;&lt;condition/&gt;&lt;context/&gt;&lt;correct_answer/&gt;&lt;correct_answer_checkbox/&gt;&lt;correct_answer_choice/&gt;&lt;correct_answer_template/&gt;&lt;correct_answer_yesno/&gt;&lt;custom_metric/&gt;&lt;datatype&gt;choice&lt;/datatype&gt;&lt;default_value_field/&gt;&lt;depends_on/&gt;&lt;description/&gt;&lt;details/&gt;&lt;displayed_when/&gt;&lt;displayed_when_checkbox/&gt;&lt;displayed_when_template/&gt;&lt;displayed_when_yesno/&gt;&lt;duration/&gt;&lt;field_validation/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max&gt;9&lt;/max&gt;&lt;max_weight/&gt;&lt;maximum_normalization_input&gt;false&lt;/maximum_normalization_input&gt;&lt;method&gt;assessment&lt;/method&gt;&lt;metric_type display_value="Contrôle de qualité Interne - Route B03"&gt;e388a39e874299107f7d20e5cebb35c6&lt;/metric_type&gt;&lt;min&gt;0&lt;/min&gt;&lt;name&gt;Approvisionnement suffisant des distributeurs (savon, papier)&lt;/name&gt;&lt;order&gt;6700&lt;/order&gt;&lt;plugin/&gt;&lt;question&gt;Approvisionnement suffisant des distributeurs (savon, papier)&lt;/question&gt;&lt;randomize_answers&gt;false&lt;/randomize_answers&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;reference_table/&gt;&lt;scale&gt;low&lt;/scale&gt;&lt;scored&gt;false&lt;/scored&gt;&lt;script&gt;&lt;![CDATA[// The following variables are available:  // - primary: contains the sys_id of the assessable object to be evaluated  // - string_result: the script sets the display string value for this metric to this variable  // - actual_result: the script sets the actual value for this metric to this variable  // - scaled_result: the script sets the scaled value (used in calculations) for this metric to this variable  //  // For example: // var gr = new GlideRecord('cmdb_ci'); // gr.addQuery('manufacturer', primary); // gr.query(); // actual_result = gr.getRowCount(); // string_result = actual_result + ''; // if (actual_result &amp;gt; 100) scaled_result = 5; // else scaled_result = 1;]]&gt;&lt;/script&gt;&lt;source_field/&gt;&lt;string_option&gt;wide&lt;/string_option&gt;&lt;sys_class_name&gt;asmt_metric&lt;/sys_class_name&gt;&lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-28 17:41:18&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;92245ed0879ad910124b7777dabb356d&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;Approvisionnement suffisant des distributeurs (savon, papier)&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;asmt_metric_92245ed0879ad910124b7777dabb356d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-11-07 13:59:27&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_subcategory&gt;002&lt;/u_subcategory&gt;&lt;u_target/&gt;&lt;value_parameters/&gt;&lt;weight&gt;10&lt;/weight&gt;&lt;/asmt_metric&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=92245ed0879ad910124b7777dabb356d"/&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;92245ed0879ad910124b7777dabb356d&lt;/documentkey&gt;&lt;fieldname&gt;add_info_label&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;mg83368&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-28 17:54:09&lt;/sys_created_on&gt;&lt;sys_id&gt;ae175218879ad910124b7777dabb35a9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;mg83368&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-28 17:54:09&lt;/sys_updated_on&gt;&lt;tablename&gt;asmt_metric&lt;/tablename&gt;&lt;value&gt;Additional Information&lt;/value&gt;&lt;/sys_translated_text&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;92245ed0879ad910124b7777dabb356d&lt;/documentkey&gt;&lt;fieldname&gt;description&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;mg83368&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-28 17:54:09&lt;/sys_created_on&gt;&lt;sys_id&gt;6e175218879ad910124b7777dabb35b8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;mg83368&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-28 17:54:09&lt;/sys_updated_on&gt;&lt;tablename&gt;asmt_metric&lt;/tablename&gt;&lt;value/&gt;&lt;/sys_translated_text&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;92245ed0879ad910124b7777dabb356d&lt;/documentkey&gt;&lt;fieldname&gt;details&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;mg83368&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-28 17:54:09&lt;/sys_created_on&gt;&lt;sys_id&gt;aa175218879ad910124b7777dabb35a7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;mg83368&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-28 17:54:09&lt;/sys_updated_on&gt;&lt;tablename&gt;asmt_metric&lt;/tablename&gt;&lt;value/&gt;&lt;/sys_translated_text&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;92245ed0879ad910124b7777dabb356d&lt;/documentkey&gt;&lt;fieldname&gt;question&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;mg83368&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-28 17:54:09&lt;/sys_created_on&gt;&lt;sys_id&gt;e6175218879ad910124b7777dabb35bb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;mg83368&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-28 17:54:09&lt;/sys_updated_on&gt;&lt;tablename&gt;asmt_metric&lt;/tablename&gt;&lt;value&gt;Approvisionnement suffisant des distributeurs (savon, papier)&lt;/value&gt;&lt;/sys_translated_text&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1758328086</payload_hash>
+        <remote_update_set display_value="FX-CS0173424-03-Survey">ac0a00b347c39190c6170f9e436d4340</remote_update_set>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>martin.roux@fxinnovation.com</sys_created_by>
+        <sys_created_on>2022-11-15 11:23:34</sys_created_on>
+        <sys_id>010a00b347c39190c6170f9e436d4391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1845263916d0000001</sys_recorded_at>
+        <sys_updated_by>martin.roux@fxinnovation.com</sys_updated_by>
+        <sys_updated_on>2022-11-15 11:23:34</sys_updated_on>
+        <table/>
+        <target_name>Approvisionnement suffisant des distributeurs (savon, papier)</target_name>
+        <type>Assessment Metric</type>
+        <update_domain>global</update_domain>
+        <update_guid>6af023811f87d510f10b84cd7b4b3e54</update_guid>
+        <update_guid_history>6af023811f87d510f10b84cd7b4b3e54:-1758328086,66175218749ad91022bf0ee2dcad47bd:-1758328086,2a175218a79ad910149860ed51d294ba:2091175651,6e175218db9ad91022a745e8632544b7:1273676715,ee175218ab9ad91051d384ce87fbb9a8:-180410260,af455e14e99ad91075b61c0b1adc37d3:-1268735143,e03412140d9ad910ac790caf00dfdf70:1095482203,d6245ed0259ad9102d66cb26a253eb7f:620562033,52245ed07e9ad9108802b303dec1907a:-975393322,5e245ed0189ad9104929b03f90121474:147980717,92245ed0c99ad910a6fb19dc3a1f5471:620562033</update_guid_history>
+        <update_set/>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1421433947c4fe1097744049116d43c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>asmt_metric_92245ed0879ad910124b7777dabb356d</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_1421433947c4fe1097744049116d43c5</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:18</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>010fa35bdbf86b407e24de82ca9619ec</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>customer</category>
+        <comments/>
+        <name>sysevent_email_action_58603bddc0a80a6d1493a3def49f617e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;
+&lt;action_insert&gt;false&lt;/action_insert&gt;
+&lt;action_update&gt;false&lt;/action_update&gt;
+&lt;active&gt;false&lt;/active&gt;
+&lt;advanced_condition/&gt;
+&lt;affected_field_on_event/&gt;
+&lt;category display_value="Live Feed" name="Live Feed"&gt;b69d02137f232200ee2e108c3ffa9148&lt;/category&gt;
+&lt;collection&gt;live_message&lt;/collection&gt;
+&lt;condition table="live_message"/&gt;
+&lt;content_type&gt;multipart/mixed&lt;/content_type&gt;
+&lt;default_interval display_value=""/&gt;
+&lt;description/&gt;
+&lt;digest_from/&gt;
+&lt;digest_html/&gt;
+&lt;digest_reply_to/&gt;
+&lt;digest_separator_html&gt;&lt;![CDATA[&lt;br&gt;&lt;hr&gt;&lt;br&gt;]]&gt;&lt;/digest_separator_html&gt;
+&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;
+&lt;digest_subject/&gt;
+&lt;digest_template display_value=""/&gt;
+&lt;digest_text/&gt;
+&lt;digestable&gt;false&lt;/digestable&gt;
+&lt;event_name&gt;live_message.replied&lt;/event_name&gt;
+&lt;event_parm_1&gt;true&lt;/event_parm_1&gt;
+&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;
+&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;
+&lt;force_delivery&gt;false&lt;/force_delivery&gt;
+&lt;from/&gt;
+&lt;generation_type&gt;event&lt;/generation_type&gt;
+&lt;importance/&gt;
+&lt;include_attachments&gt;true&lt;/include_attachments&gt;
+&lt;item&gt;event.parm1&lt;/item&gt;
+&lt;item_table/&gt;
+&lt;mandatory&gt;false&lt;/mandatory&gt;
+&lt;message/&gt;
+&lt;message_html&gt;&lt;![CDATA[&lt;div&gt;${profile.name} just replied:&lt;/div&gt;
+&lt;div&gt;${mail_script:live_feed_message}&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;${mail_script:live_feed_message_and_reply_to_links}&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;a title="View Feed" href="/nav_to.do?uri=live_feed_launcher.do"&gt;View Feed&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;If you would like to stop receiving live message emails you can disable "Live Message Reply" in your ${NOTIF_PREFS} or ${NOTIF_UNSUB}&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;${mail_script:live_feed_message_headers}&lt;/div&gt;]]&gt;&lt;/message_html&gt;
+&lt;message_list&gt;7d40c70253020200601fa3fc9ec58778&lt;/message_list&gt;
+&lt;message_text/&gt;
+&lt;name&gt;Live Message Reply&lt;/name&gt;
+&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;
+&lt;order/&gt;
+&lt;push_message_only&gt;false&lt;/push_message_only&gt;
+&lt;recipient_fields/&gt;
+&lt;recipient_groups/&gt;
+&lt;recipient_users/&gt;
+&lt;reply_to/&gt;
+&lt;send_self&gt;false&lt;/send_self&gt;
+&lt;sms_alternate/&gt;
+&lt;style display_value=""/&gt;
+&lt;subject&gt;Live Message: ${profile.name} replied to a message&lt;/subject&gt;
+&lt;subscribable&gt;false&lt;/subscribable&gt;
+&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;
+&lt;sys_created_by&gt;john.roberts&lt;/sys_created_by&gt;
+&lt;sys_created_on&gt;2011-01-05 22:52:12&lt;/sys_created_on&gt;
+&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;
+&lt;sys_domain&gt;global&lt;/sys_domain&gt;
+&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+&lt;sys_id&gt;58603bddc0a80a6d1493a3def49f617e&lt;/sys_id&gt;
+&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;
+&lt;sys_name&gt;Live Message Reply&lt;/sys_name&gt;
+&lt;sys_overrides display_value=""/&gt;
+&lt;sys_package display_value="Live Feed" source="com.glideapp.live_feed"&gt;f24286a74f303200015eab99f110c7ef&lt;/sys_package&gt;
+&lt;sys_policy/&gt;
+&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;
+&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;
+&lt;sys_update_name&gt;sysevent_email_action_58603bddc0a80a6d1493a3def49f617e&lt;/sys_update_name&gt;
+&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;
+&lt;sys_updated_on&gt;2018-09-27 16:51:26&lt;/sys_updated_on&gt;
+&lt;sys_version&gt;2&lt;/sys_version&gt;
+&lt;template display_value=""/&gt;
+&lt;type&gt;email&lt;/type&gt;
+&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;
+&lt;u_source/&gt;
+&lt;u_target/&gt;
+&lt;weight&gt;0&lt;/weight&gt;
+&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1100172554</payload_hash>
+        <remote_update_set/>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>mroux_admin</sys_created_by>
+        <sys_created_on>2018-10-02 21:07:47</sys_created_on>
+        <sys_id>010fa35bdbf86b407e24de82ca9619ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>166369bba570000001</sys_recorded_at>
+        <sys_updated_by>mroux_admin</sys_updated_by>
+        <sys_updated_on>2018-10-02 21:07:47</sys_updated_on>
+        <table>live_message</table>
+        <target_name>Live Message Reply</target_name>
+        <type>Notification</type>
+        <update_domain>global</update_domain>
+        <update_guid>8d0fa35b95f86b40d16b5f7d707e12eb</update_guid>
+        <update_guid_history>8d0fa35b95f86b40d16b5f7d707e12eb:-1100172554,c90fa35b0af86b40f36fbb05f75021ea:1641191509</update_guid_history>
+        <update_set display_value="Default">64074e2b4f703200015eab99f110c709</update_set>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5d21833947c4fe1097744049116d43ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sysevent_email_action_58603bddc0a80a6d1493a3def49f617e</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_5d21833947c4fe1097744049116d43ab</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:23</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

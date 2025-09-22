@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>013ac41547847a1097744049116d435d</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="GRC: Advanced Risk">7443d9ba7373230055e9d8b0caf6a7b0</application>
+        <category>customer</category>
+        <comments/>
+        <name>sysevent_email_action_7015b5a447aba29097744049116d4314</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Uncategorized" name="Uncategorized"&gt;c97d83137f4432005f58108c3ffa917a&lt;/category&gt;&lt;collection&gt;sn_risk_advanced_risk_assessment_instance&lt;/collection&gt;&lt;condition table="sn_risk_advanced_risk_assessment_instance"&gt;stateCHANGESTO1^risk_assessment_methodology.assessed_on=0^risk_assessment_projectISEMPTY^EQ&lt;item display_value="Ready to assess" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="1"/&gt;&lt;item display_value="Risk" endquery="false" field="risk_assessment_methodology.assessed_on" goto="false" newquery="false" operator="=" or="false" value="0"/&gt;&lt;item endquery="false" field="risk_assessment_project" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;enable_dynamic_translation&gt;false&lt;/enable_dynamic_translation&gt;&lt;event_name&gt;activate.life.cycle.migration&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;engine&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;Bonjour ${assessor_user},&lt;/p&gt;
+&lt;p&gt;Veuillez effectuer une &amp;eacute;valuation du risque ${URI_REF} pour ${risk.number} avant la date d'&amp;eacute;ch&amp;eacute;ance.&lt;/p&gt;
+&lt;p&gt;Merci.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table style="border-collapse: collapse; width: 100%;" border="1"&gt;&lt;colgroup&gt;&lt;col&gt;&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th style="background-color: rgb(0, 64, 112); text-align: left;"&gt;&lt;span style="color: rgb(255, 255, 255);"&gt;Information de la demande&lt;/span&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table style="border-collapse: collapse; width: 100%;" border="1"&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col style="width: 49.927%;"&gt;&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="height: 15.3993px;"&gt;Nom du risque &amp;agrave; &amp;eacute;valuer&lt;/td&gt;
+&lt;td&gt;${risk}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Description du risque&lt;/td&gt;
+&lt;td&gt;${risk.description}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lien du risque&lt;/td&gt;
+&lt;td&gt;${mail_script:Energir_go_to_risk_workspace}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Nom du gestionnaire ayant initi&amp;eacute; la demande&lt;/td&gt;
+&lt;td&gt;${risk.owner}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Instructions ou commentaires &amp;eacute;ventuels&lt;/td&gt;
+&lt;td&gt;${risk.comments}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Date limite souhait&amp;eacute;e pour l'&amp;eacute;valuation (si applicable)&lt;/td&gt;
+&lt;td&gt;${asmt_due_date}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;Notify assessor - SGSOP Energir&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields&gt;assessor_user&lt;/recipient_fields&gt;&lt;recipient_groups/&gt;&lt;recipient_users/&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;Demande d'évaluation de risque -- ${risk}&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;gad_dayan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-20 18:18:13&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;7015b5a447aba29097744049116d4314&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;Notify assessor - SGSOP Energir&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="GRC: Advanced Risk" source="sn_risk_advanced"&gt;7443d9ba7373230055e9d8b0caf6a7b0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="GRC: Advanced Risk"&gt;7443d9ba7373230055e9d8b0caf6a7b0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_7015b5a447aba29097744049116d4314&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;gad_dayan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-09-16 14:58:24&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template display_value="Énergir"&gt;decef08a876c75107f7d20e5cebb35a5&lt;/template&gt;&lt;type&gt;email&lt;/type&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1912906166</payload_hash>
+        <remote_update_set/>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>gad_dayan</sys_created_by>
+        <sys_created_on>2025-09-16 14:58:08</sys_created_on>
+        <sys_id>013ac41547847a1097744049116d435d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>1995308b8c80000001</sys_recorded_at>
+        <sys_updated_by>gad_dayan</sys_updated_by>
+        <sys_updated_on>2025-09-16 14:58:24</sys_updated_on>
+        <table>sn_risk_advanced_risk_assessment_instance</table>
+        <target_name>Notify assessor - SGSOP Energir</target_name>
+        <type>Notification</type>
+        <update_domain>global</update_domain>
+        <update_guid>814ac05581847a108969b1facc11daba</update_guid>
+        <update_guid_history>814ac05581847a108969b1facc11daba:1912906166,4d3ac415b8847a107270ecefa076b35c:-1923481910,21f6ca2cff2fa290c71fa8fcec179803:948505576,fe76c22c422fa290bc869ec9147a9f23:1924051782,0c4642a8342fa290b87605f79650ea8c:-183953833,86e48a281b2fa290c050c27487d507ee:1566130099,269f7da878eba29066aca3da5269f3e5:-338716356,facdbd287ceba2909ba0926cc5c6effe:665287757,d74dfde486eba290544a301f2bbe3e8c:-1950781758,050dfde432eba2907df9f088b93fcd87:1154851509,adcc79e4f9eba2904e5b240bfa8c6b80:-378269364,8d4cb1a41eeba290aa5070a7ed20d1ca:-1365869051,681cb9a459eba290dec4d20b84174a7b:230957614,8aebb1a417eba290f3e8ef38616469ae:-996092728,c7cbb1a433eba29095af4ae9d72fae6a:-204432256,d6abf564fbeba290b645073954205842:120059061,2b7b316498eba2909e1abe85452ca975:16464924,6b5bb92447eba2900afc3d1e7474a490:-1018359672,9a2bb12400eba2908d99025df98cb030:302831977,d4faf12410eba29098e5da96d897ab74:-378269364,49caf12488eba290b739ce66917c5a6a:291972726,0a99396052eba290e64d26cafb7a81c4:1293654622,76e83decb3aba2901a5b2327e72bd091:1740946767,407871ecbcaba29024374d43f9dc6b98:-1931674213,2c25f1e4f1aba290d98311265aa48d2e:-1671135097,f015b5a423aba2907b2081996fb44218:-1257214617</update_guid_history>
+        <update_set display_value="COLLAB-6236 - GD - v1.1">ebf9841547847a1097744049116d43ad</update_set>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a5410b3947c4fe1097744049116d4375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sysevent_email_action_7015b5a447aba29097744049116d4314</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_a5410b3947c4fe1097744049116d4375</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:56</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

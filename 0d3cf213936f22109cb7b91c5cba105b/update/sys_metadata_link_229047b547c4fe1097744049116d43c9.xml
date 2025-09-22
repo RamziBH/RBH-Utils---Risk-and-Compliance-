@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>005bf7cf33ca9650af24e7382e5c7b68</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>sys_script_4f2b4100478a9a1097744049116d4391</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;cost_plan&lt;/collection&gt;&lt;condition/&gt;&lt;description&gt;When a cost plan's Total planned cost field changes, run the global.ProjectCalculateAJAX.updateEstimateAtCompletionCostSubProjects method to update Estimate to/at completion fields.&lt;/description&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="cost_plan"&gt;cost_local_currencyVALCHANGES^EQ&lt;item endquery="false" field="cost_local_currency" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Update Completion Est. (Cost plan)&lt;/name&gt;&lt;order&gt;1100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	logs = ["Recalculating estimated costs at completion for modified cost plan " + current.name];
+	//Find the cost plan's project and update it
+	if (current.task.sys_class_name == 'pm_project') {
+		var project = current.task;
+	}
+	else if (current.task.parent.sys_class_name == 'pm_project') {
+		project = current.task.parent;
+	}
+	if (project) {
+		logs.push("Project found, number is " + project.number);
+		var taskClass = project.sys_class_name;
+		logs.push("Project " + project.short_description + " is being updated for EST / EAC");	
+		var spmu = new global.Energir_SPMUtils();
+		spmu.updateEstimateAtCompletionCost(project.sys_id);
+	}
+	else {
+		logs.push("Project not found");
+	}
+	gs.log(logs.join('\n'), "BR: Update Completion Est. (Cost plan)");
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcrepeault_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-18 16:42:06&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;4f2b4100478a9a1097744049116d4391&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Update Completion Est. (Cost plan)&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_4f2b4100478a9a1097744049116d4391&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bcrepeault_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-21 19:54:32&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=4f2b4100478a9a1097744049116d4391"/&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;4f2b4100478a9a1097744049116d4391&lt;/documentkey&gt;&lt;fieldname&gt;message&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;bcrepeault_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-21 19:44:25&lt;/sys_created_on&gt;&lt;sys_id&gt;bb589d8d470a525097744049116d43a0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcrepeault_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-21 19:44:25&lt;/sys_updated_on&gt;&lt;tablename&gt;sys_script&lt;/tablename&gt;&lt;value/&gt;&lt;/sys_translated_text&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>266585390</payload_hash>
+        <remote_update_set/>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>bcrepeault_admin</sys_created_by>
+        <sys_created_on>2024-11-28 12:44:11</sys_created_on>
+        <sys_id>005bf7cf33ca9650af24e7382e5c7b68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19372cce6d50000001</sys_recorded_at>
+        <sys_updated_by>bcrepeault_admin</sys_updated_by>
+        <sys_updated_on>2024-11-28 12:44:11</sys_updated_on>
+        <table>cost_plan</table>
+        <target_name>Update Completion Est. (Cost plan)</target_name>
+        <type>Business Rule</type>
+        <update_domain>global</update_domain>
+        <update_guid>c0ba5509804a525062a308ab71064464</update_guid>
+        <update_guid_history>c0ba5509804a525062a308ab71064464:266585390,d4e859c1474a5250c8760d28bd94ae8b:72270241,775855057a4a5250b35b0034e5574510:1580933017,73559d017a421e50d7f12d4fa431fea9:213568084,9205dd8d4c021e509c5ec3bac33264f9:-1624329927,a650d145cb021e509acf8bd3eeca9da5:2100209181,c5536900684e9a107665bc281531323d:1094980746,6e1121c8300e9a106a40f2c11508e805:-1768042307,72d495c0baca9a100051d74133b2c21a:1884967606,f2b315001cca9a10a2ab4466eb3841ed:-1559890922,bad2998c118a9a10298495ff256dff04:-1807664186,d0c2958c968a9a10a181de005c7555ab:674605688,77d1190ca78a9a104fad5f3108806d28:-1299671747</update_guid_history>
+        <update_set display_value="COLLAB-4854 - Calculs après mod aux plans de coût v3">405bf7cf33ca9650af24e7382e5c7b66</update_set>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:32:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>229047b547c4fe1097744049116d43c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_script_4f2b4100478a9a1097744049116d4391</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_229047b547c4fe1097744049116d43c9</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:32:00</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <event_mappings>[]</event_mappings>
+        <macroponent display_value="Issue Sidebar">1595b40b47fb6a1097744049116d4387</macroponent>
+        <macroponent_config>{
+    "sysId": "@context.props.sysId",
+    "table": "@context.props.table"
+}</macroponent_config>
+        <name>Issue Sidebar</name>
+        <order>0</order>
+        <parent_macroponent/>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition>parent.table=sn_grc_issue^parent.sysId!=-1</screen_condition>
+        <screen_type display_value="Issue Sidebar Collection">27757cc747fb6a1097744049116d43b4</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>6195b40b47fb6a1097744049116d43b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Issue Sidebar</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_screen_6195b40b47fb6a1097744049116d43b1</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:20</sys_updated_on>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_screen>
+</record_update>

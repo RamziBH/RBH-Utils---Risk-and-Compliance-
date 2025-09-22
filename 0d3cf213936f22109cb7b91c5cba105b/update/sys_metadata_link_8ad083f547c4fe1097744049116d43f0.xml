@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00a3a436dbab5f801561622dca96195d</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_documentation_dmn_demand_demand_manager_en&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_documentation element="demand_manager" label="Responsible" language="en" table="dmn_demand"&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;demand_manager&lt;/element&gt;&lt;help/&gt;&lt;hint&gt;Responsible of this demand&lt;/hint&gt;&lt;label&gt;Responsible&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;dmn_demand&lt;/name&gt;&lt;plural&gt;Responsibles&lt;/plural&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;system&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-06-21 10:27:02&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;8b904f8edbf69300fd756451ca96194a&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Responsible&lt;/sys_name&gt;&lt;sys_package display_value="Demand Management" source="com.snc.demand_management"&gt;478fbe82dbf69300fd756451ca9619c8&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_documentation_dmn_demand_demand_manager_en&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-07-17 11:00:23&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;/sys_documentation&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-348931426&lt;/payload_hash&gt;
+        &lt;remote_update_set display_value="FX - Demande - 20180716"&gt;6793ecf2dbab5f801561622dca96196f&lt;/remote_update_set&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2018-07-30 13:43:41&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00a3a436dbab5f801561622dca96195d&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;164a7e5fb6e0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2018-07-30 13:43:41&lt;/sys_updated_on&gt;
+        &lt;table&gt;dmn_demand&lt;/table&gt;
+        &lt;target_name&gt;Demande.Responsible&lt;/target_name&gt;
+        &lt;type&gt;Field Label&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;dd91456281db9b404d60d1531d37d932&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;dd91456281db9b404d60d1531d37d932:-348931426,cd9105622bdb9b404103493ab0ef11eb:67726307&lt;/update_guid_history&gt;
+        &lt;update_set/&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:33:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8ad083f547c4fe1097744049116d43f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_documentation_dmn_demand_demand_manager_en</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_8ad083f547c4fe1097744049116d43f0</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:33:04</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

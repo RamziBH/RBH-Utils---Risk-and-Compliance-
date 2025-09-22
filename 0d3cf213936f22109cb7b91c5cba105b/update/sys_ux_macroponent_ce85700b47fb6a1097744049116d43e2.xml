@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <bundles/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[
+    {
+        "definition": {
+            "id": "d356d14b6e293a3020a244b63d278d8f",
+            "type": "MACROPONENT"
+        },
+        "elementId": "5e1826e6b3c130102fd4ea5b86a8dc4c_Main",
+        "elementLabel": "Main",
+        "eventMappings": [],
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "overrides": {
+            "composition": [
+                {
+                    "definition": {
+                        "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "goals_tree_heading",
+                    "elementLabel": "Goals Tree Heading",
+                    "eventMappings": [],
+                    "extensionPoints": [],
+                    "isHero": false,
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": ""
+                    },
+                    "isNonDestructive": false,
+                    "items": [],
+                    "overrides": null,
+                    "propertyValues": {
+                        "hasNoMargin": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "label": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "Goals and Targets Hierarchy"
+                            }
+                        },
+                        "level": {
+                            "type": "JSON_LITERAL",
+                            "value": "1"
+                        },
+                        "variant": {
+                            "type": "JSON_LITERAL",
+                            "value": "header-secondary"
+                        },
+                        "wontWrap": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "71baad1870878aa2e853a2d9a3373f84",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "goals_content_tree",
+                    "elementLabel": "Goals Content Tree",
+                    "eventMappings": [
+                        {
+                            "eventMappingId": "ckqspddeeclaaaaggwddhhhqjltjjvtfe",
+                            "isConfiguration": false,
+                            "offRowStorageId": null,
+                            "sourceEventApiName": "sn_content_tree.NOW_CONTENT_TREE#ITEM_CLICKED",
+                            "sourceEventCorrelationId": null,
+                            "sourceEventDefinition": {
+                                "apiName": "sn_content_tree.NOW_CONTENT_TREE#ITEM_CLICKED",
+                                "id": null,
+                                "type": "UXEVENT"
+                            },
+                            "sourceEventSysId": null,
+                            "targets": [
+                                {
+                                    "broker": null,
+                                    "clientScript": {
+                                        "sysId": "4a85700b47fb6a1097744049116d43e7"
+                                    },
+                                    "conditional": null,
+                                    "declarativeAction": null,
+                                    "event": null,
+                                    "operation": null,
+                                    "targetId": "ckqspfgeeccaaaaiiyddhhhqeehhaatkghbb",
+                                    "type": "CLIENT_SCRIPT"
+                                }
+                            ]
+                        }
+                    ],
+                    "extensionPoints": [],
+                    "isHero": false,
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": ""
+                    },
+                    "isNonDestructive": false,
+                    "items": [],
+                    "overrides": null,
+                    "propertyValues": {
+                        "configAria": {
+                            "container": {
+                                "tree": {
+                                    "container": {
+                                        "aria-label": {
+                                            "type": "TRANSLATION_LITERAL",
+                                            "value": {
+                                                "code": null,
+                                                "comment": "",
+                                                "message": "Expandable and selectable options of the page for goals"
+                                            }
+                                        }
+                                    },
+                                    "type": "MAP_CONTAINER"
+                                }
+                            },
+                            "type": "MAP_CONTAINER"
+                        },
+                        "expandedItems": {
+                            "binding": {
+                                "address": [
+                                    "expandedItem"
+                                ]
+                            },
+                            "type": "STATE_BINDING"
+                        },
+                        "highlightSelectedParent": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "items": {
+                            "binding": {
+                                "address": [
+                                    "get_goalstargets_tree",
+                                    "output"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "loadingItems": {
+                            "container": [],
+                            "type": "LIST_CONTAINER"
+                        },
+                        "overflow": {
+                            "type": "JSON_LITERAL",
+                            "value": "wrap"
+                        },
+                        "searchTerm": {
+                            "type": "JSON_LITERAL",
+                            "value": null
+                        },
+                        "select": {
+                            "type": "JSON_LITERAL",
+                            "value": "single"
+                        },
+                        "selectedItems": {
+                            "binding": {
+                                "address": [
+                                    "selectedItem"
+                                ]
+                            },
+                            "type": "STATE_BINDING"
+                        },
+                        "showActionsOnHover": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "showDividers": {
+                            "type": "JSON_LITERAL",
+                            "value": null
+                        },
+                        "showPresencePattern": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "size": {
+                            "type": "JSON_LITERAL",
+                            "value": "md"
+                        },
+                        "triggerIcon": {
+                            "type": "JSON_LITERAL",
+                            "value": "chevron"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                }
+            ],
+            "layout": {
+                "default": {
+                    "children": null,
+                    "items": [
+                        {
+                            "element_id": "goals_tree_heading",
+                            "rules": {},
+                            "styles": {}
+                        },
+                        {
+                            "element_id": "goals_content_tree",
+                            "rules": {},
+                            "styles": {
+                                "cursor": "pointer"
+                            }
+                        }
+                    ],
+                    "root": null,
+                    "rules": {},
+                    "styles": {
+                        "display": "flex",
+                        "flex-direction": "column",
+                        "height": "100%"
+                    },
+                    "type": "flex"
+                },
+                "version": "3.0.0"
+            }
+        },
+        "preset": null,
+        "propertyValues": {
+            "ariaRegionHeadingLevel": {
+                "type": "JSON_LITERAL",
+                "value": "1"
+            },
+            "ariaRegionName": {
+                "type": "TRANSLATION_LITERAL",
+                "value": {
+                    "code": null,
+                    "comment": "",
+                    "message": ""
+                }
+            },
+            "ariaRole": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "hideEmptyStateUi": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "includeAriaHeading": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "slotWrapperBehavior": {
+                "type": "JSON_LITERAL",
+                "value": "fullheight"
+            },
+            "type": {
+                "type": "JSON_LITERAL",
+                "value": "section"
+            }
+        },
+        "slot": null,
+        "styles": null
+    }
+]</composition>
+        <da_relay_models/>
+        <data>[
+    {
+        "definition": {
+            "id": "55ec023fb30930102fd4ea5b86a8dca1",
+            "type": "TRANSFORM"
+        },
+        "dependencies": {},
+        "elementId": "get_goalstargets_tree",
+        "elementLabel": "Get Goals/Targets Tree",
+        "eventMappings": [
+            {
+                "eventMappingId": "ckqtwatomaaaaffhddhiibbkdgccfbqt",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": {
+                            "sysId": "4e85700b47fb6a1097744049116d43eb"
+                        },
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "ckqtwatomaaaaffiddhiibbmbbayafzbb",
+                        "type": "CLIENT_SCRIPT"
+                    }
+                ]
+            }
+        ],
+        "inputValues": {
+            "sysId": {
+                "binding": {
+                    "address": [
+                        "sysId"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "table": {
+                "binding": {
+                    "address": [
+                        "table"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    }
+]</data>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events/>
+        <events/>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{}</internal_event_mappings>
+        <layout>{
+    "default": {
+        "children": null,
+        "isInline": null,
+        "items": [
+            {
+                "element_id": "5e1826e6b3c130102fd4ea5b86a8dc4c_Main",
+                "rules": {},
+                "styles": {
+                    "flex": "1",
+                    "height": "100%"
+                }
+            }
+        ],
+        "root": null,
+        "rules": null,
+        "styles": {
+            "align-items": "stretch",
+            "flex-flow": "row nowrap",
+            "height": "100%",
+            "min-height": "400px"
+        },
+        "templateId": "28bde4cd53431010e6bcddeeff7b12cc",
+        "type": "flex"
+    },
+    "version": "3.0.0"
+}</layout>
+        <macroponent_dependencies/>
+        <name>Goals Sidebar</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "",
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "Tableau",
+        "mandatory": false,
+        "name": "table",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "SysId",
+        "mandatory": false,
+        "name": "sysId",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ {
+  "message" : "Expandable and selectable options of the page for goals",
+  "comment" : ""
+}, {
+  "message" : "Goals and Targets Hierarchy",
+  "comment" : ""
+} ]</required_translations>
+        <root_component/>
+        <root_component_config>{}</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties>[
+    {
+        "description": "",
+        "fieldType": "json",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": []
+        },
+        "label": "expandedItem",
+        "name": "expandedItem",
+        "shape": "",
+        "valueType": "json"
+    },
+    {
+        "description": "",
+        "fieldType": "json",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": []
+        },
+        "label": "selectedItem",
+        "name": "selectedItem",
+        "shape": "",
+        "valueType": "json"
+    }
+]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ce85700b47fb6a1097744049116d43e2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Goals Sidebar</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_macroponent_ce85700b47fb6a1097744049116d43e2</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:07</sys_updated_on>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_macroponent>
+</record_update>

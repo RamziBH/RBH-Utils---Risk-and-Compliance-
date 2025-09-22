@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>006bd7a02faf6110a70eddda2799b69c</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="PGL"&gt;6292b379db203f80858c2c23ca9619de&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_ui_section_c22bd215879b29107f7d20e5cebb3540&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_ui_section caption="" section_id="c22bd215879b29107f7d20e5cebb3540" sys_domain="global" table="x_gamlp_pgl_trouble_type" version="3" view="workspace"&gt;&lt;sys_ui_element action="INSERT_OR_UPDATE"&gt;&lt;element&gt;name&lt;/element&gt;&lt;position&gt;0&lt;/position&gt;&lt;sys_created_by&gt;onasr_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-06-07 09:59:47&lt;/sys_created_on&gt;&lt;sys_id&gt;362b1215879b29107f7d20e5cebb35f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_ui_formatter/&gt;&lt;sys_ui_section caption="NULL" display_value="" name="x_gamlp_pgl_trouble_type" sys_domain="global" view="5f30263adba123002d9958eadc9619b2"&gt;c22bd215879b29107f7d20e5cebb3540&lt;/sys_ui_section&gt;&lt;sys_updated_by&gt;onasr_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-06-07 09:59:47&lt;/sys_updated_on&gt;&lt;sys_user/&gt;&lt;type/&gt;&lt;/sys_ui_element&gt;&lt;sys_ui_section action="INSERT_OR_UPDATE"&gt;&lt;caption/&gt;&lt;header&gt;false&lt;/header&gt;&lt;name&gt;x_gamlp_pgl_trouble_type&lt;/name&gt;&lt;roles/&gt;&lt;sys_class_name&gt;sys_ui_section&lt;/sys_class_name&gt;&lt;sys_created_by&gt;onasr_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-06-07 09:59:44&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c22bd215879b29107f7d20e5cebb3540&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_gamlp_pgl_trouble_type&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="PGL" source="x_gamlp_pgl"&gt;6292b379db203f80858c2c23ca9619de&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="PGL"&gt;6292b379db203f80858c2c23ca9619de&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_section_c22bd215879b29107f7d20e5cebb3540&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;onasr_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-06-07 09:59:44&lt;/sys_updated_on&gt;&lt;sys_user/&gt;&lt;title&gt;false&lt;/title&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;view display_value="Workspace" name="workspace"&gt;5f30263adba123002d9958eadc9619b2&lt;/view&gt;&lt;view_name/&gt;&lt;/sys_ui_section&gt;&lt;/sys_ui_section&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;1401798225&lt;/payload_hash&gt;
+        &lt;remote_update_set display_value="KER-worskapce_views"&gt;c86bd7a02faf6110a70eddda2799b68e&lt;/remote_update_set&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;onasr_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2023-06-17 17:00:33&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;006bd7a02faf6110a70eddda2799b69c&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;188954c53870000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;onasr_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2023-06-17 17:00:33&lt;/sys_updated_on&gt;
+        &lt;table&gt;x_gamlp_pgl_trouble_type&lt;/table&gt;
+        &lt;target_name&gt;Trouble Type&lt;/target_name&gt;
+        &lt;type&gt;Form Layout&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;fa2b1615389b2910b32d9cdeea6a667f&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;fa2b1615389b2910b32d9cdeea6a667f:1401798225,c22bd215f69b29109960ba47c6665843:1401798225&lt;/update_guid_history&gt;
+        &lt;update_set/&gt;
+        &lt;view&gt;workspace&lt;/view&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:32:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>15a0c7b547c4fe1097744049116d4391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_ui_section_c22bd215879b29107f7d20e5cebb3540</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_15a0c7b547c4fe1097744049116d4391</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:32:12</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

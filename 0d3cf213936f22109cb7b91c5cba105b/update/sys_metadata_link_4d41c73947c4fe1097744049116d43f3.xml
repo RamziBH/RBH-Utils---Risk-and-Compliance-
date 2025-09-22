@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>0137c655472dde1037f719b3716d4358</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>sys_script_include_df826c3f47019e1097744049116d436f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.EnergirMailScriptsUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;EnergirMailScriptsUtils&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var EnergirMailScriptsUtils = Class.create();
+EnergirMailScriptsUtils.prototype = {
+    initialize: function() {
+    },
+
+	getJournalEntries: function(tableName, recordId, element, numberOfEntries) {
+		/*
+			This method is an alternative to the OOB GlideElement.getJournalEntry() and differs only
+			by the return format. In this method, only the text of journal entries is returned, as opposed
+			to a string composed of the person commenting, the date and the entry type, in addition to the text.
+
+			String tableName    : name of the table for which we wish to extract journal entries
+			String recordId     : the sys_id of the record
+			String element      : the type of journal entry we wish to extract. Can be one of:
+								  - comments
+								  - work_notes
+								  - approval_history
+								  - notes
+			Int numberOfEntries : the number of entries to extract. Entries are ordered by date in descending order
+								  A value of 1 would give the lastest entry, etc.
+								  Use 0 or -1 to extract all entries on a given record.
+
+			String entries[]	: Text of the extracted journal entries, with most recent entry at index 0
+		*/
+		
+		var entries = [];
+		var gr = new GlideRecord('sys_journal_field');
+		gr.addQuery('name', tableName);  // Table name
+		gr.addQuery('element', element);  // Type of journal entry
+		gr.addQuery('element_id', recordId); // Current record
+		gr.orderByDesc('sys_created_on');
+		if (numberOfEntries &gt; 0) {
+			gr.setLimit(numberOfEntries);
+		}
+		gr.query();
+		while (gr.next()) {
+			entries.push(gr.value);
+		}
+		return entries;
+	},
+
+	verifyMissingAttachments: function(recordId, targetTable) {
+		/*
+			Looks in the sys_email_attachment table for attachments belonging to targetTable.recordID
+			that do not have a matching record in sys_attachment. When that happens, we have an attchment
+			that was dropped by ServiceNow (for example, when the size limit set by property 
+			glide.email.inbound.max_total_attachment_size_bytes is exceeded). The method can be used in 
+			Notification emails scripts, for example, to notify a user that not all their attachments were
+			properly received.
+
+			String recordId    : sys_id of the record upon which we are looking for missing attachments
+			String targetTable : name of the table upon which we are looking for missing attachments
+
+			String results[]   : file names of attachments that are missing / dropped
+		*/
+		
+		var missing = []; // Missing attachments list
+		var gr = new GlideRecord('sys_email_attachment');
+		gr.addQuery('email.instance', recordId);
+		gr.addQuery('email.target_table', targetTable);
+		gr.query();
+		
+		while (gr.next()) {
+			if (gr.attachment == '' || gr.attachment == null) { // We detected a skipped attachment
+				missing.push(gr.file_name.toString()); // Store its name
+			}
+		}
+		return missing;
+	},
+
+    type: 'EnergirMailScriptsUtils'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcrepeault_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-11 12:35:48&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;df826c3f47019e1097744049116d436f&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;EnergirMailScriptsUtils&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_df826c3f47019e1097744049116d436f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bcrepeault_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-11 13:15:58&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2061753301</payload_hash>
+        <remote_update_set display_value="EnergirMailScriptUtils">3037c655472dde1037f719b3716d4357</remote_update_set>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>bcrepeault_admin</sys_created_by>
+        <sys_created_on>2024-10-28 21:16:08</sys_created_on>
+        <sys_id>0137c655472dde1037f719b3716d4358</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1927bbbe30f0000001</sys_recorded_at>
+        <sys_updated_by>bcrepeault_admin</sys_updated_by>
+        <sys_updated_on>2024-10-28 21:16:08</sys_updated_on>
+        <table/>
+        <target_name>EnergirMailScriptsUtils</target_name>
+        <type>Script Include</type>
+        <update_domain>global</update_domain>
+        <update_guid>f707f0f705c19e1008ed9500c0457157</update_guid>
+        <update_guid_history>f707f0f705c19e1008ed9500c0457157:2061753301,ed46387739c19e102825e578aedd00e4:2061753301,b6533c7f17819e1030ad481db8f05a5a:1353661357,e25f2c3711819e10e42951fba1ff85f2:-724992185,b22fec37bd819e106c9c798475e586df:-1336608380,551de47370819e1083e2b3c55c66e8a0:-473722428</update_guid_history>
+        <update_set/>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4d41c73947c4fe1097744049116d43f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_script_include_df826c3f47019e1097744049116d436f</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_4d41c73947c4fe1097744049116d43f3</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:54</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

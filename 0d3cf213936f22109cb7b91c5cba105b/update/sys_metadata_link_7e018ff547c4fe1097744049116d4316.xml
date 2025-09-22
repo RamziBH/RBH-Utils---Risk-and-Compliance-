@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00e80be5937b26909cb7b91c5cba1045</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>customer</category>
+        <comments/>
+        <name>sys_transform_entry_6511311193f7ea509cb7b91c5cba108f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_entry"&gt;&lt;sys_transform_entry action="INSERT_OR_UPDATE"&gt;&lt;choice_action&gt;create&lt;/choice_action&gt;&lt;coalesce&gt;true&lt;/coalesce&gt;&lt;coalesce_case_sensitive&gt;false&lt;/coalesce_case_sensitive&gt;&lt;coalesce_empty_fields&gt;true&lt;/coalesce_empty_fields&gt;&lt;date_format&gt;yyyy-MM-dd HH:mm:ss&lt;/date_format&gt;&lt;map display_value="SGSOP Policy to control objective"&gt;eb11ae4147f3265097744049116d4369&lt;/map&gt;&lt;reference_value_field&gt;sys_id&lt;/reference_value_field&gt;&lt;source_field&gt;[Script]&lt;/source_field&gt;&lt;source_script&gt;&lt;![CDATA[answer = (function transformEntry(source) {
+    var s_value = source.u_control_objective;
+    var c_id = '';
+    var controlob = new GlideRecord('sn_compliance_policy_statement');
+    controlob.addEncodedQuery('nameSTARTSWITH'+ s_value);
+    // controlob.addQuery('name', s_value);    // parent.addQuery('active', true);
+    controlob.orderBy('sys_created_on');
+    controlob.query();
+    if (controlob.next()) {
+        c_id = controlob.sys_id;
+    }
+    return c_id;
+
+})(source);]]&gt;&lt;/source_script&gt;&lt;source_table&gt;u_sgsop_policy_to_control_objective&lt;/source_table&gt;&lt;sys_class_name&gt;sys_transform_entry&lt;/sys_class_name&gt;&lt;sys_created_by&gt;rben-hassine_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-09-04 12:13:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;6511311193f7ea509cb7b91c5cba108f&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;[Script]&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_entry_6511311193f7ea509cb7b91c5cba108f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;rben-hassine_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-09-04 12:58:09&lt;/sys_updated_on&gt;&lt;target_field&gt;content&lt;/target_field&gt;&lt;target_table&gt;sn_compliance_m2m_policy_policy_statement&lt;/target_table&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;use_source_script&gt;true&lt;/use_source_script&gt;&lt;/sys_transform_entry&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;6511311193f7ea509cb7b91c5cba108f&lt;/id&gt;&lt;sys_created_by&gt;rben-hassine_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-09-04 12:13:07&lt;/sys_created_on&gt;&lt;sys_id&gt;43513d1193f7ea509cb7b91c5cba1067&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;rben-hassine_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-09-04 12:13:07&lt;/sys_updated_on&gt;&lt;table&gt;sys_transform_entry&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>950134820</payload_hash>
+        <remote_update_set/>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-05 13:13:57</sys_created_on>
+        <sys_id>00e80be5937b26909cb7b91c5cba1045</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1991a03246d0000001</sys_recorded_at>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-05 13:13:57</sys_updated_on>
+        <table/>
+        <target_name>[Script]</target_name>
+        <type>Field Map</type>
+        <update_domain>global</update_domain>
+        <update_guid>88e80be56a7b2690afc2bfe267364144</update_guid>
+        <update_guid_history>88e80be56a7b2690afc2bfe267364144:950134820,a6abf1d51efbea503b5b7f3083522d72:950134820,856bfd95e4fbea504ddf7fe764f06a9b:-930481166,4698fdd14cbbea50503b098c06c92308:1960434063,e3563555897bea50b553050f351f78c0:-930481166,55a47195ec3bea50485ffec4e9ff1ba5:682977361,9751b551d5f7ea50c9f7273c9d207d5c:-878864691</update_guid_history>
+        <update_set display_value="COLLAB-6468-RBH-Data">5bd7c761937b26909cb7b91c5cba1017</update_set>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:33:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7e018ff547c4fe1097744049116d4316</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_transform_entry_6511311193f7ea509cb7b91c5cba108f</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_7e018ff547c4fe1097744049116d4316</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:33:55</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

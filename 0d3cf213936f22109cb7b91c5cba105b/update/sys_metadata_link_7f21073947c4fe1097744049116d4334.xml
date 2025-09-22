@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>011ee8a547409ed03ef68d57536d43d9</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>sys_ui_action_0a6b0d908f32110040f82ab2f0f92363</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;deferred&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;gs.hasRole('demand_manager') &amp;amp;&amp;amp; (current.state == 1 || current.state == 2 || current.state == 3 || current.state == -4)&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Defer&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;150&lt;/order&gt;&lt;script&gt;&lt;![CDATA[current.state = '10';
+current.update();
+action.setRedirectURL(current);]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2014-02-05 21:56:23&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;0a6b0d908f32110040f82ab2f0f92363&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;Defer&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Demand Management" source="com.snc.demand_management"&gt;478fbe82dbf69300fd756451ca9619c8&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_0a6b0d908f32110040f82ab2f0f92363&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;gad_dayan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-14 14:48:17&lt;/sys_updated_on&gt;&lt;table&gt;dmn_demand&lt;/table&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1765900480</payload_hash>
+        <remote_update_set/>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>gad_dayan</sys_created_by>
+        <sys_created_on>2024-08-15 19:51:03</sys_created_on>
+        <sys_id>011ee8a547409ed03ef68d57536d43d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1915797fa230000001</sys_recorded_at>
+        <sys_updated_by>gad_dayan</sys_updated_by>
+        <sys_updated_on>2024-08-15 19:51:03</sys_updated_on>
+        <table>dmn_demand</table>
+        <target_name>Defer</target_name>
+        <type>UI Action</type>
+        <update_domain>global</update_domain>
+        <update_guid>d83f1e85f688561003cabcf0bb69c303</update_guid>
+        <update_guid_history>d83f1e85f688561003cabcf0bb69c303:1765900480,903f1e85e08856107a46e26ce35dbf01:1003242641</update_guid_history>
+        <update_set display_value="COLLAB-4807 - GD - v1.0">0d1ee8a547409ed03ef68d57536d43d6</update_set>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7f21073947c4fe1097744049116d4334</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_ui_action_0a6b0d908f32110040f82ab2f0f92363</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_7f21073947c4fe1097744049116d4334</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:32</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

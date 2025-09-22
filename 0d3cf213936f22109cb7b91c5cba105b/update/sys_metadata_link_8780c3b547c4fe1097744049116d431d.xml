@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00462020dbd5af0021126033ca9619a0</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="CCR"&gt;2a97bef70f899f80eea6a218b1050e87&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_translated_7e7681170f2ddfc049346509b1050e7e&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_translated action="INSERT_OR_UPDATE"&gt;
+&lt;element&gt;text&lt;/element&gt;
+&lt;id/&gt;
+&lt;label&gt;Régulation&lt;/label&gt;
+&lt;language&gt;fq&lt;/language&gt;
+&lt;name&gt;question_choice&lt;/name&gt;
+&lt;sys_class_name&gt;sys_translated&lt;/sys_class_name&gt;
+&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;
+&lt;sys_created_on&gt;2018-04-23 19:27:22&lt;/sys_created_on&gt;
+&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;
+&lt;sys_id&gt;7e7681170f2ddfc049346509b1050e7e&lt;/sys_id&gt;
+&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+&lt;sys_name&gt;Régulation&lt;/sys_name&gt;
+&lt;sys_package display_value="CCR"&gt;2a97bef70f899f80eea6a218b1050e87&lt;/sys_package&gt;
+&lt;sys_policy/&gt;
+&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;
+&lt;sys_scope display_value="CCR"&gt;2a97bef70f899f80eea6a218b1050e87&lt;/sys_scope&gt;
+&lt;sys_update_name&gt;sys_translated_7e7681170f2ddfc049346509b1050e7e&lt;/sys_update_name&gt;
+&lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;
+&lt;sys_updated_on&gt;2018-04-23 19:27:22&lt;/sys_updated_on&gt;
+&lt;value&gt;Regulation&lt;/value&gt;
+&lt;/sys_translated&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;1334146709&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;Ludovic.Andre@fxinnovation.com&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2018-10-18 13:58:42&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00462020dbd5af0021126033ca9619a0&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;1668778a6310000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;Ludovic.Andre@fxinnovation.com&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2018-10-18 13:58:42&lt;/sys_updated_on&gt;
+        &lt;table&gt;question_choice&lt;/table&gt;
+        &lt;target_name&gt;Régulation&lt;/target_name&gt;
+        &lt;type&gt;Translated Name / Field&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;8c46202049d5af0072b97fe760eb769f&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;8c46202049d5af0072b97fe760eb769f:1334146709,06618a5d405b1b80f830216886ab88ce:1460156232&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8780c3b547c4fe1097744049116d431d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_translated_7e7681170f2ddfc049346509b1050e7e</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_8780c3b547c4fe1097744049116d431d</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:45</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

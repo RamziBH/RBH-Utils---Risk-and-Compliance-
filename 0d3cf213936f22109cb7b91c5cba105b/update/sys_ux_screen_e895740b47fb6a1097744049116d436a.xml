@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="CMDB Workspace App Config">6825d0ae8f312010960c53ac37bdee72</app_config>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <event_mappings>[]</event_mappings>
+        <macroponent display_value="Attachment default">2495740b47fb6a1097744049116d434a</macroponent>
+        <macroponent_config>{
+    "bare": true,
+    "headerLevel": "1",
+    "interceptNotifications": false,
+    "label": "",
+    "propagateNotifications": false,
+    "scrollable": "y",
+    "sysId": "@data.gform.nowRecordFormBlob.sysId",
+    "table": "@data.gform.nowRecordFormBlob.table"
+}</macroponent_config>
+        <name>Attachment default</name>
+        <order>0</order>
+        <parent_macroponent/>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition>parent.table!=sn_cmdb_ws_group_query_metadata</screen_condition>
+        <screen_type display_value="Attachment">df757cc747fb6a1097744049116d434d</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>e895740b47fb6a1097744049116d436a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Attachment default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_screen_e895740b47fb6a1097744049116d436a</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:16</sys_updated_on>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_screen>
+</record_update>

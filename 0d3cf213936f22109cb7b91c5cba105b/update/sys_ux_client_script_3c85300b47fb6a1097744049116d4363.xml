@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Specify supporting data screen">3485fcc747fb6a1097744049116d43e6</macroponent>
+        <name>Set supporting data fields , sample size and sample collection type</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+
+
+
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    var {
+        name,
+        payload
+    } = event;
+    if (name === 'NOW_TYPEAHEAD_MULTI#SELECTED_ITEMS_SET') {
+        if (event.elementId == 'supporting_data_fields') {
+            if (payload.value) {
+                var arr = [];
+                payload.value.forEach(function(obj) {
+                    arr.push(obj);
+                });
+                api.setState('supportingDataFields', arr);
+            }
+        }
+    }
+
+    //Searching fields based on initials
+    if (name === "NOW_TYPEAHEAD_MULTI#VALUE_SET") {
+        api.setState('fieldSearchString', payload.value);
+    }
+
+    let sampleSizeErrorMessageValue = '';
+    
+    if (name === 'NOW_INPUT#INPUT') {
+        if (event.elementId == 'sample_size') {
+            if (payload.fieldValue || api.state.sampleCollectionType == 'count') {
+                api.setState('sampleSize', parseInt(payload.fieldValue));
+            }
+
+            if (api.state.sampleCollectionType == 'count' && parseInt(payload.fieldValue) <= 0) {
+                sampleSizeErrorMessageValue = api.state.sampleCountErrorMessage;
+            } else if (api.state.sampleCollectionType == 'percentage' && (!payload.fieldValue || (parseInt(payload.fieldValue) <= 0 || parseInt(payload.fieldValue) > 100))) {
+                sampleSizeErrorMessageValue = api.state.samplePercentageErrorMessage;
+            }
+
+        }
+    }
+
+    if (name === 'NOW_SELECT#SELECTED_ITEM_SET') {
+        if (event.elementId == 'sample_collection_type') {
+            if (payload.item && payload.item.id) {
+
+                if (payload.item.id === 'count') {
+                    api.setState('isSampleSizeRequired', false);
+
+                    if (api.state.sampleCollectionType == 'percentage') {
+                        api.setState('sampleSizeDisplayLabel', api.state.sampleSizeLabel);
+
+                    }
+
+                    if (parseInt(api.state.sampleSize) <= 0) {
+                        sampleSizeErrorMessageValue = api.state.sampleCountErrorMessage;
+                    }
+                }
+
+                if (payload.item.id === 'percentage') {
+                    api.setState('isSampleSizeRequired', true);
+
+                    if (api.state.sampleCollectionType == 'count') {
+                        api.setState('sampleSizeDisplayLabel', api.state.samplePercentageLabel);
+
+                    }
+
+                    if (api.state.sampleSize == null || isNaN(api.state.sampleSize) || parseInt(api.state.sampleSize) <= 0 || parseInt(api.state.sampleSize) > 100) {
+                        sampleSizeErrorMessageValue = api.state.samplePercentageErrorMessage;
+                    }
+                }
+
+                api.setState('sampleCollectionType', payload.item.id);
+
+            }
+        }
+    }
+
+    if (sampleSizeErrorMessageValue) {
+        api.emit("NOW_UXF_PAGE#ADD_NOTIFICATIONS", {
+            items: [{
+                id: "record-alert-1",
+                status: "critical",
+                icon: "info-circle-outline",
+                content: sampleSizeErrorMessageValue,
+                action: {
+                    type: "dismiss"
+                }
+            }]
+        });
+        api.setState('disableSave', true);
+    } else {
+        api.setState('disableSave', false);
+    }
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3c85300b47fb6a1097744049116d4363</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Set supporting data fields , sample size and sample collection type</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_client_script_3c85300b47fb6a1097744049116d4363</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:01</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_client_script>
+</record_update>

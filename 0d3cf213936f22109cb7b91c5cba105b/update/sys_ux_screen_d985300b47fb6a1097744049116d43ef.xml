@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <event_mappings>[
+    {
+        "eventMappingId": "aaddzddhptjbhhddckfsmyrmqaalfii",
+        "isConfiguration": false,
+        "offRowStorageId": null,
+        "sourceEventApiName": "sn_uib_base_aw.RECORD#RELATED_LIST_REFRESH_REQUESTED",
+        "sourceEventDefinition": {
+            "apiName": "sn_uib_base_aw.RECORD#RELATED_LIST_REFRESH_REQUESTED",
+            "id": null,
+            "type": "UXEVENT"
+        },
+        "sourceEventSysId": null,
+        "targets": [
+            {
+                "event": {
+                    "apiName": "sn_uib_base_aw.RECORD#RELATED_LIST_REFRESH_REQUESTED",
+                    "payload": {
+                        "container": {
+                            "relatedListName": {
+                                "binding": {
+                                    "address": [
+                                        "relatedListName"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            }
+                        },
+                        "type": "MAP_CONTAINER"
+                    }
+                },
+                "targetId": "dyddhhhddgckfsmynggtuiirmkaaaadgggii",
+                "type": "EVENT"
+            }
+        ]
+    }
+]</event_mappings>
+        <macroponent display_value="Taxonomy Topic Selection Screen">dd85300b47fb6a1097744049116d43cd</macroponent>
+        <macroponent_config>{
+    "bare": true,
+    "headerLevel": "1",
+    "interceptNotifications": false,
+    "label": "",
+    "propagateNotifications": false,
+    "scrollable": "y",
+    "sysId": "@context.props.sys_id"
+}</macroponent_config>
+        <name>Taxonomy Topic Selection Screen</name>
+        <order>0</order>
+        <parent_macroponent/>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Taxonomy Topic Selection Screen">7b75bcc747fb6a1097744049116d4325</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>d985300b47fb6a1097744049116d43ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Taxonomy Topic Selection Screen</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_screen_d985300b47fb6a1097744049116d43ef</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:03</sys_updated_on>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_screen>
+</record_update>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>011f7a43473ce190c6170f9e436d4305</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>sys_ui_action_91f7de5e872ced50124b7777dabb357d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;sysverb_energir_accept&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments&gt;Besoin Énergir&amp;#13;
+Membre du groupe: Gestionnaires d'idées&lt;/comments&gt;&lt;condition&gt; gs.getUser().isMemberOf('e701f8a987bc2d107f7d20e5cebb3517') &amp;amp;&amp;amp; current.state == -1&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint&gt;Accept Idea to Promote as a Demand&lt;/hint&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;true&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;true&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Create Demand&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[current.state = '4';
+current.update();
+if (action.get('isFormPage') == 'true')
+	action.setRedirectURL(current);
+else
+	action.setRedirectURL('/'+current.getTableName()+'_list.do');]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-01-24 19:27:00&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;91f7de5e872ced50124b7777dabb357d&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create Demand&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_91f7de5e872ced50124b7777dabb357d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-02-03 14:39:00&lt;/sys_updated_on&gt;&lt;table&gt;idea&lt;/table&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>814442810</payload_hash>
+        <remote_update_set display_value="SG - Idée - COLLAB-3144 - Remplacer le bouton pour créer les demandes">381f3a43473ce190c6170f9e436d43f3</remote_update_set>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>sgomez_admin</sys_created_by>
+        <sys_created_on>2023-02-08 16:29:04</sys_created_on>
+        <sys_id>011f7a43473ce190c6170f9e436d4305</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18617b7667a0000001</sys_recorded_at>
+        <sys_updated_by>sgomez_admin</sys_updated_by>
+        <sys_updated_on>2023-02-08 16:29:04</sys_updated_on>
+        <table>idea</table>
+        <target_name>Create Demand</target_name>
+        <type>UI Action</type>
+        <update_domain>global</update_domain>
+        <update_guid>77e5bca1b5fc2d10dc78ab0edeb23486</update_guid>
+        <update_guid_history>77e5bca1b5fc2d10dc78ab0edeb23486:814442810,9862ed9458bca510e2936a2a1ee3651e:-1456663267,405cdc83f2e0a110fed5dd0051835c0b:370205988,af78dad2f46ced5033b2ba10ed5b959e:124237990,900816d26b6ced506bcdf5d724817eb2:1315251518,1df716d28e6ced5096c9946694ceedac:1990848119</update_guid_history>
+        <update_set/>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c831073947c4fe1097744049116d433e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_ui_action_91f7de5e872ced50124b7777dabb357d</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_c831073947c4fe1097744049116d433e</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:33</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

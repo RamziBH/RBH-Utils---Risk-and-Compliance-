@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>0122dd32dbc70010f2b13a0f9d961978</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>sp_instance_link_bf039a2cdbee0810858c2c23ca96197c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;kb_article/&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item/&gt;&lt;sc_category display_value="Nouveau consultant"&gt;a310bad7db610c90555768d35b961986&lt;/sc_category&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;68035a2cdbee0810858c2c23ca96197a&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="SC Popular Items V2"&gt;c476d08ddbd28410555768d35b9619a7&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-21 17:34:54&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;bf039a2cdbee0810858c2c23ca96197c&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_bf039a2cdbee0810858c2c23ca96197c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-21 17:44:35&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;type&gt;sc_category&lt;/type&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"limit": {
+		"value": 4,
+		"displayValue": "4"
+	},
+	"include_record_producers": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=bf039a2cdbee0810858c2c23ca96197c"/&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;bf039a2cdbee0810858c2c23ca96197c&lt;/documentkey&gt;&lt;fieldname&gt;short_description&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-21 17:44:35&lt;/sys_created_on&gt;&lt;sys_id&gt;3545d6acdbee0810858c2c23ca961994&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-21 17:44:35&lt;/sys_updated_on&gt;&lt;tablename&gt;sp_instance_link&lt;/tablename&gt;&lt;value/&gt;&lt;/sys_translated_text&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;bf039a2cdbee0810858c2c23ca96197c&lt;/documentkey&gt;&lt;fieldname&gt;title&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-21 17:44:35&lt;/sys_created_on&gt;&lt;sys_id&gt;bd45d2ecdbee0810858c2c23ca96194b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-21 17:44:35&lt;/sys_updated_on&gt;&lt;tablename&gt;sp_instance_link&lt;/tablename&gt;&lt;value/&gt;&lt;/sys_translated_text&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-112586802</payload_hash>
+        <remote_update_set display_value="FX - RITM0102914 - 1 - MR">8122dd32dbc70010f2b13a0f9d961977</remote_update_set>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>Boyoti.Degbe@fxinnovation.com</sys_created_by>
+        <sys_created_on>2020-02-22 09:08:59</sys_created_on>
+        <sys_id>0122dd32dbc70010f2b13a0f9d961978</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170203174000000001</sys_recorded_at>
+        <sys_updated_by>Boyoti.Degbe@fxinnovation.com</sys_updated_by>
+        <sys_updated_on>2020-02-22 09:08:59</sys_updated_on>
+        <table/>
+        <target_name/>
+        <type>Instance with Link</type>
+        <update_domain>global</update_domain>
+        <update_guid>7545d2ec3eee0810da2749c7c7e5c44f</update_guid>
+        <update_guid_history>7545d2ec3eee0810da2749c7c7e5c44f:-112586802,b145d2ec08ee081097965517aef29e4d:-112586802,bd45d2ec88ee0810d23faaf18ad33c4a:207879214,b233dee8baee0810c86f88bd45c2039f:-1800328908,f3039a2c4fee081031641b2dcea47c7e:1913220318</update_guid_history>
+        <update_set/>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:34:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9131473947c4fe1097744049116d4390</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sp_instance_link_bf039a2cdbee0810858c2c23ca96197c</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_9131473947c4fe1097744049116d4390</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:34:39</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

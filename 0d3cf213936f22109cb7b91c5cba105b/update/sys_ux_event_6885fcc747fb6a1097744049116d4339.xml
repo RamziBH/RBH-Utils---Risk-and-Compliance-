@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>CONTENT_UPDATED_RELAY_5485fcc747fb6a1097744049116d4309</event_name>
+        <explicit_api_name>sn_uib_base_aw.CONTENT_UPDATED_RELAY_3478e8db0f0210107d20409dc4767e89</explicit_api_name>
+        <interfaces/>
+        <label>Content updated relay</label>
+        <props>[
+    {
+        "fieldType": "json",
+        "label": "Optional parameters",
+        "name": "params",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ {
+  "message" : "Optional parameters",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6885fcc747fb6a1097744049116d4339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Content updated relay</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_event_6885fcc747fb6a1097744049116d4339</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:00</sys_updated_on>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_event>
+</record_update>

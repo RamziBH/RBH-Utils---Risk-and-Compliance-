@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout_item">
+    <sys_ux_form_action_layout_item action="INSERT_OR_UPDATE">
+        <action display_value="New Risk Statement">7ce4e7779377ee109cb7b91c5cba102c</action>
+        <active>true</active>
+        <animate_icon>false</animate_icon>
+        <color>secondary</color>
+        <description/>
+        <icon/>
+        <item_type>action</item_type>
+        <label>New Risk Statement</label>
+        <layout_group/>
+        <name>New Risk Statement</name>
+        <order>0</order>
+        <overflow>false</overflow>
+        <sys_class_name>sys_ux_form_action_layout_item</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-12 15:02:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3ce427b79377ee109cb7b91c5cba10e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Risk Statement</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_form_action_layout_item_3ce427b79377ee109cb7b91c5cba10e3</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 15:02:42</sys_updated_on>
+        <table>x_gamlp_irm_risk_c_risk</table>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_form_action_layout_item>
+</record_update>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00487bc6db3e13007e24de82ca961910</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_attachment_doc_9ca6f9120f1f4600caa5a218b1050e32&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_attachment_doc action="INSERT_OR_UPDATE"&gt;
+&lt;data&gt;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&lt;/data&gt;
+&lt;length&gt;2664&lt;/length&gt;
+&lt;position&gt;1&lt;/position&gt;
+&lt;sys_attachment display_value="icon"&gt;1ca6f9120f1f4600caa5a218b1050e32&lt;/sys_attachment&gt;
+&lt;sys_created_by&gt;dberube_admin&lt;/sys_created_by&gt;
+&lt;sys_created_on&gt;2015-10-26 15:17:55&lt;/sys_created_on&gt;
+&lt;sys_id&gt;9ca6f9120f1f4600caa5a218b1050e32&lt;/sys_id&gt;
+&lt;/sys_attachment_doc&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;-1159809133&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;landre_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2018-06-21 14:30:08&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00487bc6db3e13007e24de82ca961910&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;166878401000000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;Ludovic.Andre@fxinnovation.com&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2018-10-18 14:11:07&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;9ca6f9120f1f4600caa5a218b1050e32&lt;/target_name&gt;
+        &lt;type&gt;Attachment Document&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;611928246dd5af007f8e651b48ee74ae&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;611928246dd5af007f8e651b48ee74ae:-1159809133,4c487bc6d13e1300c4aba5d00361220f:-1159809133&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5380c3b547c4fe1097744049116d4362</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_attachment_doc_9ca6f9120f1f4600caa5a218b1050e32</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_5380c3b547c4fe1097744049116d4362</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:47</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

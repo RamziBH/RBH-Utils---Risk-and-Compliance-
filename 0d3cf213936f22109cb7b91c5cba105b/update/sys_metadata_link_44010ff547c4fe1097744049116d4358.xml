@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00db79f0db370450a8d8757a8c9619f7</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Loaner Request">24e4b01167301200f5c55bb557415a68</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>sysauto_script_0c1dddd167301200f5c55bb557415a72</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sysauto_script"&gt;&lt;sysauto_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;name&gt;Loaner Item Return&lt;/name&gt;&lt;run_as display_value="System Administrator"&gt;6816f79cc0a8016401c5a33be04be441&lt;/run_as&gt;&lt;run_as_tz/&gt;&lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;&lt;run_dayofweek&gt;1&lt;/run_dayofweek&gt;&lt;run_period&gt;1970-01-01 01:00:00&lt;/run_period&gt;&lt;run_start&gt;2016-01-06 00:26:29&lt;/run_start&gt;&lt;run_time&gt;1970-01-01 07:00:00&lt;/run_time&gt;&lt;run_type&gt;periodically&lt;/run_type&gt;&lt;script&gt;&lt;![CDATA[// Check the table once an hour to see if there are any items that the user needs to return
+
+var lutil = new LoanerUtils();
+var rlist = lutil.getNullReturnReminders();
+
+for (var i=0; i &lt; rlist.length; i++) {
+	lutil.sendReturnReminder(rlist[i]);
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sysauto_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-01-06 00:27:15&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;0c1dddd167301200f5c55bb557415a72&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Loaner Item Return&lt;/sys_name&gt;&lt;sys_package display_value="Loaner Request" source="x_loaner"&gt;24e4b01167301200f5c55bb557415a68&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Loaner Request"&gt;24e4b01167301200f5c55bb557415a68&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysauto_script_0c1dddd167301200f5c55bb557415a72&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin_SHARE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-01-07 18:23:34&lt;/sys_updated_on&gt;&lt;upgrade_safe&gt;false&lt;/upgrade_safe&gt;&lt;/sysauto_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>279721108</payload_hash>
+        <remote_update_set display_value="Loaner Request v6.2.0">fbbbf5f0db370450a8d8757a8c961966</remote_update_set>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>martin.roux@fxinnovation.com</sys_created_by>
+        <sys_created_on>2020-03-24 13:50:19</sys_created_on>
+        <sys_id>00db79f0db370450a8d8757a8c9619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170eecf590d0000001</sys_recorded_at>
+        <sys_updated_by>martin.roux@fxinnovation.com</sys_updated_by>
+        <sys_updated_on>2020-03-24 13:50:19</sys_updated_on>
+        <table/>
+        <target_name>Loaner Item Return</target_name>
+        <type>Scheduled Script Execution</type>
+        <update_domain>global</update_domain>
+        <update_guid/>
+        <update_guid_history/>
+        <update_set/>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:33:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>44010ff547c4fe1097744049116d4358</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sysauto_script_0c1dddd167301200f5c55bb557415a72</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_44010ff547c4fe1097744049116d4358</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:33:45</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

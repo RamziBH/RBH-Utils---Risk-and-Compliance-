@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00370655472dde1037f719b3716d43e9</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Global"&gt;global&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;item_option_new_set_127f2b900f6f4b00eea6a218b1050e04&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="item_option_new_set"&gt;&lt;item_option_new_set action="INSERT_OR_UPDATE"&gt;&lt;create_roles/&gt;&lt;description&gt;Pour les éléments de catalogue représentant les rôles SAP&lt;/description&gt;&lt;display_title&gt;false&lt;/display_title&gt;&lt;internal_name&gt;mim_traitement_des_acces_sap&lt;/internal_name&gt;&lt;layout&gt;normal&lt;/layout&gt;&lt;name&gt;MIM - Traitement des accès SAP&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;read_roles/&gt;&lt;set_attributes/&gt;&lt;sys_class_name&gt;item_option_new_set&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-01-05 13:59:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;127f2b900f6f4b00eea6a218b1050e04&lt;/sys_id&gt;&lt;sys_mod_count&gt;29&lt;/sys_mod_count&gt;&lt;sys_name&gt;MIM - Traitement des accès SAP&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;item_option_new_set_127f2b900f6f4b00eea6a218b1050e04&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-10 19:07:51&lt;/sys_updated_on&gt;&lt;title&gt;MIM - Traitement des accès SAP&lt;/title&gt;&lt;type&gt;one_to_one&lt;/type&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;version&gt;26&lt;/version&gt;&lt;write_roles/&gt;&lt;/item_option_new_set&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;36277221&lt;/payload_hash&gt;
+        &lt;remote_update_set display_value="COLLAB-5114-RBH-V1"&gt;84370655472dde1037f719b3716d43e4&lt;/remote_update_set&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;bcrepeault_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-10-28 21:16:04&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00370655472dde1037f719b3716d43e9&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;19277d48f6c0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;bcrepeault_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-10-28 21:16:04&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;MIM - Traitement des accès SAP&lt;/target_name&gt;
+        &lt;type&gt;Variable Set&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;223d7ceffd411e1037c7d5b0b3aba97f&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;223d7ceffd411e1037c7d5b0b3aba97f:36277221,d32df8efd2411e1053d915fd3df4e0be:244975524,e4c9e8a3d9cdda10da196e5cd04c5293:453673827,3026ace3448dda109cc9085c7a658e2b:662372130,d7252c237b8dda1025a10f4d8715c807:871070433,262320eb924dda1015be77b267a47ded:1079768736,f613acaba54dda102d184fac7949baba:1288467039,47032cabb64dda106e0d7daa530f0bf2:1584862409,9ff2a8abb24dda1086c57d22d294c49d:1793560712,dfd2e4ab9d4dda102878cdb8c3481977:2002259015,dec264ab4e4dda10cf9ee91fd60f7c21:-2084009978,e3a260abc74dda107fee3826f7313795:-1875311675,2012206bc74dda106bc121ac03ca8082:-1666613372,7be1a82b4f4dda10c89f4b471c854561:-1457915069,f5ebdce7ef0dda105b893442d7d882eb:-1249216766,919bd0e7e30dda10d7faefb39cbf1daa:-1040518463,c24b10a70d0dda10ea0805853c166815:-831820160,a9b718af4cc9da1033ecf356fdfbf2d9:2097738742,b7d09cafbb89da104868e360a42da364:-1988530251,63ffc42f1d89da1009f7783b87518428:-1779831948,c2ce406bd189da10d427bfcb2b2c31a7:-1571133645,eb9ec82b1e89da108dc273fec09c86bc:-1362435342,4902f3d38f85da10a1c044c18faf3331:-1153737039,8aa03f530f85da1029760d20bb8dfa19:-945038736,4f20f3df2a45da10b7c9d62990baa02b:-736340433,457f635fbf45da10064a9ca9126080a4:-527642130,ece2041ad7be13004bd9083a6d057efa:311939714&lt;/update_guid_history&gt;
+        &lt;update_set/&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>618083b547c4fe1097744049116d4333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>item_option_new_set_127f2b900f6f4b00eea6a218b1050e04</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_618083b547c4fe1097744049116d4333</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:39</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

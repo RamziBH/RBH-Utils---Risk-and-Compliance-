@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-10 18:03:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>82babd5b47bf2e1097744049116d4300</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.nobody</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_security_acl display_value="x_gamlp_irm_risk_c_risk">59baf1db47bf2e1097744049116d4392</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_82babd5b47bf2e1097744049116d4300</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-10 18:03:01</sys_updated_on>
+        <sys_user_role display_value="nobody" name="nobody">b05940500a0a0aa70090a4893f6ff35d</sys_user_role>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_security_acl_role>
+</record_update>

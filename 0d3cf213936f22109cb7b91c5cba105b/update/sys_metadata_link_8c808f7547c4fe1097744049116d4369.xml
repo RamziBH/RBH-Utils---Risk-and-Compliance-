@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>0023ca66934312109cb7b91c5cba103b</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="Discovery and Service Mapping Patterns"&gt;06a71b1367e4130051c9027e2685ef1e&lt;/application&gt;
+        &lt;category&gt;customer&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sa_pattern_73f8b94cdb4f44109149f2131f961956&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sa_pattern"&gt;&lt;sa_pattern action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;ci_type&gt;cmdb_ci_nat_gateway&lt;/ci_type&gt;&lt;cpattern_type&gt;4&lt;/cpattern_type&gt;&lt;description/&gt;&lt;directory&gt;false&lt;/directory&gt;&lt;enforce_proc_classy&gt;false&lt;/enforce_proc_classy&gt;&lt;invoke_per_account&gt;false&lt;/invoke_per_account&gt;&lt;metadata_id&gt;73f8b94cdb4f44109149f2131f961956&lt;/metadata_id&gt;&lt;name&gt;Amazon AWS - NAT Gateway (LP)&lt;/name&gt;&lt;ndl&gt;pattern {&amp;#13;
+	metadata {&amp;#13;
+		id = "73f8b94cdb4f44109149f2131f961956"&amp;#13;
+		name = "Amazon AWS - NAT Gateway (LP)"&amp;#13;
+		description = ""&amp;#13;
+		citype = "cmdb_ci_nat_gateway"&amp;#13;
+		apply_to_os_families = "cmdb_ci_aws_datacenter"&amp;#13;
+	}&amp;#13;
+	identification {&amp;#13;
+		name = "Amazon NAT Gateway"&amp;#13;
+		entry_point {type = "*"}&amp;#13;
+		find_process_strategy {strategy = NONE}&amp;#13;
+		step {&amp;#13;
+			name = "Extract AWS Host"&amp;#13;
+			set_attr {&amp;#13;
+				"awsHost"&amp;#13;
+				eval {"javascript: rtrn = \"\";
+var host = '';
+var region = ${cmdb_ci_aws_datacenter[1].name};
+var dc_url = ${service_account[1].datacenter_url};
+
+try {
+   var hostBuilder = new AWSHostBuilder();
+   host = hostBuilder.extractAWSHost(region,dc_url);
+   if (host.startsWith(\".\")) {
+      host = host.substring(1, host.length);
+   }
+}
+catch (e){
+   ms.log(\"AWSHostBuilder Class Not Found, or Run Failed. Make sure you have installed the latest discovery patterns store release. \" + e);
+   if(dc_url.contains(\"gov\")){
+      var gov_region = dc_url.split(\".\")[1];
+      host = gov_region + '.amazonaws.com';
+   } else {
+      host = 'amazonaws.com';
+   }
+}
+
+//remove the last character if it is forward slash, because the URLs later on always add forward slash as hardcoded character
+var last_symbol = host[host.length - 1]
+if (last_symbol == \"/\") {
+      host = host.substring(0,host.length - 1)
+}
+
+rtrn = host;"}&amp;#13;
+			}&amp;#13;
+		}&amp;#13;
+		step {&amp;#13;
+			name = "Set Full URL"&amp;#13;
+			set_attr {&amp;#13;
+				"awsQueryUrl"&amp;#13;
+				concat {&amp;#13;
+					"https://ec2."&amp;#13;
+					get_attr {"awsHost"}&amp;#13;
+				}&amp;#13;
+			}&amp;#13;
+		}&amp;#13;
+		step {&amp;#13;
+			name = "Get Nat Gateway"&amp;#13;
+			ref {refid = "55ec06d49844498eb596ace0ba373af4"}&amp;#13;
+		}&amp;#13;
+		step {&amp;#13;
+			name = "Check if there are NAT Gateways"&amp;#13;
+			match {&amp;#13;
+				is_not_empty {get_attr {"natgateway"}}&amp;#13;
+				terminate_op = graceful&amp;#13;
+				terminate_msg = "NAT Gateway is empty"&amp;#13;
+			}&amp;#13;
+		}&amp;#13;
+		step {&amp;#13;
+			name = "Create Network"&amp;#13;
+			parse_var_to_var {&amp;#13;
+				from_var_name = "cmdb_ci_endpoint_nat[*].network_native_key"&amp;#13;
+				to_var_names = table {&amp;#13;
+					name = "cmdb_ci_network"&amp;#13;
+					col_names = "source_native_key"&amp;#13;
+				}&amp;#13;
+				parsing_strategy = delimited_parsing {&amp;#13;
+					exclude_lines_pattern = "null"&amp;#13;
+					selected_positions = 1&amp;#13;
+				}&amp;#13;
+				if_not_found_do = nop {}&amp;#13;
+			}&amp;#13;
+		}&amp;#13;
+		step {&amp;#13;
+			name = "Remove duplicate Networks"&amp;#13;
+			set_attr {&amp;#13;
+				"tmp"&amp;#13;
+				eval {"javascript: var tableWithoutDuplicates = '';
+tableWithoutDuplicates =  DuplicateRemover.removeDuplicates(${cmdb_ci_network},[\"source_native_key\"]);
+CTX.setAttribute(\"cmdb_ci_network\", tableWithoutDuplicates);"}&amp;#13;
+			}&amp;#13;
+		}&amp;#13;
+		step {&amp;#13;
+			name = "Relation between NAT Gateway and LDC"&amp;#13;
+			relation_reference {&amp;#13;
+				table1_name = "cmdb_ci_nat_gateway"&amp;#13;
+				table2_name = "cmdb_ci_aws_datacenter"&amp;#13;
+				result_table_name = "nat_to_ldc"&amp;#13;
+				unmatched_lines = keep&amp;#13;
+				relation_type = "Hosted on::Hosts"&amp;#13;
+				ref_direction = parentToChild&amp;#13;
+				ref_field_name = ""&amp;#13;
+			}&amp;#13;
+		}&amp;#13;
+		step {&amp;#13;
+			name = "Relation between NAT Gateway and NAT Endpoint Gateway"&amp;#13;
+			relation_reference {&amp;#13;
+				table1_name = "cmdb_ci_nat_gateway"&amp;#13;
+				key1_name = "natid"&amp;#13;
+				table2_name = "cmdb_ci_endpoint_nat"&amp;#13;
+				key2_name = "natid"&amp;#13;
+				result_table_name = "nat_to_nat_ep"&amp;#13;
+				unmatched_lines = remove&amp;#13;
+				relation_type = "Implement End Point To::Implement End Point From"&amp;#13;
+				ref_direction = parentToChild&amp;#13;
+				ref_field_name = ""&amp;#13;
+			}&amp;#13;
+		}&amp;#13;
+		step {&amp;#13;
+			name = "Create relation between Network and NAT Endpoint Gateway"&amp;#13;
+			relation_reference {&amp;#13;
+				table1_name = "cmdb_ci_network"&amp;#13;
+				key1_name = "source_native_key"&amp;#13;
+				table2_name = "cmdb_ci_endpoint_nat"&amp;#13;
+				key2_name = "network_native_key"&amp;#13;
+				result_table_name = "network_to_nat_ep"&amp;#13;
+				unmatched_lines = remove&amp;#13;
+				relation_type = "Use End Point To::Use End Point From"&amp;#13;
+				ref_direction = parentToChild&amp;#13;
+				ref_field_name = ""&amp;#13;
+			}&amp;#13;
+		}&amp;#13;
+	}&amp;#13;
+}&amp;#13;
+&lt;/ndl&gt;&lt;parent/&gt;&lt;serverless&gt;false&lt;/serverless&gt;&lt;source/&gt;&lt;sys_class_name&gt;sa_pattern&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-02-13 22:55:27&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;73f8b94cdb4f44109149f2131f961956&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;Amazon AWS - NAT Gateway (LP)&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Discovery and Service Mapping Patterns" source="sn_itom_pattern"&gt;06a71b1367e4130051c9027e2685ef1e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Discovery and Service Mapping Patterns"&gt;06a71b1367e4130051c9027e2685ef1e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sa_pattern_73f8b94cdb4f44109149f2131f961956&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-15 07:44:54&lt;/sys_updated_on&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;version/&gt;&lt;/sa_pattern&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;1644155382&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;true&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-01-15 07:44:54&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0023ca66934312109cb7b91c5cba103b&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;19468ec27ea0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-01-15 07:44:59&lt;/sys_updated_on&gt;
+        &lt;table/&gt;
+        &lt;target_name&gt;Amazon AWS - NAT Gateway (LP)&lt;/target_name&gt;
+        &lt;type&gt;Discovery Patterns&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;4c23ca66c943121003fecdcfe07b0f3a&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;4c23ca66c943121003fecdcfe07b0f3a:1644155382,0823ca6666431210c113195a951aae0d:2104812279&lt;/update_guid_history&gt;
+        &lt;update_set display_value="Default"&gt;64074e2b4f703200015eab99f110c709&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8c808f7547c4fe1097744049116d4369</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sa_pattern_73f8b94cdb4f44109149f2131f961956</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_8c808f7547c4fe1097744049116d4369</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:33</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

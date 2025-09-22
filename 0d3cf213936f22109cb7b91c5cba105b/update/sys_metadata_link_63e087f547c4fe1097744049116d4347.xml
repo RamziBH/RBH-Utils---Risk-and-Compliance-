@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00c3146147929ad037f719b3716d43e5</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;DELETE&lt;/action&gt;
+        &lt;application display_value="GRC: Metrics"&gt;09bd46de537f20104f3eddeeff7b124b&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_security_acl_3c2041114790d29097744049116d4379&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="DELETE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;condition/&gt;&lt;description&gt;Allow read for records in sn_grc_metric_metric, for users with role sn_esg.reader, and if the ACL condition (u_metric_reader_groupDYNAMICd6435e965f510100a9ad2572f2b47744^EQ) evaluates to true.&lt;/description&gt;&lt;local_or_existing&gt;Local&lt;/local_or_existing&gt;&lt;name&gt;sn_grc_metric_metric&lt;/name&gt;&lt;operation display_value="read"&gt;read&lt;/operation&gt;&lt;script/&gt;&lt;security_attribute/&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;james.pollock@energir.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-27 12:47:10&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;3c2041114790d29097744049116d4379&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;sn_grc_metric_metric&lt;/sys_name&gt;&lt;sys_package display_value="GRC: Metrics" source="sn_grc_metric"&gt;09bd46de537f20104f3eddeeff7b124b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="GRC: Metrics"&gt;09bd46de537f20104f3eddeeff7b124b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_3c2041114790d29097744049116d4379&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;james.pollock@energir.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-25 23:06:32&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;/sys_security_acl&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;310167550&lt;/payload_hash&gt;
+        &lt;remote_update_set/&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-12-05 14:17:17&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;00c3146147929ad037f719b3716d43e5&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;193972ea6dd0000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-12-05 14:17:17&lt;/sys_updated_on&gt;
+        &lt;table&gt;sn_grc_metric_metric&lt;/table&gt;
+        &lt;target_name&gt;sn_grc_metric_metric&lt;/target_name&gt;
+        &lt;type&gt;Access Control&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;539efd8b7bf41690884b042a34d0396d&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;539efd8b7bf41690884b042a34d0396d:310167550,2004e4b2e2fc5290dfea1fef210e5b42:-625717774,c959badaf274de50d359fc25b4b7955a:-1646959943,5b323e5e0bfc9a10750d98c4ff842808:-1263082300,00a59377e154d2d0869100362a50f6c6:2058837213,88eaf7b528941a90e4cda5a9163a7ef8:-490924396,4f8ba3bd15141a900b7dd1a378bff12b:741690976,fb5aaff9e8141a9006c379cdfe131720:-1190793945,63592bb904141a90411be7a2fa472995:741690976,5f97a33923141a9025c20b7f77f54a9e:-1190793945,5a67ebf51e141a9068212cb3bc4791ac:741690976,0436d5119c54d2906614d703503a17da:-1190793945,8d20c511db90d290bde68ecd565904f6:-1092497272&lt;/update_guid_history&gt;
+        &lt;update_set display_value="ESG-STRY0029135-JP-V2-Entity-based access to Metrics"&gt;40c3146147929ad037f719b3716d43a5&lt;/update_set&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:33:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>63e087f547c4fe1097744049116d4347</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_security_acl_3c2041114790d29097744049116d4379</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_63e087f547c4fe1097744049116d4347</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:33:26</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

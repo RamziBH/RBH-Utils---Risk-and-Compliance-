@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <bundles/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[
+    {
+        "elementId": "ref_search_list_1",
+        "elementLabel": "Reference Lookup List",
+        "propertyValues": {
+            "table": {
+                "type": "CONTEXT_BINDING",
+                "binding": {
+                    "address": [
+                        "table"
+                    ],
+                    "category": "props"
+                }
+            },
+            "recordSysId": {
+                "type": "CONTEXT_BINDING",
+                "binding": {
+                    "address": [
+                        "sysId"
+                    ],
+                    "category": "props"
+                }
+            },
+            "referenceKey": {
+                "type": "CONTEXT_BINDING",
+                "binding": {
+                    "address": [
+                        "referenceKey"
+                    ],
+                    "category": "props"
+                }
+            },
+            "refTableName": {
+                "type": "CONTEXT_BINDING",
+                "binding": {
+                    "address": [
+                        "referenceTable"
+                    ],
+                    "category": "props"
+                }
+            },
+            "field": {
+                "type": "CONTEXT_BINDING",
+                "binding": {
+                    "address": [
+                        "referenceField"
+                    ],
+                    "category": "props"
+                }
+            },
+            "listTitle": {
+                "type": "CONTEXT_BINDING",
+                "binding": {
+                    "address": [
+                        "label"
+                    ],
+                    "category": "props"
+                }
+            },
+            "chars": {
+                "type": "JSON_LITERAL",
+                "value": "**"
+            },
+            "ignoreRefQual": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "serializedChanges": {
+                "type": "CONTEXT_BINDING",
+                "binding": {
+                    "address": [
+                        "serializedChanges"
+                    ],
+                    "category": "props"
+                }
+            },
+            "encodedRecord": {
+                "type": "CONTEXT_BINDING",
+                "binding": {
+                    "address": [
+                        "encodedRecord"
+                    ],
+                    "category": "props"
+                }
+            }
+        },
+        "eventMappings": [
+            {
+                "eventMappingId": "ckfffejsaaaaaaaaacddhhhddiigoeethhuy",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",
+                "sourceEventDefinition": {
+                    "apiName": "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "targets": [
+                    {
+                        "clientScript": {
+                            "sysId": "0c95340b47fb6a1097744049116d4391"
+                        },
+                        "targetId": "ckfffejsaaaaaaaaadddhhhddsdxcmpiigg",
+                        "type": "CLIENT_SCRIPT"
+                    },
+                    {
+                        "event": {
+                            "apiName": "x_gamlp_irm_risk_c.MODAL_SELECTED_RELAY_0495340b47fb6a1097744049116d438c",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "showModal": false
+                                }
+                            }
+                        },
+                        "operation": null,
+                        "targetId": "ckfffmtohhcaaaaaadddhhhddkpbccwjtff",
+                        "type": "EVENT"
+                    }
+                ]
+            }
+        ],
+        "slot": "default-slot",
+        "definition": {
+            "id": "abe955e5ff13101035be517f793bf140",
+            "type": "MACROPONENT"
+        },
+        "overrides": null,
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": false
+        },
+        "styles": {}
+    }
+]</composition>
+        <da_relay_models/>
+        <data>[]</data>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events>7d0808e9ff57101035be517f793bf159,7d0808e9ff57101035be517f793bf159,4495340b47fb6a1097744049116d4396</dispatched_events>
+        <events/>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{}</internal_event_mappings>
+        <layout>{
+    "default": {
+        "children": null,
+        "items": [
+            {
+                "slotName": "default-slot",
+                "styles": {
+                    "flex-direction": "column"
+                }
+            }
+        ],
+        "root": null,
+        "rules": {
+            "flex-direction": "column"
+        },
+        "styles": null,
+        "templateId": null,
+        "type": "flex"
+    }
+}</layout>
+        <macroponent_dependencies/>
+        <name>DA Modal Ref Lookup Default</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "name": "sysId",
+        "label": "SysId",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "defaultValue": null,
+        "description": null,
+        "readOnly": false,
+        "selectable": false
+    },
+    {
+        "name": "table",
+        "label": "Tableau",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "defaultValue": null,
+        "description": null,
+        "readOnly": false,
+        "selectable": false
+    },
+    {
+        "name": "referenceField",
+        "label": "referenceField",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "defaultValue": null,
+        "description": null,
+        "readOnly": false,
+        "selectable": false
+    },
+    {
+        "name": "referenceKey",
+        "label": "referenceKey (clé de référence)",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "defaultValue": null,
+        "description": null,
+        "readOnly": false,
+        "selectable": false
+    },
+    {
+        "name": "label",
+        "label": "Étiquette",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "defaultValue": null,
+        "description": null,
+        "readOnly": false,
+        "selectable": false
+    },
+    {
+        "name": "serializedChanges",
+        "label": "serializedChanges",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "defaultValue": null,
+        "description": null,
+        "readOnly": false,
+        "selectable": false
+    },
+    {
+        "name": "referenceTable",
+        "label": "referenceTable",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "defaultValue": null,
+        "description": null,
+        "readOnly": false,
+        "selectable": false
+    },
+    {
+        "name": "encodedRecord",
+        "label": "encodedRecord",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "defaultValue": null,
+        "description": null,
+        "readOnly": false,
+        "selectable": false
+    },
+    {
+        "name": "fieldType",
+        "label": "fieldType",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "defaultValue": null,
+        "description": null,
+        "readOnly": false,
+        "selectable": false
+    },
+    {
+        "name": "currentValue",
+        "label": "currentValue",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "defaultValue": null,
+        "description": null,
+        "readOnly": false,
+        "selectable": false
+    },
+    {
+        "name": "displayValue",
+        "label": "displayValue",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "defaultValue": null,
+        "description": null,
+        "readOnly": false,
+        "selectable": false
+    },
+    {
+        "name": "displayValueList",
+        "label": "displayValueList",
+        "fieldType": "json",
+        "typeMetadata": {
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            }
+        },
+        "valueType": "json",
+        "mandatory": false,
+        "defaultValue": null,
+        "description": null,
+        "readOnly": false,
+        "selectable": false
+    }
+]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component/>
+        <root_component_config>{}</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties>[]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0495340b47fb6a1097744049116d438c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>DA Modal Ref Lookup Default</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_macroponent_0495340b47fb6a1097744049116d438c</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:15</sys_updated_on>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_macroponent>
+</record_update>

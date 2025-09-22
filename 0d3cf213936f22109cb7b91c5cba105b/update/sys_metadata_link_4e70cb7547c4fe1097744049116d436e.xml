@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>000e5681db6c3410633d3fd3e2961915</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_update_xml"&gt;
+    &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;
+        &lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;
+        &lt;application display_value="CCR"&gt;2a97bef70f899f80eea6a218b1050e87&lt;/application&gt;
+        &lt;category&gt;retrieved&lt;/category&gt;
+        &lt;comments/&gt;
+        &lt;name&gt;sys_security_acl_role_cf9231bc0fd513c0eea6a218b1050ee2&lt;/name&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl_role"&gt;&lt;sys_security_acl_role action="INSERT_OR_UPDATE"&gt;&lt;sys_class_name&gt;sys_security_acl_role&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sgomez_admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-04-03 17:59:40&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;cf9231bc0fd513c0eea6a218b1050ee2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_gamlp_ccr_station_operation.x_gamlp_ccr.user&lt;/sys_name&gt;&lt;sys_package display_value="CCR" source="x_gamlp_ccr"&gt;2a97bef70f899f80eea6a218b1050e87&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="CCR"&gt;2a97bef70f899f80eea6a218b1050e87&lt;/sys_scope&gt;&lt;sys_security_acl display_value="x_gamlp_ccr_station_operation"&gt;839231bc0fd513c0eea6a218b1050edf&lt;/sys_security_acl&gt;&lt;sys_update_name&gt;sys_security_acl_role_cf9231bc0fd513c0eea6a218b1050ee2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sgomez_admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-04-03 17:59:40&lt;/sys_updated_on&gt;&lt;sys_user_role display_value="x_gamlp_ccr.user" name="x_gamlp_ccr.user"&gt;a297bef70f899f80eea6a218b1050e99&lt;/sys_user_role&gt;&lt;transaction_id/&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;/sys_security_acl_role&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;
+        &lt;payload_hash&gt;325211284&lt;/payload_hash&gt;
+        &lt;remote_update_set display_value="CCR_v1.3.4"&gt;77fd1681db6c3410633d3fd3e29619c1&lt;/remote_update_set&gt;
+        &lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;
+        &lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-06-03 10:07:33&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;000e5681db6c3410633d3fd3e2961915&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_recorded_at&gt;179c3ff38a00000001&lt;/sys_recorded_at&gt;
+        &lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-06-03 10:07:33&lt;/sys_updated_on&gt;
+        &lt;table&gt;x_gamlp_ccr_station_operation&lt;/table&gt;
+        &lt;target_name&gt;x_gamlp_ccr_station_operation.x_gamlp_ccr.user&lt;/target_name&gt;
+        &lt;type&gt;Access Roles&lt;/type&gt;
+        &lt;update_domain&gt;global&lt;/update_domain&gt;
+        &lt;update_guid&gt;21614a5d505b1b80909fe867e83b8e65&lt;/update_guid&gt;
+        &lt;update_guid_history&gt;21614a5d505b1b80909fe867e83b8e65:1107993540&lt;/update_guid_history&gt;
+        &lt;update_set/&gt;
+        &lt;view/&gt;
+    &lt;/sys_update_xml&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:31:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4e70cb7547c4fe1097744049116d436e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_security_acl_role_cf9231bc0fd513c0eea6a218b1050ee2</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_4e70cb7547c4fe1097744049116d436e</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:31:25</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

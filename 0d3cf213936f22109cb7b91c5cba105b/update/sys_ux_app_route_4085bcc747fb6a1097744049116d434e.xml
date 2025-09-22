@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config/>
+        <description/>
+        <extension_point/>
+        <fields>table,sysId,referenceField,label,serializedChanges,encodedRecord,size,referenceKey,referenceTable,fieldType,currentValue,displayValue,displayValueList,dependentField,dependentValue</fields>
+        <icon/>
+        <name>DA Modal Ref Lookup</name>
+        <optional_parameters>displayValueList</optional_parameters>
+        <order>0</order>
+        <parent_macroponent/>
+        <parent_macroponent_composition_element_id>modalContainerViewport</parent_macroponent_composition_element_id>
+        <route_type>modal_ref_lookup</route_type>
+        <screen_type display_value="DA Modal Ref Lookup">2f757cc747fb6a1097744049116d438b</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:20:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4085bcc747fb6a1097744049116d434e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DA Modal Ref Lookup</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_app_route_4085bcc747fb6a1097744049116d434e</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:20:57</sys_updated_on>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_app_route>
+</record_update>

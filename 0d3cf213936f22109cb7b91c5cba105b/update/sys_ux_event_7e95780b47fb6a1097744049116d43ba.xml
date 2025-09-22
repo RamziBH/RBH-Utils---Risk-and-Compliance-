@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>RECORD#_RELATED_LIST_REFRESH_REQUESTED_RELAY_ea95780b47fb6a1097744049116d4382</event_name>
+        <explicit_api_name/>
+        <interfaces/>
+        <label>[Risk BU Record Page] Related List Refresh Requested Relay</label>
+        <props>[
+    {
+        "defaultValue": "",
+        "description": "The name of the related list",
+        "fieldType": "string",
+        "label": "Related list name",
+        "name": "relatedListName",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ {
+  "message" : "Related list name",
+  "comment" : ""
+}, {
+  "message" : "The name of the related list",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7e95780b47fb6a1097744049116d43ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>[Risk BU Record Page] Related List Refresh Requested Relay</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_event_7e95780b47fb6a1097744049116d43ba</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:25</sys_updated_on>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_event>
+</record_update>

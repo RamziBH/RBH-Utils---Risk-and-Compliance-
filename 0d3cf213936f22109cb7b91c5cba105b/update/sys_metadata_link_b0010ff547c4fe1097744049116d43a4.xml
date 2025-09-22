@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00ddea77dbf448d0263c3e0b7c96192d</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>sp_portal_81b75d3147032100ba13a5554ee4902b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_portal"&gt;&lt;sp_portal action="INSERT_OR_UPDATE"&gt;&lt;css_variables&gt;$brand-primary: #002855;
+$body-bg: #fff;
+$state-success-text: #5cb85c;
+$sp-homepage-bg: #fff;
+$sp-navbar-divider-color: #002855;
+$text-color: #717171;
+$sp-logo-margin-y: .5rem;
+$navbar-inverse-link-hover-color: #ffffff;
+$panel-bg: #fff;
+$brand-success: #5cb85c;
+$navbar-inverse-bg: #002855;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+$sp-tagline-color: #717171;
+$navbar-inverse-link-color: #bdc0c4;
+$brand-info: #5bc0de;
+$link-color: #428bca;
+$sp-logo-margin-x: 15px;
+$btn-default-bg: #fff;
+$text-muted: #979797;
+&lt;/css_variables&gt;&lt;default&gt;true&lt;/default&gt;&lt;homepage display_value="index"&gt;46cc384147532100ba13a5554ee49009&lt;/homepage&gt;&lt;icon/&gt;&lt;kb_knowledge_base/&gt;&lt;kb_knowledge_page display_value="kb_view2"&gt;26c2e030d7201200a9addd173e24d437&lt;/kb_knowledge_page&gt;&lt;login_page display_value="landing"&gt;36c61807cb31120000f8d856634c9ca9&lt;/login_page&gt;&lt;logo&gt;7fd2a1d3dbd7b340c3af24f4059619e3&lt;/logo&gt;&lt;notfound_page display_value="404"&gt;3c2c9063cb11020000f8d856634c9c1f&lt;/notfound_page&gt;&lt;quick_start_config&gt;&lt;![CDATA[[{
+	"tagline": {
+		"table" : "sp_instance",
+		"sys_id" : "34fe3d96cb20020000f8d856634c9cf4",
+		"field" : "title"
+	},
+	"hero_background": {
+		"table" : "sp_container",
+		"sys_id" : "be98a8d2cb20020000f8d856634c9c63",
+		"field" : "background_image"
+	}
+}]]]&gt;&lt;/quick_start_config&gt;&lt;sc_catalog display_value="Catalogue de services TI"&gt;e0d08b13c3330100c8b837659bba8fb4&lt;/sc_catalog&gt;&lt;sc_catalog_page/&gt;&lt;sc_category_page/&gt;&lt;sp_chat_queue/&gt;&lt;sp_rectangle_menu display_value="SP Header Menu"&gt;d150fd31cb10020000f8d856634c9ce6&lt;/sp_rectangle_menu&gt;&lt;sqanda_knowledge_base/&gt;&lt;sys_class_name&gt;sp_portal&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fredex&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2014-09-09 21:08:15&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;81b75d3147032100ba13a5554ee4902b&lt;/sys_id&gt;&lt;sys_mod_count&gt;191&lt;/sys_mod_count&gt;&lt;sys_name&gt;Service Portal&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal for Enterprise Service Management" source="com.glide.service-portal.esm"&gt;16a84aef4f703200015eab99f110c70e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_portal_81b75d3147032100ba13a5554ee4902b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-08-28 17:29:00&lt;/sys_updated_on&gt;&lt;theme display_value="Stock"&gt;79315153cb33310000f8d856634c9c4b&lt;/theme&gt;&lt;title&gt;Service Portal&lt;/title&gt;&lt;u_fx_inactive&gt;false&lt;/u_fx_inactive&gt;&lt;u_source/&gt;&lt;u_target/&gt;&lt;url_suffix&gt;sp&lt;/url_suffix&gt;&lt;/sp_portal&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=81b75d3147032100ba13a5554ee4902b"/&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;81b75d3147032100ba13a5554ee4902b&lt;/documentkey&gt;&lt;fieldname&gt;title&lt;/fieldname&gt;&lt;language&gt;fq&lt;/language&gt;&lt;sys_created_by&gt;system&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-06-01 15:56:09&lt;/sys_created_on&gt;&lt;sys_id&gt;742c8db7dbd613007e24de82ca961970&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-06-01 15:56:09&lt;/sys_updated_on&gt;&lt;tablename&gt;sp_portal&lt;/tablename&gt;&lt;value&gt;Portail de services&lt;/value&gt;&lt;/sys_translated_text&gt;&lt;sys_attachment action="INSERT_OR_UPDATE"&gt;&lt;average_image_color&gt;#2854&lt;/average_image_color&gt;&lt;chunk_size_bytes&gt;734003&lt;/chunk_size_bytes&gt;&lt;compressed&gt;true&lt;/compressed&gt;&lt;content_type&gt;image/png&lt;/content_type&gt;&lt;encryption_context/&gt;&lt;file_name&gt;logo&lt;/file_name&gt;&lt;image_height&gt;50&lt;/image_height&gt;&lt;image_width&gt;104&lt;/image_width&gt;&lt;size_bytes&gt;4224&lt;/size_bytes&gt;&lt;size_compressed&gt;4247&lt;/size_compressed&gt;&lt;state/&gt;&lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-08-21 13:43:36&lt;/sys_created_on&gt;&lt;sys_id&gt;7fd2a1d3dbd7b340c3af24f4059619e3&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;martin.roux@fxinnovation.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-08-21 13:43:36&lt;/sys_updated_on&gt;&lt;table_name&gt;ZZ_YYsp_portal&lt;/table_name&gt;&lt;table_sys_id&gt;81b75d3147032100ba13a5554ee4902b&lt;/table_sys_id&gt;&lt;/sys_attachment&gt;&lt;sys_attachment_doc action="INSERT_OR_UPDATE"&gt;&lt;data&gt;H4sIAAAAAAAAAA==&lt;/data&gt;&lt;length&gt;16&lt;/length&gt;&lt;position&gt;0&lt;/position&gt;&lt;sys_attachment display_value="logo" sys_id="7fd2a1d3dbd7b340c3af24f4059619e3"&gt;7fd2a1d3dbd7b340c3af24f4059619e3&lt;/sys_attachment&gt;&lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-08-21 13:43:36&lt;/sys_created_on&gt;&lt;sys_id&gt;bfd2a1d3dbd7b340c3af24f4059619e3&lt;/sys_id&gt;&lt;/sys_attachment_doc&gt;&lt;sys_attachment_doc action="INSERT_OR_UPDATE"&gt;&lt;data&gt;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&lt;/data&gt;&lt;length&gt;5652&lt;/length&gt;&lt;position&gt;1&lt;/position&gt;&lt;sys_attachment display_value="logo" sys_id="7fd2a1d3dbd7b340c3af24f4059619e3"&gt;7fd2a1d3dbd7b340c3af24f4059619e3&lt;/sys_attachment&gt;&lt;sys_created_by&gt;martin.roux@fxinnovation.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-08-21 13:43:36&lt;/sys_created_on&gt;&lt;sys_id&gt;33d2a1d3dbd7b340c3af24f4059619e4&lt;/sys_id&gt;&lt;/sys_attachment_doc&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1286987270</payload_hash>
+        <remote_update_set/>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>martin.roux@fxinnovation.com</sys_created_by>
+        <sys_created_on>2019-11-05 22:02:10</sys_created_on>
+        <sys_id>00ddea77dbf448d0263c3e0b7c96192d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16e3d96e9eb0000001</sys_recorded_at>
+        <sys_updated_by>martin.roux@fxinnovation.com</sys_updated_by>
+        <sys_updated_on>2019-11-05 22:02:10</sys_updated_on>
+        <table/>
+        <target_name>Service Portal</target_name>
+        <type>Service Portal</type>
+        <update_domain>global</update_domain>
+        <update_guid>b59952a1326f7b40c2af0a349710103d</update_guid>
+        <update_guid_history>b59952a1326f7b40c2af0a349710103d:1286987270,5d5369d333d7b3407afbf2f0b5c19605:-1535229522,9333a5d339d7b340cedfb60559b0cd81:1782648554,d02365d372d7b34039a43fae5b5980b7:65178570,3bd2a1d364d7b340272b8c6d29b7e9ed:137949390,7bd2a1d399d7b3408ea47b2188f2c8e6:-600924918,1702e59360d7b3408c8a2910fc52fdde:-1266628647,a9b1219349d7b340ed50a3dc13c9d2f8:-1240635325,20912d5368d7b340d821a2a222234ad1:1632084172,f1316953c7d7b340ccf78b6dbf982a57:2043635092,43992cb6dcef97c0434b073abc3a454f:-200147528,40589dd1b4fadb00e42864bc405b79e9:-1643430114,e4084a77047a1b00d2d13caa98287038:-2131252859,a1c7c277e67a1b00840efd10dd1d535a:206526853,4b22edaa5bfe9300f77084ba01ab630d:645501759,873c8d62d8be930081ff9554b89a85fb:280794810,7837452ebe7e9300e59b06c05abb5f6a:-1206396449,1fc60dea207e93009f4e716edc7966d7:-532404775,b5fdc4ae793e17006d7273775e583f46:-1206396449,75ed44ae763e170001fd93fb0de9508a:-660134278,6c0ca492c1b65300f209047e3f52477d:-1206396449,ba9be85226b6530007692d46db81e2a0:487767664,ac6ba4525fb653009bcdaf9752c5ef03:206770870,b32b60526eb6530087781645074e4842:1856347892,3e2ae8de64765300ae33d802291df764:1187312862,301aa8de9376530035ad46a1d07a8225:-1864541696,40589dd1b4fadb00e42864bc405b79e9:-1643430114,9f66331b359e13003d446fcc8dd4dcba:0,d366331b5d9e13003df822ff1ba329b9:-503093586</update_guid_history>
+        <update_set display_value="FX - Portail - 2019-08-28">00ddea77dbf448d0263c3e0b7c96192a</update_set>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:33:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b0010ff547c4fe1097744049116d43a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sp_portal_81b75d3147032100ba13a5554ee4902b</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_b0010ff547c4fe1097744049116d43a4</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:33:47</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

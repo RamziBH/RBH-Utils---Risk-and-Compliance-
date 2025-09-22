@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>00c46e4b4ff27200015eab99f110c762</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_xml">
+    <sys_update_xml action="INSERT_OR_UPDATE">
+        <action>INSERT_OR_UPDATE</action>
+        <application display_value="Global">global</application>
+        <category>retrieved</category>
+        <comments/>
+        <name>sys_script_client_92c969aa00f7110002adb9f58acfee46</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Display the correct list, based upon the separator field&lt;/description&gt;&lt;field&gt;selectively_apply&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;messages/&gt;&lt;name&gt;SimpSep - Show Selectively Apply 1&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (!isLoading)
+		g_form.clearMessages();
+	if (newValue == 'false'){
+		setAllInvisible();
+	}
+	else{
+		setAllInvisible();
+		if (isLoading)
+			setTimeout(checkField, 1000); //onLoad requires a delay to avoid ugly behavior
+		else
+			checkField();
+	}
+}
+
+function checkField(){
+	var ga = new GlideAjax('SimpSepAjax');
+	ga.addParam('sysparm_name', 'getRefType');
+	ga.addParam('sysparm_table', g_form.getValue('table'));
+	ga.addParam('sysparm_field', g_form.getValue('separator_field'));
+	ga.getXML(processResult);
+}
+
+function processResult(response) {
+	var answer = response.responseXML.documentElement.getAttribute("answer");
+	if (answer == 'sys_user_group')
+		g_form.setDisplay('groups', true);
+	else if (answer == 'core_company')
+		g_form.setDisplay('companies', true);
+	else if (answer == 'cmn_department')
+		g_form.setDisplay('departments', true);
+	else if (answer == 'cmn_location')
+		g_form.setDisplay('locations', true);
+	else
+		g_form.addErrorMessage(g_form.getValue('separator_field') + ' is not a supported separator field on the ' + g_form.getValue('table') + ' table.');
+}
+
+function setAllInvisible(){
+	g_form.setDisplay('groups', false);
+	g_form.setDisplay('companies', false);
+	g_form.setDisplay('departments', false);
+	g_form.setDisplay('locations', false);
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;ben.hollifield@snc_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2014-04-03 17:01:16&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;92c969aa00f7110002adb9f58acfee46&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_updated_by&gt;ben.hollifield@snc_SHARE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2014-04-04 15:22:42&lt;/sys_updated_on&gt;&lt;table&gt;separation_rules&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;sys_app_file action="INSERT_OR_UPDATE"&gt;&lt;customer_update&gt;true&lt;/customer_update&gt;&lt;publish_override/&gt;&lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;&lt;restore/&gt;&lt;sys_app/&gt;&lt;sys_code&gt;!!3FT/&lt;/sys_code&gt;&lt;sys_created_by&gt;ben.hollifield@snc_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2014-04-03 17:01:16&lt;/sys_created_on&gt;&lt;sys_id&gt;0f7aa5aa00f7110002adb9f58acfeea4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;SimpSep - Show Selectively Apply 1&lt;/sys_name&gt;&lt;sys_parent display_value="Separation Rules"&gt;07dbaf8200b7110002adb9f58acfee04&lt;/sys_parent&gt;&lt;sys_path&gt;!!3EL/!!3FT/&lt;/sys_path&gt;&lt;sys_policy/&gt;&lt;sys_source_deleted&gt;false&lt;/sys_source_deleted&gt;&lt;sys_source_id&gt;92c969aa00f7110002adb9f58acfee46&lt;/sys_source_id&gt;&lt;sys_source_table&gt;sys_script_client&lt;/sys_source_table&gt;&lt;sys_type&gt;code&lt;/sys_type&gt;&lt;sys_update_name&gt;sys_script_client_92c969aa00f7110002adb9f58acfee46&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;ben.hollifield@snc_SHARE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2014-04-04 15:22:42&lt;/sys_updated_on&gt;&lt;/sys_app_file&gt;&lt;/record_update&gt;</payload>
+        <payload_hash/>
+        <remote_update_set display_value="Simple Record Separation v1.8">3bb46e4b4ff27200015eab99f110c748</remote_update_set>
+        <replace_on_upgrade>false</replace_on_upgrade>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-05-22 18:36:56</sys_created_on>
+        <sys_id>00c46e4b4ff27200015eab99f110c762</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>15c3172a5400000000</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-05-22 18:36:56</sys_updated_on>
+        <table>separation_rules</table>
+        <target_name>SimpSep - Show Selectively Apply 1</target_name>
+        <type>Client Script</type>
+        <update_domain>global</update_domain>
+        <update_guid/>
+        <update_guid_history/>
+        <update_set/>
+        <view/>
+    </sys_update_xml>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>rben-hassine_admin</sys_created_by>
+        <sys_created_on>2025-09-18 17:33:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>37e087f547c4fe1097744049116d437f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_script_client_92c969aa00f7110002adb9f58acfee46</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_metadata_link_37e087f547c4fe1097744049116d437f</sys_update_name>
+        <sys_updated_by>rben-hassine_admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 17:33:27</sys_updated_on>
+        <tablename>sys_update_xml</tablename>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_metadata_link>
+</record_update>

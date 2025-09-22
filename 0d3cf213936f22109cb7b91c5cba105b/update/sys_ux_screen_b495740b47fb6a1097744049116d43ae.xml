@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <event_mappings>[
+    {
+        "eventMappingId": "ckfsmyrmqaaaaddzddhhhddlfiptjbi",
+        "isConfiguration": false,
+        "offRowStorageId": null,
+        "sourceEventApiName": "sn_grc_workspace.RECORD_CREATED",
+        "sourceEventDefinition": {
+            "apiName": "sn_grc_workspace.RECORD_CREATED",
+            "id": null,
+            "type": "UXEVENT"
+        },
+        "sourceEventSysId": null,
+        "targets": [
+            {
+                "event": {
+                    "apiName": "sn_grc_workspace.REFRESH_LIST",
+                    "payload": {}
+                },
+                "targetId": "dyddhhhddgckfsmynggtuiirmkaaaadgggii",
+                "type": "EVENT"
+            }
+        ]
+    },
+    {
+        "eventMappingId": "clcxyiiddqaaaaafffddbhhreoawvccydd",
+        "isConfiguration": false,
+        "offRowStorageId": null,
+        "sourceEventApiName": "sn_grc_workspace.RECORD#_RELATED_LIST_REFRESH_REQUESTED_RELAY_21fcdb090f572010878cddcd58767e27",
+        "sourceEventCorrelationId": null,
+        "sourceEventDefinition": {
+            "apiName": "sn_grc_workspace.RECORD#_RELATED_LIST_REFRESH_REQUESTED_RELAY_21fcdb090f572010878cddcd58767e27",
+            "id": null,
+            "type": "UXEVENT"
+        },
+        "sourceEventSysId": null,
+        "targets": [
+            {
+                "broker": null,
+                "clientScript": null,
+                "conditional": null,
+                "declarativeAction": null,
+                "event": null,
+                "operation": {
+                    "dataBrokerId": "029f04e053610110ac9bddeeff7b1294",
+                    "operationName": "RECORD#RELATED_LIST_REFRESH_REQUESTED",
+                    "parentResourceId": "",
+                    "payload": {
+                        "container": {
+                            "relatedListName": {
+                                "binding": {
+                                    "address": [
+                                        "relatedListName"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            }
+                        },
+                        "type": "MAP_CONTAINER"
+                    }
+                },
+                "targetId": "clcxyiiddqaaaaaffgddbhhrmjhsbbpw",
+                "type": "DATABROKER_OP"
+            }
+        ]
+    }
+]</event_mappings>
+        <macroponent display_value="New item on risk mitigation task">7895740b47fb6a1097744049116d4394</macroponent>
+        <macroponent_config/>
+        <name>New item on risk mitigation task</name>
+        <order>0</order>
+        <parent_macroponent/>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="New item on risk mitigation task">2f757cc747fb6a1097744049116d43b8</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>b495740b47fb6a1097744049116d43ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New item on risk mitigation task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_screen_b495740b47fb6a1097744049116d43ae</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:17</sys_updated_on>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_screen>
+</record_update>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>MODAL_SELECTED_RELAY_a295780b47fb6a1097744049116d4366</event_name>
+        <explicit_api_name>sn_uib_base_aw.MODAL_SELECTED_RELAY_3478e8db0f0210107d20409dc4767e89</explicit_api_name>
+        <interfaces/>
+        <label>Toggle modal relay</label>
+        <props>[
+    {
+        "fieldType": "string",
+        "interfaceApiName": "global.modal",
+        "label": "Modal",
+        "name": "modalId",
+        "valueType": "string"
+    },
+    {
+        "fieldType": "boolean",
+        "label": "Show Modal",
+        "name": "showModal",
+        "valueType": "string"
+    },
+    {
+        "fieldType": "json",
+        "label": "Modal display options",
+        "name": "displayOptions",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ {
+  "message" : "Modal",
+  "comment" : ""
+}, {
+  "message" : "Modal display options",
+  "comment" : ""
+}, {
+  "message" : "Show Modal",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6e95780b47fb6a1097744049116d436a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Toggle modal relay</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_event_6e95780b47fb6a1097744049116d436a</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:24</sys_updated_on>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_event>
+</record_update>

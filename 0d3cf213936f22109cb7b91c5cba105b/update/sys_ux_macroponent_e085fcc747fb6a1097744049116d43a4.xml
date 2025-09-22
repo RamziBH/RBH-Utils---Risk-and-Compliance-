@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <bundles/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[
+    {
+        "definition": {
+            "id": "d356d14b6e293a3020a244b63d278d8f",
+            "type": "MACROPONENT"
+        },
+        "elementId": "1804c5b0771320102a272f589a1061ca_Main",
+        "elementLabel": "Main",
+        "eventMappings": [],
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "overrides": {
+            "composition": [
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "stylized_text_3",
+                    "elementLabel": "Stylized text 3",
+                    "eventMappings": [],
+                    "isHero": false,
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": ""
+                    },
+                    "isNonDestructive": false,
+                    "overrides": null,
+                    "propertyValues": {
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* {\n    color: RGB(var(--now-color_text--secondary, 66, 80, 81));\n }"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "h3"
+                        },
+                        "text": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "Highlighted details"
+                            }
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "stylized_text_2",
+                    "elementLabel": "Stylized text 2",
+                    "eventMappings": [],
+                    "isHero": false,
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": ""
+                    },
+                    "isNonDestructive": false,
+                    "overrides": null,
+                    "propertyValues": {
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* { font-size:var(--now-global-font-size--sm, 12px);\ncolor: RGB(var(--now-color--text-tertiary, #637274));}"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "span"
+                        },
+                        "text": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "Parent hierarchy"
+                            }
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "71baad1870878aa2e853a2d9a3373f84",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "content_tree_2",
+                    "elementLabel": "Content tree 2",
+                    "eventMappings": [
+                        {
+                            "eventMappingId": "ckmynqrahaaaaddsddghhqjjrwkqhuff",
+                            "isConfiguration": false,
+                            "offRowStorageId": null,
+                            "sourceEventApiName": "sn_content_tree.NOW_CONTENT_TREE#ITEM_CLICKED",
+                            "sourceEventCorrelationId": null,
+                            "sourceEventDefinition": {
+                                "apiName": "sn_content_tree.NOW_CONTENT_TREE#ITEM_CLICKED",
+                                "id": null,
+                                "type": "UXEVENT"
+                            },
+                            "sourceEventSysId": null,
+                            "targets": [
+                                {
+                                    "broker": null,
+                                    "clientScript": {
+                                        "sysId": "6885fcc747fb6a1097744049116d43b9"
+                                    },
+                                    "conditional": null,
+                                    "declarativeAction": null,
+                                    "event": null,
+                                    "operation": null,
+                                    "targetId": "ckmynqrahaaaaddtddghhqbbulufjjck",
+                                    "type": "CLIENT_SCRIPT"
+                                }
+                            ]
+                        }
+                    ],
+                    "isHero": false,
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": ""
+                    },
+                    "isNonDestructive": false,
+                    "overrides": null,
+                    "propertyValues": {
+                        "configAria": {
+                            "container": {
+                                "tree": {
+                                    "container": {
+                                        "aria-label": {
+                                            "type": "TRANSLATION_LITERAL",
+                                            "value": {
+                                                "code": null,
+                                                "comment": "",
+                                                "message": "Expandable parent hierarchy of Risk Statement"
+                                            }
+                                        }
+                                    },
+                                    "type": "MAP_CONTAINER"
+                                }
+                            },
+                            "type": "MAP_CONTAINER"
+                        },
+                        "expandedItems": {
+                            "binding": {
+                                "address": [
+                                    "risk_statement_hierarchy",
+                                    "output",
+                                    "expanded"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "highlightSelectedParent": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "items": {
+                            "binding": {
+                                "address": [
+                                    "risk_statement_hierarchy",
+                                    "output",
+                                    "arr"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "loadingItems": {
+                            "container": [],
+                            "type": "LIST_CONTAINER"
+                        },
+                        "overflow": {
+                            "type": "JSON_LITERAL",
+                            "value": "wrap"
+                        },
+                        "searchTerm": {
+                            "type": "JSON_LITERAL",
+                            "value": null
+                        },
+                        "select": {
+                            "type": "JSON_LITERAL",
+                            "value": "single"
+                        },
+                        "selectedItems": {
+                            "binding": {
+                                "address": [
+                                    "risk_statement_hierarchy",
+                                    "output",
+                                    "selected"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "showActionsOnHover": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "showDividers": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "showPresencePattern": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "size": {
+                            "type": "JSON_LITERAL",
+                            "value": "md"
+                        },
+                        "triggerIcon": {
+                            "type": "JSON_LITERAL",
+                            "value": "chevron"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "stylized_text_1",
+                    "elementLabel": "Stylized text 1",
+                    "eventMappings": [],
+                    "isHero": false,
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": ""
+                    },
+                    "isNonDestructive": false,
+                    "overrides": null,
+                    "propertyValues": {
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* { font-size:var(--now-global-font-size--sm, 12px);\ncolor: RGB(var(--now-color--text-tertiary, #637274));}"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "span"
+                        },
+                        "text": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "Child hierarchy"
+                            }
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "71baad1870878aa2e853a2d9a3373f84",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "content_tree_3",
+                    "elementLabel": "Content tree 3",
+                    "eventMappings": [
+                        {
+                            "eventMappingId": "ckmynrbbrjaaaadduddghhqjbggiinddei",
+                            "isConfiguration": false,
+                            "offRowStorageId": null,
+                            "sourceEventApiName": "sn_content_tree.NOW_CONTENT_TREE#ITEM_CLICKED",
+                            "sourceEventCorrelationId": null,
+                            "sourceEventDefinition": {
+                                "apiName": "sn_content_tree.NOW_CONTENT_TREE#ITEM_CLICKED",
+                                "id": null,
+                                "type": "UXEVENT"
+                            },
+                            "sourceEventSysId": null,
+                            "targets": [
+                                {
+                                    "broker": null,
+                                    "clientScript": {
+                                        "sysId": "6885fcc747fb6a1097744049116d43b9"
+                                    },
+                                    "conditional": null,
+                                    "declarativeAction": null,
+                                    "event": null,
+                                    "operation": null,
+                                    "targetId": "ckmynrbbrjaaaaddvddghhqvvcfmbbfff",
+                                    "type": "CLIENT_SCRIPT"
+                                }
+                            ]
+                        }
+                    ],
+                    "isHero": false,
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": ""
+                    },
+                    "isNonDestructive": false,
+                    "overrides": null,
+                    "propertyValues": {
+                        "configAria": {
+                            "container": {
+                                "tree": {
+                                    "container": {
+                                        "aria-label": {
+                                            "type": "TRANSLATION_LITERAL",
+                                            "value": {
+                                                "code": null,
+                                                "comment": "",
+                                                "message": "Expandable child hierarchy of Risk Statement"
+                                            }
+                                        }
+                                    },
+                                    "type": "MAP_CONTAINER"
+                                }
+                            },
+                            "type": "MAP_CONTAINER"
+                        },
+                        "expandedItems": {
+                            "binding": {
+                                "address": [
+                                    "risk_statement_downstream_hierarchy",
+                                    "output",
+                                    "expanded"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "highlightSelectedParent": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "items": {
+                            "binding": {
+                                "address": [
+                                    "risk_statement_downstream_hierarchy",
+                                    "output",
+                                    "items"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "loadingItems": {
+                            "container": [],
+                            "type": "LIST_CONTAINER"
+                        },
+                        "overflow": {
+                            "type": "JSON_LITERAL",
+                            "value": "wrap"
+                        },
+                        "searchTerm": {
+                            "type": "JSON_LITERAL",
+                            "value": null
+                        },
+                        "select": {
+                            "type": "JSON_LITERAL",
+                            "value": "single"
+                        },
+                        "selectedItems": {
+                            "binding": {
+                                "address": [
+                                    "risk_statement_downstream_hierarchy",
+                                    "output",
+                                    "selected"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "showActionsOnHover": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "showDividers": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "showPresencePattern": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "size": {
+                            "type": "JSON_LITERAL",
+                            "value": "md"
+                        },
+                        "triggerIcon": {
+                            "type": "JSON_LITERAL",
+                            "value": "chevron"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                }
+            ],
+            "layout": {
+                "default": {
+                    "children": null,
+                    "items": [
+                        {
+                            "element_id": "stylized_text_3",
+                            "rules": {},
+                            "styles": {
+                                "font-size": "1.5rem",
+                                "margin-bottom": "1rem"
+                            }
+                        },
+                        {
+                            "element_id": "stylized_text_2",
+                            "rules": {},
+                            "styles": {
+                                "font-size": "1.25rem",
+                                "margin-bottom": "0.5rem"
+                            }
+                        },
+                        {
+                            "element_id": "content_tree_2",
+                            "rules": {},
+                            "styles": {
+                                "margin-bottom": "32px"
+                            }
+                        },
+                        {
+                            "element_id": "stylized_text_1",
+                            "rules": {},
+                            "styles": {
+                                "font-size": "1.25rem",
+                                "margin-bottom": "0.5rem"
+                            }
+                        },
+                        {
+                            "element_id": "content_tree_3",
+                            "rules": {},
+                            "styles": {}
+                        }
+                    ],
+                    "root": null,
+                    "rules": {},
+                    "styles": {
+                        "display": "flex",
+                        "flex-direction": "column"
+                    },
+                    "type": "flex"
+                },
+                "version": "3.0.0"
+            }
+        },
+        "preset": null,
+        "propertyValues": {
+            "ariaRegionHeadingLevel": {
+                "type": "JSON_LITERAL",
+                "value": "1"
+            },
+            "ariaRegionName": {
+                "type": "TRANSLATION_LITERAL",
+                "value": {
+                    "code": null,
+                    "comment": "",
+                    "message": ""
+                }
+            },
+            "ariaRole": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "hideEmptyStateUi": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "includeAriaHeading": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "slotWrapperBehavior": {
+                "type": "JSON_LITERAL",
+                "value": "fullheight"
+            },
+            "type": {
+                "type": "JSON_LITERAL",
+                "value": "section"
+            }
+        },
+        "slot": null,
+        "styles": null
+    }
+]</composition>
+        <da_relay_models/>
+        <data>[
+    {
+        "definition": {
+            "id": "2144c9b0771320102a272f589a10618d",
+            "type": "TRANSFORM"
+        },
+        "elementId": "risk_statement_downstream_hierarchy",
+        "elementLabel": "Risk statement downstream hierarchy",
+        "eventMappings": [],
+        "inputValues": {
+            "riskStmtSysId": {
+                "binding": {
+                    "address": [
+                        "riskStmtSysId"
+                    ]
+                },
+                "type": "STATE_BINDING"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "1f3db007534120100b6fddeeff7b124c",
+            "type": "TRANSFORM"
+        },
+        "elementId": "risk_statement_hierarchy",
+        "elementLabel": "Risk Statement Hierarchy",
+        "eventMappings": [],
+        "inputValues": {
+            "riskStmtSysId": {
+                "binding": {
+                    "address": [
+                        "riskStmtSysId"
+                    ]
+                },
+                "type": "STATE_BINDING"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    }
+]</data>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events/>
+        <events/>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{
+    "MACROPONENT_READY": [
+        {
+            "broker": null,
+            "clientScript": {
+                "sysId": "ac85fcc747fb6a1097744049116d43a8"
+            },
+            "conditional": null,
+            "declarativeAction": null,
+            "event": null,
+            "operation": null,
+            "targetId": "ckmylggugoaaaaceddghhviifzbbkvggn",
+            "type": "CLIENT_SCRIPT"
+        }
+    ]
+}</internal_event_mappings>
+        <layout>{
+    "default": {
+        "children": null,
+        "isInline": null,
+        "items": [
+            {
+                "element_id": "1804c5b0771320102a272f589a1061ca_Main",
+                "rules": {},
+                "styles": {
+                    "grid-area": "main",
+                    "height": "100%",
+                    "width": "100%"
+                }
+            }
+        ],
+        "root": null,
+        "rules": null,
+        "styles": {
+            "grid-gap": "1rem",
+            "grid-template-areas": "\"main\"",
+            "grid-template-columns": "1fr",
+            "grid-template-rows": "minmax(400px,auto)",
+            "height": "100%"
+        },
+        "templateId": "28bde4cd53431010e6bcddeeff7b12cc",
+        "type": "grid"
+    },
+    "version": "3.0.0"
+}</layout>
+        <macroponent_dependencies/>
+        <name>Risk statement side bar</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "",
+        "description": null,
+        "disabled": false,
+        "fieldType": "string",
+        "label": "statementId",
+        "mandatory": false,
+        "name": "statementId",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "Tableau",
+        "mandatory": false,
+        "name": "table",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "SysId",
+        "mandatory": false,
+        "name": "sysId",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ {
+  "message" : "Child hierarchy",
+  "comment" : ""
+}, {
+  "message" : "Expandable child hierarchy of Risk Statement",
+  "comment" : ""
+}, {
+  "message" : "Expandable parent hierarchy of Risk Statement",
+  "comment" : ""
+}, {
+  "message" : "Highlighted details",
+  "comment" : ""
+}, {
+  "message" : "Parent hierarchy",
+  "comment" : ""
+} ]</required_translations>
+        <root_component/>
+        <root_component_config>{}</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties>[
+    {
+        "description": "",
+        "fieldType": "",
+        "initialValue": {
+            "binding": {
+                "address": [
+                    "sysId"
+                ],
+                "category": "props"
+            },
+            "type": "CONTEXT_BINDING"
+        },
+        "label": "riskStmtSysId",
+        "name": "riskStmtSysId",
+        "shape": "",
+        "valueType": ""
+    }
+]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e085fcc747fb6a1097744049116d43a4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Risk statement side bar</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_macroponent_e085fcc747fb6a1097744049116d43a4</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:00</sys_updated_on>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_macroponent>
+</record_update>

@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <bundles/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[
+    {
+        "definition": {
+            "id": "d356d14b6e293a3020a244b63d278d8f",
+            "type": "MACROPONENT"
+        },
+        "elementId": "9238fcd20ff52010878cddcd58767ea8_Main",
+        "elementLabel": "Main",
+        "eventMappings": [],
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "overrides": {
+            "composition": [
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "highlighted_details",
+                    "elementLabel": "Highlighted details",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": false
+                    },
+                    "isNonDestructive": false,
+                    "overrides": null,
+                    "propertyValues": {
+                        "configAria": {
+                            "container": {
+                                "input": {
+                                    "container": {
+                                        "aria-label": {
+                                            "type": "TRANSLATION_LITERAL",
+                                            "value": {
+                                                "code": null,
+                                                "comment": "",
+                                                "message": "Highlighted details"
+                                            }
+                                        }
+                                    },
+                                    "type": "MAP_CONTAINER"
+                                }
+                            },
+                            "type": "MAP_CONTAINER"
+                        },
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* {\n    font-size: var(--now-global-font-size--xl, 24px);\n    font-family: var(--now-font-family,\"Source Sans Pro\",Arial,sans-serif);\n    color: RGB(var(--now-color--text-secondary, #425051)); \n    line-height: var(--now-line-height,1.25);\n }"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "span"
+                        },
+                        "text": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "Highlighted details"
+                            }
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "hierarchy",
+                    "elementLabel": "Hierarchy",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": false
+                    },
+                    "isNonDestructive": false,
+                    "overrides": null,
+                    "propertyValues": {
+                        "configAria": {
+                            "container": {
+                                "input": {
+                                    "container": {
+                                        "aria-label": {
+                                            "type": "TRANSLATION_LITERAL",
+                                            "value": {
+                                                "code": null,
+                                                "comment": "",
+                                                "message": "Hierarchy"
+                                            }
+                                        }
+                                    },
+                                    "type": "MAP_CONTAINER"
+                                }
+                            },
+                            "type": "MAP_CONTAINER"
+                        },
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* { font-size:var(--now-global-font-size--sm, 12px);\ncolor:RGB(var(--now-color--text-secondary, #425051)); }"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "span"
+                        },
+                        "text": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "Hierarchy"
+                            }
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "hierarchy_none_text",
+                    "elementLabel": "Hierarchy none text",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "script": {
+                            "apiVersion": "2.0.0",
+                            "controllerElementId": null,
+                            "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n\tvar output = api.data.policy_side_panel.output;\n\treturn (output &amp;&amp; output.hierarchy.items[0].children) ? true : false;\n}",
+                            "scriptSysId": "2969d816072f02101e7cf4ce0ad3004a",
+                            "target": null
+                        },
+                        "type": "CLIENT_TRANSFORM_SCRIPT"
+                    },
+                    "isNonDestructive": false,
+                    "overrides": null,
+                    "propertyValues": {
+                        "configAria": {
+                            "container": {
+                                "input": {
+                                    "container": {
+                                        "aria-label": {
+                                            "type": "TRANSLATION_LITERAL",
+                                            "value": {
+                                                "code": null,
+                                                "comment": "",
+                                                "message": "None"
+                                            }
+                                        }
+                                    },
+                                    "type": "MAP_CONTAINER"
+                                }
+                            },
+                            "type": "MAP_CONTAINER"
+                        },
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* { font-size:var(--now-global-font-size--md, 16px);\n}"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "div"
+                        },
+                        "text": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "None"
+                            }
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "71baad1870878aa2e853a2d9a3373f84",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "policy_hierarchy",
+                    "elementLabel": "Policy hierarchy",
+                    "eventMappings": [
+                        {
+                            "eventMappingId": "ckkggteogyaaaacchddhiihhfseaaeetlb",
+                            "isConfiguration": false,
+                            "offRowStorageId": null,
+                            "sourceEventApiName": "sn_content_tree.NOW_CONTENT_TREE#ACTIONABLE_ITEM_CLICKED",
+                            "sourceEventCorrelationId": null,
+                            "sourceEventDefinition": {
+                                "apiName": "sn_content_tree.NOW_CONTENT_TREE#ACTIONABLE_ITEM_CLICKED",
+                                "id": null,
+                                "type": "UXEVENT"
+                            },
+                            "sourceEventSysId": null,
+                            "targets": [
+                                {
+                                    "broker": null,
+                                    "clientScript": {
+                                        "sysId": "4195b40b47fb6a1097744049116d434a"
+                                    },
+                                    "declarativeAction": null,
+                                    "event": null,
+                                    "operation": null,
+                                    "targetId": "ckkggteogzaaaacciddhiihhpdxxflpx",
+                                    "type": "CLIENT_SCRIPT"
+                                }
+                            ]
+                        }
+                    ],
+                    "isHidden": {
+                        "script": {
+                            "apiVersion": "1.0.0",
+                            "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n\tvar output = api.data.policy_side_panel.output;\n\treturn (output &amp;&amp; output.hierarchy.items[0].children) ? false : true;\n}"
+                        },
+                        "type": "CLIENT_TRANSFORM_SCRIPT"
+                    },
+                    "isNonDestructive": false,
+                    "overrides": null,
+                    "propertyValues": {
+                        "activeRoute": {
+                            "type": "JSON_LITERAL",
+                            "value": {
+                                "0": "@",
+                                "routeType": ""
+                            }
+                        },
+                        "configAria": {
+                            "container": {
+                                "tree": {
+                                    "container": {
+                                        "aria-label": {
+                                            "type": "TRANSLATION_LITERAL",
+                                            "value": {
+                                                "code": null,
+                                                "comment": "",
+                                                "message": "Policy hierarchy"
+                                            }
+                                        }
+                                    },
+                                    "type": "MAP_CONTAINER"
+                                }
+                            },
+                            "type": "MAP_CONTAINER"
+                        },
+                        "expandedItems": {
+                            "binding": {
+                                "address": [
+                                    "policy_side_panel",
+                                    "output",
+                                    "hierarchy",
+                                    "expandedItems"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "highlightSelectedParent": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "items": {
+                            "binding": {
+                                "address": [
+                                    "policy_side_panel",
+                                    "output",
+                                    "hierarchy",
+                                    "items"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "loadingItems": {
+                            "container": [],
+                            "type": "LIST_CONTAINER"
+                        },
+                        "overflow": {
+                            "type": "JSON_LITERAL",
+                            "value": "truncate"
+                        },
+                        "searchTerm": {
+                            "type": "JSON_LITERAL",
+                            "value": null
+                        },
+                        "select": {
+                            "type": "JSON_LITERAL",
+                            "value": "none"
+                        },
+                        "selectedItems": {
+                            "binding": {
+                                "address": [
+                                    "policy_side_panel",
+                                    "output",
+                                    "hierarchy",
+                                    "selectedItems"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "showActionsOnHover": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "showDividers": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "showPresencePattern": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "size": {
+                            "type": "JSON_LITERAL",
+                            "value": "md"
+                        },
+                        "triggerIcon": {
+                            "type": "JSON_LITERAL",
+                            "value": "chevron"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "regulations_addressed",
+                    "elementLabel": "Regulations addressed",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": false
+                    },
+                    "isNonDestructive": false,
+                    "overrides": null,
+                    "propertyValues": {
+                        "configAria": {
+                            "container": {
+                                "input": {
+                                    "container": {
+                                        "aria-label": {
+                                            "type": "TRANSLATION_LITERAL",
+                                            "value": {
+                                                "code": null,
+                                                "comment": "",
+                                                "message": "Regulations addressed"
+                                            }
+                                        }
+                                    },
+                                    "type": "MAP_CONTAINER"
+                                }
+                            },
+                            "type": "MAP_CONTAINER"
+                        },
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* { font-size:var(--now-global-font-size--sm, 12px);\ncolor:RGB(var(--now-color--text-secondary, #425051)); }"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "span"
+                        },
+                        "text": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "Regulations addressed"
+                            }
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "regulations_none_text",
+                    "elementLabel": "Regulations none text",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "script": {
+                            "apiVersion": "1.0.0",
+                            "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n\tvar output = api.data.policy_side_panel.output;\n\treturn (output &amp;&amp; output.authorityDocLinks.length) ? true : false;\n}"
+                        },
+                        "type": "CLIENT_TRANSFORM_SCRIPT"
+                    },
+                    "isNonDestructive": false,
+                    "overrides": null,
+                    "propertyValues": {
+                        "configAria": {
+                            "container": {
+                                "input": {
+                                    "container": {
+                                        "aria-label": {
+                                            "type": "TRANSLATION_LITERAL",
+                                            "value": {
+                                                "code": null,
+                                                "comment": "",
+                                                "message": "None"
+                                            }
+                                        }
+                                    },
+                                    "type": "MAP_CONTAINER"
+                                }
+                            },
+                            "type": "MAP_CONTAINER"
+                        },
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* { font-size:var(--now-global-font-size--md, 16px);\n}"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "div"
+                        },
+                        "text": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "comment": "",
+                                "message": "None"
+                            }
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "b83fb1af6e8e84e024d4057df053038b",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "link_set_1",
+                    "elementLabel": "Link set 1",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": false
+                    },
+                    "isNonDestructive": false,
+                    "overrides": null,
+                    "propertyValues": {
+                        "browseLink": {
+                            "binding": {
+                                "address": [
+                                    "policy_side_panel",
+                                    "output",
+                                    "authorityDocViewAllLink"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "heading": {
+                            "container": {},
+                            "type": "MAP_CONTAINER"
+                        },
+                        "indentLinks": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "links": {
+                            "binding": {
+                                "address": [
+                                    "policy_side_panel",
+                                    "output",
+                                    "authorityDocLinks"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "minWidth": {
+                            "type": "JSON_LITERAL",
+                            "value": "350"
+                        },
+                        "size": {
+                            "type": "JSON_LITERAL",
+                            "value": "md"
+                        },
+                        "variant": {
+                            "type": "JSON_LITERAL",
+                            "value": "primary"
+                        },
+                        "width": {
+                            "type": "JSON_LITERAL",
+                            "value": null
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "related_risk_statements",
+                    "elementLabel": "Related risk statements",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "operation": {
+                            "left": {
+                                "binding": {
+                                    "address": [
+                                        "risk_installed",
+                                        "output"
+                                    ]
+                                },
+                                "type": "DATA_OUTPUT_BINDING"
+                            },
+                            "operator": "AND",
+                            "right": {
+                                "operation": {
+                                    "operand": {
+                                        "binding": {
+                                            "address": [
+                                                "risk_installed",
+                                                "output",
+                                                "active"
+                                            ]
+                                        },
+                                        "type": "DATA_OUTPUT_BINDING"
+                                    },
+                                    "operator": "NOT"
+                                },
+                                "type": "UNARY"
+                            }
+                        },
+                        "type": "BINARY"
+                    },
+                    "isNonDestructive": false,
+                    "overrides": null,
+                    "propertyValues": {
+                        "configAria": {
+                            "container": {
+                                "input": {
+                                    "container": {
+                                        "aria-label": {
+                                            "type": "TRANSLATION_LITERAL",
+                                            "value": {
+                                                "code": null,
+                                                "comment": "",
+                                                "message": "Related risk statements"
+                                            }
+                                        }
+                                    },
+                                    "type": "MAP_CONTAINER"
+                                }
+                            },
+                            "type": "MAP_CONTAINER"
+                        },
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* { font-size:var(--now-global-font-size--sm, 12px);\ncolor:RGB(var(--now-color--text-secondary, #425051)); }"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "span"
+                        },
+                        "text": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "Related risk statements"
+                            }
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "stylized_text_4",
+                    "elementLabel": "Stylized text 4",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "script": {
+                            "apiVersion": "2.0.0",
+                            "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n  var riskInstalled = api.data.risk_installed.output;\n  if(riskInstalled &amp;&amp; (!riskInstalled.active))\n    return true;\n\n\tvar output = api.data.policy_side_panel.output;\n\t  return (output &amp;&amp; output.riskStatementLinks.length) ? true : false;\n}"
+                        },
+                        "type": "CLIENT_TRANSFORM_SCRIPT"
+                    },
+                    "isNonDestructive": false,
+                    "overrides": null,
+                    "propertyValues": {
+                        "configAria": {
+                            "container": {
+                                "input": {
+                                    "container": {
+                                        "aria-label": {
+                                            "type": "TRANSLATION_LITERAL",
+                                            "value": {
+                                                "code": null,
+                                                "comment": "",
+                                                "message": "None"
+                                            }
+                                        }
+                                    },
+                                    "type": "MAP_CONTAINER"
+                                }
+                            },
+                            "type": "MAP_CONTAINER"
+                        },
+                        "css": {
+                            "type": "JSON_LITERAL",
+                            "value": "* { \n    font-size: 1rem;\n}"
+                        },
+                        "tag": {
+                            "type": "JSON_LITERAL",
+                            "value": "div"
+                        },
+                        "text": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "None"
+                            }
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "b83fb1af6e8e84e024d4057df053038b",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "link_set_2",
+                    "elementLabel": "Link set 2",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": false
+                    },
+                    "isNonDestructive": false,
+                    "overrides": null,
+                    "propertyValues": {
+                        "browseLink": {
+                            "binding": {
+                                "address": [
+                                    "policy_side_panel",
+                                    "output",
+                                    "riskStatementViewAllLink"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "heading": {
+                            "container": {},
+                            "type": "MAP_CONTAINER"
+                        },
+                        "indentLinks": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "links": {
+                            "binding": {
+                                "address": [
+                                    "policy_side_panel",
+                                    "output",
+                                    "riskStatementLinks"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "minWidth": {
+                            "type": "JSON_LITERAL",
+                            "value": "350"
+                        },
+                        "size": {
+                            "type": "JSON_LITERAL",
+                            "value": "md"
+                        },
+                        "variant": {
+                            "type": "JSON_LITERAL",
+                            "value": "primary"
+                        },
+                        "width": {
+                            "type": "JSON_LITERAL",
+                            "value": null
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                }
+            ],
+            "layout": {
+                "default": {
+                    "children": null,
+                    "items": [
+                        {
+                            "element_id": "highlighted_details",
+                            "rules": {},
+                            "styles": {
+                                "margin-bottom": "var(--now-global-space--sm, 8px)"
+                            }
+                        },
+                        {
+                            "element_id": "hierarchy",
+                            "rules": {},
+                            "styles": {
+                                "margin-bottom": "0.5rem"
+                            }
+                        },
+                        {
+                            "element_id": "hierarchy_none_text",
+                            "rules": {},
+                            "styles": {}
+                        },
+                        {
+                            "element_id": "policy_hierarchy",
+                            "rules": {},
+                            "styles": {}
+                        },
+                        {
+                            "element_id": "regulations_addressed",
+                            "rules": {},
+                            "styles": {
+                                "margin-bottom": "0.5rem",
+                                "margin-top": "3rem"
+                            }
+                        },
+                        {
+                            "element_id": "regulations_none_text",
+                            "rules": {},
+                            "styles": {}
+                        },
+                        {
+                            "element_id": "link_set_1",
+                            "rules": {},
+                            "styles": {}
+                        },
+                        {
+                            "element_id": "related_risk_statements",
+                            "rules": {},
+                            "styles": {
+                                "margin-bottom": "0.5rem",
+                                "margin-top": "3rem"
+                            }
+                        },
+                        {
+                            "element_id": "stylized_text_4",
+                            "rules": {},
+                            "styles": {}
+                        },
+                        {
+                            "element_id": "link_set_2",
+                            "rules": {},
+                            "styles": {
+                                "padding-bottom": "2rem"
+                            }
+                        }
+                    ],
+                    "root": null,
+                    "rules": {},
+                    "styles": {
+                        "display": "flex",
+                        "flex-direction": "column"
+                    },
+                    "type": "flex"
+                },
+                "version": "3.0.0"
+            }
+        },
+        "preset": null,
+        "propertyValues": {
+            "ariaRegionHeadingLevel": {
+                "type": "JSON_LITERAL",
+                "value": "1"
+            },
+            "ariaRegionName": {
+                "type": "TRANSLATION_LITERAL",
+                "value": {
+                    "code": null,
+                    "comment": "",
+                    "message": ""
+                }
+            },
+            "ariaRole": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "hideEmptyStateUi": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "includeAriaHeading": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "slotWrapperBehavior": {
+                "type": "JSON_LITERAL",
+                "value": "fullheight"
+            },
+            "type": {
+                "type": "JSON_LITERAL",
+                "value": "section"
+            }
+        },
+        "slot": null,
+        "styles": null
+    }
+]</composition>
+        <da_relay_models/>
+        <data>[
+    {
+        "definition": {
+            "id": "d752ccf40f712010878cddcd58767e0c",
+            "type": "TRANSFORM"
+        },
+        "elementId": "policy_side_panel",
+        "elementLabel": "Policy Side Panel",
+        "eventMappings": [],
+        "inputValues": {
+            "policyId": {
+                "binding": {
+                    "address": [
+                        "sysId"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "6852f3e753e010105a20ddeeff7b129f",
+            "type": "TRANSFORM"
+        },
+        "elementId": "risk_installed",
+        "elementLabel": "Risk installed",
+        "eventMappings": [],
+        "inputValues": {
+            "pluginId": {
+                "type": "JSON_LITERAL",
+                "value": "com.sn_risk"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    }
+]</data>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events/>
+        <events/>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{}</internal_event_mappings>
+        <layout>{
+    "default": {
+        "children": null,
+        "items": [
+            {
+                "element_id": "9238fcd20ff52010878cddcd58767ea8_Main",
+                "rules": {},
+                "styles": {
+                    "grid-area": "main",
+                    "height": "100%",
+                    "width": "100%"
+                }
+            }
+        ],
+        "root": null,
+        "rules": null,
+        "styles": {
+            "grid-gap": "1rem",
+            "grid-template-areas": "\"main\"",
+            "grid-template-columns": "1fr",
+            "grid-template-rows": "minmax(400px,auto)",
+            "height": "100%"
+        },
+        "templateId": "28bde4cd53431010e6bcddeeff7b12cc",
+        "type": "grid"
+    },
+    "version": "3.0.0"
+}</layout>
+        <macroponent_dependencies/>
+        <name>Policy Sidebar</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "",
+        "description": "",
+        "fieldType": "string",
+        "label": "Tableau",
+        "mandatory": false,
+        "name": "table",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "",
+        "fieldType": "string",
+        "label": "SysId",
+        "mandatory": false,
+        "name": "sysId",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ {
+  "message" : "Hierarchy",
+  "comment" : ""
+}, {
+  "message" : "Highlighted details",
+  "comment" : ""
+}, {
+  "message" : "None",
+  "comment" : ""
+}, {
+  "message" : "Policy hierarchy",
+  "comment" : ""
+}, {
+  "message" : "Regulations addressed",
+  "comment" : ""
+}, {
+  "message" : "Related risk statements",
+  "comment" : ""
+} ]</required_translations>
+        <root_component/>
+        <root_component_config>{}</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties>[]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0195b40b47fb6a1097744049116d4339</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Policy Sidebar</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_macroponent_0195b40b47fb6a1097744049116d4339</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:19</sys_updated_on>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_macroponent>
+</record_update>

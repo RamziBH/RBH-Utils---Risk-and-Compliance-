@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Entity side bar">aa85b00b47fb6a1097744049116d4377</macroponent>
+        <name>Add more children to entity hierarchy</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    
+    // More entities are loaded for a parent entity based on user action.
+
+    var output = event.payload.data.output;
+    setChildren(api.state.treeItems, api.state.currentPath, 0, output);
+
+    function setChildren(items, path, index, output) {
+        for (var i in items) {
+            if (items[i].id == path[index]) {
+                if (path.length - 1 == index) {
+                    items[i].remainingChildren = output.result.remainingChildren;
+                    items[i].childrenIds.push(...(output.result.downstreamIds));
+                    var arr = items[i].children;
+                    if (output.result.remainingChildren > 0) {
+                        if ((arr.length>0) && arr[arr.length - 1].id == "show_more") {
+                            items[i].children.pop(); 
+                        }
+                        items[i].children.push(...output.items);
+                        items[i].children.push(output.result.show10More);
+                    } else {
+                        if ((arr.length>0) && arr[arr.length - 1].id == "show_more") {
+                            items[i].children.pop();
+                        }
+                        items[i].children.push(...output.items);
+                    }
+                    return;
+                }
+                return setChildren(items[i].children, path, ++index, output);
+            }
+        }
+    }
+
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-09-09 18:21:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ea85b00b47fb6a1097744049116d439d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Add more children to entity hierarchy</sys_name>
+        <sys_package display_value="Energir Risk and Compliance" source="x_gamlp_irm_risk_c">0d3cf213936f22109cb7b91c5cba105b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Energir Risk and Compliance">0d3cf213936f22109cb7b91c5cba105b</sys_scope>
+        <sys_update_name>sys_ux_client_script_ea85b00b47fb6a1097744049116d439d</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-09-09 18:21:08</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+        <u_fx_inactive>false</u_fx_inactive>
+        <u_source/>
+        <u_target/>
+    </sys_ux_client_script>
+</record_update>
